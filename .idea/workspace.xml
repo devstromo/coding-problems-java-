@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devstromo/day225/DESCRIPTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devstromo/day225/Problem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/devstromo/day225/ProblemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devstromo/day241/DESCRIPTION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devstromo/day241/Problem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/devstromo/day241/ProblemTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,18 +42,38 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/src/main/java/com/devstromo/day241",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\src\main\java\com\devstromo\day241" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.day241" />
       <recent name="com.devstromo.day225" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProblemTest">
+  <component name="RunManager" selected="JUnit.ProblemTest (1)">
+    <configuration name="ProblemTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coding-problems-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.day241.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.day241" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.day241.ProblemTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProblemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="coding-problems-java" />
       <extension name="coverage">
@@ -104,6 +123,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProblemTest (1)" />
         <item itemvalue="JUnit.ProblemTest" />
         <item itemvalue="JUnit.ProblemTest.testJosephusProblemForK9" />
         <item itemvalue="JUnit.ProblemTest.testJosephusProblemForK2" />
@@ -118,7 +138,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666465512819</updated>
-      <workItem from="1666465514791" duration="2449000" />
+      <workItem from="1666465514791" duration="2730000" />
+      <workItem from="1666742301657" duration="2125000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666466137924</created>
@@ -127,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666466137924</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Day 225 Problem">
+      <created>1666470157946</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666470157946</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +163,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Day 225 Problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 225 Problem" />
   </component>
 </project>
