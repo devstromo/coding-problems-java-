@@ -4,8 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import com.devstromo.day310.Problem;
-
 class ProblemTest {
 
     @Test
