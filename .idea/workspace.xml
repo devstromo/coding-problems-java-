@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devstromo/day310/DESCRIPTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devstromo/day310/Problem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/devstromo/day310/ProblemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devstromo/day311/DESCRIPTION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devstromo/day311/Problem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/devstromo/day311/ProblemTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,12 +43,13 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/src/main/java/com/devstromo/day310",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/src/main/java/com/devstromo/day311",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\src\main\java\com\devstromo\day311" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\src\main\java\com\devstromo\day310" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\src\main\java\com\devstromo\day278" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\src\main\java\com\devstromo\day244" />
@@ -59,44 +59,14 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.day311" />
       <recent name="com.devstromo.day310" />
       <recent name="com.devstromo.day278" />
       <recent name="com.devstromo.day244" />
       <recent name="com.devstromo.day241" />
-      <recent name="com.devstromo.day225" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProblemTest.testBit">
-    <configuration name="ProblemTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="coding-problems-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.day241.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.day241" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.day241.ProblemTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProblemTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="coding-problems-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.day244.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.day244" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.day244.ProblemTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ProblemTest">
     <configuration name="ProblemTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="coding-problems-java" />
       <extension name="coverage">
@@ -107,6 +77,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.devstromo.day278" />
       <option name="MAIN_CLASS_NAME" value="com.devstromo.day278.ProblemTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProblemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coding-problems-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.day311.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.day311" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.day311.ProblemTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,6 +108,22 @@
       <option name="PACKAGE_NAME" value="com.devstromo.day310" />
       <option name="MAIN_CLASS_NAME" value="com.devstromo.day310.ProblemTest" />
       <option name="METHOD_NAME" value="testBit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProblemTest.testPeak" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coding-problems-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.day311.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.day311" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.day311.ProblemTest" />
+      <option name="METHOD_NAME" value="testPeak" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProblemTest" />
+        <item itemvalue="JUnit.ProblemTest.testPeak" />
         <item itemvalue="JUnit.ProblemTest.testBit" />
         <item itemvalue="JUnit.ProblemTest (3)" />
         <item itemvalue="JUnit.ProblemTest.testSieve" />
-        <item itemvalue="JUnit.ProblemTest (2)" />
-        <item itemvalue="JUnit.ProblemTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +167,8 @@
       <workItem from="1666742301657" duration="2285000" />
       <workItem from="1668959285756" duration="4810000" />
       <workItem from="1669680847273" duration="4135000" />
-      <workItem from="1672437219802" duration="1046000" />
+      <workItem from="1672437219802" duration="1086000" />
+      <workItem from="1673306588636" duration="1682000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666466137924</created>
@@ -203,7 +205,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669685104009</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Day 310 Problem">
+      <created>1672438282478</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672438282478</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Day 310 Problem">
+      <created>1672438295182</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672438295182</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +231,7 @@
     <MESSAGE value="Day 241 Problem" />
     <MESSAGE value="Day 244 Problem not bonus" />
     <MESSAGE value="Day 278 Problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 278 Problem" />
+    <MESSAGE value="Day 310 Problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 310 Problem" />
   </component>
 </project>
