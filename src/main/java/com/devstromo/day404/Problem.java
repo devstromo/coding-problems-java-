@@ -34,4 +34,33 @@ public class Problem {
         // The size of the priority queue represents the minimum number of rooms required
         return endTimeQueue.size();
     }
+
+    public static int findMinimumRooms(Lecture[] lectures) {
+        if (lectures == null || lectures.length == 0) {
+            return 0;
+        }
+
+        // Sort lectures by start time
+        sort(lectures, Comparator.comparingInt(Lecture::start));
+
+        // Use a priority queue to keep track of end times
+        var endTimeQueue = new PriorityQueue<Integer>();
+
+        // Add the end time of the first interval
+        endTimeQueue.offer(lectures[0].end());
+
+        for (int i = 1; i < lectures.length; i++) {
+            // If the current interval's start time is greater than or equal to the earliest end time,
+            // we can use the same room for this lecture, so remove the earliest end time from the queue.
+            if (lectures[i].start() >= endTimeQueue.peek()) {
+                endTimeQueue.poll();
+            }
+
+            // Add the current interval's end time to the queue
+            endTimeQueue.offer(lectures[i].end());
+        }
+
+        // The size of the priority queue represents the minimum number of rooms required
+        return endTimeQueue.size();
+    }
 }
