@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devstromo/day404/Lecture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devstromo/day403/DESCRIPTION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devstromo/day403/Problem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +43,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/src/main/java/com/devstromo/day404",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/src/main/java/com/devstromo/day403",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
@@ -64,7 +66,7 @@
       <recent name="com.devstromo.day244" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProblemTest (1)">
+  <component name="RunManager" selected="JUnit.ProblemTest (2)">
     <configuration name="ProblemTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="coding-problems-java" />
       <extension name="coverage">
@@ -80,16 +82,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProblemTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProblemTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="coding-problems-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.day278.*" />
+          <option name="PATTERN" value="com.devstromo.day403.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.day278" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.day278.ProblemTest" />
+      <option name="PACKAGE_NAME" value="com.devstromo.day403" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.day403.ProblemTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProblemTest (2)" />
         <item itemvalue="JUnit.ProblemTest (1)" />
         <item itemvalue="JUnit.ProblemTest" />
         <item itemvalue="JUnit.ProblemTest.testPeak" />
         <item itemvalue="JUnit.ProblemTest.testBit" />
-        <item itemvalue="JUnit.ProblemTest (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +169,8 @@
       <workItem from="1672437219802" duration="1086000" />
       <workItem from="1673306588636" duration="1861000" />
       <workItem from="1674253417121" duration="18000" />
-      <workItem from="1681579390970" duration="1334000" />
+      <workItem from="1681579390970" duration="1565000" />
+      <workItem from="1681772576501" duration="402000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666466137924</created>
@@ -232,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681580518888</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Day 404 Problem">
+      <created>1681580940428</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681580940428</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
