@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devstromo/day403/DESCRIPTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/devstromo/day403/Problem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devstromo/day402/DESCRIPTION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devstromo/day402/Problem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/devstromo/day402/ProblemTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Record" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
-        <option value="Record" />
       </list>
     </option>
   </component>
@@ -43,30 +44,31 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/src/main/java/com/devstromo/day403",
-    "nodejs_package_manager_path": "npm"
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/src/main/java/com/devstromo/day402",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\src\main\java\com\devstromo\day402" />
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\src\main\java\com\devstromo\day403" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\src\main\java\com\devstromo\day404" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\src\main\java\com\devstromo\day311" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\src\main\java\com\devstromo\day310" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\src\main\java\com\devstromo\day278" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\src\main\java\com\devstromo\day244" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.day402" />
+      <recent name="com.devstromo.day403" />
       <recent name="com.devstromo.day404" />
       <recent name="com.devstromo.day311" />
       <recent name="com.devstromo.day310" />
-      <recent name="com.devstromo.day278" />
-      <recent name="com.devstromo.day244" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProblemTest (2)">
+  <component name="RunManager" selected="JUnit.ProblemTest (3)">
     <configuration name="ProblemTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="coding-problems-java" />
       <extension name="coverage">
@@ -97,6 +99,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProblemTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="coding-problems-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.day402.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.day402" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.day402.ProblemTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProblemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="coding-problems-java" />
       <extension name="coverage">
@@ -108,22 +125,6 @@
       <option name="PACKAGE_NAME" value="com.devstromo.day311" />
       <option name="MAIN_CLASS_NAME" value="com.devstromo.day311.ProblemTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProblemTest.testBit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="coding-problems-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.day310.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.day310" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.day310.ProblemTest" />
-      <option name="METHOD_NAME" value="testBit" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProblemTest (3)" />
         <item itemvalue="JUnit.ProblemTest (2)" />
         <item itemvalue="JUnit.ProblemTest (1)" />
         <item itemvalue="JUnit.ProblemTest" />
         <item itemvalue="JUnit.ProblemTest.testPeak" />
-        <item itemvalue="JUnit.ProblemTest.testBit" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +171,8 @@
       <workItem from="1673306588636" duration="1861000" />
       <workItem from="1674253417121" duration="18000" />
       <workItem from="1681579390970" duration="1565000" />
-      <workItem from="1681772576501" duration="402000" />
+      <workItem from="1681772576501" duration="650000" />
+      <workItem from="1681859084319" duration="564000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666466137924</created>
@@ -242,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681580940428</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Day 403 Problem">
+      <created>1681773175101</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1681773175101</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +268,7 @@
     <MESSAGE value="Day 310 Problem" />
     <MESSAGE value="Day 311 Problem" />
     <MESSAGE value="Day 404 Problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 404 Problem" />
+    <MESSAGE value="Day 403 Problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 403 Problem" />
   </component>
 </project>
