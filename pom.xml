@@ -6,7 +6,12 @@
 
   <groupId>com.devstromo</groupId>
   <artifactId>coding-problems-java</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>codewars</module>
+    <module>daily-coding-problem</module>
+  </modules>
 
   <name>coding-problems-java</name>
 
