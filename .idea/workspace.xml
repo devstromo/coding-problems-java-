@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="Code Refactor">
-      <change afterPath="$PROJECT_DIR$/codewars/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/App.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu5/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu5/mean_square_error/DESCRIPTION.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devstromo/day225/DESCRIPTION.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu5/mean_square_error/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu5/mean_square_error/SolutionUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu5/mean_square_error/DESCRIPTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu5/mean_square_error/DESCRIPTION.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -53,24 +54,24 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\codewars\src\main\java\com\devstromo\kyu5\mean_square_error" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\src\main\java\com\devstromo\day382" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\src\main\java\com\devstromo\day381" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\src\main\java\com\devstromo\day386" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\src\main\java\com\devstromo\day401" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\src\main\java\com\devstromo\day402" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.kyu5.mean_square_error" />
       <recent name="com.devstromo.day382" />
       <recent name="com.devstromo.day381" />
       <recent name="com.devstromo.day386" />
       <recent name="com.devstromo.day401" />
-      <recent name="com.devstromo.day402" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProblemTest">
+  <component name="RunManager" selected="JUnit.SolutionUnitTest">
     <configuration name="ProblemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="daily-coding-problem" />
       <extension name="coverage">
@@ -81,21 +82,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.devstromo.day225" />
       <option name="MAIN_CLASS_NAME" value="com.devstromo.day225.ProblemTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProblemUnitTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="coding-problems-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.day386.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.day386" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.day386.ProblemUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,28 +117,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProblemUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="coding-problems-java" />
+    <configuration name="SolutionUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codewars" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.day401.*" />
+          <option name="PATTERN" value="com.devstromo.kyu5.mean_square_error.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.day401" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.day401.ProblemUnitTest" />
+      <option name="PACKAGE_NAME" value="com.devstromo.kyu5.mean_square_error" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu5.mean_square_error.SolutionUnitTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionUnitTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codewars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.kyu5.mean_square_error.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.kyu5.mean_square_error" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu5.mean_square_error.SolutionUnitTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionUnitTest" />
+        <item itemvalue="JUnit.SolutionUnitTest.test1" />
         <item itemvalue="JUnit.ProblemTest" />
         <item itemvalue="JUnit.ProblemUnitTest (3)" />
         <item itemvalue="JUnit.ProblemUnitTest (2)" />
-        <item itemvalue="JUnit.ProblemUnitTest (1)" />
-        <item itemvalue="JUnit.ProblemUnitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +180,7 @@
       <workItem from="1682033992156" duration="1038000" />
       <workItem from="1682119550476" duration="237000" />
       <workItem from="1682188213489" duration="831000" />
-      <workItem from="1682463592472" duration="638000" />
+      <workItem from="1682463592472" duration="1767000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666466137924</created>
@@ -299,7 +301,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682464215376</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Code Refactor">
+      <created>1682464252623</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1682464252623</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Mean Square Error Problem">
+      <created>1682464268490</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1682464268490</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,6 +339,7 @@
     <MESSAGE value="Day 381 Problem" />
     <MESSAGE value="Day 382 Problem" />
     <MESSAGE value="Code Refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code Refactor" />
+    <MESSAGE value="Mean Square Error Problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mean Square Error Problem" />
   </component>
 </project>
