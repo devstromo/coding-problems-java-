@@ -11,6 +11,7 @@
   <modules>
     <module>codewars</module>
     <module>daily-coding-problem</module>
+      <module>leetcode</module>
   </modules>
 
   <name>coding-problems-java</name>
