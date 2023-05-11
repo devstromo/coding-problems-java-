@@ -37,4 +37,21 @@ class Solution {
         }
         return dp[n];
     }
+    // not feasible without dp
+    public static int maxUncrossedLinesRecursive(int[] nums1, int[] nums2) {
+        return lcs(nums1, nums2, nums1.length, nums2.length);
+    }
+
+    private static int lcs(int[] nums1, int[] nums2, int m, int n) {
+        if (m == 0 || n == 0) {
+            return 0;
+        }
+        if (nums1[m - 1] == nums2[n - 1]) {
+            return 1 + lcs(nums1, nums2, m - 1, n - 1);
+        } else {
+            var x = lcs(nums1, nums2, m - 1, n);
+            var y = lcs(nums1, nums2, m, n - 1);
+            return max(x, y);
+        }
+    }
 }
