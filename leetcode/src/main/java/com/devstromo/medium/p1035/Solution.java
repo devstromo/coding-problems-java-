@@ -26,13 +26,13 @@ class Solution {
             return maxUncrossedLines(nums2, nums1);
         int dp[] = new int[n + 1];
         for (int i = 0; i < m; i++) {
-            for (int j = 0, prev = 0, cur; j < n; j++) {
-                cur = dp[j + 1];
+            for (int j = 0, previous = 0, current; j < n; j++) {
+                current = dp[j + 1];
                 if (nums1[i] == nums2[j])
-                    dp[j + 1] = prev + 1;
+                    dp[j + 1] = previous + 1;
                 else
-                    dp[j + 1] = Math.max(dp[j], cur);
-                prev = cur;
+                    dp[j + 1] = max(dp[j], current);
+                previous = current;
             }
         }
         return dp[n];
