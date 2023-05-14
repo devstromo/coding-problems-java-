@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p70/DESCRIPTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p70/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p70/SolutionUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/hard/p1799/DESCRIPTION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/hard/p1799/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/hard/p1799/SolutionUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,18 +45,18 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/easy/p70",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/hard/p1799",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\hard\p1799" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p70" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p2466" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p2140" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p1035" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p59" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -65,17 +65,17 @@
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\problem258" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.hard.p1799" />
       <recent name="com.devstromo.easy.p70" />
       <recent name="com.devstromo.medium.p2466" />
       <recent name="com.devstromo.medium.p2140" />
       <recent name="com.devstromo.medium.p1035" />
-      <recent name="com.devstromo.medium.p59" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionUnitTest (1)">
+  <component name="RunManager" selected="JUnit.SolutionUnitTest (2)">
     <configuration name="SolutionUnitTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
@@ -91,31 +91,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionUnitTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.medium.p2140.*" />
+          <option name="PATTERN" value="com.devstromo.hard.p1799.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.medium.p2140" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p2140.SolutionUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SolutionUnitTest (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.medium.p1035.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.medium.p1035" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p1035.SolutionUnitTest" />
+      <option name="PACKAGE_NAME" value="com.devstromo.hard.p1799" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.hard.p1799.SolutionUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,6 +117,22 @@
       <option name="PACKAGE_NAME" value="com.devstromo.medium.p2466" />
       <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p2466.SolutionUnitTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionUnitTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.hard.p1799.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.hard.p1799" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.hard.p1799.SolutionUnitTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -154,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionUnitTest (2)" />
+        <item itemvalue="JUnit.SolutionUnitTest.test" />
         <item itemvalue="JUnit.SolutionUnitTest (1)" />
         <item itemvalue="JUnit.SolutionUnitTest" />
         <item itemvalue="JUnit.SolutionUnitTest.testCountGoodStrings" />
-        <item itemvalue="JUnit.SolutionUnitTest (3)" />
-        <item itemvalue="JUnit.SolutionUnitTest (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +205,7 @@
       <workItem from="1683764874486" duration="1487000" />
       <workItem from="1683851342318" duration="2244000" />
       <workItem from="1683936848371" duration="5540000" />
-      <workItem from="1684010748512" duration="1958000" />
+      <workItem from="1684010748512" duration="5046000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666466137924</created>
@@ -542,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683942579748</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Leet Code | Climbing Stairs">
+      <created>1684012721093</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1684012721093</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,7 +559,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Leet Code 258" />
     <MESSAGE value="Leet Code | Palindrome Number" />
     <MESSAGE value="Code Refactor" />
     <MESSAGE value="Leet Code | 319. Bulb Switcher" />
@@ -576,7 +583,8 @@
     <MESSAGE value="Leet Code | Uncrossed Lines" />
     <MESSAGE value="Leet Code | Solving Questions With Brainpower" />
     <MESSAGE value="Leet Code | Count Ways To Build Good Strings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leet Code | Count Ways To Build Good Strings" />
+    <MESSAGE value="Leet Code | Climbing Stairs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leet Code | Climbing Stairs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
