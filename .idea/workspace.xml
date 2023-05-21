@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="" />
+    <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p338/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p338/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p338/SolutionUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p338/SolutionUnitTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,18 +44,18 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/medium/p934&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/easy/p338&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p338" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p934" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p21" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p399" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p785" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p1557" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -60,11 +64,11 @@
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\problem258" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.easy.p338" />
       <recent name="com.devstromo.medium.p934" />
       <recent name="com.devstromo.easy.p21" />
       <recent name="com.devstromo.medium.p399" />
       <recent name="com.devstromo.medium.p785" />
-      <recent name="com.devstromo.medium.p1557" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -118,17 +122,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest.testMergeTwoLists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionUnitTest.testCountBitsRecursive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.easy.p21.*" />
+          <option name="PATTERN" value="com.devstromo.easy.p338.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.easy.p21" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p21.SolutionUnitTest" />
-      <option name="METHOD_NAME" value="testMergeTwoLists" />
+      <option name="PACKAGE_NAME" value="com.devstromo.easy.p338" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p338.SolutionUnitTest" />
+      <option name="METHOD_NAME" value="testCountBitsRecursive" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,10 +157,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SolutionUnitTest (3)" />
+        <item itemvalue="JUnit.SolutionUnitTest.testCountBitsRecursive" />
         <item itemvalue="JUnit.SolutionUnitTest (2)" />
         <item itemvalue="JUnit.SolutionUnitTest.testMergeTwoListsWhile" />
         <item itemvalue="JUnit.SolutionUnitTest (1)" />
-        <item itemvalue="JUnit.SolutionUnitTest.testMergeTwoLists" />
       </list>
     </recent_temporary>
   </component>
@@ -217,20 +221,8 @@
       <workItem from="1684589583298" duration="1419000" />
       <workItem from="1684620882380" duration="26000" />
       <workItem from="1684628609766" duration="2092000" />
-    </task>
-    <task id="LOCAL-00011" summary="Day 403 Problem">
-      <created>1681773175101</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1681773175101</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Day 402 Problem">
-      <created>1681859696344</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1681859696344</updated>
+      <workItem from="1684682216192" duration="344000" />
+      <workItem from="1684682579477" duration="344000" />
     </task>
     <task id="LOCAL-00013" summary="Day 401 Problem">
       <created>1681944155066</created>
@@ -561,7 +553,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684630188223</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Leet Code | Counting Bits">
+      <created>1684682506334</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1684682506334</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Leet Code | Counting Bits">
+      <created>1684682550211</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1684682550211</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,7 +576,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Leet Code | Average Salary Excluding the Minimum and Maximum Salary" />
     <MESSAGE value="Leet Code | Sign of the Product of an Array" />
     <MESSAGE value="Leet Code | Find the Difference of Two Arrays" />
     <MESSAGE value="Leet Code | Length of Last Word" />
@@ -595,7 +600,8 @@
     <MESSAGE value="Leet Code | Evaluate Division" />
     <MESSAGE value="Leet Code | Merge Two Sorted Lists" />
     <MESSAGE value="Leet Code | Shortest Bridge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leet Code | Shortest Bridge" />
+    <MESSAGE value="Leet Code | Counting Bits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leet Code | Counting Bits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -614,6 +620,21 @@
           <url>file://$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p21/SolutionUnitTest.java</url>
           <line>65</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p338/Solution.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p338/Solution.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p338/Solution.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
