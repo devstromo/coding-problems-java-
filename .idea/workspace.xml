@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu4/StripComments/DESCRIPTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu4/StripComments/StripComments.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu4/StripComments/StripCommentsUnitTest.java" afterDir="false" />
+    <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="LeetCode | Strip Comments">
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p703/KthLargest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p703/KthLargestUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,18 +45,21 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/codewars/src/main/java/com/devstromo/kyu4/StripComments",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/medium/p347",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.devstromo.medium.p347" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p347" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\codewars\src\main\java\com\devstromo\kyu4\StripComments" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p338" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p934" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p21" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p399" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -65,11 +68,11 @@
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\problem258" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.easy.p703" />
+      <recent name="com.devstromo.medium.p347" />
       <recent name="com.devstromo.kyu4.StripComments" />
       <recent name="com.devstromo.easy.p338" />
       <recent name="com.devstromo.medium.p934" />
-      <recent name="com.devstromo.easy.p21" />
-      <recent name="com.devstromo.medium.p399" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -77,64 +80,64 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StripCommentsUnitTest">
-    <configuration name="SolutionUnitTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.KthLargestUnitTest.testKthLargest">
+    <configuration name="KthLargestUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.medium.p934.*" />
+          <option name="PATTERN" value="com.devstromo.easy.p703.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.medium.p934" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p934.SolutionUnitTest" />
+      <option name="PACKAGE_NAME" value="com.devstromo.easy.p703" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p703.KthLargestUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KthLargestUnitTest.testKthLargest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.easy.p338.*" />
+          <option name="PATTERN" value="com.devstromo.easy.p703.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.easy.p338" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p338.SolutionUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SolutionUnitTest.testCountBitsRecursive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.easy.p338.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.easy.p338" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p338.SolutionUnitTest" />
-      <option name="METHOD_NAME" value="testCountBitsRecursive" />
+      <option name="PACKAGE_NAME" value="com.devstromo.easy.p703" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p703.KthLargestUnitTest" />
+      <option name="METHOD_NAME" value="testKthLargest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest.testMergeTwoListsWhile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.easy.p21.*" />
+          <option name="PATTERN" value="com.devstromo.medium.p347.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.easy.p21" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p21.SolutionUnitTest" />
-      <option name="METHOD_NAME" value="testMergeTwoListsWhile" />
+      <option name="PACKAGE_NAME" value="com.devstromo.medium.p347" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p347.SolutionUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionUnitTest.testTopKFrequent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.medium.p347.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.medium.p347" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p347.SolutionUnitTest" />
+      <option name="METHOD_NAME" value="testTopKFrequent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KthLargestUnitTest.testKthLargest" />
+        <item itemvalue="JUnit.KthLargestUnitTest" />
+        <item itemvalue="JUnit.SolutionUnitTest" />
+        <item itemvalue="JUnit.SolutionUnitTest.testTopKFrequent" />
         <item itemvalue="JUnit.StripCommentsUnitTest" />
-        <item itemvalue="JUnit.SolutionUnitTest (3)" />
-        <item itemvalue="JUnit.SolutionUnitTest.testCountBitsRecursive" />
-        <item itemvalue="JUnit.SolutionUnitTest (2)" />
-        <item itemvalue="JUnit.SolutionUnitTest.testMergeTwoListsWhile" />
       </list>
     </recent_temporary>
   </component>
@@ -224,21 +227,8 @@
       <workItem from="1684628609766" duration="2092000" />
       <workItem from="1684682216192" duration="344000" />
       <workItem from="1684682579477" duration="639000" />
-      <workItem from="1684713525037" duration="1921000" />
-    </task>
-    <task id="LOCAL-00014" summary="Day 386 Problem">
-      <created>1682034839815</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1682034839816</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Day 381 Problem">
-      <created>1682119775163</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1682119775163</updated>
+      <workItem from="1684713525037" duration="4218000" />
+      <workItem from="1684801952484" duration="1377000" />
     </task>
     <task id="LOCAL-00016" summary="Day 382 Problem">
       <created>1682189030317</created>
@@ -569,7 +559,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684683202600</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Codewars | Strip Comments">
+      <created>1684715472730</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1684715472731</updated>
+    </task>
+    <task id="LOCAL-00064" summary="LeetCode | Top K Frequent Elements">
+      <created>1684717663686</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1684717663686</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,8 +582,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Leet Code | Sign of the Product of an Array" />
-    <MESSAGE value="Leet Code | Find the Difference of Two Arrays" />
     <MESSAGE value="Leet Code | Length of Last Word" />
     <MESSAGE value="Leet Code | Maximum Number of Vowels in a Substring of Given Length" />
     <MESSAGE value="Leet Code | Number of Subsequences That Satisfy the Given Sum Condition" />
@@ -603,7 +605,9 @@
     <MESSAGE value="Leet Code | Merge Two Sorted Lists" />
     <MESSAGE value="Leet Code | Shortest Bridge" />
     <MESSAGE value="Leet Code | Counting Bits" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leet Code | Counting Bits" />
+    <MESSAGE value="Codewars | Strip Comments" />
+    <MESSAGE value="LeetCode | Top K Frequent Elements" />
+    <option name="LAST_COMMIT_MESSAGE" value="LeetCode | Top K Frequent Elements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
