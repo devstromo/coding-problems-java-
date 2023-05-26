@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/medium/p837/DESCRIPTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/medium/p837/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/medium/p837/SolutionUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/medium/p1140/DESCRIPTION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/medium/p1140/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/medium/p1140/SolutionUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +45,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/medium/p837",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/medium/p1140",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
@@ -55,11 +55,11 @@
       <recent name="com.devstromo.medium.p347" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p1140" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p837" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p2542" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p703" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p347" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\codewars\src\main\java\com\devstromo\kyu4\StripComments" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -68,11 +68,11 @@
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\problem258" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.medium.p1140" />
       <recent name="com.devstromo.medium.p837" />
       <recent name="com.devstromo.medium.p2542" />
       <recent name="com.devstromo.easy.p703" />
       <recent name="com.devstromo.medium.p347" />
-      <recent name="com.devstromo.kyu4.StripComments" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -80,33 +80,17 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionUnitTest">
-    <configuration name="KthLargestUnitTest.testKthLargest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SolutionUnitTest (2)">
+    <configuration name="SolutionUnitTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.easy.p703.*" />
+          <option name="PATTERN" value="com.devstromo.medium.p1140.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.easy.p703" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p703.KthLargestUnitTest" />
-      <option name="METHOD_NAME" value="testKthLargest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SolutionUnitTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.medium.p2542.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.medium.p2542" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p2542.SolutionUnitTest" />
+      <option name="PACKAGE_NAME" value="com.devstromo.medium.p1140" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p1140.SolutionUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,33 +111,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest.testMaxScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionUnitTest.testNew21Game3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.medium.p2542.*" />
+          <option name="PATTERN" value="com.devstromo.medium.p837.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.medium.p2542" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p2542.SolutionUnitTest" />
-      <option name="METHOD_NAME" value="testMaxScore" />
+      <option name="PACKAGE_NAME" value="com.devstromo.medium.p837" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p837.SolutionUnitTest" />
+      <option name="METHOD_NAME" value="testNew21Game3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest.testMaxScorePair" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionUnitTest.testStoneGameII" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.medium.p2542.*" />
+          <option name="PATTERN" value="com.devstromo.medium.p1140.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.medium.p2542" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p2542.SolutionUnitTest" />
-      <option name="METHOD_NAME" value="testMaxScorePair" />
+      <option name="PACKAGE_NAME" value="com.devstromo.medium.p1140" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p1140.SolutionUnitTest" />
+      <option name="METHOD_NAME" value="testStoneGameII" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionUnitTest.testStoneGameII2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.medium.p1140.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.medium.p1140" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p1140.SolutionUnitTest" />
+      <option name="METHOD_NAME" value="testStoneGameII2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -161,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionUnitTest (2)" />
+        <item itemvalue="JUnit.SolutionUnitTest.testStoneGameII" />
+        <item itemvalue="JUnit.SolutionUnitTest.testStoneGameII2" />
         <item itemvalue="JUnit.SolutionUnitTest" />
-        <item itemvalue="JUnit.SolutionUnitTest.testMaxScore" />
-        <item itemvalue="JUnit.SolutionUnitTest (1)" />
-        <item itemvalue="JUnit.SolutionUnitTest.testMaxScorePair" />
-        <item itemvalue="JUnit.KthLargestUnitTest.testKthLargest" />
+        <item itemvalue="JUnit.SolutionUnitTest.testNew21Game3" />
       </list>
     </recent_temporary>
   </component>
@@ -231,21 +231,8 @@
       <workItem from="1684713525037" duration="4218000" />
       <workItem from="1684801952484" duration="1517000" />
       <workItem from="1684886051934" duration="3733000" />
-      <workItem from="1684973645099" duration="1312000" />
-    </task>
-    <task id="LOCAL-00018" summary="Code Refactor">
-      <created>1682464252623</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1682464252623</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Mean Square Error Problem">
-      <created>1682464268490</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1682464268490</updated>
+      <workItem from="1684973645099" duration="1696000" />
+      <workItem from="1685059984383" duration="1632000" />
     </task>
     <task id="LOCAL-00020" summary="Mean Square Error">
       <created>1682466813363</created>
@@ -576,7 +563,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684891153743</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="LeetCode | New 21 Game">
+      <created>1684975065118</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1684975065119</updated>
+    </task>
+    <task id="LOCAL-00068" summary="LeetCode | New 21 Game">
+      <created>1684975085158</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1684975085158</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,7 +586,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Leet Code | Number of Subsequences That Satisfy the Given Sum Condition" />
     <MESSAGE value="Leet Code | Two Sum" />
     <MESSAGE value="Leet Code | Fibonacci Number" />
     <MESSAGE value="Leet Code | Find the Longest Valid Obstacle Course at Each Position" />
@@ -610,7 +610,8 @@
     <MESSAGE value="LeetCode | Top K Frequent Elements" />
     <MESSAGE value="LeetCode | Kth Largest Element in a Stream" />
     <MESSAGE value="LeetCode | Maximum Subsequence Score" />
-    <option name="LAST_COMMIT_MESSAGE" value="LeetCode | Maximum Subsequence Score" />
+    <MESSAGE value="LeetCode | New 21 Game" />
+    <option name="LAST_COMMIT_MESSAGE" value="LeetCode | New 21 Game" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
