@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p1137/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p1137/SolutionUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p1603/ParkingSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p1603/ParkingSystemUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +44,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/medium/p86&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/easy/p1137&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
@@ -54,11 +54,11 @@
       <recent name="com.devstromo.medium.p347" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p1137" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p86" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\codewars\src\main\java\com\devstromo\kyu4\Hamming" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p1140" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p837" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p2542" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -67,11 +67,11 @@
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\problem258" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.easy.p1603" />
       <recent name="com.devstromo.easy.p1137" />
       <recent name="com.devstromo.medium.p86" />
       <recent name="com.devstromo.kyu4.Hamming" />
       <recent name="com.devstromo.medium.p1140" />
-      <recent name="com.devstromo.medium.p837" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -79,7 +79,7 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionUnitTest">
+  <component name="RunManager" selected="JUnit.ParkingSystemUnitTest.testParkingSystem">
     <configuration name="HammingUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars" />
       <extension name="coverage">
@@ -91,6 +91,22 @@
       <option name="PACKAGE_NAME" value="com.devstromo.kyu4.Hamming" />
       <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu4.Hamming.HammingUnitTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingSystemUnitTest.testParkingSystem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.easy.p1603.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.easy.p1603" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p1603.ParkingSystemUnitTest" />
+      <option name="METHOD_NAME" value="testParkingSystem" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,29 +156,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest.testStoneGameII" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.medium.p1140.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.medium.p1140" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p1140.SolutionUnitTest" />
-      <option name="METHOD_NAME" value="testStoneGameII" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ParkingSystemUnitTest.testParkingSystem" />
         <item itemvalue="JUnit.SolutionUnitTest" />
         <item itemvalue="JUnit.SolutionUnitTest (1)" />
         <item itemvalue="JUnit.HammingUnitTest" />
         <item itemvalue="JUnit.SolutionUnitTest (2)" />
-        <item itemvalue="JUnit.SolutionUnitTest.testStoneGameII" />
       </list>
     </recent_temporary>
   </component>
@@ -232,14 +232,8 @@
       <workItem from="1685059984383" duration="1878000" />
       <workItem from="1685147537068" duration="1401000" />
       <workItem from="1685206028297" duration="869000" />
-      <workItem from="1685282585347" duration="725000" />
-    </task>
-    <task id="LOCAL-00023" summary="Leet Code | Palindrome Number">
-      <created>1682635630774</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1682635630774</updated>
+      <workItem from="1685282585347" duration="1047000" />
+      <workItem from="1685402519316" duration="318000" />
     </task>
     <task id="LOCAL-00024" summary="Leet Code | 319. Bulb Switcher">
       <created>1682636414233</created>
@@ -577,7 +571,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685206887488</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="LeetCode | N-th Tribonacci Number">
+      <created>1685283507660</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1685283507661</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,7 +587,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Leet Code | Matrix Diagonal Sum" />
     <MESSAGE value="Leet Code | Spiral Matrix" />
     <MESSAGE value="Leet Code | Spiral Matrix II" />
     <MESSAGE value="Leet Code | Uncrossed Lines" />
@@ -611,7 +611,8 @@
     <MESSAGE value="LeetCode | Stone Game II" />
     <MESSAGE value="Codewars | Hamming Numbers" />
     <MESSAGE value="LeetCode | Partition List" />
-    <option name="LAST_COMMIT_MESSAGE" value="LeetCode | Partition List" />
+    <MESSAGE value="LeetCode | N-th Tribonacci Number" />
+    <option name="LAST_COMMIT_MESSAGE" value="LeetCode | N-th Tribonacci Number" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
