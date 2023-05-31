@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p1365/DESCRIPTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p1365/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p1365/SolutionUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu4/FactorialTail/DESCRIPTION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu4/FactorialTail/FactorialTail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu4/FactorialTail/FactorialTailUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +45,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/easy/p1365",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/codewars/src/main/java/com/devstromo/kyu4/FactorialTail",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
@@ -55,11 +55,11 @@
       <recent name="com.devstromo.medium.p347" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\codewars\src\main\java\com\devstromo\kyu4\FactorialTail" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p1365" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p1603" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p1137" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p86" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\codewars\src\main\java\com\devstromo\kyu4\Hamming" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -68,11 +68,11 @@
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\problem258" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.kyu4.FactorialTail" />
       <recent name="com.devstromo.easy.p1365" />
       <recent name="com.devstromo.easy.p1603" />
       <recent name="com.devstromo.easy.p1137" />
       <recent name="com.devstromo.medium.p86" />
-      <recent name="com.devstromo.kyu4.Hamming" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -80,18 +80,34 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionUnitTest (3)">
-    <configuration name="HammingUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FactorialTailUnitTest.basicTests">
+    <configuration name="FactorialTailUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.kyu4.Hamming.*" />
+          <option name="PATTERN" value="com.devstromo.kyu4.FactorialTail.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.kyu4.Hamming" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu4.Hamming.HammingUnitTest" />
+      <option name="PACKAGE_NAME" value="com.devstromo.kyu4.FactorialTail" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu4.FactorialTail.FactorialTailUnitTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FactorialTailUnitTest.basicTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codewars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.kyu4.FactorialTail.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.kyu4.FactorialTail" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu4.FactorialTail.FactorialTailUnitTest" />
+      <option name="METHOD_NAME" value="basicTests" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -108,21 +124,6 @@
       <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p1603.ParkingSystemUnitTest" />
       <option name="METHOD_NAME" value="testParkingSystem" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SolutionUnitTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.medium.p86.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.medium.p86" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p86.SolutionUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FactorialTailUnitTest.basicTests" />
+        <item itemvalue="JUnit.FactorialTailUnitTest" />
         <item itemvalue="JUnit.SolutionUnitTest (3)" />
         <item itemvalue="JUnit.ParkingSystemUnitTest.testParkingSystem" />
         <item itemvalue="JUnit.SolutionUnitTest" />
-        <item itemvalue="JUnit.SolutionUnitTest (1)" />
-        <item itemvalue="JUnit.HammingUnitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -234,14 +235,9 @@
       <workItem from="1685147537068" duration="1401000" />
       <workItem from="1685206028297" duration="869000" />
       <workItem from="1685282585347" duration="1047000" />
-      <workItem from="1685402519316" duration="1446000" />
-    </task>
-    <task id="LOCAL-00025" summary="Leet Code | 319. Bulb Switcher">
-      <created>1682636458733</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1682636458733</updated>
+      <workItem from="1685402519316" duration="1490000" />
+      <workItem from="1685409650803" duration="21000" />
+      <workItem from="1685490764444" duration="1114000" />
     </task>
     <task id="LOCAL-00026" summary="Daily Coding Problem day 419">
       <created>1682728249049</created>
@@ -579,7 +575,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685403052171</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="LeetCode | How Many Numbers Are Smaller Than the Current Number">
+      <created>1685404814081</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1685404814081</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -588,7 +591,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Leet Code | Spiral Matrix II" />
     <MESSAGE value="Leet Code | Uncrossed Lines" />
     <MESSAGE value="Leet Code | Solving Questions With Brainpower" />
     <MESSAGE value="Leet Code | Count Ways To Build Good Strings" />
@@ -613,7 +615,8 @@
     <MESSAGE value="LeetCode | Partition List" />
     <MESSAGE value="LeetCode | N-th Tribonacci Number" />
     <MESSAGE value="LeetCode | Design Parking System" />
-    <option name="LAST_COMMIT_MESSAGE" value="LeetCode | Design Parking System" />
+    <MESSAGE value="LeetCode | How Many Numbers Are Smaller Than the Current Number" />
+    <option name="LAST_COMMIT_MESSAGE" value="LeetCode | How Many Numbers Are Smaller Than the Current Number" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
