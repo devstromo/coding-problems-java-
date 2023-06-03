@@ -15,20 +15,20 @@ class SolutionUnitTest {
         // Test case 1:
         // numRows = 1
         // Expected output: [[1]]
-//        List<List<Integer>> expected1 = Arrays.asList(Arrays.asList(1));
-//        assertEquals(expected1, generate(1));
-//
-//        // Test case 2:
-//        // numRows = 2
-//        // Expected output: [[1], [1, 1]]
-//        List<List<Integer>> expected2 = Arrays.asList(Arrays.asList(1), Arrays.asList(1, 1));
-//        assertEquals(expected2, generate(2));
-//
-//        // Test case 3:
-//        // numRows = 3
-//        // Expected output: [[1], [1, 1], [1, 2, 1]]
-//        List<List<Integer>> expected3 = Arrays.asList(Arrays.asList(1), Arrays.asList(1, 1), Arrays.asList(1, 2, 1));
-//        assertEquals(expected3, generate(3));
+        List<List<Integer>> expected1 = Arrays.asList(Arrays.asList(1));
+        assertEquals(expected1, generate(1));
+
+        // Test case 2:
+        // numRows = 2
+        // Expected output: [[1], [1, 1]]
+        List<List<Integer>> expected2 = Arrays.asList(Arrays.asList(1), Arrays.asList(1, 1));
+        assertEquals(expected2, generate(2));
+
+        // Test case 3:
+        // numRows = 3
+        // Expected output: [[1], [1, 1], [1, 2, 1]]
+        List<List<Integer>> expected3 = Arrays.asList(Arrays.asList(1), Arrays.asList(1, 1), Arrays.asList(1, 2, 1));
+        assertEquals(expected3, generate(3));
 
         // Test case 4:
         // numRows = 5
