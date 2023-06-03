@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p119/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p119/SolutionUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +40,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/WORK/PROYECTOS/JAVA/coding-problems-java/codewars/src/main/java/com/devstromo/kyu6/MinNbDiv&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/easy/p119&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;aws.codewhisperer&quot;
   }
@@ -79,7 +75,7 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionUnitTest">
+  <component name="RunManager" selected="JUnit.SolutionUnitTest (1)">
     <configuration name="MinNbDivUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars" />
       <extension name="coverage">
@@ -91,22 +87,6 @@
       <option name="PACKAGE_NAME" value="com.devstromo.kyu6.MinNbDiv" />
       <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu6.MinNbDiv.MinNbDivUnitTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MinNbDivUnitTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codewars" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.kyu6.MinNbDiv.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.kyu6.MinNbDiv" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu6.MinNbDiv.MinNbDivUnitTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,6 +103,21 @@
       <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu6.MinNbDiv.MinNbDivUnitTest" />
       <option name="METHOD_NAME" value="testMinNbDiv2" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionUnitTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.easy.p746.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.easy.p746" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p746.SolutionUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionUnitTest (1)" />
         <item itemvalue="JUnit.SolutionUnitTest" />
         <item itemvalue="JUnit.SolutionUnitTest.testGenerate" />
         <item itemvalue="JUnit.MinNbDivUnitTest.testMinNbDiv2" />
         <item itemvalue="JUnit.MinNbDivUnitTest" />
-        <item itemvalue="JUnit.MinNbDivUnitTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -241,14 +236,7 @@
       <workItem from="1685572789077" duration="1048000" />
       <workItem from="1685574857640" duration="1908000" />
       <workItem from="1685659873995" duration="4833000" />
-      <workItem from="1685752080976" duration="732000" />
-    </task>
-    <task id="LOCAL-00031" summary="Leet Code | Valid Parentheses">
-      <created>1682879480239</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1682879480239</updated>
+      <workItem from="1685752080976" duration="874000" />
     </task>
     <task id="LOCAL-00032" summary="Leet Code | Average Salary Excluding the Minimum and Maximum Salary">
       <created>1682956191565</created>
@@ -586,7 +574,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685752290325</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="LeetCode | Pascal's Triangle II">
+      <created>1685752941647</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1685752941647</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,7 +601,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Leet Code | Maximize Score After N Operations" />
     <MESSAGE value="Leet Code | Swapping Nodes in a Linked List" />
     <MESSAGE value="Leet Code | Swap Nodes in Pairs" />
     <MESSAGE value="Leet Code | Maximum Twin Sum of a Linked List" />
@@ -631,7 +625,8 @@
     <MESSAGE value="LeetCode | Divisor Game" />
     <MESSAGE value="Codewars | Find the First Number in Having a Certain Number of Divisors I" />
     <MESSAGE value="LeetCode | Pascal's Triangle" />
-    <option name="LAST_COMMIT_MESSAGE" value="LeetCode | Pascal's Triangle" />
+    <MESSAGE value="LeetCode | Pascal's Triangle II" />
+    <option name="LAST_COMMIT_MESSAGE" value="LeetCode | Pascal's Triangle II" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
