@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p1929/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p1929/SolutionUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p121/DESCRIPTION.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +43,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/easy/p1920",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/easy/p121",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "aws.codewhisperer"
   }
@@ -54,11 +53,11 @@
       <recent name="com.devstromo.medium.p347" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p121" />
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p1929" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p1920" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p392" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p746" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p119" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\codewars\src\main\java\com\devstromo\kyu6\MinNbDiv" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -79,7 +78,7 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionUnitTest (4)">
+  <component name="RunManager" selected="JUnit.SolutionUnitTest (5)">
     <configuration name="SolutionUnitTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
@@ -140,16 +139,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionUnitTest (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.easy.p119.*" />
+          <option name="PATTERN" value="com.devstromo.easy.p121.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.easy.p119" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p119.SolutionUnitTest" />
+      <option name="PACKAGE_NAME" value="com.devstromo.easy.p121" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p121.SolutionUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionUnitTest (5)" />
         <item itemvalue="JUnit.SolutionUnitTest (4)" />
         <item itemvalue="JUnit.SolutionUnitTest (3)" />
         <item itemvalue="JUnit.SolutionUnitTest (2)" />
         <item itemvalue="JUnit.SolutionUnitTest (1)" />
-        <item itemvalue="JUnit.SolutionUnitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -241,14 +240,8 @@
       <workItem from="1685752080976" duration="874000" />
       <workItem from="1685805986648" duration="282000" />
       <workItem from="1685911902656" duration="1554000" />
-      <workItem from="1686005628001" duration="2436000" />
-    </task>
-    <task id="LOCAL-00035" summary="Leet Code | Length of Last Word">
-      <created>1683245761590</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1683245761590</updated>
+      <workItem from="1686005628001" duration="2649000" />
+      <workItem from="1686095310973" duration="411000" />
     </task>
     <task id="LOCAL-00036" summary="Leet Code | Maximum Number of Vowels in a Substring of Given Length">
       <created>1683248278119</created>
@@ -586,7 +579,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686007076690</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="LeetCode | Concatenation of Array">
+      <created>1686008263851</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1686008263851</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,7 +606,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Leet Code | Minimum Number of Vertices to Reach All Nodes" />
     <MESSAGE value="Leet Code | Is Graph Bipartite?" />
     <MESSAGE value="Leet Code | Evaluate Division" />
     <MESSAGE value="Leet Code | Merge Two Sorted Lists" />
@@ -631,7 +630,8 @@
     <MESSAGE value="LeetCode | Min Cost Climbing Stairs" />
     <MESSAGE value="LeetCode | Is Subsequence" />
     <MESSAGE value="LeetCode | Build Array from Permutation" />
-    <option name="LAST_COMMIT_MESSAGE" value="LeetCode | Build Array from Permutation" />
+    <MESSAGE value="LeetCode | Concatenation of Array" />
+    <option name="LAST_COMMIT_MESSAGE" value="LeetCode | Concatenation of Array" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
