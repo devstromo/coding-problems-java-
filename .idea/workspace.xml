@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p121/DESCRIPTION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu7/SecondOcurrence/DESCRIPTION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu7/SecondOcurrence/SecondOcurrence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu7/SecondOcurrence/SecondOcurrenceUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +45,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/easy/p121",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/codewars/src/main/java/com/devstromo/kyu7/SecondOcurrence",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "aws.codewhisperer"
   }
@@ -66,11 +68,11 @@
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\problem258" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.easy.p121" />
       <recent name="com.devstromo.easy.p1929" />
       <recent name="com.devstromo.easy.p1920" />
       <recent name="com.devstromo.easy.p392" />
       <recent name="com.devstromo.easy.p746" />
-      <recent name="com.devstromo.easy.p119" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -78,18 +80,19 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionUnitTest (5)">
-    <configuration name="SolutionUnitTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode" />
+  <component name="RunManager" selected="JUnit.SecondOcurrenceUnitTest.sampleTestCases">
+    <configuration name="SecondOcurrenceUnitTest.sampleTestCases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codewars" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.easy.p746.*" />
+          <option name="PATTERN" value="com.devstromo.kyu7.SecondOcurrence.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.easy.p746" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p746.SolutionUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.devstromo.kyu7.SecondOcurrence" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu7.SecondOcurrence.SecondOcurrenceUnitTest" />
+      <option name="METHOD_NAME" value="sampleTestCases" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -156,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SecondOcurrenceUnitTest.sampleTestCases" />
         <item itemvalue="JUnit.SolutionUnitTest (5)" />
         <item itemvalue="JUnit.SolutionUnitTest (4)" />
         <item itemvalue="JUnit.SolutionUnitTest (3)" />
         <item itemvalue="JUnit.SolutionUnitTest (2)" />
-        <item itemvalue="JUnit.SolutionUnitTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -241,14 +244,8 @@
       <workItem from="1685805986648" duration="282000" />
       <workItem from="1685911902656" duration="1554000" />
       <workItem from="1686005628001" duration="2649000" />
-      <workItem from="1686095310973" duration="411000" />
-    </task>
-    <task id="LOCAL-00036" summary="Leet Code | Maximum Number of Vowels in a Substring of Given Length">
-      <created>1683248278119</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1683248278119</updated>
+      <workItem from="1686095310973" duration="760000" />
+      <workItem from="1686177935467" duration="300000" />
     </task>
     <task id="LOCAL-00037" summary="Leet Code | Number of Subsequences That Satisfy the Given Sum Condition">
       <created>1683339935092</created>
@@ -586,7 +583,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686008263851</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="LeetCode | Best Time to Buy and Sell Stock">
+      <created>1686096021611</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1686096021611</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,7 +610,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Leet Code | Is Graph Bipartite?" />
     <MESSAGE value="Leet Code | Evaluate Division" />
     <MESSAGE value="Leet Code | Merge Two Sorted Lists" />
     <MESSAGE value="Leet Code | Shortest Bridge" />
@@ -631,7 +634,8 @@
     <MESSAGE value="LeetCode | Is Subsequence" />
     <MESSAGE value="LeetCode | Build Array from Permutation" />
     <MESSAGE value="LeetCode | Concatenation of Array" />
-    <option name="LAST_COMMIT_MESSAGE" value="LeetCode | Concatenation of Array" />
+    <MESSAGE value="LeetCode | Best Time to Buy and Sell Stock" />
+    <option name="LAST_COMMIT_MESSAGE" value="LeetCode | Best Time to Buy and Sell Stock" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
