@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu7/SecondOcurrence/DESCRIPTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu7/SecondOcurrence/SecondOcurrence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu7/SecondOcurrence/SecondOcurrenceUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p1646/DESCRIPTION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p1646/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p1646/SolutionUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +45,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/codewars/src/main/java/com/devstromo/kyu7/SecondOcurrence",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/easy/p1646",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "aws.codewhisperer"
   }
@@ -55,11 +55,11 @@
       <recent name="com.devstromo.medium.p347" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p1646" />
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\codewars\src\main\java\com\devstromo\kyu7\SecondOcurrence" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p121" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p1929" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p1920" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p392" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p746" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -68,11 +68,11 @@
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\problem258" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.easy.p1646" />
+      <recent name="com.devstromo.kyu7.SecondOcurrence" />
       <recent name="com.devstromo.easy.p121" />
       <recent name="com.devstromo.easy.p1929" />
       <recent name="com.devstromo.easy.p1920" />
-      <recent name="com.devstromo.easy.p392" />
-      <recent name="com.devstromo.easy.p746" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -80,7 +80,7 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SecondOcurrenceUnitTest.sampleTestCases">
+  <component name="RunManager" selected="JUnit.SolutionUnitTest.testGetMaximumGenerated">
     <configuration name="SecondOcurrenceUnitTest.sampleTestCases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars" />
       <extension name="coverage">
@@ -93,21 +93,6 @@
       <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu7.SecondOcurrence.SecondOcurrenceUnitTest" />
       <option name="METHOD_NAME" value="sampleTestCases" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SolutionUnitTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.easy.p392.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.easy.p392" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p392.SolutionUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,13 +142,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SolutionUnitTest.testGetMaximumGenerated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.easy.p1646.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.easy.p1646" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p1646.SolutionUnitTest" />
+      <option name="METHOD_NAME" value="testGetMaximumGenerated" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionUnitTest.testGetMaximumGenerated" />
         <item itemvalue="JUnit.SecondOcurrenceUnitTest.sampleTestCases" />
         <item itemvalue="JUnit.SolutionUnitTest (5)" />
         <item itemvalue="JUnit.SolutionUnitTest (4)" />
         <item itemvalue="JUnit.SolutionUnitTest (3)" />
-        <item itemvalue="JUnit.SolutionUnitTest (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -245,14 +246,8 @@
       <workItem from="1685911902656" duration="1554000" />
       <workItem from="1686005628001" duration="2649000" />
       <workItem from="1686095310973" duration="760000" />
-      <workItem from="1686177935467" duration="300000" />
-    </task>
-    <task id="LOCAL-00037" summary="Leet Code | Number of Subsequences That Satisfy the Given Sum Condition">
-      <created>1683339935092</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1683339935092</updated>
+      <workItem from="1686177935467" duration="342000" />
+      <workItem from="1686265965632" duration="1818000" />
     </task>
     <task id="LOCAL-00038" summary="Leet Code | Two Sum">
       <created>1683402165325</created>
@@ -590,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686096021611</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Codewars | Find the index of the second occurrence of a letter in a string">
+      <created>1686178256776</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1686178256776</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,7 +612,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Leet Code | Evaluate Division" />
     <MESSAGE value="Leet Code | Merge Two Sorted Lists" />
     <MESSAGE value="Leet Code | Shortest Bridge" />
     <MESSAGE value="Leet Code | Counting Bits" />
@@ -635,7 +636,8 @@
     <MESSAGE value="LeetCode | Build Array from Permutation" />
     <MESSAGE value="LeetCode | Concatenation of Array" />
     <MESSAGE value="LeetCode | Best Time to Buy and Sell Stock" />
-    <option name="LAST_COMMIT_MESSAGE" value="LeetCode | Best Time to Buy and Sell Stock" />
+    <MESSAGE value="Codewars | Find the index of the second occurrence of a letter in a string" />
+    <option name="LAST_COMMIT_MESSAGE" value="Codewars | Find the index of the second occurrence of a letter in a string" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
