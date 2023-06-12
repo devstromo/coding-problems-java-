@@ -8,13 +8,10 @@
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/DESCRIPTION.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/Fibonacci.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu3/Fibonacci/FibonacciUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/numbers/bigNumberPrimalityTest/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/test/java/com/devstromo/numbers/bigNumberPrimalityTest/SolutionUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/numbers/bigDecimalSort/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/test/java/com/devstromo/numbers/bigDecimalSort/SolutionUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,21 +41,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/codewars/src/main/java/com/devstromo/kyu7/BinaryAddition",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "aws.codewhisperer"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/WORK/PROYECTOS/JAVA/coding-problems-java/codewars/src/main/java/com/devstromo/kyu7/BinaryAddition&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;aws.codewhisperer&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.devstromo.medium.p347" />
@@ -77,11 +74,11 @@
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\problem258" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.numbers.bigDecimalSort" />
       <recent name="com.devstromo.numbers.bigNumberPrimalityTest" />
       <recent name="com.devstromo.kyu7.BinaryAddition" />
       <recent name="com.devstromo.kyu3.Fibonacci" />
       <recent name="com.devstromo.medium.p1641" />
-      <recent name="com.devstromo.easy.p2469" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -89,7 +86,7 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionUnitTest">
+  <component name="RunManager" selected="JUnit.SolutionUnitTest.testBigDecimalSort">
     <configuration name="FibonacciUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars" />
       <extension name="coverage">
@@ -150,17 +147,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest.testCountVowelStringsBestSolution" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode" />
+    <configuration name="SolutionUnitTest.testBigDecimalSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hacker-rank" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.medium.p1641.*" />
+          <option name="PATTERN" value="com.devstromo.numbers.bigDecimalSort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.medium.p1641" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p1641.SolutionUnitTest" />
-      <option name="METHOD_NAME" value="testCountVowelStringsBestSolution" />
+      <option name="PACKAGE_NAME" value="com.devstromo.numbers.bigDecimalSort" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.numbers.bigDecimalSort.SolutionUnitTest" />
+      <option name="METHOD_NAME" value="testBigDecimalSort" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -168,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionUnitTest.testBigDecimalSort" />
         <item itemvalue="JUnit.SolutionUnitTest" />
         <item itemvalue="JUnit.KataUnitTest" />
         <item itemvalue="JUnit.FibonacciUnitTest" />
         <item itemvalue="JUnit.SolutionUnitTest (1)" />
-        <item itemvalue="JUnit.SolutionUnitTest.testCountVowelStringsBestSolution" />
       </list>
     </recent_temporary>
   </component>
@@ -261,21 +258,8 @@
       <workItem from="1686409259695" duration="256000" />
       <workItem from="1686442156781" duration="913000" />
       <workItem from="1686507600284" duration="2934000" />
-      <workItem from="1686610127875" duration="1156000" />
-    </task>
-    <task id="LOCAL-00042" summary="Leet Code | Spiral Matrix">
-      <created>1683591609597</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1683591609597</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Leet Code | Spiral Matrix II">
-      <created>1683680141791</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1683680141791</updated>
+      <workItem from="1686610127875" duration="1403000" />
+      <workItem from="1686612265059" duration="371000" />
     </task>
     <task id="LOCAL-00044" summary="Leet Code | Uncrossed Lines">
       <created>1683764750745</created>
@@ -606,7 +590,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686510717412</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="HackerRank | Java Primality Test">
+      <created>1686611974013</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1686611974013</updated>
+    </task>
+    <task id="LOCAL-00092" summary="HackerRank module">
+      <created>1686611991488</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1686611991488</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,8 +625,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="LeetCode | Top K Frequent Elements" />
-    <MESSAGE value="LeetCode | Kth Largest Element in a Stream" />
     <MESSAGE value="LeetCode | Maximum Subsequence Score" />
     <MESSAGE value="LeetCode | New 21 Game" />
     <MESSAGE value="LeetCode | Stone Game II" />
@@ -652,7 +648,9 @@
     <MESSAGE value="LeetCode | Convert the Temperature" />
     <MESSAGE value="LeetCode | Minimum Number of Vertices to Reach All Nodes" />
     <MESSAGE value="Codewars | Binary Addition" />
-    <option name="LAST_COMMIT_MESSAGE" value="Codewars | Binary Addition" />
+    <MESSAGE value="HackerRank | Java Primality Test" />
+    <MESSAGE value="HackerRank module" />
+    <option name="LAST_COMMIT_MESSAGE" value="HackerRank module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
