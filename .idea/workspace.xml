@@ -8,7 +8,13 @@
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/DESCRIPTION.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/Fibonacci.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu3/Fibonacci/FibonacciUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/numbers/bigNumberPrimalityTest/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/test/java/com/devstromo/numbers/bigNumberPrimalityTest/SolutionUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,13 +37,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GVEmW1cS05budbxQXZYGbFgeUv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -45,7 +54,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/codewars/src/main/java/com/devstromo/kyu3/Fibonacci",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/codewars/src/main/java/com/devstromo/kyu7/BinaryAddition",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "aws.codewhisperer"
   }
@@ -55,11 +64,11 @@
       <recent name="com.devstromo.medium.p347" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\codewars\src\main\java\com\devstromo\kyu7\BinaryAddition" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\codewars\src\main\java\com\devstromo\kyu3\Fibonacci" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p1641" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p2469" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p1646" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\codewars\src\main\java\com\devstromo\kyu7\SecondOcurrence" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -68,11 +77,11 @@
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\problem258" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.numbers.bigNumberPrimalityTest" />
+      <recent name="com.devstromo.kyu7.BinaryAddition" />
       <recent name="com.devstromo.kyu3.Fibonacci" />
       <recent name="com.devstromo.medium.p1641" />
       <recent name="com.devstromo.easy.p2469" />
-      <recent name="com.devstromo.easy.p1646" />
-      <recent name="com.devstromo.kyu7.SecondOcurrence" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -80,7 +89,7 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KataUnitTest">
+  <component name="RunManager" selected="JUnit.SolutionUnitTest">
     <configuration name="FibonacciUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars" />
       <extension name="coverage">
@@ -126,18 +135,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest.testCountVowelStrings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode" />
+    <configuration name="SolutionUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hacker-rank" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.medium.p1641.*" />
+          <option name="PATTERN" value="com.devstromo.numbers.bigNumberPrimalityTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.medium.p1641" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p1641.SolutionUnitTest" />
-      <option name="METHOD_NAME" value="testCountVowelStrings" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.devstromo.numbers.bigNumberPrimalityTest" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.numbers.bigNumberPrimalityTest.SolutionUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionUnitTest" />
         <item itemvalue="JUnit.KataUnitTest" />
         <item itemvalue="JUnit.FibonacciUnitTest" />
         <item itemvalue="JUnit.SolutionUnitTest (1)" />
         <item itemvalue="JUnit.SolutionUnitTest.testCountVowelStringsBestSolution" />
-        <item itemvalue="JUnit.SolutionUnitTest.testCountVowelStrings" />
       </list>
     </recent_temporary>
   </component>
@@ -252,14 +260,8 @@
       <workItem from="1686409097430" duration="123000" />
       <workItem from="1686409259695" duration="256000" />
       <workItem from="1686442156781" duration="913000" />
-      <workItem from="1686507600284" duration="2620000" />
-    </task>
-    <task id="LOCAL-00041" summary="Leet Code | Matrix Diagonal Sum">
-      <created>1683508128146</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1683508128146</updated>
+      <workItem from="1686507600284" duration="2934000" />
+      <workItem from="1686610127875" duration="1156000" />
     </task>
     <task id="LOCAL-00042" summary="Leet Code | Spiral Matrix">
       <created>1683591609597</created>
@@ -597,7 +599,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686442900415</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="Codewars | Binary Addition">
+      <created>1686510717412</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1686510717412</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -617,7 +626,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Codewars | Strip Comments" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="LeetCode | Top K Frequent Elements" />
     <MESSAGE value="LeetCode | Kth Largest Element in a Stream" />
     <MESSAGE value="LeetCode | Maximum Subsequence Score" />
@@ -642,7 +651,8 @@
     <MESSAGE value="LeetCode | Get Maximum in Generated Array" />
     <MESSAGE value="LeetCode | Convert the Temperature" />
     <MESSAGE value="LeetCode | Minimum Number of Vertices to Reach All Nodes" />
-    <option name="LAST_COMMIT_MESSAGE" value="LeetCode | Minimum Number of Vertices to Reach All Nodes" />
+    <MESSAGE value="Codewars | Binary Addition" />
+    <option name="LAST_COMMIT_MESSAGE" value="Codewars | Binary Addition" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

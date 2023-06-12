@@ -12,6 +12,7 @@
         <module>codewars</module>
         <module>daily-coding-problem</module>
         <module>leetcode</module>
+        <module>hacker-rank</module>
     </modules>
 
     <name>coding-problems-java</name>
