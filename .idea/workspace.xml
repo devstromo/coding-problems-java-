@@ -9,8 +9,9 @@
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/Fibonacci.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu3/Fibonacci/FibonacciUnitTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/numbers/bigDecimalSort/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/test/java/com/devstromo/numbers/bigDecimalSort/SolutionUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p530/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p530/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p530/SolutionUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,11 +75,11 @@
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\problem258" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.easy.p530" />
       <recent name="com.devstromo.numbers.bigDecimalSort" />
       <recent name="com.devstromo.numbers.bigNumberPrimalityTest" />
       <recent name="com.devstromo.kyu7.BinaryAddition" />
       <recent name="com.devstromo.kyu3.Fibonacci" />
-      <recent name="com.devstromo.medium.p1641" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -86,47 +87,17 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionUnitTest.testBigDecimalSort">
-    <configuration name="FibonacciUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codewars" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.kyu3.Fibonacci.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.kyu3.Fibonacci" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu3.Fibonacci.FibonacciUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KataUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codewars" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.kyu7.BinaryAddition.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.kyu7.BinaryAddition" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu7.BinaryAddition.KataUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SolutionUnitTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SolutionUnitTest.testGetMinimumDifferenceBesRuntime">
+    <configuration name="SolutionUnitTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.medium.p1641.*" />
+          <option name="PATTERN" value="com.devstromo.easy.p530.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.medium.p1641" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p1641.SolutionUnitTest" />
+      <option name="PACKAGE_NAME" value="com.devstromo.easy.p530" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p530.SolutionUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,13 +134,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SolutionUnitTest,testGetMinimumDifferenceBesRuntime and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="com.devstromo.easy.p530.SolutionUnitTest,testGetMinimumDifferenceBesRuntime" />
+        <pattern testClass="com.devstromo.easy.p530.SolutionUnitTest,testGetMinimumDifferenceBesRuntime1" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionUnitTest.testGetMinimumDifferenceBesRuntime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.easy.p530.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.easy.p530" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p530.SolutionUnitTest" />
+      <option name="METHOD_NAME" value="testGetMinimumDifferenceBesRuntime" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionUnitTest.testGetMinimumDifferenceBesRuntime" />
+        <item itemvalue="JUnit.SolutionUnitTest (2)" />
+        <item itemvalue="JUnit.SolutionUnitTest,testGetMinimumDifferenceBesRuntime and 1 more" />
         <item itemvalue="JUnit.SolutionUnitTest.testBigDecimalSort" />
         <item itemvalue="JUnit.SolutionUnitTest" />
-        <item itemvalue="JUnit.KataUnitTest" />
-        <item itemvalue="JUnit.FibonacciUnitTest" />
-        <item itemvalue="JUnit.SolutionUnitTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -259,14 +257,8 @@
       <workItem from="1686442156781" duration="913000" />
       <workItem from="1686507600284" duration="2934000" />
       <workItem from="1686610127875" duration="1403000" />
-      <workItem from="1686612265059" duration="371000" />
-    </task>
-    <task id="LOCAL-00044" summary="Leet Code | Uncrossed Lines">
-      <created>1683764750745</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1683764750745</updated>
+      <workItem from="1686612265059" duration="555000" />
+      <workItem from="1686701701156" duration="2103000" />
     </task>
     <task id="LOCAL-00045" summary="Leet Code | Uncrossed Lines">
       <created>1683765584021</created>
@@ -604,7 +596,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686611991488</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="HackerRank | BigDecimal sort">
+      <created>1686612805532</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1686612805532</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -625,7 +624,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="LeetCode | Maximum Subsequence Score" />
     <MESSAGE value="LeetCode | New 21 Game" />
     <MESSAGE value="LeetCode | Stone Game II" />
     <MESSAGE value="Codewars | Hamming Numbers" />
@@ -650,7 +648,8 @@
     <MESSAGE value="Codewars | Binary Addition" />
     <MESSAGE value="HackerRank | Java Primality Test" />
     <MESSAGE value="HackerRank module" />
-    <option name="LAST_COMMIT_MESSAGE" value="HackerRank module" />
+    <MESSAGE value="HackerRank | BigDecimal sort" />
+    <option name="LAST_COMMIT_MESSAGE" value="HackerRank | BigDecimal sort" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -669,6 +668,31 @@
           <url>file://$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p21/SolutionUnitTest.java</url>
           <line>65</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p530/Solution.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p530/Solution.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p530/Solution.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p530/Solution.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p530/Solution.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
