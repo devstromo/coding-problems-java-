@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
+    <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="Codewars | Consonant value">
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/DESCRIPTION.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/Fibonacci.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu6/ConsonantValue/ConsonantValue.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu3/Fibonacci/FibonacciUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu6/ConsonantValue/ConsonantValueUnitTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/patterns/factory/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,13 +21,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -51,7 +51,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/WORK/PROYECTOS/JAVA/coding-problems-java/codewars/src/main/java/com/devstromo/kyu7/BinaryAddition&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alejamdro/Exercism/java/hamming&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;aws.codewhisperer&quot;
   }
@@ -258,21 +258,9 @@
       <workItem from="1686610127875" duration="1403000" />
       <workItem from="1686612265059" duration="555000" />
       <workItem from="1686701701156" duration="2355000" />
-      <workItem from="1686782001881" duration="989000" />
-    </task>
-    <task id="LOCAL-00046" summary="Leet Code | Uncrossed Lines">
-      <created>1683765760251</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1683765760251</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Leet Code | Solving Questions With Brainpower">
-      <created>1683853574674</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1683853574674</updated>
+      <workItem from="1686782001881" duration="1313000" />
+      <workItem from="1686872596674" duration="338000" />
+      <workItem from="1686963301576" duration="367000" />
     </task>
     <task id="LOCAL-00048" summary="Leet Code | Count Ways To Build Good Strings">
       <created>1683942579748</created>
@@ -603,7 +591,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686704044178</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Codewars | Consonant value">
+      <created>1686783254455</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1686783254456</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Codewars | Consonant value">
+      <created>1686783302389</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1686783302389</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,7 +626,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="LeetCode | Stone Game II" />
     <MESSAGE value="Codewars | Hamming Numbers" />
     <MESSAGE value="LeetCode | Partition List" />
     <MESSAGE value="LeetCode | N-th Tribonacci Number" />
@@ -649,7 +650,8 @@
     <MESSAGE value="HackerRank module" />
     <MESSAGE value="HackerRank | BigDecimal sort" />
     <MESSAGE value="LeetCode | Minimum Absolute Difference in BST" />
-    <option name="LAST_COMMIT_MESSAGE" value="LeetCode | Minimum Absolute Difference in BST" />
+    <MESSAGE value="Codewars | Consonant value" />
+    <option name="LAST_COMMIT_MESSAGE" value="Codewars | Consonant value" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
