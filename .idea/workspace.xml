@@ -7,9 +7,10 @@
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="Codewars | Consonant value">
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/DESCRIPTION.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/Fibonacci.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu6/ConsecutiveStrings/LongestConsec.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu3/Fibonacci/FibonacciUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu6/ConsecutiveStrings/LongestConsecUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/medium/p92/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/medium/p92/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/medium/p92/SolutionUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,11 +75,11 @@
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\problem258" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.medium.p92" />
       <recent name="com.devstromo.kyu6.ConsecutiveStrings" />
       <recent name="com.devstromo.medium.p931" />
       <recent name="com.devstromo.easy.p206" />
       <recent name="com.devstromo.kyu6.ConsonantValue" />
-      <recent name="com.devstromo.easy.p530" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -86,35 +87,7 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LongestConsecUnitTest">
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.patterns.singleton.Solution" />
-      <module name="hacker-rank" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.patterns.singleton.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConsonantValueUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codewars" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.kyu6.ConsonantValue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.kyu6.ConsonantValue" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu6.ConsonantValue.ConsonantValueUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SolutionUnitTest.testReverseBetween">
     <configuration name="LongestConsecUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars" />
       <extension name="coverage">
@@ -145,6 +118,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SolutionUnitTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.medium.p92.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.medium.p92" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p92.SolutionUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SolutionUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
@@ -160,13 +148,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SolutionUnitTest.testReverseBetween" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.medium.p92.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.medium.p92" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p92.SolutionUnitTest" />
+      <option name="METHOD_NAME" value="testReverseBetween" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionUnitTest.testReverseBetween" />
+        <item itemvalue="JUnit.SolutionUnitTest (2)" />
         <item itemvalue="JUnit.LongestConsecUnitTest" />
         <item itemvalue="JUnit.SolutionUnitTest (1)" />
         <item itemvalue="JUnit.SolutionUnitTest" />
-        <item itemvalue="Application.Solution" />
-        <item itemvalue="JUnit.ConsonantValueUnitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -263,14 +267,8 @@
       <workItem from="1686963301576" duration="1429000" />
       <workItem from="1687024185245" duration="368000" />
       <workItem from="1687220559003" duration="1444000" />
-      <workItem from="1687298526911" duration="1899000" />
-    </task>
-    <task id="LOCAL-00052" summary="Leet Code | Swap Nodes in Pairs">
-      <created>1684197281581</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1684197281581</updated>
+      <workItem from="1687298526911" duration="2060000" />
+      <workItem from="1687390361886" duration="716000" />
     </task>
     <task id="LOCAL-00053" summary="Leet Code | Maximum Twin Sum of a Linked List">
       <created>1684284879961</created>
@@ -608,7 +606,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687221951243</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="Codewars | Consecutive strings">
+      <created>1687300568445</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1687300568446</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,7 +634,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="LeetCode | How Many Numbers Are Smaller Than the Current Number" />
     <MESSAGE value="Codewars | Factorial tail" />
     <MESSAGE value="LeetCode | Divisor Game" />
     <MESSAGE value="Codewars | Find the First Number in Having a Certain Number of Divisors I" />
@@ -654,7 +658,8 @@
     <MESSAGE value="HackerRank | Singleton pattern" />
     <MESSAGE value="Leetcode | Reverse Linked List" />
     <MESSAGE value="LeetCode | Minimum Falling Path Sum" />
-    <option name="LAST_COMMIT_MESSAGE" value="LeetCode | Minimum Falling Path Sum" />
+    <MESSAGE value="Codewars | Consecutive strings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Codewars | Consecutive strings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -673,6 +678,31 @@
           <url>file://$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p21/SolutionUnitTest.java</url>
           <line>65</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/medium/p92/Solution.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/medium/p92/Solution.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/medium/p92/Solution.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/medium/p92/Solution.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/medium/p92/Solution.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
