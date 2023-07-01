@@ -8,9 +8,9 @@
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/DESCRIPTION.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/Fibonacci.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu3/Fibonacci/FibonacciUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p217/DESCRIPTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p217/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p217/SolutionUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/medium/p583/DESCRIPTION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/medium/p583/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/medium/p583/SolutionUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +52,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/easy/p217",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/medium/p583",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "aws.codewhisperer"
   }
@@ -62,11 +62,11 @@
       <recent name="com.devstromo.medium.p347" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p583" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p217" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\codewars\src\main\java\com\devstromo\kyu7\consonants" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p63" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\codewars\src\main\java\com\devstromo\kyu7\getNNode" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p110" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -75,11 +75,11 @@
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\problem258" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.medium.p583" />
       <recent name="com.devstromo.easy.p217" />
       <recent name="com.devstromo.kyu7.consonants" />
       <recent name="com.devstromo.medium.p63" />
       <recent name="com.devstromo.kyu7.getNNode" />
-      <recent name="com.devstromo.medium.p62" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -87,47 +87,17 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionUnitTest">
-    <configuration name="ConsonantsUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codewars" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.kyu7.consonants.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.kyu7.consonants" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu7.consonants.ConsonantsUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NodeUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codewars" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.kyu7.getNNode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.kyu7.getNNode" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu7.getNNode.NodeUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SolutionUnitTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SolutionUnitTest.testMinDistance3">
+    <configuration name="SolutionUnitTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.medium.p63.*" />
+          <option name="PATTERN" value="com.devstromo.medium.p583.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.medium.p63" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p63.SolutionUnitTest" />
+      <option name="PACKAGE_NAME" value="com.devstromo.medium.p583" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p583.SolutionUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,17 +118,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest.testUniquePathsWithObstacles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionUnitTest.testMinDistance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.medium.p63.*" />
+          <option name="PATTERN" value="com.devstromo.medium.p583.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.medium.p63" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p63.SolutionUnitTest" />
-      <option name="METHOD_NAME" value="testUniquePathsWithObstacles" />
+      <option name="PACKAGE_NAME" value="com.devstromo.medium.p583" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p583.SolutionUnitTest" />
+      <option name="METHOD_NAME" value="testMinDistance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionUnitTest.testMinDistance3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.medium.p583.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.medium.p583" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p583.SolutionUnitTest" />
+      <option name="METHOD_NAME" value="testMinDistance3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SolutionUnitTest.testMinDistance4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.medium.p583.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.medium.p583" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p583.SolutionUnitTest" />
+      <option name="METHOD_NAME" value="testMinDistance4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -166,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionUnitTest.testMinDistance3" />
+        <item itemvalue="JUnit.SolutionUnitTest (1)" />
+        <item itemvalue="JUnit.SolutionUnitTest.testMinDistance4" />
+        <item itemvalue="JUnit.SolutionUnitTest.testMinDistance" />
         <item itemvalue="JUnit.SolutionUnitTest" />
-        <item itemvalue="JUnit.ConsonantsUnitTest" />
-        <item itemvalue="JUnit.SolutionUnitTest (2)" />
-        <item itemvalue="JUnit.SolutionUnitTest.testUniquePathsWithObstacles" />
-        <item itemvalue="JUnit.NodeUnitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -276,14 +278,7 @@
       <workItem from="1687905030698" duration="1112000" />
       <workItem from="1687994662233" duration="2732000" />
       <workItem from="1688079783121" duration="903000" />
-      <workItem from="1688171192871" duration="1039000" />
-    </task>
-    <task id="LOCAL-00061" summary="Leet Code | Counting Bits">
-      <created>1684682550211</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1684682550211</updated>
+      <workItem from="1688171192871" duration="4713000" />
     </task>
     <task id="LOCAL-00062" summary="Leet Code | Counting Bits">
       <created>1684683202599</created>
@@ -621,7 +616,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688080664331</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="Leetcode | Contains Duplicate">
+      <created>1688172560427</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1688172560428</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -642,7 +644,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="LeetCode | Concatenation of Array" />
     <MESSAGE value="LeetCode | Best Time to Buy and Sell Stock" />
     <MESSAGE value="Codewars | Find the index of the second occurrence of a letter in a string" />
     <MESSAGE value="LeetCode | Get Maximum in Generated Array" />
@@ -667,7 +668,8 @@
     <MESSAGE value="Codewars | Consonant value" />
     <MESSAGE value="Leetcode | Unique Paths II" />
     <MESSAGE value="Codewars | Count consonants" />
-    <option name="LAST_COMMIT_MESSAGE" value="Codewars | Count consonants" />
+    <MESSAGE value="Leetcode | Contains Duplicate" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leetcode | Contains Duplicate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
