@@ -10,7 +10,8 @@ import java.util.regex.Pattern;
 public class Solution {
     public static void main(String[] args) throws IOException {
         try (var inputStream = Solution.class.getClassLoader()
-          .getResourceAsStream("regex/ip/input.txt"); BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
+          .getResourceAsStream("regex/ip/input.txt");
+          BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
             String line;
             var regexIp = new MyRegex();
             while ((line = reader.readLine()) != null) {
