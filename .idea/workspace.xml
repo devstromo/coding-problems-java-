@@ -7,9 +7,9 @@
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="Codewars | Consonant value">
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/DESCRIPTION.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/Fibonacci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu7/DTC/DTC.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu3/Fibonacci/FibonacciUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p219/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p219/SolutionUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu7/DTC/DTCUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,21 +41,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/easy/p461",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "aws.codewhisperer"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/easy/p219&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;aws.codewhisperer&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.devstromo.medium.p347" />
@@ -76,11 +76,11 @@
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\problem258" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.kyu7.DTC" />
       <recent name="com.devstromo.easy.p219" />
       <recent name="com.devstromo.easy.p461" />
       <recent name="com.devstromo.kyu7.Isograms" />
       <recent name="com.devstromo.kyu7.LeapYears" />
-      <recent name="com.devstromo.medium.p97" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -88,7 +88,22 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionUnitTest (2)">
+  <component name="RunManager" selected="JUnit.DTCUnitTest">
+    <configuration name="DTCUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codewars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.kyu7.DTC.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.kyu7.DTC" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu7.DTC.DTCUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IsogramsUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars" />
       <extension name="coverage">
@@ -99,21 +114,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.devstromo.kyu7.Isograms" />
       <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu7.Isograms.IsogramsUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LeapYearsUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codewars" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.kyu7.LeapYears.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.kyu7.LeapYears" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu7.LeapYears.LeapYearsUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DTCUnitTest" />
         <item itemvalue="JUnit.SolutionUnitTest (2)" />
         <item itemvalue="JUnit.SolutionUnitTest.testContainsNearbyDuplicate3" />
         <item itemvalue="JUnit.SolutionUnitTest (1)" />
         <item itemvalue="JUnit.IsogramsUnitTest" />
-        <item itemvalue="JUnit.LeapYearsUnitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -281,14 +281,8 @@
       <workItem from="1688266004619" duration="1759000" />
       <workItem from="1688428210463" duration="2426000" />
       <workItem from="1688517254226" duration="813000" />
-      <workItem from="1688601261417" duration="1383000" />
-    </task>
-    <task id="LOCAL-00069" summary="LeetCode | Stone Game II">
-      <created>1685061848471</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1685061848471</updated>
+      <workItem from="1688601261417" duration="1633000" />
+      <workItem from="1688687023669" duration="2110000" />
     </task>
     <task id="LOCAL-00070" summary="Codewars | Hamming Numbers">
       <created>1685149168454</created>
@@ -626,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688602050579</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="Leetcode | Contains Duplicate II">
+      <created>1688602873788</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1688602873788</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -647,7 +648,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="HackerRank | Java Primality Test" />
     <MESSAGE value="HackerRank module" />
     <MESSAGE value="HackerRank | BigDecimal sort" />
     <MESSAGE value="LeetCode | Minimum Absolute Difference in BST" />
@@ -665,14 +665,15 @@
     <MESSAGE value="Leetcode | Unique Paths II" />
     <MESSAGE value="Codewars | Count consonants" />
     <MESSAGE value="Leetcode | Contains Duplicate" />
-    <MESSAGE value="Codewars | Consonant value" />
     <MESSAGE value="Leetcode | Delete Operation for Two Strings" />
     <MESSAGE value="HackerRank | Tags extraction" />
     <MESSAGE value="Leetcode | Interleaving String" />
     <MESSAGE value="Codewars | Leap Year" />
     <MESSAGE value="Codewars | Isograms" />
     <MESSAGE value="Leetcode | Hamming Distance" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leetcode | Hamming Distance" />
+    <MESSAGE value="Codewars | Consonant value" />
+    <MESSAGE value="Leetcode | Contains Duplicate II" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leetcode | Contains Duplicate II" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
