@@ -8,10 +8,10 @@
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/DESCRIPTION.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/Fibonacci.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu3/Fibonacci/FibonacciUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/medium/p1143/DESCRIPTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/medium/p1143/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/medium/p1143/SolutionUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/strings/formatting/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/strings/formatting/input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/regex/tags/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/regex/tags/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,21 +42,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/medium/p1143",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "aws.codewhisperer"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/medium/p1143&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;aws.codewhisperer&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.devstromo.medium.p347" />
@@ -89,7 +89,20 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionUnitTest">
+  <component name="RunManager" selected="Application.Solution">
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.strings.formatting.Solution" />
+      <module name="hacker-rank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.strings.formatting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DTCUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars" />
       <extension name="coverage">
@@ -135,22 +148,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest.testContainsNearbyDuplicate3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.easy.p219.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.easy.p219" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p219.SolutionUnitTest" />
-      <option name="METHOD_NAME" value="testContainsNearbyDuplicate3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SolutionUnitTest.testLongestCommonSubsequence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
@@ -169,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution" />
         <item itemvalue="JUnit.SolutionUnitTest" />
         <item itemvalue="JUnit.SolutionUnitTest.testLongestCommonSubsequence" />
         <item itemvalue="JUnit.DTCUnitTest" />
         <item itemvalue="JUnit.SolutionUnitTest (2)" />
-        <item itemvalue="JUnit.SolutionUnitTest.testContainsNearbyDuplicate3" />
       </list>
     </recent_temporary>
   </component>
@@ -285,14 +282,8 @@
       <workItem from="1688517254226" duration="813000" />
       <workItem from="1688601261417" duration="1633000" />
       <workItem from="1688687023669" duration="2449000" />
-      <workItem from="1688777281511" duration="1122000" />
-    </task>
-    <task id="LOCAL-00071" summary="LeetCode | Partition List">
-      <created>1685206887488</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1685206887488</updated>
+      <workItem from="1688777281511" duration="1443000" />
+      <workItem from="1688858391039" duration="1004000" />
     </task>
     <task id="LOCAL-00072" summary="LeetCode | N-th Tribonacci Number">
       <created>1685283507660</created>
@@ -630,7 +621,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688690309166</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="Leetcode | Longest Common Subsequence">
+      <created>1688778714404</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1688778714404</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,7 +649,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="HackerRank | BigDecimal sort" />
     <MESSAGE value="LeetCode | Minimum Absolute Difference in BST" />
     <MESSAGE value="HackerRank | Java Factory Pattern" />
     <MESSAGE value="HackerRank | Singleton pattern" />
@@ -676,7 +673,8 @@
     <MESSAGE value="Codewars | Consonant value" />
     <MESSAGE value="Leetcode | Contains Duplicate II" />
     <MESSAGE value="Codewars | Decimal Time Conversion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Codewars | Decimal Time Conversion" />
+    <MESSAGE value="Leetcode | Longest Common Subsequence" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leetcode | Longest Common Subsequence" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
