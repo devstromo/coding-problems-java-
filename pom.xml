@@ -13,6 +13,7 @@
         <module>daily-coding-problem</module>
         <module>leetcode</module>
         <module>hacker-rank</module>
+        <module>freestyle</module>
     </modules>
 
     <name>coding-problems-java</name>
