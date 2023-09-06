@@ -8,16 +8,12 @@
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/DESCRIPTION.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/Fibonacci.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu3/Fibonacci/FibonacciUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/freestyle/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/App.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/DESCRIPTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/LIS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/freestyle/src/test/java/com/devstromo/TestApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/freestyle/src/test/java/com/devstromo/dp/lis/LISUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p2520/DESCRIPTION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p2520/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p2520/SolutionUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +54,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/freestyle/src/main/java/com/devstromo/dp/lis",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/easy/p2520",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "aws.codewhisperer"
   }
@@ -68,11 +64,11 @@
       <recent name="com.devstromo.medium.p347" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p2520" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\freestyle\src\main\java\com\devstromo\dp\lis" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p1051" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p2160" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p1342" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p2652" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -83,11 +79,11 @@
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\problem258" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.easy.p2520" />
       <recent name="com.devstromo.dp.lis" />
       <recent name="com.devstromo.easy.p1051" />
       <recent name="com.devstromo.easy.p2160" />
       <recent name="com.devstromo.easy.p1342" />
-      <recent name="com.devstromo.easy.p2652" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -95,7 +91,7 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LISUnitTest">
+  <component name="RunManager" selected="JUnit.SolutionUnitTest (2)">
     <configuration name="LISUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="freestyle" />
       <extension name="coverage">
@@ -126,16 +122,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionUnitTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.easy.p2652.*" />
+          <option name="PATTERN" value="com.devstromo.easy.p2520.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.easy.p2652" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p2652.SolutionUnitTest" />
+      <option name="PACKAGE_NAME" value="com.devstromo.easy.p2520" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p2520.SolutionUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -173,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionUnitTest (2)" />
         <item itemvalue="JUnit.LISUnitTest" />
         <item itemvalue="JUnit.SolutionUnitTest (1)" />
         <item itemvalue="JUnit.SolutionUnitTest (4)" />
         <item itemvalue="JUnit.SolutionUnitTest" />
-        <item itemvalue="JUnit.SolutionUnitTest (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -337,14 +333,8 @@
       <workItem from="1693612564574" duration="614000" />
       <workItem from="1693680043861" duration="1390000" />
       <workItem from="1693758125852" duration="2391000" />
-      <workItem from="1693871010415" duration="2370000" />
-    </task>
-    <task id="LOCAL-00122" summary="Leetcode | Defanging an IP Address">
-      <created>1688931298276</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1688931298276</updated>
+      <workItem from="1693871010415" duration="2670000" />
+      <workItem from="1693957787439" duration="768000" />
     </task>
     <task id="LOCAL-00123" summary="Leetcode | Longest Palindromic Subsequence">
       <created>1689027937782</created>
@@ -682,7 +672,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693761596670</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="Freestyle | Longest Increasing Subsequence (LIS)">
+      <created>1693873750043</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1693873750043</updated>
+    </task>
+    <option name="localTasksCounter" value="172" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -703,7 +700,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Leetcode | Faulty Keyboard" />
     <MESSAGE value="Leetcode | Remove Duplicates from Sorted Array" />
     <MESSAGE value="Leetcode | Reverse Words in a String III" />
     <MESSAGE value="Leetcode | Maximum Nesting Depth of the Parentheses" />
@@ -728,7 +724,8 @@
     <MESSAGE value="Leetcode | Number of Steps to Reduce a Number to Zero" />
     <MESSAGE value="Leetcode | Minimum Sum of Four Digit Number After Splitting Digits" />
     <MESSAGE value="Leetcode | Height Checker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leetcode | Height Checker" />
+    <MESSAGE value="Freestyle | Longest Increasing Subsequence (LIS)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Freestyle | Longest Increasing Subsequence (LIS)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
