@@ -10,10 +10,10 @@
       <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu3/Fibonacci/FibonacciUnitTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/App.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p2520/DESCRIPTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p2520/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p2520/SolutionUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/DESCRIPTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/DESCRIPTION.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/LIS.java" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/LIS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freestyle/src/test/java/com/devstromo/dp/lis/LISUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/test/java/com/devstromo/dp/lis/LISUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,21 +44,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/easy/p2520",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "aws.codewhisperer"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/easy/p2520&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;aws.codewhisperer&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.devstromo.medium.p347" />
@@ -91,7 +91,7 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionUnitTest (2)">
+  <component name="RunManager" selected="JUnit.LISUnitTest">
     <configuration name="LISUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="freestyle" />
       <extension name="coverage">
@@ -169,8 +169,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SolutionUnitTest (2)" />
         <item itemvalue="JUnit.LISUnitTest" />
+        <item itemvalue="JUnit.SolutionUnitTest (2)" />
         <item itemvalue="JUnit.SolutionUnitTest (1)" />
         <item itemvalue="JUnit.SolutionUnitTest (4)" />
         <item itemvalue="JUnit.SolutionUnitTest" />
@@ -334,14 +334,8 @@
       <workItem from="1693680043861" duration="1390000" />
       <workItem from="1693758125852" duration="2391000" />
       <workItem from="1693871010415" duration="2670000" />
-      <workItem from="1693957787439" duration="768000" />
-    </task>
-    <task id="LOCAL-00123" summary="Leetcode | Longest Palindromic Subsequence">
-      <created>1689027937782</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1689027937783</updated>
+      <workItem from="1693957787439" duration="853000" />
+      <workItem from="1694045199755" duration="653000" />
     </task>
     <task id="LOCAL-00124" summary="Leetcode | Shuffle String">
       <created>1689125948326</created>
@@ -679,7 +673,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693873750043</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="Leetcode | Count the Digits That Divide a Number">
+      <created>1693958627650</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1693958627651</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -700,7 +701,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Leetcode | Remove Duplicates from Sorted Array" />
     <MESSAGE value="Leetcode | Reverse Words in a String III" />
     <MESSAGE value="Leetcode | Maximum Nesting Depth of the Parentheses" />
     <MESSAGE value="Leetcode | Search in Rotated Sorted Array" />
@@ -725,7 +725,8 @@
     <MESSAGE value="Leetcode | Minimum Sum of Four Digit Number After Splitting Digits" />
     <MESSAGE value="Leetcode | Height Checker" />
     <MESSAGE value="Freestyle | Longest Increasing Subsequence (LIS)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Freestyle | Longest Increasing Subsequence (LIS)" />
+    <MESSAGE value="Leetcode | Count the Digits That Divide a Number" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leetcode | Count the Digits That Divide a Number" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
