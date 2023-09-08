@@ -10,10 +10,10 @@
       <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu3/Fibonacci/FibonacciUnitTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/App.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p1379/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p1379/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p1379/SolutionUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/DESCRIPTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/DESCRIPTION.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/LIS.java" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/LIS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freestyle/src/test/java/com/devstromo/dp/lis/LISUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/test/java/com/devstromo/dp/lis/LISUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +79,11 @@
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\problem258" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.easy.p1379" />
       <recent name="com.devstromo.easy.p2520" />
       <recent name="com.devstromo.dp.lis" />
       <recent name="com.devstromo.easy.p1051" />
       <recent name="com.devstromo.easy.p2160" />
-      <recent name="com.devstromo.easy.p1342" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -91,7 +91,7 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LISUnitTest">
+  <component name="RunManager" selected="JUnit.SolutionUnitTest (3)">
     <configuration name="LISUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="freestyle" />
       <extension name="coverage">
@@ -137,6 +137,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SolutionUnitTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.easy.p1379.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.easy.p1379" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p1379.SolutionUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SolutionUnitTest (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
@@ -152,28 +167,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.easy.p1342.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.easy.p1342" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p1342.SolutionUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionUnitTest (3)" />
         <item itemvalue="JUnit.LISUnitTest" />
         <item itemvalue="JUnit.SolutionUnitTest (2)" />
         <item itemvalue="JUnit.SolutionUnitTest (1)" />
         <item itemvalue="JUnit.SolutionUnitTest (4)" />
-        <item itemvalue="JUnit.SolutionUnitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -335,14 +335,8 @@
       <workItem from="1693758125852" duration="2391000" />
       <workItem from="1693871010415" duration="2670000" />
       <workItem from="1693957787439" duration="853000" />
-      <workItem from="1694045199755" duration="653000" />
-    </task>
-    <task id="LOCAL-00124" summary="Leetcode | Shuffle String">
-      <created>1689125948326</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1689125948326</updated>
+      <workItem from="1694045199755" duration="722000" />
+      <workItem from="1694134051168" duration="1027000" />
     </task>
     <task id="LOCAL-00125" summary="Codewars | Get the Middle Character">
       <created>1689209903209</created>
@@ -680,7 +674,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693958627651</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="Freestyle | LIS | Practice #1">
+      <created>1694045908486</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1694045908486</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -701,7 +702,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Leetcode | Reverse Words in a String III" />
     <MESSAGE value="Leetcode | Maximum Nesting Depth of the Parentheses" />
     <MESSAGE value="Leetcode | Search in Rotated Sorted Array" />
     <MESSAGE value="Leetcode | Count Asterisks" />
@@ -726,7 +726,8 @@
     <MESSAGE value="Leetcode | Height Checker" />
     <MESSAGE value="Freestyle | Longest Increasing Subsequence (LIS)" />
     <MESSAGE value="Leetcode | Count the Digits That Divide a Number" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leetcode | Count the Digits That Divide a Number" />
+    <MESSAGE value="Freestyle | LIS | Practice #1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Freestyle | LIS | Practice #1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
