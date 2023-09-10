@@ -2,6 +2,7 @@ package com.devstromo.dp.lis;
 
 import static com.devstromo.dp.lis.LIS.lis;
 import static com.devstromo.dp.lis.LIS.lisP1;
+import static com.devstromo.dp.lis.LIS.lisP2;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
@@ -42,5 +43,11 @@ class LISUnitTest {
     public void testLisP13() {
         var arr3 = new int[] { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
         assertEquals(1, lisP1(arr3));
+    }
+
+    @Test
+    public void testLisP2() {
+        var arr1 = new int[] { 1, 3, 7, 5, 10, 4, 15 };
+        assertEquals(5, lisP2(arr1));
     }
 }

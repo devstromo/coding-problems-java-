@@ -25,3 +25,30 @@ Copy code
 Output:
 
 5
+
+### Practice #2
+
+Sure!
+
+Problem: Longest Increasing Subsequence with a Twist
+
+Description:
+Given an unsorted array of integers, find the length of the longest increasing subsequence where the difference between consecutive elements in the subsequence is at least 2.
+
+Input:
+
+An array of integers, arr (1 ≤ |arr| ≤ 1000) where each integer (-10^6 ≤ arr[i] ≤ 10^6).
+Output:
+
+Return an integer representing the length of the longest increasing subsequence where the difference between consecutive elements is at least 2.
+Example:
+
+Input: arr = [1, 3, 7, 5, 10, 4, 15]
+
+Output: 5
+
+Explanation: The longest increasing subsequence with a difference of at least 2 between consecutive elements is [1, 3, 7, 10, 15].
+
+Note:
+
+In the example, even though [1, 3, 5, 10, 15] is also an increasing subsequence, the difference between 3 and 5 is just 2 which does not satisfy the given condition.
