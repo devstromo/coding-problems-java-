@@ -10,10 +10,15 @@
       <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu3/Fibonacci/FibonacciUnitTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/App.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/dynamic_programming/lis/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/dynamic_programming/lis/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/lis/input/input00.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/lis/input/input10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/lis/input/test20.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/lis/output/output00.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/lis/output/output10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/lis/output/output20.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/DESCRIPTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/DESCRIPTION.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/LIS.java" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/LIS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freestyle/src/test/java/com/devstromo/dp/lis/LISUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/test/java/com/devstromo/dp/lis/LISUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -91,7 +96,20 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LISUnitTest">
+  <component name="RunManager" selected="Application.Solution">
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.dynamic_programming.lis.Solution" />
+      <module name="hacker-rank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.dynamic_programming.lis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LISUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="freestyle" />
       <extension name="coverage">
@@ -139,21 +157,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.easy.p1379.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.easy.p1379" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p1379.SolutionUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SolutionUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
@@ -171,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution" />
         <item itemvalue="JUnit.LISUnitTest" />
         <item itemvalue="JUnit.LISUnitTest.testLisP2" />
         <item itemvalue="JUnit.LISUnitTest.testLisP2_2" />
         <item itemvalue="JUnit.SolutionUnitTest" />
-        <item itemvalue="JUnit.SolutionUnitTest (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -340,14 +343,8 @@
       <workItem from="1694045199755" duration="722000" />
       <workItem from="1694134051168" duration="1338000" />
       <workItem from="1694216367625" duration="1006000" />
-      <workItem from="1694377338230" duration="3992000" />
-    </task>
-    <task id="LOCAL-00127" summary="Leetcode | Final Value of Variable After Performing Operations">
-      <created>1689724206847</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1689724206847</updated>
+      <workItem from="1694377338230" duration="4098000" />
+      <workItem from="1694483405834" duration="2036000" />
     </task>
     <task id="LOCAL-00128" summary="Leetcode | Sort the People">
       <created>1689819204078</created>
@@ -685,7 +682,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694217346825</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="Freestyle | Longest Increasing Subsequence with a Twist">
+      <created>1694385595890</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1694385595891</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -706,7 +710,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Leetcode | Count Asterisks" />
     <MESSAGE value="Leetcode | Remove Outermost Parentheses" />
     <MESSAGE value="Leetcode | Find Maximum Number of String Pairs" />
     <MESSAGE value="Leetcode | Search a 2D Matrix" />
@@ -731,7 +734,8 @@
     <MESSAGE value="Freestyle | LIS | Practice #1" />
     <MESSAGE value="Leetcode | Find a Corresponding Node of a Binary Tree in a Clone of That Tree" />
     <MESSAGE value="Leetcode | Longest Increasing Subsequence" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leetcode | Longest Increasing Subsequence" />
+    <MESSAGE value="Freestyle | Longest Increasing Subsequence with a Twist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Freestyle | Longest Increasing Subsequence with a Twist" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -750,11 +754,6 @@
           <url>file://$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p21/SolutionUnitTest.java</url>
           <line>65</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/LIS.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
