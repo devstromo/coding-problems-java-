@@ -4,20 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="Leetcode | Find a Corresponding Node of a Binary Tree in a Clone of That Tree">
+    <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="Hackerrank | Longest Increasing Subsequence">
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/DESCRIPTION.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/Fibonacci.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu3/Fibonacci/FibonacciUnitTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/App.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/dynamic_programming/lis/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/dynamic_programming/lis/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/lis/input/input00.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/lis/input/input10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/lis/input/test20.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/lis/output/output00.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/lis/output/output10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/lis/output/output20.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p674/DESCRIPTION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p674/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p674/SolutionUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -49,31 +44,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/medium/p300&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;aws.codewhisperer&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/easy/p674",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "aws.codewhisperer"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.devstromo.medium.p347" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p674" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p300" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p1379" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p2520" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\freestyle\src\main\java\com\devstromo\dp\lis" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p1051" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -84,11 +79,11 @@
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\problem258" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.easy.p674" />
       <recent name="com.devstromo.dp.lis" />
       <recent name="com.devstromo.medium.p300" />
       <recent name="com.devstromo.easy.p1379" />
       <recent name="com.devstromo.easy.p2520" />
-      <recent name="com.devstromo.easy.p1051" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -96,7 +91,7 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution">
+  <component name="RunManager" selected="JUnit.SolutionUnitTest (1)">
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.devstromo.dynamic_programming.lis.Solution" />
       <module name="hacker-rank" />
@@ -157,16 +152,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionUnitTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.medium.p300.*" />
+          <option name="PATTERN" value="com.devstromo.easy.p674.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.medium.p300" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p300.SolutionUnitTest" />
+      <option name="PACKAGE_NAME" value="com.devstromo.easy.p674" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p674.SolutionUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -174,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionUnitTest (1)" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="JUnit.LISUnitTest" />
         <item itemvalue="JUnit.LISUnitTest.testLisP2" />
         <item itemvalue="JUnit.LISUnitTest.testLisP2_2" />
-        <item itemvalue="JUnit.SolutionUnitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -344,14 +339,9 @@
       <workItem from="1694134051168" duration="1338000" />
       <workItem from="1694216367625" duration="1006000" />
       <workItem from="1694377338230" duration="4098000" />
-      <workItem from="1694483405834" duration="2036000" />
-    </task>
-    <task id="LOCAL-00128" summary="Leetcode | Sort the People">
-      <created>1689819204078</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1689819204078</updated>
+      <workItem from="1694483405834" duration="2335000" />
+      <workItem from="1694908972781" duration="35000" />
+      <workItem from="1695080045788" duration="1434000" />
     </task>
     <task id="LOCAL-00129" summary="Leetcode | Jewels and Stones">
       <created>1689900182774</created>
@@ -689,7 +679,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694385595891</updated>
     </task>
-    <option name="localTasksCounter" value="177" />
+    <task id="LOCAL-00177" summary="Hackerrank | Longest Increasing Subsequence">
+      <created>1694485714542</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1694485714543</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -710,7 +707,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Leetcode | Remove Outermost Parentheses" />
     <MESSAGE value="Leetcode | Find Maximum Number of String Pairs" />
     <MESSAGE value="Leetcode | Search a 2D Matrix" />
     <MESSAGE value="Leetcode | Search a 2D Matrix II" />
@@ -735,7 +731,8 @@
     <MESSAGE value="Leetcode | Find a Corresponding Node of a Binary Tree in a Clone of That Tree" />
     <MESSAGE value="Leetcode | Longest Increasing Subsequence" />
     <MESSAGE value="Freestyle | Longest Increasing Subsequence with a Twist" />
-    <option name="LAST_COMMIT_MESSAGE" value="Freestyle | Longest Increasing Subsequence with a Twist" />
+    <MESSAGE value="Hackerrank | Longest Increasing Subsequence" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hackerrank | Longest Increasing Subsequence" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
