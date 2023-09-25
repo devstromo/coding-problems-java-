@@ -1,5 +1,11 @@
 package com.devstromo.dp.lis;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
+
 class LIS {
 
     public static int lis(int[] nums) {
@@ -64,5 +70,33 @@ class LIS {
             max = Math.max(max, lis[i]);
         }
         return max;
+    }
+
+    public static int lisP3(int[] nums) {
+        return lisWithBS(Arrays.stream(nums).boxed().toList());
+    }
+
+    public static int lisWithBS(List<Integer> arr) {
+        var n = arr.size();
+        var tails = new int[n];
+        var size = 0;
+        var i = 0;
+        var j = size;
+        for (var k = 0; k < n; k++) {
+            i = 0;
+            j = size;
+            // binary search variations
+            while (i != j) {
+                var mid = (i + j) / 2;
+                if (tails[mid] < arr.get(k))
+                    i = mid + 1;
+                else
+                    j = mid;
+            }
+            tails[i] = arr.get(k);
+            if (i == size)
+                ++size;
+        }
+        return size;
     }
 }
