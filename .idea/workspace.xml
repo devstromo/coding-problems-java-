@@ -8,12 +8,8 @@
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/DESCRIPTION.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/Fibonacci.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu3/Fibonacci/FibonacciUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/math/fib/FastFibonacci.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/LIS.java" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/LIS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freestyle/src/test/java/com/devstromo/dp/lis/LISUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/test/java/com/devstromo/dp/lis/LISUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -101,7 +97,22 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LISUnitTest.testLisP3">
+  <component name="RunManager" selected="JUnit.FibonacciUnitTest">
+    <configuration name="FibonacciUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codewars" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.kyu3.Fibonacci.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.kyu3.Fibonacci" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.kyu3.Fibonacci.FibonacciUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LISUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="freestyle" />
       <extension name="coverage">
@@ -148,21 +159,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.easy.p1704.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.easy.p1704" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p1704.SolutionUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SolutionUnitTest.testMaxProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
@@ -181,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FibonacciUnitTest" />
         <item itemvalue="JUnit.LISUnitTest.testLisP3" />
         <item itemvalue="JUnit.LISUnitTest" />
         <item itemvalue="JUnit.SolutionUnitTest (2)" />
         <item itemvalue="JUnit.SolutionUnitTest.testMaxProduct" />
-        <item itemvalue="JUnit.SolutionUnitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -356,7 +352,7 @@
       <workItem from="1695080045788" duration="1700000" />
       <workItem from="1695165234901" duration="965000" />
       <workItem from="1695341259439" duration="969000" />
-      <workItem from="1695682659465" duration="1263000" />
+      <workItem from="1695682659465" duration="4896000" />
     </task>
     <task id="LOCAL-00132" summary="Leetcode | Goal Parser Interpretation">
       <created>1690330365360</created>
@@ -701,7 +697,7 @@
       <option name="project" value="LOCAL" />
       <updated>1695342181211</updated>
     </task>
-    <option name="localTasksCounter" value="181" />
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -722,7 +718,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Leetcode | Replace All Digits with Characters" />
     <MESSAGE value="Leetcode | Number of Good Pairs" />
     <MESSAGE value="Leetcode | Number of Arithmetic Triplets" />
     <MESSAGE value="Leetcode | Count Number of Pairs With Absolute Difference K" />
@@ -743,11 +738,12 @@
     <MESSAGE value="Leetcode | Find a Corresponding Node of a Binary Tree in a Clone of That Tree" />
     <MESSAGE value="Leetcode | Longest Increasing Subsequence" />
     <MESSAGE value="Freestyle | Longest Increasing Subsequence with a Twist" />
-    <MESSAGE value="Hackerrank | Longest Increasing Subsequence" />
     <MESSAGE value="Leetcode | Longest Continuous Increasing Subsequence" />
     <MESSAGE value="Leetcode | Determine if String Halves Are Alike" />
     <MESSAGE value="Leetcode | Maximum Product of Two Elements in an Array" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leetcode | Maximum Product of Two Elements in an Array" />
+    <MESSAGE value="Hackerrank | Longest Increasing Subsequence" />
+    <MESSAGE value="Freestyle | Longest Increasing Subsequence | with Binary Search variation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Freestyle | Longest Increasing Subsequence | with Binary Search variation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
