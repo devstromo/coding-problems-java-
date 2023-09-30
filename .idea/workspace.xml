@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="Hackerrank | Longest Increasing Subsequence">
-      <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/DESCRIPTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codewars/src/main/java/com/devstromo/kyu3/Fibonacci/Fibonacci.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/codewars/src/test/java/com/devstromo/kyu3/Fibonacci/FibonacciUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/math/fib/FastFibonacci.java" afterDir="false" />
+    <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p27/DESCRIPTION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p27/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p27/SolutionUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -32,10 +32,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "000000ff",
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;000000ff&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2GVEmW1cS05budbxQXZYGbFgeUv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -54,14 +54,15 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/java/com/devstromo/easy/p27",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -70,11 +71,11 @@
       <recent name="com.devstromo.medium.p347" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p27" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p1464" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p1704" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p674" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p300" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p1379" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -85,11 +86,11 @@
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\problem258" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.easy.p27" />
       <recent name="com.devstromo.dp.lis" />
       <recent name="com.devstromo.easy.p1464" />
       <recent name="com.devstromo.easy.p1704" />
       <recent name="com.devstromo.easy.p674" />
-      <recent name="com.devstromo.medium.p300" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -97,7 +98,7 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FibonacciUnitTest">
+  <component name="RunManager" selected="JUnit.SolutionUnitTest">
     <configuration name="FibonacciUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codewars" />
       <extension name="coverage">
@@ -144,32 +145,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.easy.p1464.*" />
+          <option name="PATTERN" value="com.devstromo.easy.p27.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.easy.p1464" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p1464.SolutionUnitTest" />
+      <option name="PACKAGE_NAME" value="com.devstromo.easy.p27" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p27.SolutionUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest.testMaxProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SolutionUnitTest.testRemoveElement4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.easy.p1464.*" />
+          <option name="PATTERN" value="com.devstromo.easy.p27.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.easy.p1464" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p1464.SolutionUnitTest" />
-      <option name="METHOD_NAME" value="testMaxProduct" />
+      <option name="PACKAGE_NAME" value="com.devstromo.easy.p27" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p27.SolutionUnitTest" />
+      <option name="METHOD_NAME" value="testRemoveElement4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionUnitTest" />
+        <item itemvalue="JUnit.SolutionUnitTest.testRemoveElement4" />
         <item itemvalue="JUnit.FibonacciUnitTest" />
         <item itemvalue="JUnit.LISUnitTest.testLisP3" />
         <item itemvalue="JUnit.LISUnitTest" />
-        <item itemvalue="JUnit.SolutionUnitTest (2)" />
-        <item itemvalue="JUnit.SolutionUnitTest.testMaxProduct" />
       </list>
     </recent_temporary>
   </component>
@@ -352,7 +353,8 @@
       <workItem from="1695080045788" duration="1700000" />
       <workItem from="1695165234901" duration="965000" />
       <workItem from="1695341259439" duration="969000" />
-      <workItem from="1695682659465" duration="4896000" />
+      <workItem from="1695682659465" duration="5096000" />
+      <workItem from="1696073380600" duration="1747000" />
     </task>
     <task id="LOCAL-00132" summary="Leetcode | Goal Parser Interpretation">
       <created>1690330365360</created>
@@ -697,7 +699,7 @@
       <option name="project" value="LOCAL" />
       <updated>1695342181211</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -718,9 +720,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Leetcode | Number of Good Pairs" />
-    <MESSAGE value="Leetcode | Number of Arithmetic Triplets" />
-    <MESSAGE value="Leetcode | Count Number of Pairs With Absolute Difference K" />
     <MESSAGE value="Leetcode | Find the Maximum Achievable Number" />
     <MESSAGE value="Leetcode | Smallest Even Multiple" />
     <MESSAGE value="Leetcode | XOR Operation in an Array" />
@@ -741,9 +740,12 @@
     <MESSAGE value="Leetcode | Longest Continuous Increasing Subsequence" />
     <MESSAGE value="Leetcode | Determine if String Halves Are Alike" />
     <MESSAGE value="Leetcode | Maximum Product of Two Elements in an Array" />
-    <MESSAGE value="Hackerrank | Longest Increasing Subsequence" />
     <MESSAGE value="Freestyle | Longest Increasing Subsequence | with Binary Search variation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Freestyle | Longest Increasing Subsequence | with Binary Search variation" />
+    <MESSAGE value="Codewars | The Millionth Fibonacci Kata" />
+    <MESSAGE value="Hackerrank | Longest Increasing Subsequence" />
+    <MESSAGE value="Freestyle | Longest Increasing Subsequence" />
+    <MESSAGE value="Freestyle | Fast Fibonacci for positive numbers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Freestyle | Fast Fibonacci for positive numbers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -762,6 +764,26 @@
           <url>file://$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p21/SolutionUnitTest.java</url>
           <line>65</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p27/Solution.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p27/Solution.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p27/Solution.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p27/Solution.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
