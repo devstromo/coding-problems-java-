@@ -8,9 +8,9 @@ class SolutionKtUnitTest {
 
     @Test
     fun testExample1() {
-        val root = TreeNode(1).apply {
-            right = TreeNode(2).apply {
-                left = TreeNode(3)
+        val root = TreeNodeKt(1).apply {
+            right = TreeNodeKt(2).apply {
+                left = TreeNodeKt(3)
             }
         }
 
@@ -20,7 +20,7 @@ class SolutionKtUnitTest {
 
     @Test
     fun testExample2() {
-        val root: TreeNode? = null
+        val root: TreeNodeKt? = null
 
         val expected = listOf<Int>()
         assertEquals(expected, solution.preorderTraversal(root))
@@ -28,7 +28,7 @@ class SolutionKtUnitTest {
 
     @Test
     fun testExample3() {
-        val root = TreeNode(1)
+        val root = TreeNodeKt(1)
 
         val expected = listOf(1)
         assertEquals(expected, solution.preorderTraversal(root))

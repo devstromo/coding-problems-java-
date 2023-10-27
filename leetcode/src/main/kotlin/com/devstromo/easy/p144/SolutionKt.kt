@@ -1,13 +1,13 @@
 package com.devstromo.easy.p144
 
 class SolutionKt {
-    fun preorderTraversal(root: TreeNode?): List<Int> {
+    fun preorderTraversal(root: TreeNodeKt?): List<Int> {
         val list = mutableListOf<Int>()
         preorder(root, list)
         return list
     }
 
-    private fun preorder(root: TreeNode?, list: MutableList<Int>) {
+    private fun preorder(root: TreeNodeKt?, list: MutableList<Int>) {
         if (root == null) {
             return
         }
