@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/kotlin/com/devstromo/easy/p202/DESCRIPTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/kotlin/com/devstromo/easy/p202/SolutionKt.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/test/kotlin/com/devstromo/easy/p202/SolutionKtUnitTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/main/kotlin/com/devstromo/easy/p202/SolutionKt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/main/kotlin/com/devstromo/easy/p202/SolutionKt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/test/kotlin/com/devstromo/easy/p202/SolutionKtUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/test/kotlin/com/devstromo/easy/p202/SolutionKtUnitTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -370,7 +368,7 @@
       <workItem from="1698530947053" duration="872000" />
       <workItem from="1699049499521" duration="2372000" />
       <workItem from="1699666054599" duration="1060000" />
-      <workItem from="1700263639842" duration="755000" />
+      <workItem from="1700263639842" duration="1393000" />
     </task>
     <task id="LOCAL-00132" summary="Leetcode | Goal Parser Interpretation">
       <created>1690330365360</created>
@@ -715,7 +713,7 @@
       <option name="project" value="LOCAL" />
       <updated>1695342181211</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -736,7 +734,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Freestyle | LIS | Practice #1" />
     <MESSAGE value="Leetcode | Find a Corresponding Node of a Binary Tree in a Clone of That Tree" />
     <MESSAGE value="Leetcode | Longest Increasing Subsequence" />
     <MESSAGE value="Freestyle | Longest Increasing Subsequence with a Twist" />
@@ -761,7 +758,8 @@
     <MESSAGE value="Leetcode | Add Binary | Java" />
     <MESSAGE value="Leetcode | Power of Two | Kotlin" />
     <MESSAGE value="Leetcode | Power of Two | Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leetcode | Power of Two | Java" />
+    <MESSAGE value="Leetcode | Happy Number | Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leetcode | Happy Number | Java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

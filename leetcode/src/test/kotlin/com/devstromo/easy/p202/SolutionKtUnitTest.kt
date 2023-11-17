@@ -18,4 +18,14 @@ class SolutionKtUnitTest {
     fun testNotIsHappy() {
         assertFalse(solutionKt.isHappy(2))
     }
+
+    @Test
+    fun testIsHappyMath() {
+        assertTrue(solutionKt.isHappyMath(19))
+    }
+
+    @Test
+    fun testNotIsHappyMath() {
+        assertFalse(solutionKt.isHappyMath(2))
+    }
 }

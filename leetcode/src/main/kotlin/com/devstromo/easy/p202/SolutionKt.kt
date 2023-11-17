@@ -13,6 +13,18 @@ class SolutionKt {
         return true
     }
 
+    fun isHappyMath(n: Int): Boolean {
+        var slow = n
+        var fast = slow
+        do {
+            slow = sumOfSquares(slow)
+            fast = sumOfSquares(fast)
+            fast = sumOfSquares(fast)
+        } while (slow != fast)
+        return slow == 1
+    }
+
+
     private fun sumOfSquares(num: Int): Int {
         var number = num
         var sum = 0
