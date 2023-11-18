@@ -19,5 +19,15 @@ class SolutionUnitTest {
         assertFalse(solution.isHappy(2));
     }
 
+    @Test
+    public void testIsHappyBest() {
+        assertTrue(solution.isHappyBest(19));
+    }
+
+    @Test
+    public void testNotIsHappyBest() {
+        assertFalse(solution.isHappyBest(2));
+    }
+
 
 }
