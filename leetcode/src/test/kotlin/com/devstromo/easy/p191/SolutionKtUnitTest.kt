@@ -17,4 +17,14 @@ class SolutionKtUnitTest {
     fun testHammingWeightKt2() {
         assertEquals(1, solutionKt.hammingWeight(128))
     }
+
+    @Test
+    fun testHammingWeightKtBest() {
+        assertEquals(3, solutionKt.hammingWeightBest(11))
+    }
+
+    @Test
+    fun testHammingWeightKtBest2() {
+        assertEquals(1, solutionKt.hammingWeightBest(128))
+    }
 }
