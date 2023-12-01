@@ -22,4 +22,19 @@ class SolutionUnitTest {
         assertEquals(3, solution.rob(new int[]{1, 2, 3}));
     }
 
+    @Test
+    void testBestRobberHouseII() {
+        assertEquals(3, solution.robBest(new int[]{2, 3, 2}));
+    }
+
+    @Test
+    void testBestRobberHouseII2() {
+        assertEquals(4, solution.robBest(new int[]{1, 2, 3, 1}));
+    }
+
+    @Test
+    void testBestRobberHouseII3() {
+        assertEquals(3, solution.robBest(new int[]{1, 2, 3}));
+    }
+
 }
