@@ -33,4 +33,32 @@ class SolutionKtUnitTest {
         val expected = intArrayOf(1, 1, 0)
         assertArrayEquals(expected, solution.dailyTemperatures(input))
     }
+
+    @Test
+    fun `Test Daily Temperatures Best`() {
+        val input = intArrayOf(58, 56, 61, 55, 57, 44, 40, 35, 46)
+        val expected = intArrayOf(2, 1, 0, 1, 0, 3, 2, 1, 0)
+        assertArrayEquals(expected, solution.dailyTemperaturesBest(input))
+    }
+
+    @Test
+    fun `Test Daily Temperatures Best 2`() {
+        val input = intArrayOf(73, 74, 75, 71, 69, 72, 76, 73)
+        val expected = intArrayOf(1, 1, 4, 2, 1, 1, 0, 0)
+        assertArrayEquals(expected, solution.dailyTemperaturesBest(input))
+    }
+
+    @Test
+    fun `Test Daily Temperatures Best 3`() {
+        val input = intArrayOf(30, 40, 50, 60)
+        val expected = intArrayOf(1, 1, 1, 0)
+        assertArrayEquals(expected, solution.dailyTemperaturesBest(input))
+    }
+
+    @Test
+    fun `Test Daily Temperatures Best 4`() {
+        val input = intArrayOf(30, 60, 90)
+        val expected = intArrayOf(1, 1, 0)
+        assertArrayEquals(expected, solution.dailyTemperaturesBest(input))
+    }
 }
