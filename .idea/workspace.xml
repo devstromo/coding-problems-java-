@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/kotlin/com/devstromo/medium/p739/DESCRIPTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/kotlin/com/devstromo/medium/p739/SolutionKt.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/test/kotlin/com/devstromo/medium/p739/SolutionKtUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/kotlin/com/devstromo/easy/p1952/DESCRIPTION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/kotlin/com/devstromo/easy/p1952/SolutionKt.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/test/kotlin/com/devstromo/easy/p1952/SolutionKtUnitTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,9 +19,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Kotlin Class" />
         <option value="Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
@@ -51,6 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JUnit.SolutionKtUnitTest (1).executor": "Run",
     "JUnit.SolutionKtUnitTest.executor": "Run",
     "JUnit.SolutionUnitTest (2).executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -63,8 +64,8 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_directory_selection": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/test/kotlin/com/devstromo/medium",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/kotlin/com/devstromo/medium/p739",
+    "last_directory_selection": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/test/kotlin/com/devstromo/easy",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/kotlin/com/devstromo/easy/p1952",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -79,11 +80,11 @@
       <recent name="com.devstromo.medium.p347" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\kotlin\com\devstromo\easy\p1952" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\kotlin\com\devstromo\medium\p739" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p739" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p213" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\kotlin\com\devstromo\medium\p213" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p198" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -97,11 +98,11 @@
       <recent name="com.devstromo.easy.p191" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.easy.p1952" />
       <recent name="com.devstromo.medium.p739" />
       <recent name="com.devstromo.medium.p213" />
       <recent name="com.devstromo.medium.p198" />
       <recent name="com.devstromo.easy.p191" />
-      <recent name="com.devstromo.easy" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -109,17 +110,17 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionKtUnitTest">
-    <configuration name="SolutionKtUnitTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SolutionKtUnitTest (1)">
+    <configuration name="SolutionKtUnitTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.medium.p198.*" />
+          <option name="PATTERN" value="com.devstromo.easy.p1952.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.medium.p198" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.medium.p198.SolutionKtUnitTest" />
+      <option name="PACKAGE_NAME" value="com.devstromo.easy.p1952" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p1952.SolutionKtUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionKtUnitTest (1)" />
         <item itemvalue="JUnit.SolutionKtUnitTest" />
         <item itemvalue="JUnit.SolutionUnitTest (2)" />
         <item itemvalue="JUnit.SolutionUnitTest (1)" />
         <item itemvalue="JUnit.SolutionKtUnitTest (3)" />
-        <item itemvalue="JUnit.SolutionKtUnitTest (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -387,7 +388,8 @@
       <workItem from="1700880102675" duration="828000" />
       <workItem from="1701028745982" duration="1269000" />
       <workItem from="1701473689603" duration="903000" />
-      <workItem from="1702770550580" duration="2239000" />
+      <workItem from="1702770550580" duration="2439000" />
+      <workItem from="1703106130307" duration="1381000" />
     </task>
     <task id="LOCAL-00132" summary="Leetcode | Goal Parser Interpretation">
       <created>1690330365360</created>
@@ -732,7 +734,7 @@
       <option name="project" value="LOCAL" />
       <updated>1695342181211</updated>
     </task>
-    <option name="localTasksCounter" value="214" />
+    <option name="localTasksCounter" value="216" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -753,7 +755,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Hackerrank | Longest Increasing Subsequence" />
     <MESSAGE value="Freestyle | Longest Increasing Subsequence" />
     <MESSAGE value="Freestyle | Fast Fibonacci for positive numbers" />
     <MESSAGE value="Leetcode | Remove Element" />
@@ -778,7 +779,8 @@
     <MESSAGE value="Leetcode | House Robber II | Kotlin" />
     <MESSAGE value="Leetcode | House Robber II | Java" />
     <MESSAGE value="Leetcode | Daily Temperatures | Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leetcode | Daily Temperatures | Java" />
+    <MESSAGE value="Leetcode | Daily Temperatures | Kotlin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leetcode | Daily Temperatures | Kotlin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
