@@ -5,4 +5,19 @@ class SolutionKt {
     fun isThree(n: Int): Boolean {
         return set.contains(n)
     }
+
+    fun isThreeBest(n: Int): Boolean {
+        var count = 0
+        var div = 1
+        while (div <= n) {
+            if (n % div == 0) {
+                count++
+            }
+            div++
+            if (count > 3) {
+                break
+            }
+        }
+        return count == 3
+    }
 }

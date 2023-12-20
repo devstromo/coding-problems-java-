@@ -15,4 +15,13 @@ class SolutionKtUnitTest {
     fun `Test is not three`() {
         assertFalse(solution.isThree(2))
     }
+    @Test
+    fun `Test isThree Best`() {
+        assertTrue(solution.isThreeBest(4))
+    }
+
+    @Test
+    fun `Test is not three (Best)`() {
+        assertFalse(solution.isThreeBest(2))
+    }
 }
