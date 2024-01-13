@@ -24,4 +24,22 @@ class SolutionUnitTest {
         var profits = new int[]{2000, 1000, 1500, 500};
         assertEquals(3500, solution.knapsack01(n, w, weights, profits));
     }
+
+    @Test
+    void testKnapsack01With1DArray() {
+        int n = 3;
+        int w = 50;
+        var weights = new int[]{10, 20, 30};
+        var profits = new int[]{60, 100, 120};
+        assertEquals(220, solution.knapsack01With1DArray(n, w, weights, profits));
+    }
+
+    @Test
+    void testKnapsack01With1DArrayTest2() {
+        int n = 4;
+        int w = 5;
+        var weights = new int[]{3, 1, 2, 1};
+        var profits = new int[]{2000, 1000, 1500, 500};
+        assertEquals(3500, solution.knapsack01With1DArray(n, w, weights, profits));
+    }
 }

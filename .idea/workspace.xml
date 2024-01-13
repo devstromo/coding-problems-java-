@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/knapsack/knapsack01/DESCRIPTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/knapsack/knapsack01/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/freestyle/src/test/java/com/devstromo/dp/knapsack/knapsack01/SolutionUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/knapsack/knapsack01/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/knapsack/knapsack01/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freestyle/src/test/java/com/devstromo/dp/knapsack/knapsack01/SolutionUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/test/java/com/devstromo/dp/knapsack/knapsack01/SolutionUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -395,7 +393,7 @@
       <workItem from="1701473689603" duration="903000" />
       <workItem from="1702770550580" duration="2439000" />
       <workItem from="1703106130307" duration="1919000" />
-      <workItem from="1705102831735" duration="4361000" />
+      <workItem from="1705102831735" duration="4685000" />
     </task>
     <task id="LOCAL-00132" summary="Leetcode | Goal Parser Interpretation">
       <created>1690330365360</created>
@@ -740,7 +738,7 @@
       <option name="project" value="LOCAL" />
       <updated>1695342181211</updated>
     </task>
-    <option name="localTasksCounter" value="219" />
+    <option name="localTasksCounter" value="220" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -761,7 +759,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Leetcode | Remove Element" />
     <MESSAGE value="Leetcode | Remove Element | Kt" />
     <MESSAGE value="Leetcode | Intersection of Two Arrays | Kt" />
     <MESSAGE value="Leetcode | Single Number | Kt" />
@@ -786,7 +783,8 @@
     <MESSAGE value="Leetcode | Daily Temperatures | Kotlin" />
     <MESSAGE value="Leetcode | Three Divisors | Kotlin" />
     <MESSAGE value="Leetcode | Three Divisors | Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leetcode | Three Divisors | Java" />
+    <MESSAGE value="Freestyle | 0/1 Knapsack | Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Freestyle | 0/1 Knapsack | Java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
