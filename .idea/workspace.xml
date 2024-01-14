@@ -113,7 +113,7 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionUnitTest.testKnapsack01With1DArray">
+  <component name="RunManager" selected="JUnit.SolutionUnitTest (3)">
     <configuration name="SolutionUnitTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="freestyle" />
       <extension name="coverage">
@@ -195,8 +195,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SolutionUnitTest.testKnapsack01With1DArray" />
         <item itemvalue="JUnit.SolutionUnitTest (3)" />
+        <item itemvalue="JUnit.SolutionUnitTest.testKnapsack01With1DArray" />
         <item itemvalue="JUnit.SolutionUnitTest.testKnapsack01SelectedItems" />
         <item itemvalue="JUnit.SolutionUnitTest.testKnapsack01" />
         <item itemvalue="JUnit.SolutionUnitTest.testKnapsack01Test3" />

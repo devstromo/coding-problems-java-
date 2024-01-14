@@ -20,29 +20,10 @@ public class Solution {
     }
 
     public int[] knapsack01Selected(int n, int m, int[] wt, int[] profits) {
-        int[][] dp = new int[n + 1][m + 1];
-        int i, w;
-        for (w = 0; w <= m; w++) {
-            dp[0][w] = 0;
-        }
-
-        for (i = 0; i <= n; i++) {
-            dp[i][0] = 0;
-        }
-
-        for (i = 1; i <= n; i++) {
-            for (w = 1; w <= m; w++) {
-                if (wt[i - 1] <= w) {
-                    dp[i][w] = Math.max(dp[i - 1][w], dp[i - 1][w - wt[i - 1]] + profits[i - 1]);
-                } else {
-                    dp[i][w] = dp[i - 1][w];
-                }
-            }
-        }
-
+        var dp = knapsack01DP(n, m, wt, profits);
         int[] selectedItems = new int[n];
-        w = m;
-        for (i = n; i > 0; i--) {
+        int w = m;
+        for (int i = n; i > 0; i--) {
             if (dp[i][w] != dp[i - 1][w]) {
                 selectedItems[i - 1] = 1;
                 w -= wt[i - 1];
