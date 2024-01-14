@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/knapsack/knapsack01/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/knapsack/knapsack01/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/freestyle/src/test/java/com/devstromo/dp/knapsack/knapsack01/SolutionUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/test/java/com/devstromo/dp/knapsack/knapsack01/SolutionUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -399,7 +398,7 @@
       <workItem from="1703106130307" duration="1919000" />
       <workItem from="1705102831735" duration="4887000" />
       <workItem from="1705200336190" duration="4027000" />
-      <workItem from="1705252307707" duration="366000" />
+      <workItem from="1705252307707" duration="671000" />
     </task>
     <task id="LOCAL-00132" summary="Leetcode | Goal Parser Interpretation">
       <created>1690330365360</created>
@@ -744,7 +743,7 @@
       <option name="project" value="LOCAL" />
       <updated>1695342181211</updated>
     </task>
-    <option name="localTasksCounter" value="224" />
+    <option name="localTasksCounter" value="226" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -787,10 +786,10 @@
     <MESSAGE value="Leetcode | Daily Temperatures | Kotlin" />
     <MESSAGE value="Leetcode | Three Divisors | Kotlin" />
     <MESSAGE value="Leetcode | Three Divisors | Java" />
-    <MESSAGE value="Freestyle | 0/1 Knapsack | Java" />
     <MESSAGE value="Freestyle | 0/1 Knapsack | Java | 1D Array" />
     <MESSAGE value="Freestyle | 0/1 Knapsack | Java | Selected elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Freestyle | 0/1 Knapsack | Java | Selected elements" />
+    <MESSAGE value="Freestyle | 0/1 Knapsack | Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Freestyle | 0/1 Knapsack | Java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
