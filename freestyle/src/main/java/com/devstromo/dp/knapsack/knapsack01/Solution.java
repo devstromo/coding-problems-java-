@@ -58,7 +58,7 @@ public class Solution {
         }
 
         int[] selectedItems = new int[n];
-        w = m; // Start from the maximum capacity
+        w = m;
         for (i = n; i > 0; i--) {
             if (dp[i][w] != dp[i - 1][w]) {
                 selectedItems[i - 1] = 1;
