@@ -57,21 +57,18 @@ public class Solution {
             }
         }
 
-        i = n;
-        w = m;
-        int[] result = new int[n];
-        while (i > 0 && w > 0) {
-            if (dp[i][w] == dp[i - 1][w]) {
-                System.out.println(i + "=0");
-                i--;
+        int[] selectedItems = new int[n];
+        w = m; // Start from the maximum capacity
+        for (i = n; i > 0; i--) {
+            if (dp[i][w] != dp[i - 1][w]) {
+                selectedItems[i - 1] = 1;
+                w -= wt[i - 1];
             } else {
-                System.out.println(w + "=1");
-                i--;
-                w = w - wt[i];
+                selectedItems[i - 1] = 0;
             }
-
         }
-        return result;
+
+        return selectedItems;
     }
 
 }
