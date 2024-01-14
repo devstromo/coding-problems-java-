@@ -36,4 +36,42 @@ public class Solution {
         return dp[m];
     }
 
+    public int[] knapsack01Selected(int n, int m, int[] wt, int[] profits) {
+        int[][] dp = new int[n + 1][m + 1];
+        int i, w;
+        for (w = 0; w <= m; w++) {
+            dp[0][w] = 0;
+        }
+
+        for (i = 0; i <= n; i++) {
+            dp[i][0] = 0;
+        }
+
+        for (i = 1; i <= n; i++) {
+            for (w = 1; w <= m; w++) {
+                if (wt[i - 1] <= w) {
+                    dp[i][w] = Math.max(dp[i - 1][w], dp[i - 1][w - wt[i - 1]] + profits[i - 1]);
+                } else {
+                    dp[i][w] = dp[i - 1][w];
+                }
+            }
+        }
+
+        i = n;
+        w = m;
+        int[] result = new int[n];
+        while (i > 0 && w > 0) {
+            if (dp[i][w] == dp[i - 1][w]) {
+                System.out.println(i + "=0");
+                i--;
+            } else {
+                System.out.println(w + "=1");
+                i--;
+                w = w - wt[i];
+            }
+
+        }
+        return result;
+    }
+
 }
