@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/knapsack/knapsack01/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/knapsack/knapsack01/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +56,7 @@
     "JUnit.SolutionUnitTest.testKnapsack01.executor": "Run",
     "JUnit.SolutionUnitTest.testKnapsack01SelectedItems.executor": "Run",
     "JUnit.SolutionUnitTest.testKnapsack01Test3.executor": "Run",
+    "JUnit.SolutionUnitTest.testKnapsack01With1DArray.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -111,7 +113,7 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionUnitTest (3)">
+  <component name="RunManager" selected="JUnit.SolutionUnitTest.testKnapsack01With1DArray">
     <configuration name="SolutionUnitTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="freestyle" />
       <extension name="coverage">
@@ -122,21 +124,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.devstromo.dp.knapsack.knapsack01" />
       <option name="MAIN_CLASS_NAME" value="com.devstromo.dp.knapsack.knapsack01.SolutionUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SolutionUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leetcode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.easy.p1952.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.easy.p1952" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p1952.SolutionUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -190,13 +177,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SolutionUnitTest.testKnapsack01With1DArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="freestyle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.dp.knapsack.knapsack01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.dp.knapsack.knapsack01" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.dp.knapsack.knapsack01.SolutionUnitTest" />
+      <option name="METHOD_NAME" value="testKnapsack01With1DArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionUnitTest.testKnapsack01With1DArray" />
         <item itemvalue="JUnit.SolutionUnitTest (3)" />
         <item itemvalue="JUnit.SolutionUnitTest.testKnapsack01SelectedItems" />
         <item itemvalue="JUnit.SolutionUnitTest.testKnapsack01" />
         <item itemvalue="JUnit.SolutionUnitTest.testKnapsack01Test3" />
-        <item itemvalue="JUnit.SolutionUnitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -395,7 +398,8 @@
       <workItem from="1702770550580" duration="2439000" />
       <workItem from="1703106130307" duration="1919000" />
       <workItem from="1705102831735" duration="4887000" />
-      <workItem from="1705200336190" duration="2211000" />
+      <workItem from="1705200336190" duration="4027000" />
+      <workItem from="1705252307707" duration="366000" />
     </task>
     <task id="LOCAL-00132" summary="Leetcode | Goal Parser Interpretation">
       <created>1690330365360</created>
@@ -740,7 +744,7 @@
       <option name="project" value="LOCAL" />
       <updated>1695342181211</updated>
     </task>
-    <option name="localTasksCounter" value="223" />
+    <option name="localTasksCounter" value="224" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
