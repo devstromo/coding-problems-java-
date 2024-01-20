@@ -87,4 +87,14 @@ class SolutionUnitTest {
         var result = solution.knapsack01With1DArraySelected(n, w, weights, profits);
         assertArrayEquals(expectedResult, result);
     }
+
+    @Test
+    void testKnapsackUnbounded() {
+        int n = 4;
+        int w = 8;
+        var weights = new int[]{1, 2, 3, 5};
+        var profits = new int[]{1, 4, 7, 10};
+        var result = solution.knapsackUnbounded(n, w, weights, profits);
+        assertEquals(18, result);
+    }
 }
