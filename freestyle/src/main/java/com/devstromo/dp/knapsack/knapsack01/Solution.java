@@ -3,20 +3,20 @@ package com.devstromo.dp.knapsack.knapsack01;
 import java.util.Arrays;
 
 public class Solution {
-    public int knapsack01(int n, int m, int[] wt, int[] profits) {
-        var dp = knapsack01DP(n, m, wt, profits);
-        return dp[n][m];
+    public int knapsack01(int n, int W, int[] wt, int[] profits) {
+        var dp = knapsack01DP(n, W, wt, profits);
+        return dp[n][W];
     }
 
-    public int knapsack01With1DArray(int n, int m, int[] wt, int[] profits) {
-        int[] dp = new int[m + 1];
+    public int knapsack01With1DArray(int n, int W, int[] wt, int[] profits) {
+        int[] dp = new int[W + 1];
         for (int i = 1; i <= n; i++) {
-            for (int w = m; w >= 0; w--) {
+            for (int w = W; w >= 0; w--) {
                 if (wt[i - 1] <= w)
                     dp[w] = Math.max(dp[w], dp[w - wt[i - 1]] + profits[i - 1]);
             }
         }
-        return dp[m];
+        return dp[W];
     }
 
     public int[] knapsack01Selected(int n, int m, int[] wt, int[] profits) {
@@ -56,26 +56,6 @@ public class Solution {
             }
         }
         return selectedItems;
-    }
-
-    public int knapsackUnbounded(int n, int m, int[] wt, int[] profits) {
-        int[][] dp = new int[n][m + 1];
-        for (int capacity = 0; capacity <= m; capacity++) {
-            if (wt[0] <= capacity) {
-                dp[0][capacity] = (capacity / wt[0]) * profits[0];
-            }
-        }
-        for (int item = 1; item < n; item++) {
-            for (int capacity = 1; capacity <= m; capacity++) {
-                int includeProfit = 0;
-                int excludeProfit = dp[item - 1][capacity];
-                if (wt[item] <= capacity) {
-                    includeProfit = profits[item] + dp[item][capacity - wt[item]];
-                }
-                dp[item][capacity] = Math.max(includeProfit, excludeProfit);
-            }
-        }
-        return dp[n - 1][m];
     }
 
     private int[][] knapsack01DP(int n, int m, int[] wt, int[] profits) {

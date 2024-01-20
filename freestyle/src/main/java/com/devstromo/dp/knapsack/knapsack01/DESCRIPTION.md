@@ -9,7 +9,7 @@ You're given `n` items, each with a distinct weight and value. You have a knapsa
 1. `n` : An integer representing the number of items (`1 <= n <= 100`)
 2. `W` : An integer representing the maximum weight capacity of the knapsack (`1 <= W <= 1000`)
 3. `weights` : A list of integers where `weights[i]` is the weight of the `i`-th item (`1 <= weights[i] <= 100`)
-4. `values` : A list of integers where `values[i]` is the value of the `i`-th item (`1 <= values[i] <= 100`)
+4. `profits` : A list of integers where `values[i]` is the value of the `i`-th item (`1 <= values[i] <= 100`)
 
 #### Output:
 Return an integer representing the maximum total value you can achieve.
