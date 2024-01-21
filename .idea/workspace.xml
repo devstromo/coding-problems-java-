@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/knapsack/knapsackWithBounds/DESCRIPTION.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/knapsack/knapsackWithBounds/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/freestyle/src/test/java/com/devstromo/dp/knapsack/knapsackWithBounds/SolutionUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/dynamic_programming/knapsack/unbounded/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/dynamic_programming/knapsack/unbounded/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/knapsack/unbounded/input/input00.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/knapsack/unbounded/output/output00.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/test/java/com/devstromo/dynamic_programming/knapsack/unbounded/ResultUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/knapsack/knapsack01/DESCRIPTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/knapsack/knapsack01/DESCRIPTION.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/knapsack/knapsack01/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/knapsack/knapsack01/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freestyle/src/test/java/com/devstromo/dp/knapsack/knapsack01/SolutionUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/test/java/com/devstromo/dp/knapsack/knapsack01/SolutionUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +53,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Solution.executor": "Run",
+    "JUnit.ResultUnitTest.executor": "Run",
     "JUnit.SolutionKtUnitTest (1).executor": "Run",
     "JUnit.SolutionKtUnitTest.executor": "Run",
     "JUnit.SolutionUnitTest (2).executor": "Run",
@@ -106,11 +108,11 @@
       <recent name="com.devstromo.easy.p191" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.dynamic_programming.knapsack.unbounded" />
       <recent name="com.devstromo.dp.knapsack.knapsackWithBounds" />
       <recent name="com.devstromo.dp.knapsack.knapsack01" />
       <recent name="com.devstromo.easy.p1952" />
       <recent name="com.devstromo.medium.p739" />
-      <recent name="com.devstromo.medium.p213" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -118,7 +120,35 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionUnitTest">
+  <component name="RunManager" selected="JUnit.ResultUnitTest">
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.dynamic_programming.knapsack.unbounded.Solution" />
+      <module name="hacker-rank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.dynamic_programming.knapsack.unbounded.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResultUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hacker-rank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.dynamic_programming.knapsack.unbounded.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.dynamic_programming.knapsack.unbounded" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.dynamic_programming.knapsack.unbounded.ResultUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SolutionUnitTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="freestyle" />
       <extension name="coverage">
@@ -149,38 +179,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest.testKnapsack01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="freestyle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.dp.knapsack.knapsack01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.dp.knapsack.knapsack01" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.dp.knapsack.knapsack01.SolutionUnitTest" />
-      <option name="METHOD_NAME" value="testKnapsack01" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SolutionUnitTest.testKnapsack01SelectedItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="freestyle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.dp.knapsack.knapsack01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.dp.knapsack.knapsack01" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.dp.knapsack.knapsack01.SolutionUnitTest" />
-      <option name="METHOD_NAME" value="testKnapsack01SelectedItems" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SolutionUnitTest.testKnapsack01With1DArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="freestyle" />
       <extension name="coverage">
@@ -199,18 +197,19 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ResultUnitTest" />
+        <item itemvalue="Application.Solution" />
         <item itemvalue="JUnit.SolutionUnitTest" />
         <item itemvalue="JUnit.SolutionUnitTest (3)" />
         <item itemvalue="JUnit.SolutionUnitTest.testKnapsack01With1DArray" />
-        <item itemvalue="JUnit.SolutionUnitTest.testKnapsack01SelectedItems" />
-        <item itemvalue="JUnit.SolutionUnitTest.testKnapsack01" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-8f899f12" />
+        <option value="bundled-js-predefined-1d06a55b98c1-fd6de256fdba-JavaScript-IU-241.8102.112" />
+        <option value="jdk-17.0.10-corretto-17.0.10-5b172459f563-b10de040" />
       </set>
     </attachedChunks>
   </component>
@@ -404,7 +403,8 @@
       <workItem from="1705102831735" duration="4887000" />
       <workItem from="1705200336190" duration="4027000" />
       <workItem from="1705252307707" duration="1861000" />
-      <workItem from="1705718212869" duration="1380000" />
+      <workItem from="1705718212869" duration="1576000" />
+      <workItem from="1705848659803" duration="1749000" />
     </task>
     <task id="LOCAL-00132" summary="Leetcode | Goal Parser Interpretation">
       <created>1690330365360</created>
@@ -749,7 +749,7 @@
       <option name="project" value="LOCAL" />
       <updated>1695342181211</updated>
     </task>
-    <option name="localTasksCounter" value="228" />
+    <option name="localTasksCounter" value="229" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
