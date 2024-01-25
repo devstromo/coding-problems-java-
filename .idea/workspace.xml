@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/dynamic_programming/knapsack/unbounded/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/dynamic_programming/knapsack/unbounded/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/knapsack/unbounded/input/input00.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/knapsack/unbounded/output/output00.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/test/java/com/devstromo/dynamic_programming/knapsack/unbounded/ResultUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/dynamic_programming/brick_games/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/dynamic_programming/brick_games/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/brick_games/input/input00.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/brick_games/input/input14.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/brick_games/output/output00.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/brick_games/output/output14.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/test/java/com/devstromo/dynamic_programming/brick_games/ResultUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +55,10 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Solution.executor": "Run",
+    "Application.com.devstromo.dynamic_programming.brick_games.Solution.executor": "Run",
+    "JUnit.ResultUnitTest (1).executor": "Run",
     "JUnit.ResultUnitTest.executor": "Run",
+    "JUnit.ResultUnitTest.testBrickGame.executor": "Run",
     "JUnit.SolutionKtUnitTest (1).executor": "Run",
     "JUnit.SolutionKtUnitTest.executor": "Run",
     "JUnit.SolutionUnitTest (2).executor": "Run",
@@ -108,11 +112,11 @@
       <recent name="com.devstromo.easy.p191" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.dynamic_programming.brick_games" />
       <recent name="com.devstromo.dynamic_programming.knapsack.unbounded" />
       <recent name="com.devstromo.dp.knapsack.knapsackWithBounds" />
       <recent name="com.devstromo.dp.knapsack.knapsack01" />
       <recent name="com.devstromo.easy.p1952" />
-      <recent name="com.devstromo.medium.p739" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -120,7 +124,7 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ResultUnitTest">
+  <component name="RunManager" selected="Application.com.devstromo.dynamic_programming.brick_games.Solution">
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.devstromo.dynamic_programming.knapsack.unbounded.Solution" />
       <module name="hacker-rank" />
@@ -130,6 +134,34 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.devstromo.dynamic_programming.brick_games.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.dynamic_programming.brick_games.Solution" />
+      <module name="hacker-rank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.dynamic_programming.brick_games.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResultUnitTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hacker-rank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.dynamic_programming.brick_games.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.dynamic_programming.brick_games" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.dynamic_programming.brick_games.ResultUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,47 +181,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SolutionUnitTest (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="freestyle" />
+    <configuration name="ResultUnitTest.testBrickGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hacker-rank" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.dp.knapsack.knapsack01.*" />
+          <option name="PATTERN" value="com.devstromo.dynamic_programming.brick_games.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.dp.knapsack.knapsack01" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.dp.knapsack.knapsack01.SolutionUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SolutionUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="freestyle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.dp.knapsack.knapsackWithBounds.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.dp.knapsack.knapsackWithBounds" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.dp.knapsack.knapsackWithBounds.SolutionUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SolutionUnitTest.testKnapsack01With1DArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="freestyle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.dp.knapsack.knapsack01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.dp.knapsack.knapsack01" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.dp.knapsack.knapsack01.SolutionUnitTest" />
-      <option name="METHOD_NAME" value="testKnapsack01With1DArray" />
+      <option name="PACKAGE_NAME" value="com.devstromo.dynamic_programming.brick_games" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.dynamic_programming.brick_games.ResultUnitTest" />
+      <option name="METHOD_NAME" value="testBrickGame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -197,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.devstromo.dynamic_programming.brick_games.Solution" />
+        <item itemvalue="JUnit.ResultUnitTest (1)" />
+        <item itemvalue="JUnit.ResultUnitTest.testBrickGame" />
         <item itemvalue="JUnit.ResultUnitTest" />
         <item itemvalue="Application.Solution" />
-        <item itemvalue="JUnit.SolutionUnitTest" />
-        <item itemvalue="JUnit.SolutionUnitTest (3)" />
-        <item itemvalue="JUnit.SolutionUnitTest.testKnapsack01With1DArray" />
       </list>
     </recent_temporary>
   </component>
@@ -404,7 +406,8 @@
       <workItem from="1705200336190" duration="4027000" />
       <workItem from="1705252307707" duration="1861000" />
       <workItem from="1705718212869" duration="1576000" />
-      <workItem from="1705848659803" duration="1749000" />
+      <workItem from="1705848659803" duration="1845000" />
+      <workItem from="1706223930874" duration="2325000" />
     </task>
     <task id="LOCAL-00132" summary="Leetcode | Goal Parser Interpretation">
       <created>1690330365360</created>
@@ -749,7 +752,7 @@
       <option name="project" value="LOCAL" />
       <updated>1695342181211</updated>
     </task>
-    <option name="localTasksCounter" value="229" />
+    <option name="localTasksCounter" value="230" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -770,7 +773,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Leetcode | Sqrt(x) | Kt" />
     <MESSAGE value="Leetcode | Binary Tree Preorder Traversal | Kt" />
     <MESSAGE value="Leetcode | Binary Tree Preorder Traversal | Java" />
     <MESSAGE value="Leetcode | Coin Change | Java" />
@@ -795,7 +797,8 @@
     <MESSAGE value="Freestyle | 0/1 Knapsack | Java | Selected elements" />
     <MESSAGE value="Freestyle | 0/1 Knapsack | Java" />
     <MESSAGE value="Freestyle | Knapsack Unbounded | Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Freestyle | Knapsack Unbounded | Java" />
+    <MESSAGE value="Hackerrank | Knapsack Unbounded | Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hackerrank | Knapsack Unbounded | Java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
