@@ -14,7 +14,7 @@ public class Solution {
             int t2 = Integer.parseInt(firstMultipleInput[1]);
 
             int n = Integer.parseInt(firstMultipleInput[2]);
-            int result = Result.fibonacciModified(t1, t2, n);
+            var result = Result.fibonacciModified(t1, t2, n);
             System.out.println(result);
         }
     }

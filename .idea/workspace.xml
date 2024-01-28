@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/dynamic_programming/fibonacci_modified/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/dynamic_programming/fibonacci_modified/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/fibonacci_modified/input/input00.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/fibonacci_modified/input/input01.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/fibonacci_modified/output/output00.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hacker-rank/src/main/resources/dynamic_programming/fibonacci_modified/output/output01.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hacker-rank/src/test/java/com/devstromo/dynamic_programming/fibonacci_modified/ResultUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/dynamic_programming/fibonacci_modified/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/dynamic_programming/fibonacci_modified/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/dynamic_programming/fibonacci_modified/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/hacker-rank/src/main/java/com/devstromo/dynamic_programming/fibonacci_modified/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +21,8 @@
         <option value="Record" />
         <option value="Kotlin File" />
         <option value="Kotlin Class" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -50,44 +47,46 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Solution.executor&quot;: &quot;Run&quot;,
-    &quot;Application.com.devstromo.dynamic_programming.brick_games.Solution.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ResultUnitTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ResultUnitTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ResultUnitTest.testBrickGame.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SolutionKtUnitTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SolutionKtUnitTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SolutionUnitTest (2).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SolutionUnitTest (3).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SolutionUnitTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SolutionUnitTest.testKnapsack01.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SolutionUnitTest.testKnapsack01SelectedItems.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SolutionUnitTest.testKnapsack01Test3.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SolutionUnitTest.testKnapsack01With1DArray.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/test/java/com/devstromo/easy&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/WORK/PROYECTOS/JAVA/coding-problems-java/freestyle/src/main/java/com/devstromo/dp/knapsack/knapsackWithBounds&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Solution.executor": "Run",
+    "Application.com.devstromo.dynamic_programming.brick_games.Solution.executor": "Run",
+    "JUnit.ResultUnitTest (1).executor": "Run",
+    "JUnit.ResultUnitTest (2).executor": "Run",
+    "JUnit.ResultUnitTest.executor": "Run",
+    "JUnit.ResultUnitTest.testBrickGame.executor": "Run",
+    "JUnit.ResultUnitTest.testFibonacciModified.executor": "Run",
+    "JUnit.SolutionKtUnitTest (1).executor": "Run",
+    "JUnit.SolutionKtUnitTest.executor": "Run",
+    "JUnit.SolutionUnitTest (2).executor": "Run",
+    "JUnit.SolutionUnitTest (3).executor": "Run",
+    "JUnit.SolutionUnitTest.executor": "Run",
+    "JUnit.SolutionUnitTest.testKnapsack01.executor": "Run",
+    "JUnit.SolutionUnitTest.testKnapsack01SelectedItems.executor": "Run",
+    "JUnit.SolutionUnitTest.testKnapsack01Test3.executor": "Run",
+    "JUnit.SolutionUnitTest.testKnapsack01With1DArray.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/test/java/com/devstromo/easy",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/freestyle/src/main/java/com/devstromo/dp/knapsack/knapsackWithBounds",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.devstromo.medium.p347" />
@@ -111,11 +110,11 @@
       <recent name="com.devstromo.easy.p191" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.dynamic_programming.fibonacci_modified" />
       <recent name="com.devstromo.dynamic_programming.brick_games" />
       <recent name="com.devstromo.dynamic_programming.knapsack.unbounded" />
       <recent name="com.devstromo.dp.knapsack.knapsackWithBounds" />
       <recent name="com.devstromo.dp.knapsack.knapsack01" />
-      <recent name="com.devstromo.easy.p1952" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -123,13 +122,13 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.devstromo.dynamic_programming.brick_games.Solution">
+  <component name="RunManager" selected="JUnit.ResultUnitTest (2)">
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.dynamic_programming.knapsack.unbounded.Solution" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.dynamic_programming.fibonacci_modified.Solution" />
       <module name="hacker-rank" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.dynamic_programming.knapsack.unbounded.*" />
+          <option name="PATTERN" value="com.devstromo.dynamic_programming.fibonacci_modified.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,32 +164,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ResultUnitTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hacker-rank" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.dynamic_programming.knapsack.unbounded.*" />
+          <option name="PATTERN" value="com.devstromo.dynamic_programming.fibonacci_modified.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.dynamic_programming.knapsack.unbounded" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.dynamic_programming.knapsack.unbounded.ResultUnitTest" />
+      <option name="PACKAGE_NAME" value="com.devstromo.dynamic_programming.fibonacci_modified" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.dynamic_programming.fibonacci_modified.ResultUnitTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultUnitTest.testBrickGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ResultUnitTest.testFibonacciModified" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="hacker-rank" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.devstromo.dynamic_programming.brick_games.*" />
+          <option name="PATTERN" value="com.devstromo.dynamic_programming.fibonacci_modified.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.dynamic_programming.brick_games" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.dynamic_programming.brick_games.ResultUnitTest" />
-      <option name="METHOD_NAME" value="testBrickGame" />
+      <option name="PACKAGE_NAME" value="com.devstromo.dynamic_programming.fibonacci_modified" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.dynamic_programming.fibonacci_modified.ResultUnitTest" />
+      <option name="METHOD_NAME" value="testFibonacciModified" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -198,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ResultUnitTest (2)" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="JUnit.ResultUnitTest.testFibonacciModified" />
         <item itemvalue="Application.com.devstromo.dynamic_programming.brick_games.Solution" />
         <item itemvalue="JUnit.ResultUnitTest (1)" />
-        <item itemvalue="JUnit.ResultUnitTest.testBrickGame" />
-        <item itemvalue="JUnit.ResultUnitTest" />
-        <item itemvalue="Application.Solution" />
       </list>
     </recent_temporary>
   </component>
@@ -407,7 +406,7 @@
       <workItem from="1705718212869" duration="1576000" />
       <workItem from="1705848659803" duration="1845000" />
       <workItem from="1706223930874" duration="2387000" />
-      <workItem from="1706462491352" duration="890000" />
+      <workItem from="1706462491352" duration="1571000" />
     </task>
     <task id="LOCAL-00132" summary="Leetcode | Goal Parser Interpretation">
       <created>1690330365360</created>
@@ -752,7 +751,7 @@
       <option name="project" value="LOCAL" />
       <updated>1695342181211</updated>
     </task>
-    <option name="localTasksCounter" value="231" />
+    <option name="localTasksCounter" value="232" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -773,7 +772,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Leetcode | Binary Tree Preorder Traversal | Java" />
     <MESSAGE value="Leetcode | Coin Change | Java" />
     <MESSAGE value="Leetcode | Coin Change | Kotlin" />
     <MESSAGE value="Leetcode | Add Binary | Kotlin" />
@@ -798,7 +796,8 @@
     <MESSAGE value="Freestyle | Knapsack Unbounded | Java" />
     <MESSAGE value="Hackerrank | Knapsack Unbounded | Java" />
     <MESSAGE value="Hackerrank | Bricks Game | Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hackerrank | Bricks Game | Java" />
+    <MESSAGE value="Hackerrank | Fibonacci Modified | Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hackerrank | Fibonacci Modified | Java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
