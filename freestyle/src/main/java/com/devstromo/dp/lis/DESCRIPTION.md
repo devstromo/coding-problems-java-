@@ -28,10 +28,6 @@ Output:
 
 ### Practice #2
 
-Sure!
-
-Problem: Longest Increasing Subsequence with a Twist
-
 Description:
 Given an unsorted array of integers, find the length of the longest increasing subsequence where the difference between consecutive elements in the subsequence is at least 2.
 
