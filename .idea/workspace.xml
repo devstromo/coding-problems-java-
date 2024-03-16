@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p283/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p283/SolutionUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/DESCRIPTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/DESCRIPTION.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,21 +30,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="SOFT" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "devstromo"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;devstromo&quot;
   }
-}]]></component>
+}</component>
+  <component name="GitHubPullRequestState">{
+  &quot;prStates&quot;: []
+}</component>
+  <component name="GitLabMergeRequestsSettings">{}</component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="b71f8dfc-c02d-490d-a3be-08a2cc92d09b" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/devstromo/coding-problems-java-.git",
-    "accountId": "b71f8dfc-c02d-490d-a3be-08a2cc92d09b"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/devstromo/coding-problems-java-.git&quot;,
+    &quot;accountId&quot;: &quot;b71f8dfc-c02d-490d-a3be-08a2cc92d09b&quot;
   }
-}]]></component>
+}</component>
+  <component name="KubernetesApiProvider">{}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -120,11 +127,11 @@
       <recent name="com.devstromo.easy.p191" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.devstromo.easy.p283" />
       <recent name="com.devstromo.dynamic_programming.fibonacci_modified" />
       <recent name="com.devstromo.dynamic_programming.brick_games" />
       <recent name="com.devstromo.dynamic_programming.knapsack.unbounded" />
       <recent name="com.devstromo.dp.knapsack.knapsackWithBounds" />
-      <recent name="com.devstromo.dp.knapsack.knapsack01" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.devstromo.medium.p2130" />
@@ -132,7 +139,7 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ResultUnitTest (2)">
+  <component name="RunManager" selected="JUnit.SolutionUnitTest">
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.devstromo.dynamic_programming.fibonacci_modified.Solution" />
       <module name="hacker-rank" />
@@ -155,21 +162,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResultUnitTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="hacker-rank" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.dynamic_programming.brick_games.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.devstromo.dynamic_programming.brick_games" />
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.dynamic_programming.brick_games.ResultUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -205,13 +197,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SolutionUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.easy.p283.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.easy.p283" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p283.SolutionUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionUnitTest" />
         <item itemvalue="JUnit.ResultUnitTest (2)" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="JUnit.ResultUnitTest.testFibonacciModified" />
         <item itemvalue="Application.com.devstromo.dynamic_programming.brick_games.Solution" />
-        <item itemvalue="JUnit.ResultUnitTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -419,7 +426,8 @@
       <workItem from="1706223930874" duration="2387000" />
       <workItem from="1706462491352" duration="1998000" />
       <workItem from="1706913905053" duration="1203000" />
-      <workItem from="1710286550793" duration="1156000" />
+      <workItem from="1710286550793" duration="1266000" />
+      <workItem from="1710551316858" duration="1339000" />
     </task>
     <task id="LOCAL-00132" summary="Leetcode | Goal Parser Interpretation">
       <created>1690330365360</created>
@@ -764,7 +772,7 @@
       <option name="project" value="LOCAL" />
       <updated>1695342181211</updated>
     </task>
-    <option name="localTasksCounter" value="233" />
+    <option name="localTasksCounter" value="234" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -785,7 +793,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Leetcode | Coin Change | Java" />
     <MESSAGE value="Leetcode | Coin Change | Kotlin" />
     <MESSAGE value="Leetcode | Add Binary | Kotlin" />
     <MESSAGE value="Leetcode | Add Binary | Java" />
@@ -810,7 +817,8 @@
     <MESSAGE value="Hackerrank | Knapsack Unbounded | Java" />
     <MESSAGE value="Hackerrank | Bricks Game | Java" />
     <MESSAGE value="Hackerrank | Fibonacci Modified | Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hackerrank | Fibonacci Modified | Java" />
+    <MESSAGE value="Code refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
