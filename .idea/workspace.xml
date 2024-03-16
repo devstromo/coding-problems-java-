@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/leetcode/src/main/java/com/devstromo/easy/p283/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode/src/test/java/com/devstromo/easy/p283/SolutionUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/kotlin/com/devstromo/easy/p283/DESCRIPTION.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/main/kotlin/com/devstromo/easy/p283/SolutionKt.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/src/test/kotlin/com/devstromo/easy/p283/SolutionKtUnitTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +20,8 @@
       <list>
         <option value="Record" />
         <option value="Kotlin File" />
-        <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="Kotlin Class" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
@@ -49,7 +49,10 @@
     &quot;accountId&quot;: &quot;b71f8dfc-c02d-490d-a3be-08a2cc92d09b&quot;
   }
 }</component>
-  <component name="KubernetesApiProvider">{}</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -64,56 +67,56 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Solution.executor&quot;: &quot;Run&quot;,
-    &quot;Application.com.devstromo.dynamic_programming.brick_games.Solution.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ResultUnitTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ResultUnitTest (2).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ResultUnitTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ResultUnitTest.testBrickGame.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ResultUnitTest.testFibonacciModified.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SolutionKtUnitTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SolutionKtUnitTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SolutionUnitTest (2).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SolutionUnitTest (3).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SolutionUnitTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SolutionUnitTest.testKnapsack01.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SolutionUnitTest.testKnapsack01SelectedItems.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SolutionUnitTest.testKnapsack01Test3.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SolutionUnitTest.testKnapsack01With1DArray.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/test/java/com/devstromo/easy&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/WORK/PROYECTOS/JAVA/coding-problems-java/freestyle/src/main/java/com/devstromo/dp/knapsack/knapsackWithBounds&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Solution.executor": "Run",
+    "Application.com.devstromo.dynamic_programming.brick_games.Solution.executor": "Run",
+    "JUnit.ResultUnitTest (1).executor": "Run",
+    "JUnit.ResultUnitTest (2).executor": "Run",
+    "JUnit.ResultUnitTest.executor": "Run",
+    "JUnit.ResultUnitTest.testBrickGame.executor": "Run",
+    "JUnit.ResultUnitTest.testFibonacciModified.executor": "Run",
+    "JUnit.SolutionKtUnitTest (1).executor": "Run",
+    "JUnit.SolutionKtUnitTest.executor": "Run",
+    "JUnit.SolutionUnitTest (2).executor": "Run",
+    "JUnit.SolutionUnitTest (3).executor": "Run",
+    "JUnit.SolutionUnitTest.executor": "Run",
+    "JUnit.SolutionUnitTest.testKnapsack01.executor": "Run",
+    "JUnit.SolutionUnitTest.testKnapsack01SelectedItems.executor": "Run",
+    "JUnit.SolutionUnitTest.testKnapsack01Test3.executor": "Run",
+    "JUnit.SolutionUnitTest.testKnapsack01With1DArray.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/test/kotlin/com/devstromo/easy",
+    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/kotlin/com/devstromo/easy/p283",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.devstromo.medium.p347" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\kotlin\com\devstromo\easy\p283" />
+      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p283" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\freestyle\src\main\java\com\devstromo\dp\knapsack\knapsackWithBounds" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\easy\p1952" />
       <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\kotlin\com\devstromo\easy\p1952" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\kotlin\com\devstromo\medium\p739" />
-      <recent name="D:\WORK\PROYECTOS\JAVA\coding-problems-java\leetcode\src\main\java\com\devstromo\medium\p739" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -139,26 +142,13 @@
       <recent name="com.devstromo.easy.p13" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SolutionUnitTest">
+  <component name="RunManager" selected="JUnit.SolutionKtUnitTest">
     <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.devstromo.dynamic_programming.fibonacci_modified.Solution" />
       <module name="hacker-rank" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.devstromo.dynamic_programming.fibonacci_modified.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.devstromo.dynamic_programming.brick_games.Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.devstromo.dynamic_programming.brick_games.Solution" />
-      <module name="hacker-rank" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.devstromo.dynamic_programming.brick_games.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -197,6 +187,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SolutionKtUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.devstromo.easy.p283.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.devstromo.easy.p283" />
+      <option name="MAIN_CLASS_NAME" value="com.devstromo.easy.p283.SolutionKtUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SolutionUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
       <extension name="coverage">
@@ -214,11 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SolutionKtUnitTest" />
         <item itemvalue="JUnit.SolutionUnitTest" />
         <item itemvalue="JUnit.ResultUnitTest (2)" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="JUnit.ResultUnitTest.testFibonacciModified" />
-        <item itemvalue="Application.com.devstromo.dynamic_programming.brick_games.Solution" />
       </list>
     </recent_temporary>
   </component>
@@ -427,7 +432,7 @@
       <workItem from="1706462491352" duration="1998000" />
       <workItem from="1706913905053" duration="1203000" />
       <workItem from="1710286550793" duration="1266000" />
-      <workItem from="1710551316858" duration="1339000" />
+      <workItem from="1710551316858" duration="2081000" />
     </task>
     <task id="LOCAL-00132" summary="Leetcode | Goal Parser Interpretation">
       <created>1690330365360</created>
@@ -772,7 +777,7 @@
       <option name="project" value="LOCAL" />
       <updated>1695342181211</updated>
     </task>
-    <option name="localTasksCounter" value="234" />
+    <option name="localTasksCounter" value="235" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -793,7 +798,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Leetcode | Coin Change | Kotlin" />
     <MESSAGE value="Leetcode | Add Binary | Kotlin" />
     <MESSAGE value="Leetcode | Add Binary | Java" />
     <MESSAGE value="Leetcode | Power of Two | Kotlin" />
@@ -818,7 +822,8 @@
     <MESSAGE value="Hackerrank | Bricks Game | Java" />
     <MESSAGE value="Hackerrank | Fibonacci Modified | Java" />
     <MESSAGE value="Code refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code refactor" />
+    <MESSAGE value="Leetcode | Move Zeroes | Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leetcode | Move Zeroes | Java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
