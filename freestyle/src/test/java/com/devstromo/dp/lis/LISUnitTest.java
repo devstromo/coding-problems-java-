@@ -54,4 +54,16 @@ class LISUnitTest {
         var arr1 = new int[]{6, 2, 4, 3, 7, 4, 5};
         assertEquals(4, lisP3(arr1));
     }
+
+    @Test
+    public void testLds1() {
+        var arr1 = new int[]{9, 4, 3, 2, 5, 4, 3, 2};
+        assertEquals(5, longestDecreasingSubsequence(arr1));
+    }
+
+    @Test
+    public void testLds2() {
+        var arr1 = new int[]{10, 22, 9, 33, 21, 50, 41, 60, 80};
+        assertEquals(2, longestDecreasingSubsequence(arr1));
+    }
 }

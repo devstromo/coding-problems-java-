@@ -99,4 +99,23 @@ class LIS {
         }
         return size;
     }
+
+    public static int longestDecreasingSubsequence(int[] nums) {
+        int n = nums.length;
+        int[] lds = new int[n];
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < n; i++) {
+            lds[i] = 1;
+        }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                if (nums[j] > nums[i] && lds[j] + 1 > lds[i]) {
+                    lds[i] = lds[j] + 1;
+                }
+            }
+            max = Math.max(max, lds[i]);
+        }
+
+        return max;
+    }
 }
