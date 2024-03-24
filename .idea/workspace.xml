@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/DESCRIPTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/DESCRIPTION.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/LIS.java" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/LIS.java" afterDir="false" />
@@ -67,47 +68,47 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Solution.executor": "Run",
-    "Application.com.devstromo.dynamic_programming.brick_games.Solution.executor": "Run",
-    "JUnit.LISUnitTest.executor": "Run",
-    "JUnit.ResultUnitTest (1).executor": "Run",
-    "JUnit.ResultUnitTest (2).executor": "Run",
-    "JUnit.ResultUnitTest.executor": "Run",
-    "JUnit.ResultUnitTest.testBrickGame.executor": "Run",
-    "JUnit.ResultUnitTest.testFibonacciModified.executor": "Run",
-    "JUnit.SolutionKtUnitTest (1).executor": "Run",
-    "JUnit.SolutionKtUnitTest.executor": "Run",
-    "JUnit.SolutionUnitTest (2).executor": "Run",
-    "JUnit.SolutionUnitTest (3).executor": "Run",
-    "JUnit.SolutionUnitTest.executor": "Run",
-    "JUnit.SolutionUnitTest.testKnapsack01.executor": "Run",
-    "JUnit.SolutionUnitTest.testKnapsack01SelectedItems.executor": "Run",
-    "JUnit.SolutionUnitTest.testKnapsack01Test3.executor": "Run",
-    "JUnit.SolutionUnitTest.testKnapsack01With1DArray.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/test/kotlin/com/devstromo/easy",
-    "last_opened_file_path": "D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/kotlin/com/devstromo/easy/p283",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Solution.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.devstromo.dynamic_programming.brick_games.Solution.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LISUnitTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ResultUnitTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ResultUnitTest (2).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ResultUnitTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ResultUnitTest.testBrickGame.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ResultUnitTest.testFibonacciModified.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SolutionKtUnitTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SolutionKtUnitTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SolutionUnitTest (2).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SolutionUnitTest (3).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SolutionUnitTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SolutionUnitTest.testKnapsack01.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SolutionUnitTest.testKnapsack01SelectedItems.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SolutionUnitTest.testKnapsack01Test3.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SolutionUnitTest.testKnapsack01With1DArray.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/test/kotlin/com/devstromo/easy&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/WORK/PROYECTOS/JAVA/coding-problems-java/leetcode/src/main/kotlin/com/devstromo/easy/p283&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.devstromo.medium.p347" />
@@ -230,8 +231,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.17" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.17" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.158" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.158" />
         <option value="jdk-17.0.10-corretto-17.0.10-5b172459f563-b10de040" />
       </set>
     </attachedChunks>
@@ -433,7 +434,8 @@
       <workItem from="1706913905053" duration="1203000" />
       <workItem from="1710286550793" duration="1266000" />
       <workItem from="1710551316858" duration="2952000" />
-      <workItem from="1710696039648" duration="1042000" />
+      <workItem from="1710696039648" duration="1157000" />
+      <workItem from="1711316867239" duration="1223000" />
     </task>
     <task id="LOCAL-00132" summary="Leetcode | Goal Parser Interpretation">
       <created>1690330365360</created>
@@ -778,7 +780,7 @@
       <option name="project" value="LOCAL" />
       <updated>1695342181211</updated>
     </task>
-    <option name="localTasksCounter" value="236" />
+    <option name="localTasksCounter" value="237" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -799,7 +801,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Leetcode | Add Binary | Java" />
     <MESSAGE value="Leetcode | Power of Two | Kotlin" />
     <MESSAGE value="Leetcode | Power of Two | Java" />
     <MESSAGE value="Leetcode | Happy Number | Kotlin" />
@@ -824,7 +825,8 @@
     <MESSAGE value="Code refactor" />
     <MESSAGE value="Leetcode | Move Zeroes | Java" />
     <MESSAGE value="Leetcode | Move Zeroes | Kotlin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leetcode | Move Zeroes | Kotlin" />
+    <MESSAGE value="Freestyle | Longest Decreasing Subsequence | Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Freestyle | Longest Decreasing Subsequence | Java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

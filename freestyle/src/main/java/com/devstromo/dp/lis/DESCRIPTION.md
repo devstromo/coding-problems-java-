@@ -84,3 +84,52 @@ Explanation: The longest strictly decreasing subsequence is `[9, 5, 4, 3, 2]`. I
 ## Approach
 
 The problem can be solved using a dynamic programming approach similar to the Longest Increasing Subsequence (LIS) problem. For each element in the array, you determine the length of the longest decreasing subsequence ending with that element. By comparing and updating these lengths throughout the array, you can find the overall longest strictly decreasing subsequence.
+
+# Longest Bitonic Subsequence Problem
+
+## Problem Statement
+
+Given an array of integers, your task is to find the length of the longest bitonic subsequence. A bitonic subsequence is a sequence which first increases and then decreases. A subsequence is defined as a sequence that can be derived from the array by deleting some or no elements without changing the order of the remaining elements.
+
+## Input
+
+- An array of `n` integers, `nums`, where (1 ≤ `n` ≤ 3000) and (-10^9 ≤ `nums[i]` ≤ 10^9) for 0 ≤ `i` < `n`.
+
+## Output
+
+- An integer representing the length of the longest bitonic subsequence in the array.
+
+## Examples
+
+### Example 1
+
+**Input:** `nums = [1, 11, 2, 10, 4, 5, 2, 1]`
+
+**Output:** `6`
+
+**Explanation:** The longest bitonic subsequence is `[1, 2, 10, 4, 2, 1]`. It first increases from 1 to 10, then decreases from 10 to 1. The length of this subsequence is 6.
+
+### Example 2
+
+**Input:** `nums = [12, 11, 40, 5, 3, 1]`
+
+**Output:** `5`
+
+**Explanation:** One of the longest bitonic subsequences is `[12, 11, 40, 5, 1]`. It first decreases from 12 to 11, then increases to 40, and finally decreases to 1. The length of this subsequence is 5.
+
+### Example 3
+
+**Input:** `nums = [10, 20, 30, 40]`
+
+**Output:** `4`
+
+**Explanation:** In this case, the longest bitonic subsequence can be the entire array `[10, 20, 30, 40]` as it is strictly increasing. A strictly increasing or decreasing sequence is considered bitonic for the purpose of this problem.
+
+## Approach
+
+The problem can be solved using dynamic programming by combining the concepts of Longest Increasing Subsequence (LIS) and Longest Decreasing Subsequence (LDS). For each element `nums[i]`, calculate:
+
+1. The length of the LIS ending at `nums[i]` from the left.
+2. The length of the LDS starting at `nums[i]` from the right.
+
+The length of the longest bitonic subsequence that includes `nums[i]` as the peak element is the sum of the LIS ending at `nums[i]` and the LDS starting at `nums[i]`, minus one (to not count `nums[i]` twice). The answer to the problem is the maximum length found for all `i`.
