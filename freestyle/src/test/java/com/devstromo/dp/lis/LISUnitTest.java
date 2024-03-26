@@ -84,4 +84,16 @@ class LISUnitTest {
         var arr1 = new int[]{10, 20, 30, 40};
         assertEquals(4, longestBitonicSubsequence(arr1));
     }
+
+    @Test
+    public void testLongestIncreaseSubsequenceWithUniqueDifferences() {
+        var arr1 = new int[]{1, 2, 4, 7, 11, 8, 12, 7, 6, 5};
+        assertEquals(4, longestIncreaseSubsequenceWithUniqueDifference(arr1));
+    }
+
+    @Test
+    public void testLongestIncreaseSubsequenceWithUniqueDifferences2() {
+        var arr1 = new int[]{5, 9, 4, 10, 5, 8, 9, 7};
+        assertEquals(3, longestIncreaseSubsequenceWithUniqueDifference(arr1));
+    }
 }

@@ -133,3 +133,39 @@ The problem can be solved using dynamic programming by combining the concepts of
 2. The length of the LDS starting at `nums[i]` from the right.
 
 The length of the longest bitonic subsequence that includes `nums[i]` as the peak element is the sum of the LIS ending at `nums[i]` and the LDS starting at `nums[i]`, minus one (to not count `nums[i]` twice). The answer to the problem is the maximum length found for all `i`.
+
+# Longest Increasing Subsequence with Unique Differences
+
+## Problem Statement
+
+Given an array of integers, your task is to find the length of the longest increasing subsequence (LIS) where no two adjacent elements in the subsequence have the same difference. A subsequence is a sequence that can be derived from the array by deleting some or no elements without changing the order of the remaining elements.
+
+## Input
+
+- An array of `n` integers, `nums`, where (1 ≤ `n` ≤ 3000) and (-10^9 ≤ `nums[i]` ≤ 10^9) for 0 ≤ `i` < `n`.
+
+## Output
+
+- An integer representing the length of the longest increasing subsequence where no two adjacent elements in the subsequence have the same difference.
+
+## Examples
+
+### Example 1
+
+**Input:** `nums = [1, 2, 4, 7, 11, 8, 12, 7, 6, 5]`
+
+**Output:** `4`
+
+**Explanation:** The longest increasing subsequence with unique differences is `[1, 4, 7, 11]`. The differences are `[3, 3, 4]`, and no two adjacent differences are the same.
+
+### Example 2
+
+**Input:** `nums = [5, 9, 4, 10, 5, 8, 9, 7]`
+
+**Output:** `3`
+
+**Explanation:** One possible longest increasing subsequence with unique differences is `[5, 9, 10]`. The differences here are `[4, 1]`, which are unique.
+
+## Approach
+
+This problem can be approached by modifying the traditional dynamic programming solution for the LIS problem. Along with maintaining the length of the LIS at each element, we need to ensure that the condition of unique differences between adjacent elements in the subsequence is satisfied. This might involve keeping track of the differences used at each step of the subsequence and ensuring that any new addition does not repeat the immediate previous difference.

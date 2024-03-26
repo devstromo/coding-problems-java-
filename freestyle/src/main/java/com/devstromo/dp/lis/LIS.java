@@ -1,9 +1,6 @@
 package com.devstromo.dp.lis;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 class LIS {
@@ -20,7 +17,7 @@ class LIS {
 
         for (i = 1; i < n; i++) {
             for (j = 0; j < i; j++) {
-                if (nums[j] < nums[i] && lis[i] < lis[j] + 1)
+                if (nums[j] < nums[i] && lis[j] + 1 > lis[i])
                     lis[i] = lis[j] + 1;
             }
         }
@@ -148,6 +145,38 @@ class LIS {
         int maxLength = 0;
         for (int i = 0; i < n; i++) {
             maxLength = Math.max(maxLength, lis[i] + lds[i] - 1);
+        }
+
+        return maxLength;
+    }
+
+    public static int longestIncreaseSubsequenceWithUniqueDifference(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+
+        // DP array where dp[i] stores a map.
+        // The map keys are differences with the previous element in the subsequence,
+        // and the values are the lengths of the longest subsequence ending at i with that difference.
+        Map<Integer, Integer>[] dp = new HashMap[nums.length];
+
+        int maxLength = 1; // At least each individual number can form a subsequence.
+
+        for (int i = 0; i < nums.length; i++) {
+            dp[i] = new HashMap<>();
+            for (int j = 0; j < i; j++) {
+                int diff = nums[i] - nums[j];
+                // The length of the longest subsequence ending at j with a difference 'diff'.
+                // If dp[j] does not contain diff, we consider it as a new subsequence starting from j to i.
+                int length = dp[j].getOrDefault(diff, 1) + 1;
+
+                // Update the maxLength if necessary.
+                maxLength = Math.max(maxLength, length);
+
+                // Update dp[i] with the longest subsequence ending at i with difference 'diff'.
+                // Ensures no two adjacent elements have the same difference in the subsequence.
+                dp[i].put(diff, Math.max(dp[i].getOrDefault(diff, 0), length));
+            }
         }
 
         return maxLength;

@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3046dd86-c663-4529-936d-74d842612ac4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/DESCRIPTION.md" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/DESCRIPTION.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/LIS.java" beforeDir="false" afterPath="$PROJECT_DIR$/freestyle/src/main/java/com/devstromo/dp/lis/LIS.java" afterDir="false" />
@@ -435,7 +434,8 @@
       <workItem from="1710286550793" duration="1266000" />
       <workItem from="1710551316858" duration="2952000" />
       <workItem from="1710696039648" duration="1157000" />
-      <workItem from="1711316867239" duration="1223000" />
+      <workItem from="1711316867239" duration="1340000" />
+      <workItem from="1711494946269" duration="2403000" />
     </task>
     <task id="LOCAL-00132" summary="Leetcode | Goal Parser Interpretation">
       <created>1690330365360</created>
@@ -780,7 +780,7 @@
       <option name="project" value="LOCAL" />
       <updated>1695342181211</updated>
     </task>
-    <option name="localTasksCounter" value="237" />
+    <option name="localTasksCounter" value="238" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -801,7 +801,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Leetcode | Power of Two | Kotlin" />
     <MESSAGE value="Leetcode | Power of Two | Java" />
     <MESSAGE value="Leetcode | Happy Number | Kotlin" />
     <MESSAGE value="Leetcode | Happy Number | Java" />
@@ -826,7 +825,8 @@
     <MESSAGE value="Leetcode | Move Zeroes | Java" />
     <MESSAGE value="Leetcode | Move Zeroes | Kotlin" />
     <MESSAGE value="Freestyle | Longest Decreasing Subsequence | Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Freestyle | Longest Decreasing Subsequence | Java" />
+    <MESSAGE value="Freestyle | Longest Bitonic Subsequence | Java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Freestyle | Longest Bitonic Subsequence | Java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
