@@ -37,5 +37,34 @@ class SolutionUnitTest {
         assertEquals(5, solution.maxRepeating("aaabaaaabaaabaaaabaaaabaaaabaaaaba", "aaaba"));
     }
 
+    @Test
+    void testMaxRepeatingBest() {
+        assertEquals(2, solution.maxRepeatingBest("ababc", "ab"));
+    }
+
+    @Test
+    void testMaxRepeatingBest2() {
+        assertEquals(1, solution.maxRepeatingBest("ababc", "ba"));
+    }
+
+    @Test
+    void testMaxRepeatingBest3() {
+        assertEquals(0, solution.maxRepeatingBest("ababc", "ac"));
+    }
+
+    @Test
+    void testMaxRepeatingBest4() {
+        assertEquals(1, solution.maxRepeatingBest("a", "a"));
+    }
+
+    @Test
+    void testMaxRepeatingBest5() {
+        assertEquals(0, solution.maxRepeatingBest("a", "c"));
+    }
+
+    @Test
+    void testMaxRepeatingBest6() {
+        assertEquals(5, solution.maxRepeatingBest("aaabaaaabaaabaaaabaaaabaaaabaaaaba", "aaaba"));
+    }
 
 }

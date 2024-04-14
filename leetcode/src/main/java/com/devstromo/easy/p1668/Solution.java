@@ -14,4 +14,15 @@ public class Solution {
         return count - 1;
     }
 
+    public int maxRepeatingBest(String sequence, String word) {
+        if (!sequence.contains(word)) return 0;
+        int repeating = 0;
+        String now=  word;
+        while (sequence.contains(now)) {
+            repeating++;
+            now+=word;
+        }
+        return repeating;
+    }
+
 }
