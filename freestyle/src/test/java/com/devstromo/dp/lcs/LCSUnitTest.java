@@ -12,6 +12,23 @@ class LCSUnitTest {
         var sequence1 = "ABCBDAB";
         var sequence2 = "BDCABC";
         assertEquals(4, lcs.lcs(sequence1, sequence2));
+        sequence1 = "XMJYAUZ";
+        sequence2 = "MZJAWXU";
+        assertEquals(4, lcs.lcs(sequence1, sequence2));
+    }
+
+    @Test
+    void testLCSBlankString() {
+        var sequence1 = "ABCBDAB";
+        var sequence2 = "";
+        assertEquals(0, lcs.lcs(sequence1, sequence2));
+    }
+
+    @Test
+    void testLCSBothBlankString() {
+        var sequence1 = "";
+        var sequence2 = "";
+        assertEquals(0, lcs.lcs(sequence1, sequence2));
     }
 
 }
