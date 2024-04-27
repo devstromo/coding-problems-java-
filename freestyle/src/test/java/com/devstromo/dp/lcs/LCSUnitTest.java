@@ -31,4 +31,28 @@ class LCSUnitTest {
         assertEquals(0, lcs.lcs(sequence1, sequence2));
     }
 
+    @Test
+    void testLCSString() {
+        var sequence1 = "ABCBDAB";
+        var sequence2 = "BDCABC";
+        assertEquals("BCAB", lcs.lcsString(sequence1, sequence2));
+        sequence1 = "XMJYAUZ";
+        sequence2 = "MZJAWXU";
+        assertEquals("MJAU", lcs.lcsString(sequence1, sequence2));
+    }
+
+    @Test
+    void testLCSStringBlankString() {
+        var sequence1 = "ABCBDAB";
+        var sequence2 = "";
+        assertEquals("", lcs.lcsString(sequence1, sequence2));
+    }
+
+    @Test
+    void testLCSStringBothBlankString() {
+        var sequence1 = "";
+        var sequence2 = "";
+        assertEquals("", lcs.lcsString(sequence1, sequence2));
+    }
+
 }
