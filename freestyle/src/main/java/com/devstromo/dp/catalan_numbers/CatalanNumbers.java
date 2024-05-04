@@ -30,6 +30,18 @@ public class CatalanNumbers {
      * Time: O(n)
      * Space: O(1)
      */
+    public int catalanUsingMathFormula(int n) {
+        int result = 1;
+        for (int i = 1; i <= n; i++) {
+            result = (result * (4 * i - 2)) / (i + 1);
+        }
+        return result;
+    }
+
+    /**
+     * Time: O(n)
+     * Space: O(1)
+     */
     private long withBinomialCoefficient(int n, int k) {
         var res = 1L;
         // Since C(n, k) = C(n, n-k)

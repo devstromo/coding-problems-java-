@@ -51,7 +51,7 @@ class CatalanNumbersUnitTest {
 
     @Test
     public void testCatalanNumberWithBinomialCoefficientZero() {
-        assertEquals(1, catalanNumbers.catalanNumber(0), "The 0th Catalan number should be 1");
+        assertEquals(1, catalanNumbers.catalanNumberWithBinomialCoefficient(0), "The 0th Catalan number should be 1");
     }
 
     @Test
@@ -89,4 +89,43 @@ class CatalanNumbersUnitTest {
         assertEquals(16796, catalanNumbers.catalanNumberWithBinomialCoefficient(10), "The 10th Catalan number should be 16796");
     }
 
+    @Test
+    public void testCatalanNumberWithMathFormulaZero() {
+        assertEquals(1, catalanNumbers.catalanUsingMathFormula(0), "The 0th Catalan number should be 1");
+    }
+
+    @Test
+    public void testCatalanNumberWithMathFormulaOne() {
+        assertEquals(1, catalanNumbers.catalanUsingMathFormula(1), "The 1st Catalan number should be 1");
+    }
+
+    @Test
+    public void testCatalanNumberWithMathFormulaTwo() {
+        assertEquals(2, catalanNumbers.catalanUsingMathFormula(2), "The 2nd Catalan number should be 2");
+    }
+
+    @Test
+    public void testCatalanNumberWithMathFormulaThree() {
+        assertEquals(5, catalanNumbers.catalanUsingMathFormula(3), "The 3rd Catalan number should be 5");
+    }
+
+    @Test
+    public void testCatalanNumberWithMathFormulaFour() {
+        assertEquals(14, catalanNumbers.catalanUsingMathFormula(4), "The 4th Catalan number should be 14");
+    }
+
+    @Test
+    public void testCatalanNumberWithMathFormulaFive() {
+        assertEquals(42, catalanNumbers.catalanUsingMathFormula(5), "The 5th Catalan number should be 42");
+    }
+
+    @Test
+    public void testCatalanNumberWithMathFormulaLarge() {
+        assertEquals(132, catalanNumbers.catalanUsingMathFormula(6), "The 6th Catalan number should be 132");
+    }
+
+    @Test
+    public void testCatalanNumberWithMathFormulaVeryLarge() {
+        assertEquals(16796, catalanNumbers.catalanUsingMathFormula(10), "The 10th Catalan number should be 16796");
+    }
 }
