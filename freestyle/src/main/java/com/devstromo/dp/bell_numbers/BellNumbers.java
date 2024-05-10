@@ -1,31 +1,34 @@
 package com.devstromo.dp.bell_numbers;
 
+/**
+ * The {@code BellNumbers} class provides a method to calculate Bell Numbers using
+ * a dynamic programming approach. Bell Numbers count the number of ways to partition
+ * a set that has exactly {@code n} elements, or equivalently, the number of distinct
+ * ways to partition a set of size {@code n}.
+ *
+ * <p>This implementation computes Bell Numbers by building a triangular array where
+ * the value of each cell in the array is calculated based on previously computed values,
+ * adhering to the recursive nature of Bell Numbers. The recursive relation used is:
+ * <blockquote>
+ * B(i, k) = k * B(i-1, k) + B(i-1, k-1)
+ * </blockquote>
+ * where {@code B(i, k)} represents the number of partitions of {@code i} items with
+ * exactly {@code k} sets.</p>
+ *
+ * <p>The method uses a two-dimensional array to hold intermediate results and iterates
+ * through the array to fill it according to the rules defined above. The final result,
+ * which is the Bell Number for {@code n}, is calculated by summing up the values in the
+ * last row of the array.</p>
+ */
 public class BellNumbers {
 
     /**
-     * The {@code BellNumbers} class provides a method to calculate Bell Numbers using
-     * a dynamic programming approach. Bell Numbers count the number of ways to partition
-     * a set that has exactly {@code n} elements, or equivalently, the number of distinct
-     * ways to partition a set of size {@code n}.
-     *
-     * <p>This implementation computes Bell Numbers by building a triangular array where
-     * the value of each cell in the array is calculated based on previously computed values,
-     * adhering to the recursive nature of Bell Numbers. The recursive relation used is:
-     * <blockquote>
-     * B(i, k) = k * B(i-1, k) + B(i-1, k-1)
-     * </blockquote>
-     * where {@code B(i, k)} represents the number of partitions of {@code i} items with
-     * exactly {@code k} sets.</p>
-     *
-     * <p>The method uses a two-dimensional array to hold intermediate results and iterates
-     * through the array to fill it according to the rules defined above. The final result,
-     * which is the Bell Number for {@code n}, is calculated by summing up the values in the
-     * last row of the array.</p>
+     * Time: O(N^2)
+     * Space: O(N^2)
      *
      * @param n the number of elements in the set for which the Bell Number is calculated.
      *          The value of {@code n} must be non-negative.
      * @return the Bell Number for the set of size {@code n}.
-     * @throws IllegalArgumentException if {@code n} is negative.
      */
     public int calculate(int n) {
         var s = new int[n + 1][n + 1];
@@ -49,5 +52,26 @@ public class BellNumbers {
             ans += s[n][i];
         }
         return ans;
+    }
+
+    /**
+     * Time: O(N^2)
+     * Space: O(N^2)
+     *
+     * @param n the number of elements in the set for which the Bell Number is calculated.
+     *          The value of {@code n} must be non-negative.
+     * @return the Bell Number for the set of size {@code n}.
+     */
+    public int calculateWithBellTriangle(int n) {
+        var bell = new int[n + 1][n + 1];
+        bell[0][0] = 1;
+        for (var i = 1; i <= n; i++) {
+            bell[i][0] = bell[i - 1][i - 1];
+            for (int j = 1; j <= i; j++) {
+                bell[i][j] = bell[i - 1][j - 1] + bell[i][j - 1];
+            }
+        }
+
+        return bell[n][0];
     }
 }

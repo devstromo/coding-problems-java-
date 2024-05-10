@@ -32,4 +32,29 @@ class BellNumbersUnitTest {
     public void testCalculateBellNumbersShouldReturnTen() {
         assertEquals(115975, bellNumbers.calculate(10));
     }
+
+    @Test
+    public void testCalculateBellNumbersWithBellTriangleShouldReturnZero() {
+        assertEquals(1, bellNumbers.calculateWithBellTriangle(0));
+    }
+
+    @Test
+    public void testCalculateBellNumbersWithBellTriangleShouldReturnOne() {
+        assertEquals(1, bellNumbers.calculateWithBellTriangle(1));
+    }
+
+    @Test
+    public void testCalculateBellNumbersWithBellTriangleShouldReturnFive() {
+        assertEquals(52, bellNumbers.calculateWithBellTriangle(5));
+    }
+
+    @Test
+    public void testCalculateBellNumbersWithBellTriangleShouldReturnLargerValue() {
+        assertEquals(203, bellNumbers.calculateWithBellTriangle(6));
+    }
+
+    @Test
+    public void testCalculateBellNumbersWithBellTriangleShouldReturnTen() {
+        assertEquals(115975, bellNumbers.calculateWithBellTriangle(10));
+    }
 }
