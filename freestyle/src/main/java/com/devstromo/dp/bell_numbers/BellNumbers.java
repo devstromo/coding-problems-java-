@@ -6,9 +6,7 @@ package com.devstromo.dp.bell_numbers;
  * a set that has exactly {@code n} elements, or equivalently, the number of distinct
  * ways to partition a set of size {@code n}.
  *
- * <p>This implementation computes Bell Numbers by building a triangular array where
- * the value of each cell in the array is calculated based on previously computed values,
- * adhering to the recursive nature of Bell Numbers. The recursive relation used is:
+ * <p>The recursive nature of Bell Numbers. The recursive relation is:
  * <blockquote>
  * B(i, k) = k * B(i-1, k) + B(i-1, k-1)
  * </blockquote>
@@ -73,5 +71,29 @@ public class BellNumbers {
         }
 
         return bell[n][0];
+    }
+
+    /**
+     * Time: O(N^2)
+     * Space: O(N)
+     *
+     * @param n the number of elements in the set for which the Bell Number is calculated.
+     *          The value of {@code n} must be non-negative.
+     * @return the Bell Number for the set of size {@code n}.
+     */
+    public int calculateWith1DArray(int n)
+    {
+        var dp = new int[n + 1];
+        dp[0] = 1;
+        for (var i = 1; i <= n; i++) {
+            var prev = dp[0];
+            dp[0] = dp[i - 1];
+            for (var j = 1; j <= i; j++) {
+                var temp = dp[j];
+                dp[j] = prev + dp[j - 1];
+                prev = temp;
+            }
+        }
+        return dp[0];
     }
 }
