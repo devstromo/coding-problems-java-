@@ -82,4 +82,9 @@ class BellNumbersUnitTest {
     public void testCalculateBellNumbersWith1DArrayShouldReturnTen() {
         assertEquals(115975, bellNumbers.calculateWith1DArray(10));
     }
+
+    @Test
+    public void testMultiplicativePartitionsReturnFive() {
+        assertEquals(5, bellNumbers.multiplicativePartitions(30));
+    }
 }

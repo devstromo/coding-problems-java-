@@ -20,6 +20,8 @@ package com.devstromo.dp.bell_numbers;
  */
 public class BellNumbers {
 
+    private static final int MOD = 1000000007;
+
     /**
      * Time: O(N^2)
      * Space: O(N^2)
@@ -81,8 +83,7 @@ public class BellNumbers {
      *          The value of {@code n} must be non-negative.
      * @return the Bell Number for the set of size {@code n}.
      */
-    public int calculateWith1DArray(int n)
-    {
+    public int calculateWith1DArray(int n) {
         var dp = new int[n + 1];
         dp[0] = 1;
         for (var i = 1; i <= n; i++) {
@@ -91,6 +92,65 @@ public class BellNumbers {
             for (var j = 1; j <= i; j++) {
                 var temp = dp[j];
                 dp[j] = prev + dp[j - 1];
+                prev = temp;
+            }
+        }
+        return dp[0];
+    }
+
+    /**
+     * Calculates the number of different multiplicative partitions of a given squarefree number {@code x}.
+     * A multiplicative partition of a number refers to the various ways the number can be expressed as
+     * a product of its factors. For a squarefree number, these factors are its prime factors. More information
+     * about squarefree numbers can be found on Wikipedia: {@link <a href="https://en.wikipedia.org/wiki/Square-free_integer">Square-free integer</a>}.
+     * <p>
+     * This method determines the number of unique prime factors of {@code x} and then computes the
+     * corresponding Bell number, which represents the number of different ways to partition a set
+     * of size equal to the number of unique prime factors. The Bell number calculation is handled
+     * by the {@code bellNumber} method.
+     *
+     * @param x the squarefree number for which to calculate the number of multiplicative partitions.
+     *          The value of {@code x} must be greater than 0.
+     * @return the number of multiplicative partitions of {@code x}, which is the Bell number of the
+     * count of its unique prime factors.
+     * @throws IllegalArgumentException if {@code x} is less than or equal to 0, since a squarefree
+     *                                  number must be positive.
+     */
+    public int multiplicativePartitions(int x) {
+        if (x <= 0) {
+            throw new IllegalArgumentException("The number must be greater than 0.");
+        }
+        int primeFactorCount = countUniquePrimeFactors(x);
+        return bellNumber(primeFactorCount);
+    }
+
+    private int countUniquePrimeFactors(int x) {
+        int count = 0;
+        for (int i = 2; i * i <= x; i++) {
+            if (x % i == 0) {
+                count++;
+                while (x % i == 0) {
+                    x /= i;
+                }
+            }
+        }
+        if (x > 1) {
+            count++;
+        }
+        return count;
+    }
+
+    private int bellNumber(int n) {
+        var dp = new int[n + 1];
+        dp[0] = 1;
+
+        for (int i = 1; i <= n; i++) {
+            int prev = dp[0];
+            dp[0] = dp[i - 1];
+
+            for (int j = 1; j <= i; j++) {
+                int temp = dp[j];
+                dp[j] = (prev + dp[j - 1]) % MOD;
                 prev = temp;
             }
         }
