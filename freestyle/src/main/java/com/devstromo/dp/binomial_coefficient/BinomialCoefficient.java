@@ -54,4 +54,28 @@ public class BinomialCoefficient {
         return C[n][k];
     }
 
+    /**
+     * Computes the binomial coefficient, C(n, k), also known as "n choose k",
+     * which represents the number of ways to choose k elements from a set of n elements.
+     * This implementation uses dynamic programming with a 1D array to store intermediate results,
+     * optimizing space usage compared to a 2D matrix.
+     *
+     * @param n the number of elements in the set
+     * @param k the number of elements to choose
+     * @return the binomial coefficient C(n, k)
+     * @throws IllegalArgumentException if n or k is negative
+     * <p>
+     * Time Complexity: O(n * k) - This is because we iterate through n and update k elements in the array.
+     * Space Complexity: O(k) - This is due to the storage requirements of the 1D array.
+     */
+    public int binomialCoefficientWith1dArray(int n, int k) {
+        var C = new int[k + 1];
+        C[0] = 1;
+        for (int i = 1; i <= n; i++) {
+            for (int j = Math.min(i, k); j > 0; j--)
+                C[j] = C[j] + C[j - 1];
+        }
+        return C[k];
+    }
+
 }
