@@ -15,5 +15,13 @@ class BinomialCoefficientUnitTest {
         assertEquals(10, coefficient.binomialCoefficient(5, 2));
     }
 
+    @Test
+    public void testBinomialCoefficientWith2DArray() {
+        assertEquals(1, coefficient.binomialCoefficientWith2dMatrix(4, 0));
+        assertEquals(1, coefficient.binomialCoefficientWith2dMatrix(4, 4));
+        assertEquals(6, coefficient.binomialCoefficientWith2dMatrix(4, 2));
+        assertEquals(10, coefficient.binomialCoefficientWith2dMatrix(5, 2));
+    }
+
 
 }
