@@ -22,8 +22,28 @@ public class RodCutting {
         return memo[length];
     }
 
-    private long rodCuttingMemo(int length, long[] prices, long[] memo) {
+    public long tabular(int n, long[] prices) {
+        long[] dp = new long[n];
+        for (int length = 1; length <= n; length++) {
+            long maxProfit = 0;
+            for (int i = 1; i <= length; i++) {
+                if (i <= prices.length) {
+                    long profit = prices[i - 1];
+                    if (length - i > 0) {
+                        profit += dp[length - i - 1];
+                    }
 
+                    if (profit > maxProfit) {
+                        maxProfit = profit;
+                    }
+                }
+            }
+            dp[length - 1] = maxProfit;
+        }
+        return dp[n - 1];
+    }
+
+    private long rodCuttingMemo(int length, long[] prices, long[] memo) {
         if (memo[length] != -1) {
             for (int i = 1; i <= length; i++) {
                 long tmp = prices[i - 1] + rodCuttingMemo(length - i, prices, memo);
