@@ -1,5 +1,8 @@
 package com.devstromo.dp.rod_cutting;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class RodCutting {
     public long recursive(long length, long[] prices) {
         if (length == 0) {
@@ -32,7 +35,6 @@ public class RodCutting {
                     if (length - i > 0) {
                         profit += dp[length - i - 1];
                     }
-
                     if (profit > maxProfit) {
                         maxProfit = profit;
                     }
@@ -41,6 +43,40 @@ public class RodCutting {
             dp[length - 1] = maxProfit;
         }
         return dp[n - 1];
+    }
+
+    public Set<Integer> cuts(int n, long[] prices) {
+        if (n == 0) return new HashSet<>();  // If the rod length is 0, return an empty set of cuts.
+
+        long[] dp = new long[n];
+        int[] cuts = new int[n];
+
+        for (int length = 1; length <= n; length++) {
+            long maxProfit = 0;
+            int bestCut = 0;
+            for (int i = 1; i <= length; i++) {
+                if (i <= prices.length) {
+                    long profit = prices[i - 1];
+                    if (length - i > 0) {
+                        profit += dp[length - i - 1];
+                    }
+                    if (profit > maxProfit) {
+                        maxProfit = profit;
+                        bestCut = i;
+                    }
+                }
+            }
+            dp[length - 1] = maxProfit;
+            cuts[length - 1] = bestCut;
+        }
+
+        var answerCuts = new HashSet<Integer>();
+        while (n > 0) {
+            int cut = cuts[n - 1];
+            answerCuts.add(cut);
+            n -= cut;  // Reduce n by the length of the last cut
+        }
+        return answerCuts;
     }
 
     private long rodCuttingMemo(int length, long[] prices, long[] memo) {
