@@ -46,8 +46,7 @@ public class RodCutting {
     }
 
     public Set<Integer> cuts(int n, long[] prices) {
-        if (n == 0) return new HashSet<>();  // If the rod length is 0, return an empty set of cuts.
-
+        if (n == 0) return new HashSet<>();
         long[] dp = new long[n];
         int[] cuts = new int[n];
 
@@ -74,7 +73,7 @@ public class RodCutting {
         while (n > 0) {
             int cut = cuts[n - 1];
             answerCuts.add(cut);
-            n -= cut;  // Reduce n by the length of the last cut
+            n -= cut;
         }
         return answerCuts;
     }
