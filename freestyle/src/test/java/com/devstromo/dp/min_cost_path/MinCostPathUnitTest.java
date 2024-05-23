@@ -27,4 +27,24 @@ class MinCostPathUnitTest {
         assertEquals(8, minCostPath.dp2D(costs));
     }
 
+    @Test
+    public void testMinCostPathMemoized() {
+        var costs = new int[][]{
+                {1, 2, 3},
+                {4, 8, 2},
+                {1, 5, 3}
+        };
+        assertEquals(8, minCostPath.memoized(costs));
+    }
+
+    @Test
+    public void testMinCostPathSpaceOptimized() {
+        var costs = new int[][]{
+                {1, 2, 3},
+                {4, 8, 2},
+                {1, 5, 3}
+        };
+        assertEquals(8, minCostPath.spaceOptimized(costs));
+    }
+
 }

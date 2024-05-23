@@ -1,5 +1,7 @@
 package com.devstromo.dp.min_cost_path;
 
+import java.util.Arrays;
+
 /**
  * The {@code MinCostPath} class provides methods to calculate the minimum cost path
  * in a grid from the top-left corner to the bottom-right corner. Each cell in the grid
@@ -25,6 +27,26 @@ public class MinCostPath {
     }
 
     /**
+     * Calculates the minimum cost path in a grid using a memoized approach to optimize recursion.
+     *
+     * @param costs a 2D array where {@code costs[i][j]} represents the cost to traverse cell (i, j)
+     * @return the minimum cost to reach the bottom-right corner from the top-left corner
+     * @throws IllegalArgumentException if the input array is null or empty
+     * <p>
+     * Time Complexity: O(m*n), where m is the number of rows and n is the number of columns.
+     * Space Complexity: O(m*n) for the memoization table and recursion stack.
+     */
+    public int memoized(int[][] costs) {
+        if (costs == null || costs.length == 0 || costs[0].length == 0) {
+            throw new IllegalArgumentException("Invalid input: costs array is null or empty.");
+        }
+        int[][] memo = new int[costs.length][costs[0].length];
+        for (int[] row : memo)
+            Arrays.fill(row, -1);
+        return minCostMemoized(costs, costs.length - 1, costs[0].length - 1, memo);
+    }
+
+    /**
      * Calculates the minimum cost path in a grid using a dynamic programming approach.
      *
      * @param costs a 2D array where {@code costs[i][j]} represents the cost to traverse cell (i, j)
@@ -39,6 +61,47 @@ public class MinCostPath {
             throw new IllegalArgumentException("Invalid input: costs array is null or empty.");
         }
         return minCostDP(costs, costs.length - 1, costs[0].length - 1);
+    }
+
+    /**
+     * Calculates the minimum cost path in a grid using a space-optimized dynamic programming approach.
+     *
+     * @param cost a 2D array where {@code cost[i][j]} represents the cost to traverse cell (i, j)
+     * @return the minimum cost to reach the bottom-right corner from the top-left corner
+     * @throws IllegalArgumentException if the input array is null or empty
+     * <p>
+     * Time Complexity: O(m*n), where m is the number of rows and n is the number of columns.
+     * Space Complexity: O(1) since the input array is modified in place.
+     */
+    public int spaceOptimized(int[][] cost) {
+        if (cost == null || cost.length == 0 || cost[0].length == 0) {
+            throw new IllegalArgumentException("Invalid input: cost array is null or empty.");
+        }
+        return spaceOptimized(cost, cost.length, cost[0].length);
+    }
+
+    /**
+     * A helper method to calculate the minimum cost path using a space-optimized dynamic programming approach.
+     *
+     * @param cost a 2D array where {@code cost[i][j]} represents the cost to traverse cell (i, j)
+     * @param m the number of rows in the grid
+     * @param n the number of columns in the grid
+     * @return the minimum cost to reach the bottom-right corner from the top-left corner
+     */
+    private int spaceOptimized(int[][] cost, int m, int n) {
+        for (int i = 1; i < m; i++) {
+            cost[i][0] += cost[i - 1][0];
+        }
+        for (int j = 1; j < n; j++) {
+            cost[0][j] += cost[0][j - 1];
+        }
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
+                cost[i][j] += Math.min(cost[i - 1][j - 1], Math.min(cost[i - 1][j], cost[i][j - 1]));
+            }
+        }
+
+        return cost[m - 1][n - 1];
     }
 
     /**
@@ -92,7 +155,34 @@ public class MinCostPath {
         return min(min(minCost(costs, m - 1, n - 1), minCost(costs, m - 1, n)), minCost(costs, m, n - 1)) + costs[m][n];
     }
 
+    /**
+     * A helper method to calculate the minimum cost path using memoization to optimize recursion.
+     *
+     * @param cost a 2D array where {@code cost[i][j]} represents the cost to traverse cell (i, j)
+     * @param m    the row index of the destination cell
+     * @param n    the column index of the destination cell
+     * @param memo a 2D array for memoization to store the minimum costs of subproblems
+     * @return the minimum cost to reach cell (m, n) from the top-left corner
+     */
+    private int minCostMemoized(int[][] cost, int m, int n, int[][] memo) {
+        if (n < 0 || m < 0)
+            return Integer.MAX_VALUE;
+        else if (m == 0 && n == 0)
+            return cost[m][n];
+        if (memo[m][n] != -1)
+            return memo[m][n];
+        memo[m][n] = cost[m][n]
+                + min(minCostMemoized(cost, m - 1, n - 1, memo),
+                minCostMemoized(cost, m - 1, n, memo),
+                minCostMemoized(cost, m, n - 1, memo));
+        return memo[m][n];
+    }
+
     private int min(int x, int y) {
         return Math.min(x, y);
+    }
+
+    private int min(int x, int y, int z) {
+        return Math.min(Math.min(x, y), z);
     }
 }
