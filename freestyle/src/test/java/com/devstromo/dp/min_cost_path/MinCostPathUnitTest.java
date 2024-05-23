@@ -1,0 +1,30 @@
+package com.devstromo.dp.min_cost_path;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class MinCostPathUnitTest {
+    private final MinCostPath minCostPath = new MinCostPath();
+
+    @Test
+    public void testMinCostPathRecursive() {
+        var costs = new int[][]{
+                {1, 2, 3},
+                {4, 8, 2},
+                {1, 5, 3}
+        };
+        assertEquals(8, minCostPath.recursive(costs));
+    }
+
+    @Test
+    public void testMinCostPathDp2d() {
+        var costs = new int[][]{
+                {1, 2, 3},
+                {4, 8, 2},
+                {1, 5, 3}
+        };
+        assertEquals(8, minCostPath.dp2D(costs));
+    }
+
+}
