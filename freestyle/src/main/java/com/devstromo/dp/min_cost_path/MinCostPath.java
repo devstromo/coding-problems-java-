@@ -1,6 +1,8 @@
 package com.devstromo.dp.min_cost_path;
 
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.PriorityQueue;
 
 /**
  * The {@code MinCostPath} class provides methods to calculate the minimum cost path
@@ -8,6 +10,10 @@ import java.util.Arrays;
  * has an associated cost, and the goal is to find the path that minimizes the total cost.
  */
 public class MinCostPath {
+
+    /* Possible moves in 8 directions */
+    private static final int[] dx = {1, -1, 0, 0, 1, 1, -1, -1};
+    private static final int[] dy = {0, 0, 1, -1, 1, -1, 1, -1};
 
     /**
      * Calculates the minimum cost path in a grid using a recursive approach.
@@ -81,11 +87,70 @@ public class MinCostPath {
     }
 
     /**
+     * Calculates the minimum cost path from the top-left corner to the bottom-right corner
+     * of a cost matrix using Dijkstra's algorithm. This method explores paths in a grid
+     * where movement can be in 8 possible directions.
+     *
+     * @param costs The 2D array representing the cost of entering each cell in the grid.
+     * @return The minimum cost to reach the bottom-right corner from the top-left corner.
+     * <p>
+     * Time Complexity: O(V log V) where V is the number of vertices in the graph. In terms of
+     * the grid, V = rows * cols. This complexity arises because in the worst case, every vertex
+     * (cell in the grid) is processed in the priority queue. Inserting and removing elements
+     * in a priority queue has a logarithmic time complexity and each vertex may be visited up
+     * to 8 times due to 8 possible movements from each cell.
+     * <p>
+     * Space Complexity: O(V) where V = rows * cols, needed for maintaining the priority queue,
+     * the 'dp' array for storing the minimum path costs, and the 'visited' array to keep track
+     * of visited cells.
+     */
+    public int minCostPathDijkstra(int[][] costs) {
+        int rows = costs.length;
+        int cols = costs[0].length;
+
+        var dp = new int[rows][cols]; // To store the accumulated cost of the path
+        var visited = new boolean[rows][cols]; // To record if a cell has been visited
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                dp[i][j] = Integer.MAX_VALUE;
+                visited[i][j] = false;
+            }
+        }
+
+        var pq = new PriorityQueue<Position>(Comparator.comparingInt(a -> a.cost));
+        dp[0][0] = costs[0][0];
+        pq.add(new Position(0, 0, dp[0][0]));
+
+        while (!pq.isEmpty()) {
+            Position cell = pq.poll();
+            int x = cell.x;
+            int y = cell.y;
+
+            if (visited[x][y]) continue;
+            visited[x][y] = true;
+
+            for (var i = 0; i < 8; i++) {
+                int nextX = x + dx[i];
+                int nextY = y + dy[i];
+                if (isValid(nextX, nextY, rows, cols) && !visited[nextX][nextY]) {
+                    if (dp[nextX][nextY] > dp[x][y] + costs[nextX][nextY]) {
+                        dp[nextX][nextY] = dp[x][y] + costs[nextX][nextY];
+                        pq.add(new Position(nextX, nextY, dp[nextX][nextY]));
+                    }
+                }
+            }
+        }
+
+        return dp[costs.length - 1][ costs[0].length - 1];
+    }
+
+    /**
      * A helper method to calculate the minimum cost path using a space-optimized dynamic programming approach.
      *
      * @param cost a 2D array where {@code cost[i][j]} represents the cost to traverse cell (i, j)
-     * @param m the number of rows in the grid
-     * @param n the number of columns in the grid
+     * @param m    the number of rows in the grid
+     * @param n    the number of columns in the grid
      * @return the minimum cost to reach the bottom-right corner from the top-left corner
      */
     private int spaceOptimized(int[][] cost, int m, int n) {
@@ -185,4 +250,14 @@ public class MinCostPath {
     private int min(int x, int y, int z) {
         return Math.min(Math.min(x, y), z);
     }
+
+    private boolean isValid(int row, int col, int m, int n) {
+        return row >= 0 && row < m && col >= 0 && col < n;
+    }
+
+    record Position(
+            int x,
+            int y,
+            int cost
+    ) { }
 }
