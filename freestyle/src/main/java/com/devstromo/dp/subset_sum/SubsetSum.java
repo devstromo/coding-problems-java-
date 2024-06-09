@@ -6,8 +6,28 @@ public class SubsetSum {
         return isSubsetSumRecursive(numbers, numbers.length, sum);
     }
 
-    public boolean memoization(int[] numbers, int sum) {
+    public boolean memoizationRecursive(int[] numbers, int sum) {
         return isSubsetSumTabular(numbers, numbers.length, sum) != 0;
+    }
+
+    public boolean memoization(int[] numbers, int sum) {
+        var n = numbers.length;
+        var dp = new boolean[sum + 1][n + 1];
+        for (int i = 0; i <= n; i++) {
+            dp[0][i] = true;
+        }
+
+        for (int i = 1; i <= sum; i++) {
+            dp[i][0] = false;
+        }
+        for (int i = 1; i <= sum; i++) {
+            for (int j = 1; j <= n; j++) {
+                dp[i][j] = dp[i][j - 1];
+                if (i >= numbers[j - 1])
+                    dp[i][j] = dp[i][j] || dp[i - numbers[j - 1]][j - 1];
+            }
+        }
+        return dp[sum][n];
     }
 
     private boolean isSubsetSumRecursive(int[] numbers, int n, int sum) {
