@@ -12,6 +12,19 @@ class SubsetSumUnitTest {
         var nums = new int[]{3, 34, 4, 12, 5, 2};
         assertTrue(subsetSum.recursive(nums, 9));
         assertFalse(subsetSum.recursive(nums, 30));
+
+        var largeNums = new int[]{1, 3, 9, 2, 5, 7, 10, 13, 6, 8, 11, 4};
+        assertFalse(subsetSum.recursive(largeNums, 100));
+    }
+
+    @Test
+    public void testSubsetSumTabularMemoization() {
+        var nums = new int[]{3, 34, 4, 12, 5, 2};
+        assertTrue(subsetSum.memoization(nums, 9));
+        assertFalse(subsetSum.memoization(nums, 30));
+
+        var largeNums = new int[]{1, 3, 9, 2, 5, 7, 10, 13, 6, 8, 11, 4};
+        assertFalse(subsetSum.memoization(largeNums, 100));
     }
 
 }
