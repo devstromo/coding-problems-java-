@@ -47,4 +47,14 @@ class SubsetSumUnitTest {
         assertFalse(subsetSum.tabular1D(largeNums, 100));
     }
 
+    @Test
+    public void testSubsetSumTabular2DOptimized() {
+        var nums = new int[]{3, 34, 4, 12, 5, 2};
+        assertTrue(subsetSum.tabular2DOptimized(nums, 9));
+        assertFalse(subsetSum.tabular2DOptimized(nums, 30));
+
+        var largeNums = new int[]{1, 3, 9, 2, 5, 7, 10, 13, 6, 8, 11, 4};
+        assertFalse(subsetSum.tabular2DOptimized(largeNums, 100));
+    }
+
 }

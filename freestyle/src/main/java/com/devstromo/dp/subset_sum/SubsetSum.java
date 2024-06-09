@@ -51,6 +51,31 @@ public class SubsetSum {
         return dp[sum];
     }
 
+    public boolean tabular2DOptimized(int[] numbers, int sum) {
+        var n = numbers.length;
+        // set only two values
+        var dp = new boolean[2][sum + 1];
+
+        for (int i = 0; i <= n; i++) {
+            for (int j = 0; j <= sum; j++) {
+                if (j == 0) {
+                    dp[i % 2][j] = true;
+                }
+                else if (i == 0) {
+                    dp[i % 2][j] = false;
+                }
+                else if (numbers[i - 1] <= j) {
+                    dp[i % 2][j] = dp[(i + 1) % 2]
+                            [j - numbers[i - 1]] || dp[(i + 1) % 2][j];
+                }
+                else {
+                    dp[i % 2][j] = dp[(i + 1) % 2][j];
+                }
+            }
+        }
+        return dp[n % 2][sum];
+    }
+
     private boolean isSubsetSumRecursive(int[] numbers, int n, int sum) {
         if (sum == 0)
             return true;
