@@ -28,13 +28,23 @@ class SubsetSumUnitTest {
     }
 
     @Test
-    public void testSubsetSumTabularMemoization() {
+    public void testSubsetSumTabular2D() {
         var nums = new int[]{3, 34, 4, 12, 5, 2};
-        assertTrue(subsetSum.memoization(nums, 9));
-        assertFalse(subsetSum.memoization(nums, 30));
+        assertTrue(subsetSum.tabular2D(nums, 9));
+        assertFalse(subsetSum.tabular2D(nums, 30));
 
         var largeNums = new int[]{1, 3, 9, 2, 5, 7, 10, 13, 6, 8, 11, 4};
-        assertFalse(subsetSum.memoization(largeNums, 100));
+        assertFalse(subsetSum.tabular2D(largeNums, 100));
+    }
+
+    @Test
+    public void testSubsetSumTabular1D() {
+        var nums = new int[]{3, 34, 4, 12, 5, 2};
+        assertTrue(subsetSum.tabular1D(nums, 9));
+        assertFalse(subsetSum.tabular1D(nums, 30));
+
+        var largeNums = new int[]{1, 3, 9, 2, 5, 7, 10, 13, 6, 8, 11, 4};
+        assertFalse(subsetSum.tabular1D(largeNums, 100));
     }
 
 }

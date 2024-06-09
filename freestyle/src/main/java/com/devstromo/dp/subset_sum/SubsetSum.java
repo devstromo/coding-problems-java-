@@ -1,5 +1,7 @@
 package com.devstromo.dp.subset_sum;
 
+import java.util.Arrays;
+
 public class SubsetSum {
 
     public boolean recursive(int[] numbers, int sum) {
@@ -10,7 +12,7 @@ public class SubsetSum {
         return isSubsetSumTabular(numbers, numbers.length, sum) != 0;
     }
 
-    public boolean memoization(int[] numbers, int sum) {
+    public boolean tabular2D(int[] numbers, int sum) {
         var n = numbers.length;
         var dp = new boolean[sum + 1][n + 1];
         for (int i = 0; i <= n; i++) {
@@ -28,6 +30,25 @@ public class SubsetSum {
             }
         }
         return dp[sum][n];
+    }
+
+    public boolean tabular1D(int[] numbers, int sum) {
+        var n = numbers.length;
+        var dp = new boolean[sum + 1];
+        dp[0] = true;
+
+        var current = new boolean[sum + 1];
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= sum; j++) {
+                if (j < numbers[i - 1])
+                    current[j] = dp[j];
+                if (j >= numbers[i - 1])
+                    current[j] = dp[j] || dp[j - numbers[i - 1]];
+            }
+            dp = Arrays.copyOf(current, current.length);
+        }
+
+        return dp[sum];
     }
 
     private boolean isSubsetSumRecursive(int[] numbers, int n, int sum) {
