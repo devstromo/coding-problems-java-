@@ -4,14 +4,47 @@ import java.util.Arrays;
 
 public class SubsetSum {
 
+    /**
+     * Determines if there is a subset of the given set of integers that sums up to the specified target sum.
+     * This method uses a simple recursive approach.
+     *
+     * @param numbers the array of integers
+     * @param sum     the target sum
+     * @return {@code true} if there exists a subset of {@code numbers} that sums up to {@code sum}, {@code false} otherwise
+     */
     public boolean recursive(int[] numbers, int sum) {
         return isSubsetSumRecursive(numbers, numbers.length, sum);
     }
 
+    /**
+     * Determines if there is a subset of the given set of integers that sums up to the specified target sum.
+     * This method uses a recursive approach with memoization.
+     *
+     * @param numbers the array of integers
+     * @param sum     the target sum
+     * @return {@code true} if there exists a subset of {@code numbers} that sums up to {@code sum}, {@code false} otherwise
+     */
     public boolean memoizationRecursive(int[] numbers, int sum) {
         return isSubsetSumTabular(numbers, numbers.length, sum) != 0;
     }
 
+    /**
+     * Determines if there is a subset of the given set of integers that sums up to the specified target sum.
+     * This method uses a 2D tabular dynamic programming approach.
+     *
+     * @param numbers the array of integers
+     * @param sum     the target sum
+     * @return {@code true} if there exists a subset of {@code numbers} that sums up to {@code sum}, {@code false} otherwise
+     *
+     * <p> The method initializes a 2D boolean array {@code dp} where {@code dp[i][j]} indicates whether a subset
+     * of the first {@code j} elements in the array can sum up to {@code i}. The solution builds up the {@code dp} table
+     * using the following logic:
+     * <ul>
+     *     <li>For sum 0, the result is always {@code true} since the empty subset always sums to 0.</li>
+     *     <li>For 0 elements, any positive sum is impossible, thus {@code false}.</li>
+     *     <li>For each element, the table is updated by including or excluding the element.</li>
+     * </ul>
+     */
     public boolean tabular2D(int[] numbers, int sum) {
         var n = numbers.length;
         var dp = new boolean[sum + 1][n + 1];
@@ -32,6 +65,21 @@ public class SubsetSum {
         return dp[sum][n];
     }
 
+    /**
+     * Determines if there is a subset of the given set of integers that sums up to the specified target sum.
+     * This method uses a 1D tabular dynamic programming approach to optimize space complexity.
+     *
+     * @param numbers the array of integers
+     * @param sum     the target sum
+     * @return {@code true} if there exists a subset of {@code numbers} that sums up to {@code sum}, {@code false} otherwise
+     *
+     * <p> The method initializes a 1D boolean array {@code dp} where {@code dp[j]} indicates whether a subset
+     * can sum up to {@code j}. The solution updates the {@code dp} array iteratively:
+     * <ul>
+     *     <li>For sum 0, the result is always {@code true} since the empty subset always sums to 0.</li>
+     *     <li>For each element, the array is updated to reflect whether the current element can contribute to forming the required sums.</li>
+     * </ul>
+     */
     public boolean tabular1D(int[] numbers, int sum) {
         var n = numbers.length;
         var dp = new boolean[sum + 1];
@@ -51,6 +99,29 @@ public class SubsetSum {
         return dp[sum];
     }
 
+    /**
+     * Determines if there is a subset of the given set of integers that sums up to the specified target sum.
+     * This method uses an optimized 2D tabular dynamic programming approach to reduce space complexity.
+     *
+     * @param numbers the array of integers
+     * @param sum     the target sum
+     * @return {@code true} if there exists a subset of {@code numbers} that sums up to {@code sum}, {@code false} otherwise
+     *
+     * <p> The method initializes a 2D boolean array with only two rows (to save space) where {@code dp[i % 2][j]} indicates
+     * whether a subset of the first {@code i} elements can sum up to {@code j}. The solution updates the {@code dp} table
+     * iteratively using a rolling array technique:
+     * <ul>
+     *     <li>For sum 0, the result is always {@code true} since the empty subset always sums to 0.</li>
+     *     <li>For 0 elements, any positive sum is impossible, thus {@code false}.</li>
+     *     <li>For each element, the table is updated to reflect whether the current element can contribute to forming the required sums.</li>
+     * </ul>
+     *
+     * <p> The value of {@code dp[i][j]} will be:
+     * <ul>
+     *     <li>{@code true} if there is a subset of {@code numbers[0..i-1]} with sum equal to {@code j}.</li>
+     *     <li>{@code false} otherwise.</li>
+     * </ul>
+     */
     public boolean tabular2DOptimized(int[] numbers, int sum) {
         var n = numbers.length;
         // set only two values
@@ -73,6 +144,21 @@ public class SubsetSum {
         return dp[n % 2][sum];
     }
 
+    /**
+     * Determines if there is a subset of the given set of integers that sums up to the specified target sum.
+     * This method uses an optimized 1D tabular dynamic programming approach to minimize space complexity.
+     *
+     * @param numbers the array of integers
+     * @param sum     the target sum
+     * @return {@code true} if there exists a subset of {@code numbers} that sums up to {@code sum}, {@code false} otherwise
+     *
+     * <p> The method initializes a 1D integer array {@code dp} where {@code dp[j]} indicates whether a subset
+     * can sum up to {@code j}. The solution updates the {@code dp} array iteratively:
+     * <ul>
+     *     <li>For sum 0, the result is always {@code true} (represented by 1) since the empty subset always sums to 0.</li>
+     *     <li>For each element, the array is updated in reverse order to avoid overwriting values that are needed for subsequent calculations.</li>
+     * </ul>
+     */
     public boolean tabular1DOptimized(int[] numbers, int sum) {
         var n = numbers.length;
         var dp = new int[sum + 1];
@@ -87,6 +173,23 @@ public class SubsetSum {
         return dp[sum] == 1;
     }
 
+    /**
+     * Helper method to determine if there is a subset of the given set of integers that sums up to the specified target sum
+     * using a recursive approach.
+     *
+     * @param numbers the array of integers
+     * @param n       the current number of elements to consider from the array
+     * @param sum     the target sum
+     * @return {@code true} if there exists a subset of {@code numbers} that sums up to {@code sum}, {@code false} otherwise
+     *
+     * <p> This method checks:
+     * <ul>
+     *     <li>If the sum is 0, return {@code true} (base case).</li>
+     *     <li>If no elements are left and the sum is not 0, return {@code false} (base case).</li>
+     *     <li>If the last element is greater than the sum, ignore it and proceed with the remaining elements.</li>
+     *     <li>Otherwise, check if the sum can be obtained by either including or excluding the last element.</li>
+     * </ul>
+     */
     private boolean isSubsetSumRecursive(int[] numbers, int n, int sum) {
         if (sum == 0)
             return true;
@@ -99,6 +202,15 @@ public class SubsetSum {
                 || isSubsetSumRecursive(numbers, n - 1, sum - numbers[n - 1]);
     }
 
+    /**
+     * Initializes a memoization table and calls the recursive helper method to determine if there is a subset
+     * of the given set of integers that sums up to the specified target sum.
+     *
+     * @param numbers the array of integers
+     * @param n       the number of elements in the array
+     * @param sum     the target sum
+     * @return an integer representing {@code 1} if a subset sum equals to {@code sum} exists, otherwise {@code 0}
+     */
     private int isSubsetSumTabular(int[] numbers, int n, int sum) {
         int[][] memo = new int[n + 1][sum + 1];
         for (int i = 0; i <= n; i++) {
