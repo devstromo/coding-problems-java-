@@ -15,7 +15,6 @@ public class ComputeNCrp {
         if (r > n - r) {
             r = n - r;
         }
-
         var C = new int[r + 1];
         C[0] = 1;
         for (int i = 1; i <= n; i++) {
@@ -38,5 +37,75 @@ public class ComputeNCrp {
             }
         }
         return dp[n][r];
+    }
+
+    /**
+     * Computes nCr % p using Lucas' Theorem.
+     *
+     * @param n the total number of items
+     * @param r the number of items to choose
+     * @param p the prime number for modulo operation
+     * @return the value of nCr % p
+     */
+    public int solutionUsingLucasTheorem(int n, int r, int p) {
+        if (r == 0) {
+            return 1;
+        }
+
+        // Compute n! % p
+        int[] fact = new int[p];
+        fact[0] = 1;
+        for (int i = 1; i < p; i++) {
+            fact[i] = fact[i - 1] * i % p;
+        }
+
+        // Compute nCr % p using Lucas' Theorem
+        int result = 1;
+        while (n > 0 && r > 0) {
+            int ni = n % p;
+            int ri = r % p;
+
+            if (ri > ni) {
+                return 0;
+            }
+
+            result = result * fact[ni] % p * modInverse(fact[ri], p) % p * modInverse(fact[ni - ri], p) % p;
+            n /= p;
+            r /= p;
+        }
+
+        return result;
+    }
+
+    /**
+     * Computes the modular inverse of a number a under modulo p using Fermat's Little Theorem.
+     *
+     * @param a the number to find the modular inverse of
+     * @param p the prime number for modulo operation
+     * @return the modular inverse of a under modulo p
+     */
+    private int modInverse(int a, int p) {
+        return power(a, p - 2, p);
+    }
+
+    /**
+     * Computes (base^exp) % mod using iterative method to perform modular exponentiation.
+     *
+     * @param base the base number
+     * @param exp  the exponent
+     * @param mod  the modulo
+     * @return (base^exp) % mod
+     */
+    private int power(int base, int exp, int mod) {
+        int result = 1;
+        base = base % mod;
+        while (exp > 0) {
+            if ((exp & 1) == 1) {
+                result = (result * base) % mod;
+            }
+            exp = exp >> 1;
+            base = (base * base) % mod;
+        }
+        return result;
     }
 }
