@@ -2,6 +2,24 @@ package com.devstromo.dp.computerNCrp;
 
 public class ComputeNCrp {
 
+    /**
+     * Computes nCr % p using a simple recursive approach.
+     *
+     * @param n the total number of items
+     * @param r the number of items to choose
+     * @param p the prime number for modulo operation
+     * @return the value of nCr % p
+     *
+     * <p> This method uses a recursive approach to compute the binomial coefficient modulo p. It directly applies
+     * the recursive definition of binomial coefficients:
+     * <ul>
+     *     <li>nCr = (n-1)C(r-1) + (n-1)Cr</li>
+     * </ul>
+     * The result is taken modulo p to prevent overflow.
+     *
+     * <p><b>Time Complexity:</b> O(2^n)
+     * <p><b>Space Complexity:</b> O(n)
+     */
     public int solutionRecursive(int n, int r, int p) {
         if (r > n) {
             return 0;
@@ -11,6 +29,20 @@ public class ComputeNCrp {
         return (solutionRecursive(n - 1, r - 1, p) % p + solutionRecursive(n - 1, r, p) % p) % p;
     }
 
+    /**
+     * Computes nCr % p using a dynamic programming approach with a 1D array.
+     *
+     * @param n the total number of items
+     * @param r the number of items to choose
+     * @param p the prime number for modulo operation
+     * @return the value of nCr % p
+     *
+     * <p> This method uses a dynamic programming approach with a 1D array to compute the binomial coefficient modulo p.
+     * It iteratively updates the array to reflect the number of ways to choose r items from n items.
+     *
+     * <p><b>Time Complexity:</b> O(n * r)
+     * <p><b>Space Complexity:</b> O(r)
+     */
     public int solution(int n, int r, int p) {
         if (r > n - r) {
             r = n - r;
@@ -25,6 +57,20 @@ public class ComputeNCrp {
         return C[r];
     }
 
+    /**
+     * Computes nCr % p using a dynamic programming approach with a 2D array.
+     *
+     * @param n the total number of items
+     * @param r the number of items to choose
+     * @param p the prime number for modulo operation
+     * @return the value of nCr % p
+     *
+     * <p> This method uses a dynamic programming approach with a 2D array to compute the binomial coefficient modulo p.
+     * It builds a table where dp[i][j] represents the number of ways to choose j items from i items, taking results modulo p.
+     *
+     * <p><b>Time Complexity:</b> O(n * r)
+     * <p><b>Space Complexity:</b> O(n * r)
+     */
     public int solution2DArray(int n, int r, int p) {
         var dp = new int[n + 1][r + 1];
         for (int i = 0; i <= n; i++) {
@@ -94,7 +140,7 @@ public class ComputeNCrp {
      * @param base the base number
      * @param exp  the exponent
      * @param mod  the modulo
-     * @return (base^exp) % mod
+     * @return (base ^ exp) % mod
      */
     private int power(int base, int exp, int mod) {
         int result = 1;
