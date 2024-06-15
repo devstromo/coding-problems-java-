@@ -63,3 +63,9 @@ build/
 ### Mac OS ###
 .DS_Store
 /.idea/aws.xml
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/kotlinc.xml
+/.idea/material_theme_project_new.xml
+/.idea/misc.xml
+/.idea/uiDesigner.xml
+/.idea/vcs.xml
