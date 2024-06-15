@@ -124,6 +124,41 @@ public class ComputeNCrp {
     }
 
     /**
+     * Computes nCr % p using Fermat's Little Theorem.
+     *
+     * @param n the total number of items
+     * @param r the number of items to choose
+     * @param p the prime number for modulo operation
+     * @return the value of nCr % p
+     *
+     * <p> This method uses Fermat's Little Theorem to compute the binomial coefficient modulo p. Fermat's Little Theorem
+     * states that if p is a prime number, then for any integer a such that p does not divide a, a^(p-1) ≡ 1 (mod p).
+     * Using this theorem, the modular inverse of "a" under modulo p can be computed as a^(p-2) % p.
+     *
+     * <p> The method first computes the factorials up to n modulo p and stores them in an array. Then it computes the
+     * binomial coefficient using the formula:
+     * <ul>
+     *     <li>nCr % p = (n! / (r! * (n-r)!)) % p</li>
+     *     <li>      = (n! * modInverse(r!, p) * modInverse((n-r)!, p)) % p</li>
+     * </ul>
+     *
+     * <p><b>Time Complexity:</b> O(n + log p)
+     * <p><b>Space Complexity:</b> O(n)
+     * @see #modInverse(int, int)
+     */
+    public int solutionUsingFermatLittleTheorem(int n, int r, int p) {
+        if (n < r)
+            return 0;
+        if (r == 0)
+            return 1;
+        var fac = new int[n + 1];
+        fac[0] = 1;
+        for (int i = 1; i <= n; i++)
+            fac[i] = fac[i - 1] * i % p;
+        return (fac[n] * modInverse(fac[r], p) % p * modInverse(fac[n - r], p) % p) % p;
+    }
+
+    /**
      * Computes the modular inverse of a number a under modulo p using Fermat's Little Theorem.
      *
      * @param a the number to find the modular inverse of

@@ -27,4 +27,11 @@ class ComputeNCrpUnitTest {
         assertEquals(3, solution.solution2DArray(8, 2, 5));
         assertEquals(10, solution.solution2DArray(5, 2, 13));
     }
+
+    @Test
+    public void testComputeNCrpUsingFermatLittleTheorem() {
+        // p must be a prime greater than n.
+        assertEquals(6, solution.solutionUsingFermatLittleTheorem(10, 2, 13));
+        assertEquals(10, solution.solutionUsingFermatLittleTheorem(5, 3, 17));
+    }
 }
