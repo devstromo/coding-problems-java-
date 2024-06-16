@@ -93,7 +93,7 @@ public class ComputeNCrp {
      * @param p the prime number for modulo operation
      * @return the value of nCr % p
      */
-    public int solutionUsingLucasTheorem(int n, int r, int p) {
+    public long solutionUsingLucasTheorem(int n, int r, int p) {
         if (r == 0) {
             return 1;
         }
@@ -106,7 +106,7 @@ public class ComputeNCrp {
         }
 
         // Compute nCr % p using Lucas' Theorem
-        int result = 1;
+        long result = 1;
         while (n > 0 && r > 0) {
             int ni = n % p;
             int ri = r % p;
@@ -144,9 +144,9 @@ public class ComputeNCrp {
      *
      * <p><b>Time Complexity:</b> O(n + log p)
      * <p><b>Space Complexity:</b> O(n)
-     * @see #modInverse(int, int)
+     * @see #modInverse(long, int)
      */
-    public int solutionUsingFermatLittleTheorem(int n, int r, int p) {
+    public long solutionUsingFermatLittleTheorem(int n, int r, int p) {
         if (n < r)
             return 0;
         if (r == 0)
@@ -159,13 +159,50 @@ public class ComputeNCrp {
     }
 
     /**
+     * Computes nCr % p using Fermat's Little Theorem with an optimized approach.
+     *
+     * @param n the total number of items
+     * @param r the number of items to choose
+     * @param p the prime number for modulo operation
+     * @return the value of nCr % p
+     *
+     * <p> This method uses Fermat's Little Theorem to compute the binomial coefficient modulo p. Fermat's Little Theorem
+     * states that if p is a prime number, then for any integer a such that p does not divide a, a^(p-1) ≡ 1 (mod p).
+     * Using this theorem, the modular inverse of a under modulo p can be computed as a^(p-2) % p.
+     *
+     * <p> The method optimizes the calculation by reducing the number of multiplications and divisions needed.
+     * If r is greater than n-r, it calculates the complement to minimize the number of operations.
+     *
+     * <p> The method iteratively multiplies the necessary terms and takes the modular inverse for divisions.
+     *
+     * <p><b>Time Complexity:</b> O(r * log p)
+     * <p><b>Space Complexity:</b> O(1)
+     * @see #modInverse(long, int)
+     * @see #multiply(long, long, int)
+     * @see #divide(long, long, int)
+     */
+    public long solutionUsingFermatLittleTheoremOptimized(int n, int r, int p) {
+        if (n < r)
+            return 0;
+        if (r == 0)
+            return 1;
+        if (n - r < r)
+            return solutionUsingFermatLittleTheoremOptimized(n, n - r, p);
+
+        var result = 1L;
+        for (var i = r; i >= 1; i--)
+            result = divide(multiply(result, n - i + 1, p), i, p);
+        return result;
+    }
+
+    /**
      * Computes the modular inverse of a number a under modulo p using Fermat's Little Theorem.
      *
      * @param a the number to find the modular inverse of
      * @param p the prime number for modulo operation
      * @return the modular inverse of a under modulo p
      */
-    private int modInverse(int a, int p) {
+    private long modInverse(long a, int p) {
         return power(a, p - 2, p);
     }
 
@@ -177,8 +214,8 @@ public class ComputeNCrp {
      * @param mod  the modulo
      * @return (base ^ exp) % mod
      */
-    private int power(int base, int exp, int mod) {
-        int result = 1;
+    private long power(long base, int exp, int mod) {
+        long result = 1;
         base = base % mod;
         while (exp > 0) {
             if ((exp & 1) == 1) {
@@ -188,5 +225,13 @@ public class ComputeNCrp {
             base = (base * base) % mod;
         }
         return result;
+    }
+
+    private long multiply(long a, long b, int p) {
+        return a * b % p;
+    }
+
+    public long divide(long a, long b, int p) {
+        return multiply(a, modInverse(b, p), p);
     }
 }
