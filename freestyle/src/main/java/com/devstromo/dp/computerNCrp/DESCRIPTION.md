@@ -71,6 +71,3 @@ represents the value of `iCj % p`.
             - If `j` is 0 or `i` is equal to `j`, set `dp[i][j] = 1`.
             - Otherwise, compute `dp[i][j]` as:
               `dp[i][j] = (dp[i-1][j-1] + dp[i-1][j]) % p`.
-
-### Pseudocode
-
