@@ -174,6 +174,31 @@ public class SubsetSum {
     }
 
     /**
+     * Determines if there is a subset of the given numbers that adds up to the specified sum.
+     *
+     * <p>This method uses a dynamic programming approach with a 1D array to optimize space complexity.
+     * The boolean array `dp` is used to keep track of which sums can be achieved with the given subset
+     * of numbers.</p>
+     *
+     * @param numbers an array of integers representing the set of numbers
+     * @param sum     the target sum to achieve with a subset of the numbers
+     * @return {@code true} if there exists a subset of the given numbers that adds up to the specified sum, {@code false} otherwise
+     */
+    public boolean tabular1DOptimizedBoolean(int[] numbers, int sum) {
+        var n = numbers.length;
+        var dp = new boolean[sum + 1];
+        dp[0] = true;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = sum; j >= numbers[i]; j--) {
+                if (dp[j - numbers[i]])
+                    dp[j] = true;
+            }
+        }
+        return dp[sum];
+    }
+
+    /**
      * Helper method to determine if there is a subset of the given set of integers that sums up to the specified target sum
      * using a recursive approach.
      *
