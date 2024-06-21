@@ -16,4 +16,17 @@ class SolutionKt {
         return count
     }
 
+    fun subarraySumBestSolution(nums: IntArray, k: Int): Int {
+        val sumMap = HashMap<Int, Int>()
+        sumMap[0] = 1
+        var sum = 0
+        var count = 0
+        nums.forEach {
+            sum += it
+            count += sumMap.getOrDefault(sum - k, 0)
+            sumMap[sum] = sumMap.getOrDefault(sum, 0) + 1
+        }
+        return count
+    }
+
 }
