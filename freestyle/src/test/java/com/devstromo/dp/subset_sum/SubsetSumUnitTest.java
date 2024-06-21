@@ -78,4 +78,14 @@ class SubsetSumUnitTest {
         assertFalse(subsetSum.tabular1DOptimizedBoolean(largeNums, 100));
     }
 
+    @Test
+    public void testCountSubsetSumTabular1DOptimizedBoolean() {
+        var nums = new int[]{3, 34, 4, 12, 5, 2};
+        assertEquals(2, subsetSum.countSubsetsWithSum(nums, 9));
+        assertEquals(0, subsetSum.countSubsetsWithSum(nums, 30));
+
+        var largeNums = new int[]{1, 3, 9, 2, 5, 7, 10, 13, 6, 8, 11, 4};
+        assertEquals(0, subsetSum.countSubsetsWithSum(largeNums, 100));
+    }
+
 }

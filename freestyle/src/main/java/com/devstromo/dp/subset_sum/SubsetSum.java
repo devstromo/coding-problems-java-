@@ -199,6 +199,30 @@ public class SubsetSum {
     }
 
     /**
+     * Determines the number of subsets of the given numbers that add up to the specified sum.
+     *
+     * <p>This method uses a dynamic programming approach with a 1D array to count the number of subsets.
+     * The integer array `dp` is used to keep track of how many subsets can achieve each possible sum
+     * with the given set of numbers.</p>
+     *
+     * @param numbers an array of integers representing the set of numbers
+     * @param sum the target sum to achieve with subsets of the numbers
+     * @return the number of subsets that add up to the specified sum
+     */
+    public int countSubsetsWithSum(int[] numbers, int sum) {
+        var n = numbers.length;
+        var dp = new int[sum + 1];
+        dp[0] = 1; // There is one subset (empty subset) that sums to 0
+
+        for (int i = 0; i < n; i++) {
+            for (int j = sum; j >= numbers[i]; j--) {
+                dp[j] += dp[j - numbers[i]];
+            }
+        }
+        return dp[sum];
+    }
+
+    /**
      * Helper method to determine if there is a subset of the given set of integers that sums up to the specified target sum
      * using a recursive approach.
      *
