@@ -11,9 +11,7 @@ public class Solution {
 
         for (int num : nums) {
             currentSum += num;
-            if (prefixSumCount.containsKey(currentSum - k)) {
-                count += prefixSumCount.get(currentSum - k);
-            }
+            count += prefixSumCount.getOrDefault(currentSum - k,0);
             prefixSumCount.put(currentSum, prefixSumCount.getOrDefault(currentSum, 0) + 1);
         }
 
