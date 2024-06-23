@@ -13,4 +13,11 @@ class SolutionUnitTest {
         assertEquals(5, solution.findNumberOfLIS(new int[]{2, 2, 2, 2, 2}));
         assertEquals(1, solution.findNumberOfLIS(new int[]{1}));
     }
+
+    @Test
+    public void testFindNumberOfLISBestSolution() {
+        assertEquals(2, solution.findNumberOfLISBestSolution(new int[]{1, 3, 5, 4, 7}));
+        assertEquals(5, solution.findNumberOfLISBestSolution(new int[]{2, 2, 2, 2, 2}));
+        assertEquals(1, solution.findNumberOfLISBestSolution(new int[]{1}));
+    }
 }
