@@ -5,36 +5,47 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SolutionUnitTest {
+
+    private final Solution solution = new Solution();
     @Test
-    public void testEditDistanceBasic() {
-        assertEquals(3, Solution.editDistance("kitten", "sitting"));
-        assertEquals(1, Solution.editDistance("flaw", "flaws"));
-        assertEquals(5, Solution.editDistance("intention", "execution"));
+    public void testEditDistanceDP() {
+        assertEquals(3, solution.editDistance("kitten", "sitting"));
+        assertEquals(1, solution.editDistance("flaw", "flaws"));
+        assertEquals(5, solution.editDistance("intention", "execution"));
+
+
+        assertEquals(0, solution.editDistance("", ""));
+        assertEquals(5, solution.editDistance("", "hello"));
+        assertEquals(4, solution.editDistance("test", ""));
+
+        assertEquals(0, solution.editDistance("algorithm", "algorithm"));
+        assertEquals(0, solution.editDistance("test", "test"));
+
+        assertEquals(10, solution.editDistance("short", "longerstring"));
+        assertEquals(3, solution.editDistance("example", "samples"));
+
+        assertEquals(1, solution.editDistance("Case", "case"));
+        assertEquals(3, solution.editDistance("ABC", "abc"));
     }
 
     @Test
-    public void testEditDistanceEmptyStrings() {
-        assertEquals(0, Solution.editDistance("", ""));
-        assertEquals(5, Solution.editDistance("", "hello"));
-        assertEquals(4, Solution.editDistance("test", ""));
-    }
+    public void testEditDistanceRecursive() {
+        assertEquals(3, solution.editDistanceRecursive("kitten", "sitting"));
+        assertEquals(1, solution.editDistanceRecursive("flaw", "flaws"));
+        assertEquals(5, solution.editDistanceRecursive("intention", "execution"));
 
-    @Test
-    public void testEditDistanceSameStrings() {
-        assertEquals(0, Solution.editDistance("algorithm", "algorithm"));
-        assertEquals(0, Solution.editDistance("test", "test"));
-    }
 
-    @Test
-    public void testEditDistanceDifferentLengths() {
-        assertEquals(10, Solution.editDistance("short", "longerstring"));
-        assertEquals(3, Solution.editDistance("example", "samples"));
-    }
+        assertEquals(0, solution.editDistanceRecursive("", ""));
+        assertEquals(5, solution.editDistanceRecursive("", "hello"));
+        assertEquals(4, solution.editDistanceRecursive("test", ""));
 
-    @Test
-    public void testEditDistanceCaseSensitivity() {
-        assertEquals(1, Solution.editDistance("Case", "case"));
-        assertEquals(3, Solution.editDistance("ABC", "abc"));
-    }
+        assertEquals(0, solution.editDistanceRecursive("algorithm", "algorithm"));
+        assertEquals(0, solution.editDistanceRecursive("test", "test"));
 
+        assertEquals(10, solution.editDistanceRecursive("short", "longerstring"));
+        assertEquals(3, solution.editDistanceRecursive("example", "samples"));
+
+        assertEquals(1, solution.editDistanceRecursive("Case", "case"));
+        assertEquals(3, solution.editDistanceRecursive("ABC", "abc"));
+    }
 }

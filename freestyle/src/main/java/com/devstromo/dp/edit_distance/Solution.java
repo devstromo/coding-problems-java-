@@ -1,7 +1,7 @@
 package com.devstromo.dp.edit_distance;
 
 public class Solution {
-    public static int editDistance(String str1, String str2) {
+    public int editDistance(String str1, String str2) {
         int m = str1.length();
         int n = str2.length();
 
@@ -25,13 +25,38 @@ public class Solution {
                 }
                 // If the last character is different, consider all possibilities and find the minimum
                 else {
-                    dp[i][j] = 1 + Math.min(dp[i - 1][j],    // Remove
-                            Math.min(dp[i][j - 1],    // Insert
-                                    dp[i - 1][j - 1]));  // Replace
+                    dp[i][j] = 1 + min(dp[i - 1][j], // Remove
+                            dp[i][j - 1], // Insert
+                            dp[i - 1][j - 1] // Replace
+                    );
                 }
             }
         }
 
         return dp[m][n];
+    }
+
+    public int editDistanceRecursive(String str1, String str2) {
+        return editDistanceRecursive(str1, str2, str1.length(), str2.length());
+    }
+
+    private int editDistanceRecursive(String str1, String str2, int m, int n) {
+        if (m == 0)
+            return n;
+
+        if (n == 0)
+            return m;
+
+        if (str1.charAt(m - 1) == str2.charAt(n - 1))
+            return editDistanceRecursive(str1, str2, m - 1, n - 1);
+
+        final var insertion = editDistanceRecursive(str1, str2, m, n - 1);
+        final var remove = editDistanceRecursive(str1, str2, m - 1, n);
+        final var replace = editDistanceRecursive(str1, str2, m - 1, n - 1);
+        return 1 + min(insertion, remove, replace);
+    }
+
+    public int min(int a, int b, int c) {
+        return Math.min(a, Math.min(b, c));
     }
 }
