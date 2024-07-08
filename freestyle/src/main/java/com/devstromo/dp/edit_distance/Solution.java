@@ -58,14 +58,14 @@ public class Solution {
 
         var prev = new int[n + 1];
         final var curr = new int[n + 1];
-
-        for (int j = 0; j <= n; j++) {
-            prev[j] = j;
+        int i, j;
+        for (i = 0; i <= n; i++) {
+            prev[i] = i;
         }
 
-        for (int i = 1; i <= m; i++) {
+        for (i = 1; i <= m; i++) {
             curr[0] = i;
-            for (int j = 1; j <= n; j++) {
+            for (j = 1; j <= n; j++) {
                 if (str1.charAt(i - 1) == str2.charAt(j - 1)) {
                     curr[j] = prev[j - 1];
                 } else {
