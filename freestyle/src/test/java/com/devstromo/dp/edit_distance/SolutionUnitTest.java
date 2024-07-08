@@ -92,4 +92,26 @@ class SolutionUnitTest {
         assertEquals(1, solution.editDistanceSpaceOptimized("Case", "case"));
         assertEquals(3, solution.editDistanceSpaceOptimized("ABC", "abc"));
     }
+
+
+    @Test
+    public void testEditDistanceSpaceOptimizedSecond() {
+        assertEquals(3, solution.editDistanceSpaceOptimizedSecond("kitten", "sitting"));
+        assertEquals(1, solution.editDistanceSpaceOptimizedSecond("flaw", "flaws"));
+        assertEquals(5, solution.editDistanceSpaceOptimizedSecond("intention", "execution"));
+
+
+        assertEquals(0, solution.editDistanceSpaceOptimizedSecond("", ""));
+        assertEquals(5, solution.editDistanceSpaceOptimizedSecond("", "hello"));
+        assertEquals(4, solution.editDistanceSpaceOptimizedSecond("test", ""));
+
+        assertEquals(0, solution.editDistanceSpaceOptimizedSecond("algorithm", "algorithm"));
+        assertEquals(0, solution.editDistanceSpaceOptimizedSecond("test", "test"));
+
+        assertEquals(10, solution.editDistanceSpaceOptimizedSecond("short", "longerstring"));
+        assertEquals(3, solution.editDistanceSpaceOptimizedSecond("example", "samples"));
+
+        assertEquals(1, solution.editDistanceSpaceOptimizedSecond("Case", "case"));
+        assertEquals(3, solution.editDistanceSpaceOptimizedSecond("ABC", "abc"));
+    }
 }

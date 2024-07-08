@@ -78,6 +78,33 @@ public class Solution {
         return prev[n];
     }
 
+    public int editDistanceSpaceOptimizedSecond(String str1, String str2) {
+        final var m = str1.length();
+        final var n = str2.length();
+
+        final var curr = new int[n + 1];
+        int i, j;
+        for (i = 0; i <= n; i++) {
+            curr[i] = i;
+        }
+        int previous;
+        for (i = 1; i <= m; i++) {
+            previous = curr[0];
+            curr[0] = i;
+            for (j = 1; j <= n; j++) {
+                int temp = curr[j];
+                if (str1.charAt(i - 1) == str2.charAt(j - 1)) {
+                    curr[j] = previous;
+                } else {
+                    curr[j] = 1 + min(previous, curr[j - 1], curr[j]);
+                }
+                previous = temp;
+            }
+        }
+
+        return curr[n];
+    }
+
     private int editDistanceRecursive(String str1, String str2, int m, int n) {
         if (m == 0)
             return n;
