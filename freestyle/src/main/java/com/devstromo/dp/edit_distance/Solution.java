@@ -1,5 +1,7 @@
 package com.devstromo.dp.edit_distance;
 
+import java.util.Arrays;
+
 public class Solution {
     public int editDistance(String str1, String str2) {
         int m = str1.length();
@@ -40,6 +42,16 @@ public class Solution {
         return editDistanceRecursive(str1, str2, str1.length(), str2.length());
     }
 
+    public int editDistanceMemo(String str1, String str2) {
+        final var m = str1.length();
+        final var n = str2.length();
+        final var memo = new int[m + 1][n + 1];
+        for (int i = 0; i < m + 1; i++) {
+            Arrays.fill(memo[i], -1);
+        }
+        return editDistanceMemo(str1, str2, m, n, memo);
+    }
+
     private int editDistanceRecursive(String str1, String str2, int m, int n) {
         if (m == 0)
             return n;
@@ -54,6 +66,27 @@ public class Solution {
         final var remove = editDistanceRecursive(str1, str2, m - 1, n);
         final var replace = editDistanceRecursive(str1, str2, m - 1, n - 1);
         return 1 + min(insertion, remove, replace);
+    }
+
+    private int editDistanceMemo(String str1, String str2, int m, int n, int[][] memo) {
+        if (m == 0)
+            return n;
+
+        if (n == 0)
+            return m;
+
+        if (memo[m][n] != -1) return memo[m][n];
+
+        if (str1.charAt(m - 1) == str2.charAt(n - 1)) {
+            memo[m][n] = editDistanceRecursive(str1, str2, m - 1, n - 1);
+            return memo[m][n];
+        }
+
+        final var insertion = editDistanceRecursive(str1, str2, m, n - 1);
+        final var remove = editDistanceRecursive(str1, str2, m - 1, n);
+        final var replace = editDistanceRecursive(str1, str2, m - 1, n - 1);
+        memo[m][n] = 1 + min(insertion, remove, replace);
+        return memo[m][n];
     }
 
     public int min(int a, int b, int c) {

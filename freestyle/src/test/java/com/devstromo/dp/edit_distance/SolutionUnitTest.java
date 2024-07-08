@@ -48,4 +48,26 @@ class SolutionUnitTest {
         assertEquals(1, solution.editDistanceRecursive("Case", "case"));
         assertEquals(3, solution.editDistanceRecursive("ABC", "abc"));
     }
+
+
+    @Test
+    public void testEditDistanceMemoization() {
+        assertEquals(3, solution.editDistanceMemo("kitten", "sitting"));
+        assertEquals(1, solution.editDistanceMemo("flaw", "flaws"));
+        assertEquals(5, solution.editDistanceMemo("intention", "execution"));
+
+
+        assertEquals(0, solution.editDistanceMemo("", ""));
+        assertEquals(5, solution.editDistanceMemo("", "hello"));
+        assertEquals(4, solution.editDistanceMemo("test", ""));
+
+        assertEquals(0, solution.editDistanceMemo("algorithm", "algorithm"));
+        assertEquals(0, solution.editDistanceMemo("test", "test"));
+
+        assertEquals(10, solution.editDistanceMemo("short", "longerstring"));
+        assertEquals(3, solution.editDistanceMemo("example", "samples"));
+
+        assertEquals(1, solution.editDistanceMemo("Case", "case"));
+        assertEquals(3, solution.editDistanceMemo("ABC", "abc"));
+    }
 }
