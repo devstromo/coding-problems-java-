@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class SolutionUnitTest {
 
     private final Solution solution = new Solution();
+
     @Test
     public void testEditDistanceDP() {
         assertEquals(3, solution.editDistance("kitten", "sitting"));
@@ -69,5 +70,26 @@ class SolutionUnitTest {
 
         assertEquals(1, solution.editDistanceMemo("Case", "case"));
         assertEquals(3, solution.editDistanceMemo("ABC", "abc"));
+    }
+
+    @Test
+    public void testEditDistanceSpaceOptimized() {
+        assertEquals(3, solution.editDistanceSpaceOptimized("kitten", "sitting"));
+        assertEquals(1, solution.editDistanceSpaceOptimized("flaw", "flaws"));
+        assertEquals(5, solution.editDistanceSpaceOptimized("intention", "execution"));
+
+
+        assertEquals(0, solution.editDistanceSpaceOptimized("", ""));
+        assertEquals(5, solution.editDistanceSpaceOptimized("", "hello"));
+        assertEquals(4, solution.editDistanceSpaceOptimized("test", ""));
+
+        assertEquals(0, solution.editDistanceSpaceOptimized("algorithm", "algorithm"));
+        assertEquals(0, solution.editDistanceSpaceOptimized("test", "test"));
+
+        assertEquals(10, solution.editDistanceSpaceOptimized("short", "longerstring"));
+        assertEquals(3, solution.editDistanceSpaceOptimized("example", "samples"));
+
+        assertEquals(1, solution.editDistanceSpaceOptimized("Case", "case"));
+        assertEquals(3, solution.editDistanceSpaceOptimized("ABC", "abc"));
     }
 }

@@ -52,6 +52,32 @@ public class Solution {
         return editDistanceMemo(str1, str2, m, n, memo);
     }
 
+    public int editDistanceSpaceOptimized(String str1, String str2) {
+        final var m = str1.length();
+        final var n = str2.length();
+
+        var prev = new int[n + 1];
+        final var curr = new int[n + 1];
+
+        for (int j = 0; j <= n; j++) {
+            prev[j] = j;
+        }
+
+        for (int i = 1; i <= m; i++) {
+            curr[0] = i;
+            for (int j = 1; j <= n; j++) {
+                if (str1.charAt(i - 1) == str2.charAt(j - 1)) {
+                    curr[j] = prev[j - 1];
+                } else {
+                    curr[j] = min(1 + prev[j], 1 + curr[j - 1], 1 + prev[j - 1]);
+                }
+            }
+            prev = curr.clone();
+        }
+
+        return prev[n];
+    }
+
     private int editDistanceRecursive(String str1, String str2, int m, int n) {
         if (m == 0)
             return n;
