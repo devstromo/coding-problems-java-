@@ -48,7 +48,6 @@ class CoinChangeUnitTest {
         assertEquals(-1, coinChange.solution(coins, 3));
     }
 
-
     @Test
     public void testCoinChangeBasic1D() {
         final var coins = new int[]{1, 2, 5};
@@ -90,4 +89,44 @@ class CoinChangeUnitTest {
         assertEquals(-1, coinChange.solution1D(coins, 3));
     }
 
+    @Test
+    public void testCoinChangeBasicMemo() {
+        final var coins = new int[]{1, 2, 5};
+
+        assertEquals(3, coinChange.solutionMemo(coins, 11));
+        assertEquals(2, coinChange.solutionMemo(coins, 3));
+    }
+
+    @Test
+    public void testCoinChangeEdgeCasesMemo() {
+        final var coins1 = new int[]{1};
+        final var coins2 = new int[]{2};
+
+        assertEquals(0, coinChange.solutionMemo(coins1, 0));
+        assertEquals(1, coinChange.solutionMemo(coins1, 1));
+        assertEquals(-1, coinChange.solutionMemo(coins2, 3));
+    }
+
+    @Test
+    public void testCoinChangeLargeInputsMemo() {
+        final var coins1 = new int[]{1, 2, 5, 10, 20, 50};
+        final var coins2 = new int[]{1, 5, 10, 25, 50};
+
+        assertEquals(2, coinChange.solutionMemo(coins1, 100));
+        assertEquals(8, coinChange.solutionMemo(coins2, 99));
+    }
+
+    @Test
+    public void testCoinChangeImpossibleCasesMemo() {
+        final var coins = new int[]{2, 5, 10};
+
+        assertEquals(-1, coinChange.solutionMemo(coins, 3));
+    }
+
+    @Test
+    public void testCoinChangeAllCoinsLargerThanAmountMemo() {
+        final var coins = new int[]{5, 10, 25};
+
+        assertEquals(-1, coinChange.solutionMemo(coins, 3));
+    }
 }

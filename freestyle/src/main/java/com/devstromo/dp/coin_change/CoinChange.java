@@ -1,5 +1,8 @@
 package com.devstromo.dp.coin_change;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class CoinChange {
     public int solution(int[] coins, int amount) {
         final var n = coins.length;
@@ -39,6 +42,32 @@ public class CoinChange {
             }
         }
         return dp[amount] == Integer.MAX_VALUE ? -1 : dp[amount];
+    }
+
+    public int solutionMemo(int[] coins, int amount) {
+        final var memo = new HashMap<Integer, Integer>();
+        return coinChangeMemo(coins, amount, memo);
+    }
+
+    private int coinChangeMemo(int[] coins, int amount, Map<Integer, Integer> memo) {
+        if (amount == 0) {
+            return 0;
+        }
+        if (amount < 0) {
+            return -1;
+        }
+        if (memo.containsKey(amount)) {
+            return memo.get(amount);
+        }
+        var minCoins = Integer.MAX_VALUE;
+        for (var coin : coins) {
+            final var result = coinChangeMemo(coins, amount - coin, memo);
+            if (result >= 0 && result < minCoins) {
+                minCoins = result + 1;
+            }
+        }
+        memo.put(amount, (minCoins == Integer.MAX_VALUE) ? -1 : minCoins);
+        return memo.get(amount);
     }
 
     private int min(int a, int b) {
