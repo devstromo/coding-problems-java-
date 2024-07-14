@@ -24,6 +24,23 @@ public class CoinChange {
         return dp[coins.length][amount] >= Integer.MAX_VALUE - 1 ? -1 : dp[coins.length][amount];
     }
 
+    public int solution1D(int[] coins, int amount) {
+        final var dp = new int[amount + 1];
+        var i = 0;
+        for (i = 0; i <= amount; i++) {
+            dp[i] = Integer.MAX_VALUE;
+        }
+        dp[0] = 0;
+        for (var coin : coins) {
+            for (i = coin; i <= amount; i++) {
+                if (dp[i - coin] != Integer.MAX_VALUE) {
+                    dp[i] = min(dp[i], 1 + dp[i - coin]);
+                }
+            }
+        }
+        return dp[amount] == Integer.MAX_VALUE ? -1 : dp[amount];
+    }
+
     private int min(int a, int b) {
         return a > b ? b : a;
     }
