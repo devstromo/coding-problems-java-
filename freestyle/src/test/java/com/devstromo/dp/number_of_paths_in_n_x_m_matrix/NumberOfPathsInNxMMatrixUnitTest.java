@@ -28,11 +28,17 @@ class NumberOfPathsInNxMMatrixUnitTest {
         assertEquals(6, solution.numberOfUniquePaths2dArray(3, 3));
     }
 
-
     @Test
     public void testNumberOfPathsInNxMMatrix1DArray() {
         assertEquals(2, solution.numberOfUniquePaths1DArray(2, 2));
         assertEquals(3, solution.numberOfUniquePaths1DArray(2, 3));
         assertEquals(6, solution.numberOfUniquePaths1DArray(3, 3));
+    }
+
+    @Test
+    public void testNumberOfPathsInNxMMatrixCombinations() {
+        assertEquals(2, solution.numberOfUniquePathsUsingCombinations(2, 2));
+        assertEquals(3, solution.numberOfUniquePathsUsingCombinations(2, 3));
+        assertEquals(6, solution.numberOfUniquePathsUsingCombinations(3, 3));
     }
 }
