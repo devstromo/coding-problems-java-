@@ -20,4 +20,11 @@ class NumberOfPathsInNxMMatrixUnitTest {
         assertEquals(3, solution.numberOfUniquePathsMemo(2, 3));
         assertEquals(6, solution.numberOfUniquePathsMemo(3, 3));
     }
+
+    @Test
+    public void testNumberOfPathsInNxMMatrix2DArray() {
+        assertEquals(2, solution.numberOfUniquePaths2dArray(2, 2));
+        assertEquals(3, solution.numberOfUniquePaths2dArray(2, 3));
+        assertEquals(6, solution.numberOfUniquePaths2dArray(3, 3));
+    }
 }

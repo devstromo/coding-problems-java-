@@ -16,6 +16,29 @@ public class NumberOfPathsInNxMMatrix {
         return numberOfUniquePathsMemo(m, n, memo);
     }
 
+    // Time: O(N * M)
+    // Space: O(N * M)
+    public int numberOfUniquePaths2dArray(int m, int n) {
+        final var count = new int[m][n];
+
+        var i = 0;
+        var j = 0;
+        for (i = 0; i < m; i++) {
+            count[i][0] = 1;
+        }
+
+        for (i = 0; i < n; i++) {
+            count[0][i] = 1;
+        }
+
+        for (i = 1; i < m; i++) {
+            for (j = 1; j < n; j++) {
+                count[i][j] = count[i - 1][j] + count[i][j - 1];
+            }
+        }
+        return count[m - 1][n - 1];
+    }
+
     private int numberOfUniquePathsMemo(int m, int n, int[][] memo) {
         if (m == 1 || n == 1) return memo[m][n] = 1;
         if (memo[m][n] != 0) return memo[m][n];
