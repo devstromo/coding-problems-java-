@@ -228,6 +228,12 @@ class LIS {
             }
             memo.put(nums[i], dp[i]);
         }
-        return Collections.max(Arrays.asList(dp));
+        var max = Integer.MIN_VALUE;
+        for (int i = 0; i < dp.length; i++) {
+            if (max < dp[i]) {
+                max = dp[i];
+            }
+        }
+        return max;
     }
 }
