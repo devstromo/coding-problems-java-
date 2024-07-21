@@ -1,10 +1,13 @@
-# Longest Increasing Subsequence (LIS) 
+# Longest Increasing Subsequence (LIS)
 
-Given an array arr[] of size N, the task is to find the length of the Longest Increasing Subsequence (LIS) i.e., the longest possible subsequence in which the elements of the subsequence are sorted in increasing order.
+Given an array arr[] of size N, the task is to find the length of the Longest Increasing Subsequence (LIS) i.e., the
+longest possible subsequence in which the elements of the subsequence are sorted in increasing order.
 
- ### Practice #1
+### Practice #1
 
-Given a sequence of integers, find the length of its longest increasing subsequence. A subsequence is a sequence that can be derived from another sequence by deleting some or no elements without changing the order of the remaining elements. An increasing subsequence means that every number is strictly greater than the previous number.
+Given a sequence of integers, find the length of its longest increasing subsequence. A subsequence is a sequence that
+can be derived from another sequence by deleting some or no elements without changing the order of the remaining
+elements. An increasing subsequence means that every number is strictly greater than the previous number.
 
 Input:
 
@@ -29,31 +32,38 @@ Output:
 ### Practice #2
 
 Description:
-Given an unsorted array of integers, find the length of the longest increasing subsequence where the difference between consecutive elements in the subsequence is at least 2.
+Given an unsorted array of integers, find the length of the longest increasing subsequence where the difference between
+consecutive elements in the subsequence is at least 2.
 
 Input:
 
 An array of integers, arr (1 ≤ |arr| ≤ 1000) where each integer (-10^6 ≤ arr[i] ≤ 10^6).
 Output:
 
-Return an integer representing the length of the longest increasing subsequence where the difference between consecutive elements is at least 2.
+Return an integer representing the length of the longest increasing subsequence where the difference between consecutive
+elements is at least 2.
 Example:
 
 Input: arr = [1, 3, 7, 5, 10, 4, 15]
 
 Output: 5
 
-Explanation: The longest increasing subsequence with a difference of at least 2 between consecutive elements is [1, 3, 7, 10, 15].
+Explanation: The longest increasing subsequence with a difference of at least 2 between consecutive elements
+is [1, 3, 7, 10, 15].
 
 Note:
 
-In the example, even though [1, 3, 5, 10, 15] is also an increasing subsequence, the difference between 3 and 5 is just 2 which does not satisfy the given condition.
+In the example, even though [1, 3, 5, 10, 15] is also an increasing subsequence, the difference between 3 and 5 is just
+2 which does not satisfy the given condition.
 
 # Longest Strictly Decreasing Subsequence Problem
 
 ## Problem Statement
 
-Given an array of integers, your task is to find the length of the longest strictly decreasing subsequence (LDS). A subsequence is a sequence that can be derived from the array by deleting some or no elements without changing the order of the remaining elements. A strictly decreasing subsequence is one in which each element is strictly less than the previous element.
+Given an array of integers, your task is to find the length of the longest strictly decreasing subsequence (LDS). A
+subsequence is a sequence that can be derived from the array by deleting some or no elements without changing the order
+of the remaining elements. A strictly decreasing subsequence is one in which each element is strictly less than the
+previous element.
 
 ## Input
 
@@ -71,7 +81,9 @@ Given an array of integers, your task is to find the length of the longest stric
 
 **Output:** `5`
 
-Explanation: The longest strictly decreasing subsequence is `[9, 5, 4, 3, 2]`. It has a length of 5, which is the maximum possible length for a strictly decreasing subsequence in this array. This corrects the previous oversight and accurately represents the solution to the problem.
+Explanation: The longest strictly decreasing subsequence is `[9, 5, 4, 3, 2]`. It has a length of 5, which is the
+maximum possible length for a strictly decreasing subsequence in this array. This corrects the previous oversight and
+accurately represents the solution to the problem.
 
 ### Example 2
 
@@ -79,17 +91,24 @@ Explanation: The longest strictly decreasing subsequence is `[9, 5, 4, 3, 2]`. I
 
 **Output:** `2`
 
-**Explanation:** This sequence includes several decreasing subsequences of length 2, such as `[22, 9]`, `[33, 21]`, and others. There are no longer strictly decreasing subsequences in this array, making 2 the length of the longest possible strictly decreasing subsequence.
+**Explanation:** This sequence includes several decreasing subsequences of length 2, such as `[22, 9]`, `[33, 21]`, and
+others. There are no longer strictly decreasing subsequences in this array, making 2 the length of the longest possible
+strictly decreasing subsequence.
 
 ## Approach
 
-The problem can be solved using a dynamic programming approach similar to the Longest Increasing Subsequence (LIS) problem. For each element in the array, you determine the length of the longest decreasing subsequence ending with that element. By comparing and updating these lengths throughout the array, you can find the overall longest strictly decreasing subsequence.
+The problem can be solved using a dynamic programming approach similar to the Longest Increasing Subsequence (LIS)
+problem. For each element in the array, you determine the length of the longest decreasing subsequence ending with that
+element. By comparing and updating these lengths throughout the array, you can find the overall longest strictly
+decreasing subsequence.
 
 # Longest Bitonic Subsequence Problem
 
 ## Problem Statement
 
-Given an array of integers, your task is to find the length of the longest bitonic subsequence. A bitonic subsequence is a sequence which first increases and then decreases. A subsequence is defined as a sequence that can be derived from the array by deleting some or no elements without changing the order of the remaining elements.
+Given an array of integers, your task is to find the length of the longest bitonic subsequence. A bitonic subsequence is
+a sequence which first increases and then decreases. A subsequence is defined as a sequence that can be derived from the
+array by deleting some or no elements without changing the order of the remaining elements.
 
 ## Input
 
@@ -107,7 +126,8 @@ Given an array of integers, your task is to find the length of the longest biton
 
 **Output:** `6`
 
-**Explanation:** The longest bitonic subsequence is `[1, 2, 10, 4, 2, 1]`. It first increases from 1 to 10, then decreases from 10 to 1. The length of this subsequence is 6.
+**Explanation:** The longest bitonic subsequence is `[1, 2, 10, 4, 2, 1]`. It first increases from 1 to 10, then
+decreases from 10 to 1. The length of this subsequence is 6.
 
 ### Example 2
 
@@ -115,7 +135,8 @@ Given an array of integers, your task is to find the length of the longest biton
 
 **Output:** `5`
 
-**Explanation:** One of the longest bitonic subsequences is `[12, 11, 40, 5, 1]`. It first decreases from 12 to 11, then increases to 40, and finally decreases to 1. The length of this subsequence is 5.
+**Explanation:** One of the longest bitonic subsequences is `[12, 11, 40, 5, 1]`. It first decreases from 12 to 11, then
+increases to 40, and finally decreases to 1. The length of this subsequence is 5.
 
 ### Example 3
 
@@ -123,22 +144,28 @@ Given an array of integers, your task is to find the length of the longest biton
 
 **Output:** `4`
 
-**Explanation:** In this case, the longest bitonic subsequence can be the entire array `[10, 20, 30, 40]` as it is strictly increasing. A strictly increasing or decreasing sequence is considered bitonic for the purpose of this problem.
+**Explanation:** In this case, the longest bitonic subsequence can be the entire array `[10, 20, 30, 40]` as it is
+strictly increasing. A strictly increasing or decreasing sequence is considered bitonic for the purpose of this problem.
 
 ## Approach
 
-The problem can be solved using dynamic programming by combining the concepts of Longest Increasing Subsequence (LIS) and Longest Decreasing Subsequence (LDS). For each element `nums[i]`, calculate:
+The problem can be solved using dynamic programming by combining the concepts of Longest Increasing Subsequence (LIS)
+and Longest Decreasing Subsequence (LDS). For each element `nums[i]`, calculate:
 
 1. The length of the LIS ending at `nums[i]` from the left.
 2. The length of the LDS starting at `nums[i]` from the right.
 
-The length of the longest bitonic subsequence that includes `nums[i]` as the peak element is the sum of the LIS ending at `nums[i]` and the LDS starting at `nums[i]`, minus one (to not count `nums[i]` twice). The answer to the problem is the maximum length found for all `i`.
+The length of the longest bitonic subsequence that includes `nums[i]` as the peak element is the sum of the LIS ending
+at `nums[i]` and the LDS starting at `nums[i]`, minus one (to not count `nums[i]` twice). The answer to the problem is
+the maximum length found for all `i`.
 
 # Longest Increasing Subsequence with Unique Differences
 
 ## Problem Statement
 
-Given an array of integers, your task is to find the length of the longest increasing subsequence (LIS) where no two adjacent elements in the subsequence have the same difference. A subsequence is a sequence that can be derived from the array by deleting some or no elements without changing the order of the remaining elements.
+Given an array of integers, your task is to find the length of the longest increasing subsequence (LIS) where no two
+adjacent elements in the subsequence have the same difference. A subsequence is a sequence that can be derived from the
+array by deleting some or no elements without changing the order of the remaining elements.
 
 ## Input
 
@@ -146,7 +173,8 @@ Given an array of integers, your task is to find the length of the longest incre
 
 ## Output
 
-- An integer representing the length of the longest increasing subsequence where no two adjacent elements in the subsequence have the same difference.
+- An integer representing the length of the longest increasing subsequence where no two adjacent elements in the
+  subsequence have the same difference.
 
 ## Examples
 
@@ -156,7 +184,8 @@ Given an array of integers, your task is to find the length of the longest incre
 
 **Output:** `4`
 
-**Explanation:** The longest increasing subsequence with unique differences is `[1, 4, 7, 11]`. The differences are `[3, 3, 4]`, and no two adjacent differences are the same.
+**Explanation:** The longest increasing subsequence with unique differences is `[1, 4, 7, 11]`. The differences are
+`[3, 3, 4]`, and no two adjacent differences are the same.
 
 ### Example 2
 
@@ -164,8 +193,12 @@ Given an array of integers, your task is to find the length of the longest incre
 
 **Output:** `3`
 
-**Explanation:** One possible longest increasing subsequence with unique differences is `[5, 9, 10]`. The differences here are `[4, 1]`, which are unique.
+**Explanation:** One possible longest increasing subsequence with unique differences is `[5, 9, 10]`. The differences
+here are `[4, 1]`, which are unique.
 
 ## Approach
 
-This problem can be approached by modifying the traditional dynamic programming solution for the LIS problem. Along with maintaining the length of the LIS at each element, we need to ensure that the condition of unique differences between adjacent elements in the subsequence is satisfied. This might involve keeping track of the differences used at each step of the subsequence and ensuring that any new addition does not repeat the immediate previous difference.
+This problem can be approached by modifying the traditional dynamic programming solution for the LIS problem. Along with
+maintaining the length of the LIS at each element, we need to ensure that the condition of unique differences between
+adjacent elements in the subsequence is satisfied. This might involve keeping track of the differences used at each step
+of the subsequence and ensuring that any new addition does not repeat the immediate previous difference.

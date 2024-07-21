@@ -96,4 +96,12 @@ class LISUnitTest {
         var arr1 = new int[]{5, 9, 4, 10, 5, 8, 9, 7};
         assertEquals(3, longestIncreaseSubsequenceWithUniqueDifference(arr1));
     }
+
+    @Test
+    public void testLongestIncreaseSubsequenceWithDifferenceOfOne() {
+        var nums = new int[]{10, 9, 4, 5, 4, 8, 6};
+        assertEquals(3, longestIncreaseSubsequenceWithDifferenceOfOne(nums));
+        nums = new int[]{1, 2, 3, 2, 3, 7, 2, 1};
+        assertEquals(7, longestIncreaseSubsequenceWithDifferenceOfOne(nums));
+    }
 }
