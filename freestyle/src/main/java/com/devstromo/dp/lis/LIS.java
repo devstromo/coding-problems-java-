@@ -201,4 +201,33 @@ class LIS {
                 result = dp[i];
         return result;
     }
+
+    // Time: O(N)
+    // Space: O(N)
+    public static int longestIncreaseSubsequenceWithDifferenceOfOneOptimized(int[] nums) {
+        final var n = nums.length;
+        if (n == 1)
+            return 1;
+        final var dp = new Integer[n];
+        final var memo = new HashMap<Integer, Integer>();
+        dp[0] = 1;
+        memo.put(nums[0], 0);
+        for (int i = 1; i < n; i++) {
+            if (Math.abs(nums[i] - nums[i - 1]) == 1)
+                dp[i] = dp[i - 1] + 1;
+            else {
+                if (memo.containsKey(nums[i] + 1)
+                        || memo.containsKey(nums[i] - 1)) {
+                    dp[i] = 1
+                            + Math.max(memo.getOrDefault(
+                                    nums[i] + 1, 0),
+                            memo.getOrDefault(
+                                    nums[i] - 1, 0));
+                } else
+                    dp[i] = 1;
+            }
+            memo.put(nums[i], dp[i]);
+        }
+        return Collections.max(Arrays.asList(dp));
+    }
 }

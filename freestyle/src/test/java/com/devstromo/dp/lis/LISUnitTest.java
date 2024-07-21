@@ -104,4 +104,12 @@ class LISUnitTest {
         nums = new int[]{1, 2, 3, 2, 3, 7, 2, 1};
         assertEquals(7, longestIncreaseSubsequenceWithDifferenceOfOne(nums));
     }
+
+    @Test
+    public void testLongestIncreaseSubsequenceWithDifferenceOfOneOptimized() {
+        var nums = new int[]{10, 9, 4, 5, 4, 8, 6};
+        assertEquals(3, longestIncreaseSubsequenceWithDifferenceOfOneOptimized(nums));
+        nums = new int[]{1, 2, 3, 2, 3, 7, 2, 1};
+        assertEquals(7, longestIncreaseSubsequenceWithDifferenceOfOneOptimized(nums));
+    }
 }
