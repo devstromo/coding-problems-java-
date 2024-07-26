@@ -14,7 +14,9 @@ class ProblemUnitTest {
             "8, 3",
             "3, 7",
             "1, 0",
-            "27, 111"
+            "27, 111",
+            "199, 119",
+            "837799, 524"
     })
     public void testSolve(long input, long expected) {
         final var result = problem.solve(input);
@@ -26,7 +28,9 @@ class ProblemUnitTest {
             "8, 3",
             "3, 7",
             "1, 0",
-            "27, 111"
+            "27, 111",
+            "199, 119",
+            "837799, 524"
     })
     public void testSolveRecursive(long input, long expected) {
         final var result = problem.solveRecursive(input);
@@ -38,7 +42,9 @@ class ProblemUnitTest {
             "8, 3",
             "3, 7",
             "1, 0",
-            "27, 111"
+            "27, 111",
+            "199, 119",
+            "837799, 524"
     })
     public void testSolveRecursiveMemo(long input, long expected) {
         final var result = problem.solveRecursiveMemo(input);
