@@ -62,4 +62,14 @@ class ProblemUnitTest {
         assertEquals(524, result.get(key));
     }
 
+    @Test
+    public void testMaxSequenceLessThan1_000_000WithCache() {
+        final var result = problem.longestSequencesWithCache();
+        assertFalse(result.isEmpty());
+        final var firstKey = result.keySet().stream().findFirst();
+        var key = firstKey.get();
+        assertEquals(837799, key);
+        assertEquals(524, result.get(key) - 1);
+    }
+
 }
