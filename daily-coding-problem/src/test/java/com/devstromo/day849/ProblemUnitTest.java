@@ -33,4 +33,16 @@ class ProblemUnitTest {
         assertEquals(expected, result, "Expected " + expected + " iterations for input " + input);
     }
 
+    @ParameterizedTest
+    @CsvSource({
+            "8, 3",
+            "3, 7",
+            "1, 0",
+            "27, 111"
+    })
+    public void testSolveRecursiveMemo(long input, long expected) {
+        final var result = problem.solveRecursiveMemo(input);
+        assertEquals(expected, result, "Expected " + expected + " iterations for input " + input);
+    }
+
 }
