@@ -21,4 +21,16 @@ class ProblemUnitTest {
         assertEquals(expected, result, "Expected " + expected + " iterations for input " + input);
     }
 
+    @ParameterizedTest
+    @CsvSource({
+            "8, 3",
+            "3, 7",
+            "1, 0",
+            "27, 111"
+    })
+    public void testSolveRecursive(long input, long expected) {
+        final var result = problem.solveRecursive(input);
+        assertEquals(expected, result, "Expected " + expected + " iterations for input " + input);
+    }
+
 }
