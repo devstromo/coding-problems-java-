@@ -32,6 +32,19 @@ public class Problem {
         return solveRecursiveMemo(n, new HashMap<>());
     }
 
+    public Map<Integer, Long> longestSequences() {
+        var max = Long.MIN_VALUE;
+        var num = 0;
+        for (int i = 1; i < 1_000_000; i++) {
+            long iterations = solveRecursiveMemo(i);
+            if (iterations > max) {
+                max = iterations;
+                num = i;
+            }
+        }
+        return Map.of(num, max);
+    }
+
     private long solveRecursiveMemo(long n, Map<Long, Long> memo) {
         if (n == 1) {
             return 0;

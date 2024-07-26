@@ -1,5 +1,6 @@
 package com.devstromo.day849;
 
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -49,6 +50,16 @@ class ProblemUnitTest {
     public void testSolveRecursiveMemo(long input, long expected) {
         final var result = problem.solveRecursiveMemo(input);
         assertEquals(expected, result, "Expected " + expected + " iterations for input " + input);
+    }
+
+    @Test
+    public void testMaxSequenceLessThan1_000_000() {
+        final var result = problem.longestSequences();
+        assertFalse(result.isEmpty());
+        final var firstKey = result.keySet().stream().findFirst();
+        var key = firstKey.get();
+        assertEquals(837799, key);
+        assertEquals(524, result.get(key));
     }
 
 }
