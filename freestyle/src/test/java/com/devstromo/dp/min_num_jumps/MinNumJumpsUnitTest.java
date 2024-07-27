@@ -1,0 +1,16 @@
+package com.devstromo.dp.min_num_jumps;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class MinNumJumpsUnitTest {
+    private final MinNumJumps minNumJumps = new MinNumJumps();
+
+    @Test
+    public void testSolution() {
+        assertEquals(3, minNumJumps.recursive(new int[]{1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9}));
+        assertEquals(10, minNumJumps.recursive(new int[]{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}));
+    }
+
+}
