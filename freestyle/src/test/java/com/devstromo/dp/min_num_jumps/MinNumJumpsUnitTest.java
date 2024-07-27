@@ -25,4 +25,11 @@ class MinNumJumpsUnitTest {
         assertEquals(10, minNumJumps.tabulation(new int[]{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}));
     }
 
+    @Test
+    public void testSolutionOptimized() {
+        assertEquals(3, minNumJumps.optimized(new int[]{1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9}));
+        assertEquals(10, minNumJumps.optimized(new int[]{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}));
+    }
+
+
 }
