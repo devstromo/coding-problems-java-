@@ -18,6 +18,24 @@ public class MinNumJumps {
         return recursiveMemo(nums, 0, nums.length - 1, memo);
     }
 
+    public int tabulation(int[] nums) {
+        final var n = nums.length;
+        final var dp = new int[n];
+        if (n == 0 || nums[0] == 0)
+            return Integer.MAX_VALUE;
+        dp[0] = 0;
+        for (int i = 1; i < n; i++) {
+            dp[i] = Integer.MAX_VALUE;
+            for (int j = 0; j < i; j++) {
+                if (i <= j + nums[j] && dp[j] != Integer.MAX_VALUE) {
+                    dp[i] = Math.min(dp[i], dp[j] + 1);
+                    break;
+                }
+            }
+        }
+        return dp[n - 1];
+    }
+
     private int recursive(int[] nums, int low, int high) {
         if (low == high) return 0;
         if (nums[low] == 0) return Integer.MAX_VALUE;
