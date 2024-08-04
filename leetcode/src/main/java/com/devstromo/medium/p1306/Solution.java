@@ -1,6 +1,38 @@
 package com.devstromo.medium.p1306;
 
+import java.util.HashSet;
+import java.util.LinkedList;
+
 class Solution {
+    public boolean canReach(int[] arr, int start) {
+        final var queue = new LinkedList<Integer>();
+        queue.add(start);
+        final var visited = new HashSet<Integer>();
+
+        while (!queue.isEmpty()) {
+            final var current = queue.poll();
+
+            if (arr[current] == 0) {
+                return true;
+            }
+            if (visited.contains(current)) {
+                continue;
+            }
+            visited.add(current);
+
+            int idxLeft = current - arr[current];
+            int idxRight = current + arr[current];
+
+            if (idxLeft >= 0 && !visited.contains(idxLeft)) {
+                queue.add(idxLeft);
+            }
+            if (idxRight < arr.length && !visited.contains(idxRight)) {
+                queue.add(idxRight);
+            }
+        }
+
+        return false;
+    }
 
     public boolean canReachRecursive(int[] arr, int start) {
         final var visited = new boolean[arr.length];
