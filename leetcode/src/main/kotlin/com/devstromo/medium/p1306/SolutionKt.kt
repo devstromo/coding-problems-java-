@@ -32,4 +32,20 @@ class SolutionKt {
 
         return false
     }
+
+    fun canReachRecursive(arr: IntArray, start: Int): Boolean {
+        val visited = BooleanArray(arr.size)
+        return canReachRecursive(arr, start, visited)
+    }
+
+    private fun canReachRecursive(arr: IntArray, idx: Int, visited: BooleanArray): Boolean {
+        if (idx < 0 || idx >= arr.size || visited[idx]) {
+            return false
+        }
+        if (arr[idx] == 0) {
+            return true
+        }
+        visited[idx] = true
+        return canReachRecursive(arr, idx - arr[idx], visited) || canReachRecursive(arr, idx + arr[idx], visited)
+    }
 }
