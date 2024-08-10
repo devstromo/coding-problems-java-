@@ -14,4 +14,12 @@ class SolutionKtUnitTest {
         assertEquals(0.25000, solution.myPow(2.00000, -2), epsilon)
     }
 
+    @Test
+    fun `Test Pow(x, n) Best`() {
+        val epsilon = 1e-5
+        assertEquals(1024.00000, solution.myPowBest(2.00000, 10), epsilon)
+        assertEquals(9.26100, solution.myPowBest(2.10000, 3), epsilon)
+        assertEquals(0.25000, solution.myPowBest(2.00000, -2), epsilon)
+    }
+
 }

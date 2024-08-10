@@ -18,4 +18,24 @@ class SolutionKt {
         }
         return result
     }
+
+    fun myPowBest(x: Double, n: Int): Double {
+        var base = x
+        var exp = n
+        var res = 1.0
+        if (n < 0) {
+            base = 1 / base
+        }
+
+        while (exp != 0) {
+
+            if (exp % 2 != 0) {
+                res *= base
+            }
+
+            base *= base
+            exp /= 2
+        }
+        return res
+    }
 }
