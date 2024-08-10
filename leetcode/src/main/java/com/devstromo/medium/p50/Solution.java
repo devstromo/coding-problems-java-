@@ -19,6 +19,23 @@ public class Solution {
         return bd.doubleValue();
     }
 
+    public double myPowOptimized(double x, int n) {
+        if (n < 0) {
+            n = -n;
+            x = 1 / x;
+        }
+        var result = 1.0000;
+        while (n != 0) {
+            if ((n & 1) != 0) {
+                result *= x;
+            }
+            x *= x;
+            n >>>= 1;
+        }
+
+        return result;
+    }
+
     private double pow(double x, int n) {
         if (n == 0) return 1.0;
         var half = pow(x, n / 2);
