@@ -37,4 +37,26 @@ public class Solution {
         }
         return nums[n - 1];
     }
+
+    public int maxResultBestSolution(int[] nums, int k) {
+        int[] dp = new int[nums.length];
+        dp[nums.length - 1] = nums[nums.length - 1];
+        int idx = nums.length - 1;
+        for (int i = nums.length - 2; i >= 0; i--) {
+            if (idx > i + k) {
+                idx = i + 1;
+                for (int j = i + 2; j <= i + k && j <= nums.length - 1; j++) {
+                    if (dp[j] > dp[idx]) {
+                        idx = j;
+                    }
+                }
+            }
+
+            dp[i] = nums[i] + dp[idx];
+            if (dp[i] > dp[idx]) {
+                idx = i;
+            }
+        }
+        return dp[0];
+    }
 }

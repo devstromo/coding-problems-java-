@@ -22,5 +22,11 @@ class SolutionUnitTest {
         assertEquals(0, solution.maxResultOptimized(new int[]{1, -5, -20, 4, -1, 3, -6, -3}, 2));
     }
 
+    @Test
+    public void testJumpGame6BestSolution() {
+        assertEquals(7, solution.maxResultBestSolution(new int[]{1, -1, -2, 4, -7, 3}, 2));
+        assertEquals(17, solution.maxResultBestSolution(new int[]{10, -5, -2, 4, 0, 3}, 3));
+        assertEquals(0, solution.maxResultBestSolution(new int[]{1, -5, -20, 4, -1, 3, -6, -3}, 2));
+    }
 
 }
