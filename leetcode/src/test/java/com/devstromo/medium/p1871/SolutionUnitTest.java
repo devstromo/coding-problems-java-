@@ -19,4 +19,10 @@ class SolutionUnitTest {
         assertFalse(solution.canReach("01101110", 2, 3));
     }
 
+    @Test
+    public void testJumpGameBestSolution() {
+        assertTrue(solution.canReachBestSolution("011010", 2, 3));
+        assertFalse(solution.canReachBestSolution("01101110", 2, 3));
+    }
+
 }

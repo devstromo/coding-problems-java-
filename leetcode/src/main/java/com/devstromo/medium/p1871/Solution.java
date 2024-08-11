@@ -27,6 +27,32 @@ public class Solution {
         return false;
     }
 
+    public boolean canReachBestSolution(String s, int minJump, int maxJump) {
+        int size = s.length() - 1;
+        if (s.charAt(size) != '0') {
+            return false;
+        }
+        int low = size - maxJump;
+        int high = size - minJump;
+        while (low > 0) {
+            int max = -1;
+            int min = size + 1;
+            for (int i = low; i <= high; i++) {
+                if (s.charAt(i) == '0') {
+                    min = Math.min(min, i - maxJump);
+                    max = Math.max(max, i - minJump);
+                }
+            }
+            if (max < 0) {
+                return false;
+            }
+            high = Math.min(low - 1, max);
+            low = min;
+        }
+
+        return true;
+    }
+
     // TLE
     public boolean canReachRecursive(String s, int minJump, int maxJump) {
         int n = s.length();
