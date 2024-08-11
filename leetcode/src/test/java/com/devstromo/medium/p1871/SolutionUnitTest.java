@@ -13,4 +13,10 @@ class SolutionUnitTest {
         assertFalse(solution.canReachRecursive("01101110", 2, 3));
     }
 
+    @Test
+    public void testJumpGameBFS() {
+        assertTrue(solution.canReach("011010", 2, 3));
+        assertFalse(solution.canReach("01101110", 2, 3));
+    }
+
 }

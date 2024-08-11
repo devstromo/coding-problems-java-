@@ -1,7 +1,32 @@
 package com.devstromo.medium.p1871;
 
 
+import java.util.ArrayDeque;
+
 public class Solution {
+    public boolean canReach(String s, int minJump, int maxJump) {
+        final var deque = new ArrayDeque<Integer>();
+        int farthest = 0;
+        final var n = s.length();
+        deque.add(0);
+
+        while (!deque.isEmpty()) {
+            final var i = deque.pollFirst();
+            var low = Math.max(i + minJump, farthest + 1);
+            int high = Math.min(i + maxJump + 1, n);
+
+            for (int j = low; j < high; j++) {
+                if (s.charAt(j) == '0') {
+                    deque.addLast(j);
+                    if (j == n - 1)
+                        return true;
+                }
+            }
+            farthest = i + maxJump;
+        }
+        return false;
+    }
+
     // TLE
     public boolean canReachRecursive(String s, int minJump, int maxJump) {
         int n = s.length();
