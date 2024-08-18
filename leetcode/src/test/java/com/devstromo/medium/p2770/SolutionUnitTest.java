@@ -16,4 +16,13 @@ class SolutionUnitTest {
         assertEquals(-1, solution.maximumJumps(new int[]{0, 2, 1, 3}, 1));
     }
 
+    @Test
+    void solveMaximumJumpsBestSolution() {
+        final var nums = new int[]{1, 3, 6, 4, 1, 2};
+        assertEquals(3, solution.maximumJumpsBestSolution(nums, 2));
+        assertEquals(5, solution.maximumJumpsBestSolution(nums, 3));
+        assertEquals(-1, solution.maximumJumpsBestSolution(nums, 0));
+        assertEquals(-1, solution.maximumJumpsBestSolution(new int[]{0, 2, 1, 3}, 1));
+    }
+
 }
