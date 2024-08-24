@@ -118,4 +118,10 @@ class LISUnitTest {
         nums = new int[]{1, 2, 3, 2, 3, 7, 2, 1};
         assertEquals(7, longestIncreaseSubsequenceWithDifferenceOfOneOptimized(nums));
     }
+
+    @Test
+    public void testLisWithRMQDataStructures() {
+        var nums = new int[]{6, 2, 4, 3, 7, 4, 5};
+        assertEquals(4, lisWithRMQDataStructures(nums));
+    }
 }

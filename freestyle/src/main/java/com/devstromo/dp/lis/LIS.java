@@ -1,7 +1,6 @@
 package com.devstromo.dp.lis;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 class LIS {
 
@@ -252,5 +251,61 @@ class LIS {
             }
         }
         return max;
+    }
+
+    public static int lisWithRMQDataStructures(int[] nums) {
+        // apply coordinate compression to all elements of the array
+        int[] sorted = nums.clone();
+        Arrays.sort(sorted);
+        final var coordComp = new HashMap<Integer, Integer>();
+        int at = 0;
+        for (int i : sorted) {
+            if (!coordComp.containsKey(i)) {
+                coordComp.put(i, at++);
+            }
+        }
+        final var dp = new MaxSegTree(coordComp.size());
+        dp.set(coordComp.get(nums[0]), 1);
+        for (int i = 1; i < nums.length; i++) {
+            int cmp = coordComp.get(nums[i]);
+            int maxPrev = dp.rangeMax(0, cmp);
+            if (maxPrev != Integer.MIN_VALUE) {
+                dp.set(cmp, dp.rangeMax(0, cmp) + 1);
+            } else {
+                dp.set(cmp, 1);
+            }
+        }
+
+        return dp.rangeMax(0, coordComp.size());
+    }
+
+    static class MaxSegTree {
+        int len;
+        int[] segmentTree;
+
+        public MaxSegTree(int len) {
+            this.len = len;
+            segmentTree = new int[2 * len];
+        }
+
+        void set(int ind, int val) {
+            for (segmentTree[ind += len] = val; ind > 1; ind >>= 1) {
+                segmentTree[ind >> 1] = Math.max(segmentTree[ind], segmentTree[ind ^ 1]);
+            }
+        }
+
+        // maximum of the range [from, to)
+        int rangeMax(int from, int to) {
+            int max = Integer.MIN_VALUE;
+            for (from += len, to += len; from < to; from >>= 1, to >>= 1) {
+                if ((from & 1) != 0) {
+                    max = Math.max(max, segmentTree[from++]);
+                }
+                if ((to & 1) != 0) {
+                    max = Math.max(max, segmentTree[--to]);
+                }
+            }
+            return max;
+        }
     }
 }
