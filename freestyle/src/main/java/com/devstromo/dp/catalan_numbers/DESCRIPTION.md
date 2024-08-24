@@ -2,7 +2,9 @@
 
 ## Introduction
 
-Catalan numbers are a sequence of natural numbers that have found application in various combinatorial mathematics problems, particularly in counting problems that involve recursive structures like trees, paths, and polygons. The sequence of Catalan numbers is one of the most ubiquitous sequences in combinatorics.
+Catalan numbers are a sequence of natural numbers that have found application in various combinatorial mathematics
+problems, particularly in counting problems that involve recursive structures like trees, paths, and polygons. The
+sequence of Catalan numbers is one of the most ubiquitous sequences in combinatorics.
 
 ## Definition
 
@@ -31,30 +33,47 @@ Dynamic programming can be used to calculate Catalan numbers efficiently. Here i
 ### Algorithm
 
 1. **Initialization**:
-   - Let dp[0] = 1 as the base case.
+    - Let dp[0] = 1 as the base case.
 
 2. **Filling the dp Array**:
-   - For each i from 1 to n, calculate C_i using:
-     C_i = sum from j=0 to i-1 of (dp[j] * dp[i-1-j])
+    - For each i from 1 to n, calculate C_i using:
+      C_i = sum from j=0 to i-1 of (dp[j] * dp[i-1-j])
 
 ## Key Applications
 
 ### 1. Combinatorial Mathematics
-- **Parentheses Matching**: Catalan numbers count the number of ways \( n \) pairs of parentheses can be correctly matched. This is fundamental in programming language compilers and mathematics involving expressions with nested operations.
-- **Dyck Words**: A Dyck word is a string containing \( n \) \( X \)'s and \( n \) \( Y \)'s such that no initial segment has more \( Y \)'s than \( X \)'s. Catalan numbers enumerate these words.
+
+- **Parentheses Matching**: Catalan numbers count the number of ways \( n \) pairs of parentheses can be correctly
+  matched. This is fundamental in programming language compilers and mathematics involving expressions with nested
+  operations.
+- **Dyck Words**: A Dyck word is a string containing \( n \) \( X \)'s and \( n \) \( Y \)'s such that no initial
+  segment has more \( Y \)'s than \( X \)'s. Catalan numbers enumerate these words.
 
 ### 2. Tree Structures
-- **Binary Trees**: The nth Catalan number counts the number of distinct full binary trees with \( n+1 \) leaves. This is relevant in data structures and algorithms, particularly in the study of expression parsing and the generation of different code execution paths.
+
+- **Binary Trees**: The nth Catalan number counts the number of distinct full binary trees with \( n+1 \) leaves. This
+  is relevant in data structures and algorithms, particularly in the study of expression parsing and the generation of
+  different code execution paths.
 - **Rooted Binary Trees**: Similarly, Catalan numbers count the number of rooted binary trees with \( n \) nodes.
 
 ### 3. Polygon Triangulation
-- **Polygon Division**: Catalan numbers can determine the number of ways to divide a convex polygon with \( n+2 \) sides into triangles using non-crossing diagonals. This has applications in computer graphics and computational geometry.
+
+- **Polygon Division**: Catalan numbers can determine the number of ways to divide a convex polygon with \( n+2 \) sides
+  into triangles using non-crossing diagonals. This has applications in computer graphics and computational geometry.
 
 ### 4. Other Geometric Configurations
-- **Planar Graphs**: The number of planar graphs can be counted using Catalan numbers. This is crucial in network topology and the study of molecules in chemistry.
+
+- **Planar Graphs**: The number of planar graphs can be counted using Catalan numbers. This is crucial in network
+  topology and the study of molecules in chemistry.
 
 ### 5. Paths in a Grid
-- **Monotonic Paths**: In a grid, Catalan numbers count the number of paths from the bottom-left corner to the top-right corner that do not cross above the main diagonal, assuming only upward or rightward steps at each point. This has applications in queueing theory and traffic flow analysis.
+
+- **Monotonic Paths**: In a grid, Catalan numbers count the number of paths from the bottom-left corner to the top-right
+  corner that do not cross above the main diagonal, assuming only upward or rightward steps at each point. This has
+  applications in queueing theory and traffic flow analysis.
 
 ### 6. Games and Puzzles
-- **Mountain Ranges**: Catalan numbers count the number of mountain ranges that can be formed using upstrokes and downstrokes with \( n \) upstrokes and \( n \) downstrokes without ever going below the horizontal line. This is similar to the problem of valid sequences of parentheses.
+
+- **Mountain Ranges**: Catalan numbers count the number of mountain ranges that can be formed using upstrokes and
+  downstrokes with \( n \) upstrokes and \( n \) downstrokes without ever going below the horizontal line. This is
+  similar to the problem of valid sequences of parentheses.
