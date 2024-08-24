@@ -56,6 +56,12 @@ class LISUnitTest {
     }
 
     @Test
+    public void testLisWithBinarySearch() {
+        var nums = new int[]{6, 2, 4, 3, 7, 4, 5};
+        assertEquals(4, lisWithBS(nums));
+    }
+
+    @Test
     public void testLds1() {
         var arr1 = new int[]{9, 4, 3, 2, 5, 4, 3, 2};
         assertEquals(5, longestDecreasingSubsequence(arr1));

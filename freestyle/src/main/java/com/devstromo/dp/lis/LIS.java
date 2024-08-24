@@ -97,6 +97,23 @@ class LIS {
         return size;
     }
 
+    public static int lisWithBS(int[] nums) {
+        final var dp = new ArrayList<Integer>();
+        for (int i : nums) {
+            int pos = Collections.binarySearch(dp, i);
+            pos = pos < 0 ? Math.abs(pos + 1) : pos;
+
+            if (pos == dp.size()) {
+                // we can have a new, longer increasing subsequence!
+                dp.add(i);
+            } else {
+                // oh ok, at least we can make the ending element smaller
+                dp.set(pos, i);
+            }
+        }
+        return dp.size();
+    }
+
     public static int longestDecreasingSubsequence(int[] nums) {
         int n = nums.length;
         int[] lds = new int[n];
