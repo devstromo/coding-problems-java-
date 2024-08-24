@@ -20,4 +20,20 @@ class SolutionKt {
         return dp.size
     }
 
+    fun lengthOfLISBestSolution(nums: IntArray): Int {
+        val sub = mutableListOf<Int>()
+        for (num in nums) {
+            val pos = Collections.binarySearch(sub, num)
+            if (pos < 0) {
+                val insertPos = -(pos + 1)
+                if (insertPos < sub.size) {
+                    sub[insertPos] = num
+                } else {
+                    sub.add(num)
+                }
+            }
+        }
+        return sub.size
+    }
+
 }
