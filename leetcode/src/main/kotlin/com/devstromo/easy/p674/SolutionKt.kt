@@ -18,4 +18,16 @@ class SolutionKt {
         }
         return max
     }
+
+    fun findLengthOfLCISBest(nums: IntArray): Int {
+        var inc = 1
+        var max = 1
+
+        for (i in 1 until nums.size) {
+            inc = if (nums[i] > nums[i - 1]) inc + 1 else 1
+            max = maxOf(max, inc)
+        }
+
+        return max
+    }
 }
