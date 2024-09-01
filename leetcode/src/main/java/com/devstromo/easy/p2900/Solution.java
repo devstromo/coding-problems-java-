@@ -28,4 +28,17 @@ public class Solution {
         }
         return result;
     }
+
+    public List<String> getLongestSubsequenceBest(String[] words, int[] groups) {
+        List<String> arr = new ArrayList<>();
+        int n = groups.length;
+        int last = -1;
+        for (int i = 0; i < n; i++) {
+            if (groups[i] != last) {
+                last = groups[i];
+                arr.add(words[i]);
+            }
+        }
+        return arr;
+    }
 }

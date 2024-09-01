@@ -19,4 +19,12 @@ class SolutionUnitTest {
     }
 
 
+    @Test
+    void testGetLongestSubsequenceBest() {
+        assertEquals(List.of("e", "b"), solution.getLongestSubsequenceBest(new String[]{"e", "a", "b"}, new int[]{0, 0, 1}));
+        assertEquals(List.of("a", "b", "c"), solution.getLongestSubsequenceBest(new String[]{"a", "b", "c", "d"}, new int[]{1, 0, 1, 1}));
+        assertEquals(List.of("c"), solution.getLongestSubsequenceBest(new String[]{"c"}, new int[]{0}));
+        assertEquals(List.of("d"), solution.getLongestSubsequenceBest(new String[]{"d"}, new int[]{1}));
+        assertEquals(List.of("d", "g"), solution.getLongestSubsequenceBest(new String[]{"d", "g"}, new int[]{0, 1}));
+    }
 }
