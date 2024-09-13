@@ -70,3 +70,5 @@ build/
 /.idea/uiDesigner.xml
 /.idea/vcs.xml
 /.idea/encodings.xml
+
+local_output_input*.txt
