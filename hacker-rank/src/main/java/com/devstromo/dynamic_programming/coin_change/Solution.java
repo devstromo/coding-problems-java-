@@ -7,6 +7,7 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Stream;
 
+import static com.devstromo.helpers.TestsHelper.compareResults;
 import static java.util.stream.Collectors.toList;
 
 public class Solution {
@@ -70,22 +71,6 @@ public class Solution {
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    private static void compareResults(String expectedFile, String actualFile) {
-        try {
-            List<String> expectedLines = Files.readAllLines(Paths.get(expectedFile));
-            List<String> actualLines = Files.readAllLines(Paths.get(actualFile));
-
-            boolean isEqual = expectedLines.equals(actualLines);
-            if (isEqual) {
-                System.out.println(actualFile + " matches the expected output.");
-            } else {
-                System.out.println(actualFile + " does not match the expected output.");
-            }
-        } catch (IOException e) {
             e.printStackTrace();
         }
     }

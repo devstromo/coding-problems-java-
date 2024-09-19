@@ -4,8 +4,9 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.List;
 import java.util.stream.IntStream;
+
+import static com.devstromo.helpers.TestsHelper.compareResults;
 
 public class Solution {
     public static void main(String[] args) {
@@ -76,19 +77,4 @@ public class Solution {
         }
     }
 
-    private static void compareResults(String expectedFile, String actualFile) {
-        try {
-            List<String> expectedLines = Files.readAllLines(Paths.get(expectedFile));
-            List<String> actualLines = Files.readAllLines(Paths.get(actualFile));
-
-            boolean isEqual = expectedLines.equals(actualLines);
-            if (isEqual) {
-                System.out.println(actualFile + " matches the expected output.");
-            } else {
-                System.out.println(actualFile + " does not match the expected output.");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 }
