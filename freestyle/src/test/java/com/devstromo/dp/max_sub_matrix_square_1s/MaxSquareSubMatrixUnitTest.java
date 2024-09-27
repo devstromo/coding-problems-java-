@@ -32,4 +32,28 @@ class MaxSquareSubMatrixUnitTest {
         assertEquals(2, solution.maxSubMatrix(M));
     }
 
+    @Test
+    public void testMaxSubMatrixSpaceOptimized() {
+        final var M = new int[][]
+                {
+                        {0, 1, 1, 0, 1},
+                        {1, 1, 0, 1, 0},
+                        {0, 1, 1, 1, 0},
+                        {1, 1, 1, 1, 0},
+                        {1, 1, 1, 1, 1},
+                        {0, 0, 0, 0, 0}
+                };
+        assertEquals(3, solution.maxSubMatrix(M));
+    }
+
+    @Test
+    public void testMaxSubMatrixSpaceOptimized2() {
+        final var M = new int[][]
+                {
+                        {1, 1, 0, 1},
+                        {1, 1, 1, 0},
+                        {1, 1, 1, 1}
+                };
+        assertEquals(2, solution.maxSubMatrix(M));
+    }
 }

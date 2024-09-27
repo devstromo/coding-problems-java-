@@ -24,4 +24,40 @@ public class MaxSquareSubMatrix {
         }
         return max;
     }
+
+    public int maxSubMatrixSpaceOptimized(int[][] matrix) {
+        int rows = matrix.length;
+        int columns = matrix[0].length;
+
+        if (rows == 0 || columns == 0) {
+            return -0;
+        }
+
+        int[][] S = new int[2][columns];
+        int max = 0;
+
+        for (int j = 0; j < columns; j++) {
+            S[1][j] = matrix[0][j];
+            max = Math.max(max, S[1][j]);
+        }
+
+        for (int i = 1; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                if (matrix[i][j] == 1) {
+                    if (j == 0) {
+                        S[1][j] = 1;
+                    } else {
+                        S[1][j] = 1 + Math.min(S[0][j - 1], Math.min(S[0][j], S[1][j - 1]));
+                    }
+                } else {
+                    S[1][j] = 0;
+                }
+                max = Math.max(max, S[1][j]);
+            }
+            for (int j = 0; j < columns; j++) {
+                S[0][j] = S[1][j];
+            }
+        }
+        return max;
+    }
 }
