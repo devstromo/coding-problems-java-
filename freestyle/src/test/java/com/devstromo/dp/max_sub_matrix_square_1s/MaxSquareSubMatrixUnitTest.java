@@ -43,7 +43,7 @@ class MaxSquareSubMatrixUnitTest {
                         {1, 1, 1, 1, 1},
                         {0, 0, 0, 0, 0}
                 };
-        assertEquals(3, solution.maxSubMatrix(M));
+        assertEquals(3, solution.maxSubMatrixSpaceOptimized(M));
     }
 
     @Test
@@ -54,6 +54,6 @@ class MaxSquareSubMatrixUnitTest {
                         {1, 1, 1, 0},
                         {1, 1, 1, 1}
                 };
-        assertEquals(2, solution.maxSubMatrix(M));
+        assertEquals(2, solution.maxSubMatrixSpaceOptimized(M));
     }
 }
