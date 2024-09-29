@@ -21,9 +21,9 @@ public class MinCostPath {
      * @param costs a 2D array where {@code costs[i][j]} represents the cost to traverse cell (i, j)
      * @return the minimum cost to reach the bottom-right corner from the top-left corner
      * @throws IllegalArgumentException if the input array is null or empty
-     * <p>
-     * Time Complexity: O(3^(m*n)), where m is the number of rows and n is the number of columns.
-     * Space Complexity: O(m*n) for the recursion stack.
+     *                                  <p>
+     *                                  Time Complexity: O(3^(m*n)), where m is the number of rows and n is the number of columns.
+     *                                  Space Complexity: O(m*n) for the recursion stack.
      */
     public int recursive(int[][] costs) {
         if (costs == null || costs.length == 0 || costs[0].length == 0) {
@@ -38,9 +38,9 @@ public class MinCostPath {
      * @param costs a 2D array where {@code costs[i][j]} represents the cost to traverse cell (i, j)
      * @return the minimum cost to reach the bottom-right corner from the top-left corner
      * @throws IllegalArgumentException if the input array is null or empty
-     * <p>
-     * Time Complexity: O(m*n), where m is the number of rows and n is the number of columns.
-     * Space Complexity: O(m*n) for the memoization table and recursion stack.
+     *                                  <p>
+     *                                  Time Complexity: O(m*n), where m is the number of rows and n is the number of columns.
+     *                                  Space Complexity: O(m*n) for the memoization table and recursion stack.
      */
     public int memoized(int[][] costs) {
         if (costs == null || costs.length == 0 || costs[0].length == 0) {
@@ -58,9 +58,9 @@ public class MinCostPath {
      * @param costs a 2D array where {@code costs[i][j]} represents the cost to traverse cell (i, j)
      * @return the minimum cost to reach the bottom-right corner from the top-left corner
      * @throws IllegalArgumentException if the input array is null or empty
-     * <p>
-     * Time Complexity: O(m*n), where m is the number of rows and n is the number of columns.
-     * Space Complexity: O(m*n) for the DP table.
+     *                                  <p>
+     *                                  Time Complexity: O(m*n), where m is the number of rows and n is the number of columns.
+     *                                  Space Complexity: O(m*n) for the DP table.
      */
     public int dp2D(int[][] costs) {
         if (costs == null || costs.length == 0 || costs[0].length == 0) {
@@ -75,9 +75,9 @@ public class MinCostPath {
      * @param cost a 2D array where {@code cost[i][j]} represents the cost to traverse cell (i, j)
      * @return the minimum cost to reach the bottom-right corner from the top-left corner
      * @throws IllegalArgumentException if the input array is null or empty
-     * <p>
-     * Time Complexity: O(m*n), where m is the number of rows and n is the number of columns.
-     * Space Complexity: O(1) since the input array is modified in place.
+     *                                  <p>
+     *                                  Time Complexity: O(m*n), where m is the number of rows and n is the number of columns.
+     *                                  Space Complexity: O(1) since the input array is modified in place.
      */
     public int spaceOptimized(int[][] cost) {
         if (cost == null || cost.length == 0 || cost[0].length == 0) {
@@ -142,7 +142,11 @@ public class MinCostPath {
             }
         }
 
-        return dp[costs.length - 1][ costs[0].length - 1];
+        return dp[costs.length - 1][costs[0].length - 1];
+    }
+
+    public int minCostToMN(int[][] cost, int m, int n) {
+        return spaceOptimized(cost, m, n);
     }
 
     /**
@@ -259,5 +263,6 @@ public class MinCostPath {
             int x,
             int y,
             int cost
-    ) { }
+    ) {
+    }
 }

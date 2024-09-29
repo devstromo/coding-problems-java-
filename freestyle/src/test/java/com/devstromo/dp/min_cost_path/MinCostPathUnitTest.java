@@ -58,4 +58,13 @@ class MinCostPathUnitTest {
         assertEquals(45, minCostPath.minCostPathDijkstra(costs));
     }
 
+    @Test
+    public void testMinCostToMN() {
+        var costs = new int[][]{
+                {1, 2, 3},
+                {4, 8, 2},
+                {1, 5, 3}
+        };
+        assertEquals(2, minCostPath.minCostToMN(costs, 2, 2));
+    }
 }
