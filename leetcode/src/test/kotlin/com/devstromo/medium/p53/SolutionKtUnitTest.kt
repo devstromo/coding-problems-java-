@@ -12,4 +12,11 @@ class SolutionKtUnitTest {
         assertEquals(1, solution.maxSubArray(intArrayOf(1)));
         assertEquals(23, solution.maxSubArray(intArrayOf(5, 4, -1, 7, 8)));
     }
+
+    @Test
+    fun `Test max sub array best solution`() {
+        assertEquals(6, solution.maxSubArrayBest(intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4)));
+        assertEquals(1, solution.maxSubArrayBest(intArrayOf(1)));
+        assertEquals(23, solution.maxSubArrayBest(intArrayOf(5, 4, -1, 7, 8)));
+    }
 }

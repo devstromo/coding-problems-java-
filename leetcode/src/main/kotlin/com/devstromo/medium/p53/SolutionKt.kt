@@ -13,4 +13,19 @@ class SolutionKt {
         }
         return max;
     }
+
+    fun maxSubArrayBest(nums: IntArray): Int {
+        var max = Int.MIN_VALUE
+        var curr = 0
+        for (n in nums) {
+            curr += n
+            if (curr > max) {
+                max = curr
+            }
+            if (curr < 0) {
+                curr = 0
+            }
+        }
+        return max
+    }
 }
