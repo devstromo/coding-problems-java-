@@ -13,4 +13,19 @@ class SolutionKt {
         }
         return fib[n]
     }
+
+    fun fibBest(n: Int): Int {
+        if (n == 0) return 0
+        if (n == 1) return 1
+
+        var prev = 1
+        var secondPrev = 0
+        var fib = 0
+        for (i in 2..n) {
+            fib = secondPrev + prev
+            secondPrev = prev
+            prev = fib
+        }
+        return fib
+    }
 }

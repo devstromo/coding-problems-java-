@@ -7,9 +7,16 @@ class SolutionKtUnitTest {
     private val solutionKt = SolutionKt()
 
     @Test
-    fun  `Test fibonacci`() {
+    fun `Test fibonacci`() {
         assertEquals(832040, solutionKt.fib(30))
         assertEquals(3, solutionKt.fib(4))
         assertEquals(832040, solutionKt.fib(30))
+    }
+
+    @Test
+    fun `Test fibonacci best`() {
+        assertEquals(832040, solutionKt.fibBest(30))
+        assertEquals(3, solutionKt.fibBest(4))
+        assertEquals(832040, solutionKt.fibBest(30))
     }
 }
