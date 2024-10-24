@@ -13,4 +13,14 @@ public class Solution {
         }
         return -1;
     }
+
+    public int findDuplicateBest(int[] nums) {
+        int n = nums.length;
+        boolean[] pre = new boolean[n + 1];
+        for (int i = 0; i < n; i++) {
+            if (pre[nums[i]]) return nums[i];
+            else pre[nums[i]] = true;
+        }
+        return -1;
+    }
 }
