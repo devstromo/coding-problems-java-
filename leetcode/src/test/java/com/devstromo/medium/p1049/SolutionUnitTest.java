@@ -13,4 +13,9 @@ class SolutionUnitTest {
         assertEquals(5, solution.lastStoneWeightII(new int[]{31, 26, 33, 21, 40}));
     }
 
+    @Test
+    void testLastStoneWeightIIBest() {
+        assertEquals(1, solution.lastStoneWeightIIBest(new int[]{2, 7, 4, 1, 8, 1}));
+        assertEquals(5, solution.lastStoneWeightIIBest(new int[]{31, 26, 33, 21, 40}));
+    }
 }
