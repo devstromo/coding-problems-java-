@@ -20,4 +20,16 @@ class SolutionKt {
         }
         return dp[n][amount]
     }
+
+    fun changeBest(amount: Int, coins: IntArray): Int {
+        val dp = IntArray(amount + 1)
+        dp[0] = 1
+        for (c in coins) {
+            for (i in c..amount) {
+                dp[i] += dp[i - c]
+            }
+        }
+        return dp[amount]
+    }
+
 }

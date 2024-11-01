@@ -12,4 +12,11 @@ class SolutionKtUnitTest {
         assertEquals(0, solution.change(3, intArrayOf(2)))
         assertEquals(1, solution.change(10, intArrayOf(10)))
     }
+
+    @Test
+    fun `Test Change Coin II Best`() {
+        assertEquals(4, solution.changeBest(5, intArrayOf(1, 2, 5)))
+        assertEquals(0, solution.changeBest(3, intArrayOf(2)))
+        assertEquals(1, solution.changeBest(10, intArrayOf(10)))
+    }
 }
