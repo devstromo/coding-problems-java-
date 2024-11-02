@@ -14,4 +14,10 @@ class SolutionUnitTest {
         assertArrayEquals(new int[]{2, 3, 4, -1, 4}, solution.nextGreaterElements(new int[]{1, 2, 3, 4, 3}));
     }
 
+    @Test
+    public void testNextGreaterElementCircularBest() {
+        assertArrayEquals(new int[]{2, -1, 2}, solution.nextGreaterElementsBest(new int[]{1, 2, 1}));
+        assertArrayEquals(new int[]{2, 3, 4, -1, 4}, solution.nextGreaterElementsBest(new int[]{1, 2, 3, 4, 3}));
+    }
+
 }

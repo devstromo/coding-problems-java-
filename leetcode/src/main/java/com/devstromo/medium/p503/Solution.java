@@ -23,4 +23,23 @@ public class Solution {
 
         return result;
     }
+
+    public int[] nextGreaterElementsBest(int[] nums) {
+        int[] output = new int[nums.length];
+        int[] stack = new int[nums.length];
+        int top = -1;
+
+        for (int i = 0; i < 2 * nums.length - 1; ++i) {
+            while (top > -1 && nums[stack[top]] < nums[i % nums.length]) {
+                output[stack[top--]] = nums[i % nums.length];
+            }
+            if (i < nums.length) {
+                stack[++top] = i;
+            }
+        }
+        while (top > -1) {
+            output[stack[top--]] = -1;
+        }
+        return output;
+    }
 }
