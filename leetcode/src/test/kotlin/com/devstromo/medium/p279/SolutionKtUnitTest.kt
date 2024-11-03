@@ -11,4 +11,10 @@ class SolutionKtUnitTest {
         assertEquals(3, solution.numSquares(12))
         assertEquals(2, solution.numSquares(13))
     }
+
+    @Test
+    fun `Test numbers squares best`() {
+        assertEquals(3, solution.numSquaresBest(12))
+        assertEquals(2, solution.numSquaresBest(13))
+    }
 }
