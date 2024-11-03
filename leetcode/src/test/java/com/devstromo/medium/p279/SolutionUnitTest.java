@@ -13,4 +13,10 @@ class SolutionUnitTest {
         assertEquals(2, solution.numSquares(13));
     }
 
+    @Test
+    void testNumSquaresBest() {
+        assertEquals(3, solution.numSquaresBest(12));
+        assertEquals(2, solution.numSquaresBest(13));
+    }
+
 }
