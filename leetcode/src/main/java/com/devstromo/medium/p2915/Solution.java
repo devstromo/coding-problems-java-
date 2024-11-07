@@ -19,4 +19,18 @@ public class Solution {
 
         return dp[target];
     }
+
+    public int lengthOfLongestSubsequenceBest(List<Integer> nums, int target) {
+        int[] dp = new int[target + 1];
+        Arrays.fill(dp, -1);
+        dp[0] = 0;
+        for (int x : nums) {
+            for (int t = dp.length - 1; t >= x; t--) {
+                if (dp[t - x] != -1) {
+                    dp[t] = Math.max(dp[t], dp[t - x] + 1);
+                }
+            }
+        }
+        return dp[target];
+    }
 }
