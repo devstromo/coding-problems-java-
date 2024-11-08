@@ -14,4 +14,19 @@ class SolutionKt {
         }
         return pq.peek()
     }
+
+    fun findKthLargestBest(nums: IntArray, k: Int): Int {
+        val array: IntArray = IntArray(20001)
+        for (i in nums) {
+            array[i + 10000]++;
+        }
+        var kk = k
+        for (i in 20000 downTo 0) {
+            kk -= array[i]
+            if (kk <= 0) {
+                return i - 10000
+            }
+        }
+        return -5
+    }
 }
