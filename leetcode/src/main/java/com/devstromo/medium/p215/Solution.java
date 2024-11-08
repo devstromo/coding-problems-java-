@@ -15,4 +15,16 @@ public class Solution {
         }
         return pq.peek();
     }
+
+    public int findKthLargestBest(int[] nums, int k) {
+        int[] present = new int[20001];
+        for (int n : nums) {
+            present[10000 + n] += 1;
+        }
+        for (int i = present.length - 1; i >= 0; i--) {
+            k -= present[i];
+            if (k <= 0) return i - 10000;
+        }
+        return -1;
+    }
 }

@@ -13,4 +13,10 @@ class SolutionUnitTest {
         assertEquals(4, solution.findKthLargest(new int[]{3, 2, 3, 1, 2, 4, 5, 5, 6}, 4));
     }
 
+    @Test
+    void testFindKthLargestBest() {
+        assertEquals(5, solution.findKthLargestBest(new int[]{3, 2, 1, 5, 6, 4}, 2));
+        assertEquals(4, solution.findKthLargestBest(new int[]{3, 2, 3, 1, 2, 4, 5, 5, 6}, 4));
+    }
+
 }
