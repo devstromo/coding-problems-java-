@@ -20,6 +20,18 @@ public class Solution {
         return operations;
     }
 
+    public int convertTimeBest(String current, String correct) {
+        int currentTime = ((((current.charAt(0) - '0') * 10) + (current.charAt(1) - '0')) * 60) + ((current.charAt(3) - '0') * 10) + (current.charAt(4) - '0');
+        int correctTime = ((((correct.charAt(0) - '0') * 10) + (correct.charAt(1) - '0')) * 60) + ((correct.charAt(3) - '0') * 10) + (correct.charAt(4) - '0');
+        int move = 0;
+        int difference = correctTime - currentTime;
+        for (int increment : increments) {
+            move += (difference / increment);
+            difference %= increment;
+        }
+        return move;
+    }
+
     private int timeToMinutes(String time) {
         String[] parts = time.split(":");
         int hours = Integer.parseInt(parts[0]);
