@@ -13,4 +13,12 @@ class NumArrayUnitTest {
         assertEquals(-3, numArray.sumRange(0, 5));
     }
 
+    @Test
+    void testNumArrayBest() {
+        final var numArray = new NumArrayBest(new int[]{-2, 0, 3, -5, 2, -1});
+        assertEquals(1, numArray.sumRange(0, 2));
+        assertEquals(-1, numArray.sumRange(2, 5));
+        assertEquals(-3, numArray.sumRange(0, 5));
+    }
+
 }
