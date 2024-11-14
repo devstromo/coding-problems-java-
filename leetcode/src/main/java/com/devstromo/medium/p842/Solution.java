@@ -48,4 +48,34 @@ public class Solution {
 
         return false;
     }
+
+    public List<Integer> splitIntoFibonacciBest(String num) {
+        List<Integer> res = new ArrayList<>();
+        helper(num, res, 0);
+        return res;
+    }
+
+    private boolean helper(String s, List<Integer> res, int pos) {
+        if (pos == s.length()) {
+            return res.size() > 2;
+        }
+        long num = 0;
+        for (int i = pos; i < s.length(); i++) {
+            num = num * 10 + (s.charAt(i) - '0');
+            if (num > Integer.MAX_VALUE) {
+                return false;
+            }
+            if (res.size() < 2 || res.getLast() + res.get(res.size() - 2) == num) {
+                res.add((int) num);
+                if (helper(s, res, i + 1)) {
+                    return true;
+                }
+                res.removeLast();
+            }
+            if (i == pos && s.charAt(pos) == '0') {
+                return false;
+            }
+        }
+        return false;
+    }
 }
