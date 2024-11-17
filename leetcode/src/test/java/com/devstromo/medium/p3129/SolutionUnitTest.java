@@ -14,4 +14,11 @@ class SolutionUnitTest {
         assertEquals(14, solution.numberOfStableArrays(3, 3, 2));
     }
 
+    @Test
+    void testNumberOfStableArraysBest() {
+        assertEquals(2, solution.numberOfStableArraysBest(1, 1, 2));
+        assertEquals(1, solution.numberOfStableArraysBest(1, 2, 1));
+        assertEquals(14, solution.numberOfStableArraysBest(3, 3, 2));
+    }
+
 }
