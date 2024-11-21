@@ -14,4 +14,11 @@ class SolutionUnitTest {
         assertEquals(59, solution.subArrayRanges(new int[]{4, -2, -3, 4, 1}));
     }
 
+    @Test
+    public void testSubArrayRangesBest() {
+        assertEquals(4, solution.subArrayRangesBest(new int[]{1, 2, 3}));
+        assertEquals(4, solution.subArrayRangesBest(new int[]{1, 3, 3}));
+        assertEquals(59, solution.subArrayRangesBest(new int[]{4, -2, -3, 4, 1}));
+    }
+
 }
