@@ -29,4 +29,41 @@ public class Solution {
 
         return minLength;
     }
+
+
+    public int findShortestSubArrayBest(int[] nums) {
+
+        int max = -1;
+        for (int i = 0; i < nums.length; i++)
+            if (nums[i] > max) max = nums[i];
+
+        MinMax[] minmax = new MinMax[max + 1];
+        int maxfreq = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (minmax[nums[i]] == null)
+                minmax[nums[i]] = new MinMax(i);
+            minmax[nums[i]].max = i;
+            minmax[nums[i]].count++;
+
+            if (minmax[nums[i]].count > maxfreq)
+                maxfreq = minmax[nums[i]].count;
+        }
+        int minarray = Integer.MAX_VALUE;
+        for (int i = 0; i < minmax.length; i++) {
+            if (minmax[i] != null && minmax[i].count == maxfreq)
+                minarray = Math.min(minarray, minmax[i].max - minmax[i].min + 1);
+        }
+        return minarray;
+    }
+
+    private static class MinMax {
+        int count = 0;
+        int min;
+        int max;
+
+        public MinMax(int i) {
+            min = i;
+            max = i;
+        }
+    }
 }

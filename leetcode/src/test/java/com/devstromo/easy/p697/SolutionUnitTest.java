@@ -14,4 +14,11 @@ class SolutionUnitTest {
         assertEquals(1, solution.findShortestSubArray(new int[]{1}));
     }
 
+    @Test
+    public void testFindShortestSubArrayBest() {
+        assertEquals(2, solution.findShortestSubArrayBest(new int[]{1, 2, 2, 3, 1}));
+        assertEquals(6, solution.findShortestSubArrayBest(new int[]{1, 2, 2, 3, 1, 4, 2}));
+        assertEquals(1, solution.findShortestSubArrayBest(new int[]{1}));
+    }
+
 }
