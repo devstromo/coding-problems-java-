@@ -32,7 +32,7 @@ public class Solution {
     }
 
     public int lenLongestFibSubseqBest(int[] arr) {
-        final var index = new HashSet<>();
+        final var index = new HashSet<Integer>();
         for (int n : arr) {
             index.add(n);
         }
