@@ -1,7 +1,6 @@
 package com.devstromo.easy.p1137;
 
-import static com.devstromo.easy.p1137.Solution.tribonacci;
-import static com.devstromo.easy.p1137.Solution.tribonacciBest;
+import static com.devstromo.easy.p1137.Solution.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
@@ -24,9 +23,15 @@ class SolutionUnitTest {
         assertEquals(4, tribonacciBest(4));
     }
 
-
     @Test
     void testCaseTribonacciBest2() {
         assertEquals(1389537, tribonacciBest(25));
+    }
+
+    @Test
+    void testCaseTribonacciNoAdditionalSpace() {
+        assertEquals(1, tribonacciNoAditional(2));
+        assertEquals(4, tribonacciNoAditional(4));
+        assertEquals(1389537, tribonacciNoAditional(25));
     }
 }
