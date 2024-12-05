@@ -18,4 +18,12 @@ class SolutionUnitTest {
 
     }
 
+    @Test
+    void testThreeSumBest() {
+        assertEquals(List.of(List.of(-1, -1, 2), List.of(-1, 0, 1)), solution.threeSumBest(new int[]{-1, 0, 1, 2, -1, -4}));
+        assertEquals(List.of(), solution.threeSumBest(new int[]{0, 1, 1}));
+        assertEquals(List.of(List.of(0, 0, 0)), solution.threeSumBest(new int[]{0, 0, 0}));
+
+    }
+
 }
