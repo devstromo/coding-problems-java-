@@ -13,4 +13,10 @@ class SolutionUnitTest {
         assertEquals(2, solution.kItemsWithMaximumSum(3, 2, 0, 2));
     }
 
+    @Test
+    void testKItemsWithMaximumSumBest() {
+        assertEquals(2, solution.kItemsWithMaximumSumBest(3, 2, 0, 2));
+        assertEquals(2, solution.kItemsWithMaximumSumBest(3, 2, 0, 2));
+    }
+
 }
