@@ -18,4 +18,18 @@ public class Solution {
         }
         return max;
     }
+
+    public int maximumValueSimple(String[] strs) {
+        int max = Integer.MIN_VALUE;
+
+        for (String s : strs) {
+            try {
+                max = Math.max(max, Integer.parseInt(s));
+            } catch (NumberFormatException e) {
+                max = Math.max(max, s.length());
+            }
+        }
+
+        return max;
+    }
 }

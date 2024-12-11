@@ -14,4 +14,10 @@ class SolutionUnitTest {
         assertEquals(1, solution.maximumValue(new String[]{"1", "01", "001", "0001"}));
     }
 
+
+    @Test
+    void testMaximumValueSimple() {
+        assertEquals(5, solution.maximumValueSimple(new String[]{"alic3", "bob", "3", "4", "00000"}));
+        assertEquals(1, solution.maximumValueSimple(new String[]{"1", "01", "001", "0001"}));
+    }
 }
