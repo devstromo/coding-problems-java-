@@ -17,4 +17,32 @@ public class Solution {
 
         return Math.max(max, Math.abs(min));
     }
+
+    public int maxAbsoluteSumBest(int[] nums) {
+        int max = 0;
+        int min = 0;
+        int sum = 0;
+        for (int num : nums) {
+            if (sum < 0) {
+                sum = 0;
+            }
+            sum += num;
+            if (sum > max) {
+                max = sum;
+            }
+
+        }
+        sum = 0;
+        for (int num : nums) {
+            if (sum > 0) {
+                sum = 0;
+            }
+            sum += num;
+            if (sum < min) {
+                min = sum;
+            }
+        }
+
+        return Math.max(max, Math.abs(min));
+    }
 }

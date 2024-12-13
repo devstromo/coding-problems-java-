@@ -13,4 +13,10 @@ class SolutionUnitTest {
         assertEquals(8, solution.maxAbsoluteSum(new int[]{2, -5, 1, -4, 3, -2}));
     }
 
+    @Test
+    void testMaxAbsoluteSumBest() {
+        assertEquals(5, solution.maxAbsoluteSumBest(new int[]{1, -3, 2, 3, -4}));
+        assertEquals(8, solution.maxAbsoluteSumBest(new int[]{2, -5, 1, -4, 3, -2}));
+    }
+
 }
