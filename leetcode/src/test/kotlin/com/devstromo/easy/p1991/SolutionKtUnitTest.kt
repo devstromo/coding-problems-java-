@@ -12,4 +12,11 @@ class SolutionKtUnitTest {
         assertEquals(2, solution.findMiddleIndex(intArrayOf(1, -1, 4)))
         assertEquals(-1, solution.findMiddleIndex(intArrayOf(2, 5)))
     }
+
+    @Test
+    fun `Test Find Middle Index Best`() {
+        assertEquals(3, solution.findMiddleIndexBest(intArrayOf(2, 3, -1, 8, 4)))
+        assertEquals(2, solution.findMiddleIndexBest(intArrayOf(1, -1, 4)))
+        assertEquals(-1, solution.findMiddleIndexBest(intArrayOf(2, 5)))
+    }
 }

@@ -17,4 +17,15 @@ class SolutionKt {
         }
         return -1
     }
+
+    fun findMiddleIndexBest(nums: IntArray): Int {
+        var sum = 0
+        var leftSum = 0
+        for (num in nums) sum += num
+        for ((index, num) in nums.withIndex()) {
+            if (sum - leftSum - num == leftSum) return index
+            leftSum += num
+        }
+        return -1
+    }
 }
