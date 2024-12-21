@@ -19,4 +19,18 @@ class SolutionKtUnitTest {
             ), solution.merge(arrayOf(intArrayOf(1, 4), intArrayOf(4, 5)))
         )
     }
+
+    @Test
+    fun `Test Merge Best Solution`() {
+        assertArrayEquals(
+            arrayOf(
+                intArrayOf(1, 6), intArrayOf(8, 10), intArrayOf(15, 18)
+            ), solution.mergeBest(arrayOf(intArrayOf(1, 3), intArrayOf(2, 6), intArrayOf(8, 10), intArrayOf(15, 18)))
+        )
+        assertArrayEquals(
+            arrayOf(
+                intArrayOf(1, 5)
+            ), solution.mergeBest(arrayOf(intArrayOf(1, 4), intArrayOf(4, 5)))
+        )
+    }
 }
