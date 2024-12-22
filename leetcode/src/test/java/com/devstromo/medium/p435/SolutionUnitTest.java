@@ -33,4 +33,29 @@ class SolutionUnitTest {
         ));
     }
 
+    @Test
+    void testEraseOverlapIntervalsBest() {
+        assertEquals(1, solution.eraseOverlapIntervalsBest(
+                new int[][]{
+                        {1, 2},
+                        {2, 3},
+                        {3, 4},
+                        {1, 3}
+                }
+        ));
+        assertEquals(2, solution.eraseOverlapIntervalsBest(
+                new int[][]{
+                        {1, 2},
+                        {1, 2},
+                        {1, 2}
+                }
+        ));
+        assertEquals(0, solution.eraseOverlapIntervalsBest(
+                new int[][]{
+                        {1, 2},
+                        {2, 3}
+                }
+        ));
+    }
+
 }
