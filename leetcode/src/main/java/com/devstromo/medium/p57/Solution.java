@@ -48,21 +48,21 @@ public class Solution {
         return result;
     }
 
-    public int[][] insertBest(int[][] intervals, int[] pair) {
+    public int[][] insertBest(int[][] intervals, int[] newInterval) {
         int n = intervals.length;
         List<int[]> newIntervals = new ArrayList<>();
         int i = 0;
-        while (i < n && intervals[i][1] < pair[0]) {
+        while (i < n && intervals[i][1] < newInterval[0]) {
             newIntervals.add(intervals[i]);
             i++;
         }
 
-        while (i < n && intervals[i][0] <= pair[1]) {
-            pair[0] = Math.min(pair[0], intervals[i][0]);
-            pair[1] = Math.max(pair[1], intervals[i][1]);
+        while (i < n && intervals[i][0] <= newInterval[1]) {
+            newInterval[0] = Math.min(newInterval[0], intervals[i][0]);
+            newInterval[1] = Math.max(newInterval[1], intervals[i][1]);
             i++;
         }
-        newIntervals.add(pair);
+        newIntervals.add(newInterval);
 
         while (i < n) {
             newIntervals.add(intervals[i]);
