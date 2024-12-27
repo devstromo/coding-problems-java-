@@ -14,21 +14,19 @@ public class Solution {
     }
 
     public int findPoisonedDurationBest(int[] timeSeries, int duration) {
-        int n=timeSeries.length;
-        int res=0;
-        int start=timeSeries[0];
-        int end=start+duration;
-        for(int i=1;i<n;i++)
-        {
-            int time=timeSeries[i];
-            if(time>end)
-            {
-                res+=end-start;
-                start=time;
+        int n = timeSeries.length;
+        int res = 0;
+        int start = timeSeries[0];
+        int end = start + duration;
+        for (int i = 1; i < n; i++) {
+            int time = timeSeries[i];
+            if (time > end) {
+                res += end - start;
+                start = time;
             }
-            end=time+duration;
+            end = time + duration;
         }
-        res+=end-start;
+        res += end - start;
 
         return res;
     }
