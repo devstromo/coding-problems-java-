@@ -13,4 +13,10 @@ class SolutionUnitTest {
         assertEquals("aaaaaaaa", solution.shortestCommonSupersequence("aaaaaaaa", "aaaaaaaa"));
     }
 
+    @Test
+    void testShortestCommonSupersequenceBest() {
+        assertEquals("cabac", solution.shortestCommonSupersequenceBest("abac", "cab"));
+        assertEquals("aaaaaaaa", solution.shortestCommonSupersequenceBest("aaaaaaaa", "aaaaaaaa"));
+    }
+
 }
