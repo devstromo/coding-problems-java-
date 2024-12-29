@@ -12,4 +12,10 @@ class SolutionTest {
         assertEquals(4, solution.maximumSubsequenceCount("abdcdbc", "ac"));
         assertEquals(6, solution.maximumSubsequenceCount("aabb", "ab"));
     }
+
+    @Test
+    void testMaximumSubsequenceCountBest() {
+        assertEquals(4, solution.maximumSubsequenceCountBest("abdcdbc", "ac"));
+        assertEquals(6, solution.maximumSubsequenceCountBest("aabb", "ab"));
+    }
 }

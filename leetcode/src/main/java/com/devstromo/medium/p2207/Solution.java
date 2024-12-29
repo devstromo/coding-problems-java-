@@ -25,4 +25,39 @@ public class Solution {
         // Step 3: Return the maximum count
         return Math.max(insertFirst, insertSecond);
     }
+
+    public long maximumSubsequenceCountBest(String text, String pattern) {
+        int firstChar = pattern.charAt(0);
+        int secondChar = pattern.charAt(1);
+
+        if (firstChar == secondChar) {
+            long count = 0;
+            int freq = 0;
+
+            for (char c : text.toCharArray()) {
+                if (c == firstChar) {
+                    count += freq;
+                    freq++;
+                }
+            }
+
+            return count + freq;
+        }
+
+        long firstFreq = 0;
+        long secondFreq = 0;
+
+        long result = 0;
+
+        for (char c : text.toCharArray()) {
+            if (c == firstChar) {
+                firstFreq++;
+            } else if (c == secondChar) {
+                result += firstFreq;
+                secondFreq++;
+            }
+        }
+
+        return result + Math.max(firstFreq, secondFreq);
+    }
 }
