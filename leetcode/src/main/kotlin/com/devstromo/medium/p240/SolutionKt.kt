@@ -15,4 +15,18 @@ class SolutionKt {
         return false
     }
 
+    fun searchMatrixBest(matrix: Array<IntArray>, target: Int): Boolean {
+        var r = 0
+        var c = matrix[0].size - 1
+
+        while (r <= matrix.size - 1 && c >= 0) {
+            when {
+                target == matrix[r][c] -> return true
+                target < matrix[r][c] -> c--
+                else -> r++
+            }
+        }
+        return false
+    }
+
 }
