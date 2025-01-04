@@ -15,4 +15,13 @@ class SolutionKtUnitTest {
         assertEquals(4, solution.countPrimes(10))
     }
 
+    @Test
+    fun `Test count primes best`() {
+        assertEquals(0, solution.countPrimesBest(0))
+        assertEquals(0, solution.countPrimesBest(1))
+        assertEquals(0, solution.countPrimesBest(2))
+        assertEquals(1, solution.countPrimesBest(3))
+        assertEquals(4, solution.countPrimesBest(10))
+    }
+
 }
