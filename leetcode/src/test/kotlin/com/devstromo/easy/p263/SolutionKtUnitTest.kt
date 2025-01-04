@@ -14,4 +14,11 @@ class SolutionKtUnitTest {
         assertFalse(solution.isUgly(14))
     }
 
+    @Test
+    fun `Test is ugly best`() {
+        assertTrue(solution.isUglyBest(5))
+        assertTrue(solution.isUglyBest(6))
+        assertFalse(solution.isUglyBest(14))
+    }
+
 }

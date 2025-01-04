@@ -11,4 +11,16 @@ class SolutionKt {
         }
         return nums == 1
     }
+
+    fun isUglyBest(n: Int): Boolean {
+        if (n < 1) return false
+        if (n < 2) return true
+
+        var i = n
+        while (i % 2 == 0) i /= 2
+        while (i % 3 == 0) i /= 3
+        while (i % 5 == 0) i /= 5
+
+        return i == 1
+    }
 }
