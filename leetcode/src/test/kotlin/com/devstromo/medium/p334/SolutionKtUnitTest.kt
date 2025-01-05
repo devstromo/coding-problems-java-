@@ -13,4 +13,11 @@ class SolutionKtUnitTest {
         assertTrue(solution.increasingTriplet(intArrayOf(2, 1, 5, 0, 4, 6)))
         assertFalse(solution.increasingTriplet(intArrayOf(5, 4, 3, 2, 1)))
     }
+
+    @Test
+    fun `Test Increasing Triplet Best`() {
+        assertTrue(solution.increasingTripletBest(intArrayOf(1, 2, 3, 4, 5)))
+        assertTrue(solution.increasingTripletBest(intArrayOf(2, 1, 5, 0, 4, 6)))
+        assertFalse(solution.increasingTripletBest(intArrayOf(5, 4, 3, 2, 1)))
+    }
 }

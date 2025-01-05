@@ -19,4 +19,22 @@ class SolutionKt {
 
         return false
     }
+
+    fun increasingTripletBest(nums: IntArray): Boolean {
+        if (nums.size <= 2) return false
+
+        var i = Int.MAX_VALUE
+        var j = Int.MAX_VALUE
+
+        for (ind in nums.indices) {
+            if (nums[ind] <= i) {
+                i = nums[ind]
+            } else if (nums[ind] <= j) {
+                j = nums[ind]
+            } else {
+                return true
+            }
+        }
+        return false
+    }
 }
