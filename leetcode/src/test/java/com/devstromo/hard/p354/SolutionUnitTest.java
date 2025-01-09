@@ -25,4 +25,22 @@ class SolutionUnitTest {
                 {1, 1}
         }));
     }
+
+    @Test
+    @DisplayName("Test Max EnvelopesBest")
+    void testMaxEnvelopesBest() {
+        assertEquals(3, solution.maxEnvelopesBest(new int[][]{
+                {5, 4},
+                {6, 4},
+                {6, 7},
+                {2, 3}
+        }));
+
+        assertEquals(1, solution.maxEnvelopesBest(new int[][]{
+                {1, 1},
+                {1, 1},
+                {1, 1},
+                {1, 1}
+        }));
+    }
 }
