@@ -14,4 +14,11 @@ class SolutionUnitTest {
         assertEquals(3, solution.countSubstrings("abc"));
         assertEquals(6, solution.countSubstrings("aaa"));
     }
+
+    @Test
+    @DisplayName("Test Count Palindromic Substrings Best")
+    void testCountSubstringsBest() {
+        assertEquals(3, solution.countSubstringsBest("abc"));
+        assertEquals(6, solution.countSubstringsBest("aaa"));
+    }
 }
