@@ -11,4 +11,10 @@ class SolutionKtUnitTest {
         assertEquals(3, solution.countSubstrings("abc"))
         assertEquals(6, solution.countSubstrings("aaa"))
     }
+
+    @Test
+    fun `Test Count Palindromic Substrings Best`() {
+        assertEquals(3, solution.countSubstringsBest("abc"))
+        assertEquals(6, solution.countSubstringsBest("aaa"))
+    }
 }

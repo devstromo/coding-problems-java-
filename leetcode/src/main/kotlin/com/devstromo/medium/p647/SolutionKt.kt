@@ -31,4 +31,21 @@ class SolutionKt {
 
         return count
     }
+
+    fun countSubstringsBest(s: String): Int {
+        var max = 0
+
+        fun updateMax(l: Int, r: Int) {
+            var l = l;
+            var r = r;
+            while (l >= 0 && r < s.length && s[l--] == s[r++]) max++
+        }
+
+        for (i in s.indices) {
+            updateMax(i, i) // odd
+            updateMax(i, i + 1) // even
+        }
+
+        return max
+    }
 }
