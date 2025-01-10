@@ -15,4 +15,22 @@ class SolutionKt {
 
         return candidate
     }
+
+    fun majorityElementBest(nums: IntArray): Int {
+        var candidate = nums[0]
+        var count = 0
+
+        for (i in nums.indices) {
+            if (count == 0) {
+                candidate = nums[i]
+                count++
+            } else if (nums[i] == candidate) {
+                count++
+            } else {
+                count--
+            }
+        }
+
+        return candidate
+    }
 }

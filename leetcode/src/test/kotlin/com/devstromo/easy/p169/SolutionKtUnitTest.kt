@@ -12,4 +12,10 @@ class SolutionKtUnitTest {
         assertEquals(2, solution.majorityElement(intArrayOf(2, 2, 1, 1, 1, 2, 2)))
     }
 
+    @Test
+    fun `Test Majority Element Best`() {
+        assertEquals(3, solution.majorityElementBest(intArrayOf(3, 2, 3)))
+        assertEquals(2, solution.majorityElementBest(intArrayOf(2, 2, 1, 1, 1, 2, 2)))
+    }
+
 }
