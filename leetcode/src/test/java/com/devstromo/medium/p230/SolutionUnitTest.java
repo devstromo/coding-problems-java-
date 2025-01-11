@@ -17,4 +17,13 @@ class SolutionUnitTest {
         assertEquals(1, solution.kthSmallest(root, 1));
     }
 
+    @Test
+    @DisplayName("Test Find kth Smallest Best")
+    void testFindKthSmallestBest() {
+        final var root = new Solution.TreeNode(3);
+        root.left = new Solution.TreeNode(1, null, new Solution.TreeNode(2));
+        root.right = new Solution.TreeNode(4);
+        assertEquals(1, solution.kthSmallestBest(root, 1));
+    }
+
 }

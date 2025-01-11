@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
+    int kth = 0;
+    int ans = -1;
 
     public int kthSmallest(TreeNode root, int k) {
         List<Integer> list = new ArrayList<>();
@@ -14,6 +16,26 @@ public class Solution {
             }
         }
         return -1;
+    }
+
+    public int kthSmallestBest(TreeNode root, int k) {
+        kth = 0;
+        ans = -1;
+        recurse(root, k);
+        return ans;
+    }
+
+    void recurse(TreeNode root, int k) {
+        if (root == null) {
+            return;
+        }
+
+        recurse(root.left, k);
+        kth++;
+        if (k == kth) {
+            ans = root.val;
+        }
+        recurse(root.right, k);
     }
 
     private void inOrder(TreeNode root, List<Integer> list) {
