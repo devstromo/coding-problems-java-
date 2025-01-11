@@ -26,7 +26,26 @@ class SolutionKt {
         return -1
     }
 
+    var index = 0
+    var element: Int? = null
+    fun kthSmallestBest(root: TreeNode?, k: Int): Int {
+        findElement(root, k)
+        return element ?: 0
+    }
 
+    private fun findElement(root: TreeNode?, k: Int) {
+        if (root == null) return
+        if (element != null) return
+
+        findElement(root.left, k)
+
+        if (++index == k) {
+            element = root.`val`
+            return
+        }
+
+        findElement(root.right, k)
+    }
 }
 
 class TreeNode(var `val`: Int) {

@@ -14,4 +14,13 @@ class SolutionKtUnitTest {
         root.right = TreeNode(4)
         assertEquals(1, solution.kthSmallest(root, 1))
     }
+
+    @Test
+    fun `Test Find kth Smallest Best`() {
+        val root = TreeNode(3)
+        root.left = TreeNode(1)
+        root.left!!.right = TreeNode(2)
+        root.right = TreeNode(4)
+        assertEquals(1, solution.kthSmallestBest(root, 1))
+    }
 }
