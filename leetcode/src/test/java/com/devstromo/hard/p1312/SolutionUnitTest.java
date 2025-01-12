@@ -16,4 +16,12 @@ class SolutionUnitTest {
         assertEquals(5, solution.minInsertions("leetcode"));
     }
 
+    @Test
+    @DisplayName("Test Minimum Insertion Steps to Make a String Palindrome Best")
+    void testMinInsertionsBest() {
+        assertEquals(0, solution.minInsertionsBest("zzazz"));
+        assertEquals(2, solution.minInsertionsBest("mbadm"));
+        assertEquals(5, solution.minInsertionsBest("leetcode"));
+    }
+
 }
