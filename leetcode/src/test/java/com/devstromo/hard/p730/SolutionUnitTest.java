@@ -15,4 +15,11 @@ class SolutionUnitTest {
         assertEquals(104860361, solution.countPalindromicSubsequences("abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba"));
     }
 
+    @Test
+    @DisplayName("Test Count Different Palindromic Subsequences Best")
+    void testCountDifferentPalindromicSubsequencesBest() {
+        assertEquals(6, solution.countPalindromicSubsequencesBest("bccb"));
+        assertEquals(104860361, solution.countPalindromicSubsequencesBest("abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba"));
+    }
+
 }
