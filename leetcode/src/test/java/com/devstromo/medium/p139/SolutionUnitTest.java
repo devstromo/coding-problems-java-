@@ -18,4 +18,11 @@ class SolutionUnitTest {
         assertFalse(solution.wordBreak("catsandog", List.of("cats", "dog", "sand", "and", "cat")));
     }
 
+    @Test
+    @DisplayName("Test Word Break Best")
+    void testWordBreakBest() {
+        assertTrue(solution.wordBreakBest("leetcode", List.of("leet", "code")));
+        assertTrue(solution.wordBreakBest("applepenapple", List.of("apple", "pen")));
+        assertFalse(solution.wordBreakBest("catsandog", List.of("cats", "dog", "sand", "and", "cat")));
+    }
 }
