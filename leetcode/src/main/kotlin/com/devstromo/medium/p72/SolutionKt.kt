@@ -24,4 +24,21 @@ class SolutionKt {
         }
         return edit[m][n]
     }
+
+    fun minDistanceBest(word1: String?, word2: String?): Int {
+        if (word1.isNullOrEmpty()) return word2!!.length
+
+        if (word2.isNullOrEmpty()) return word1.length
+
+        // are the same characters
+        if (word1[0] == word2[0]) {
+            return minDistanceBest(word1.substring(1), word2.substring(1))
+        }
+        // Find edit distance for all three operations
+        val d = minDistanceBest(word1.substring(1), word2)
+        val u = minDistanceBest(word1.substring(1), word2.substring(1))
+        val i = minDistanceBest(word1, word2.substring(1))
+        // Return minimum of the three values plus 1
+        return min(d, min(u, i)) + 1
+    }
 }

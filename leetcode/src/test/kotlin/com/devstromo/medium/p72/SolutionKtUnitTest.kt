@@ -14,4 +14,11 @@ class SolutionKtUnitTest {
         assertEquals(1, solutionKt.minDistance("", "a"))
     }
 
+    @Test
+    fun `Test Edit Distance Best`() {
+        assertEquals(3, solutionKt.minDistanceBest("saturday", "sunday"))
+        assertEquals(3, solutionKt.minDistanceBest("horse", "ros"))
+        assertEquals(5, solutionKt.minDistanceBest("intention", "execution"))
+        assertEquals(1, solutionKt.minDistanceBest("", "a"))
+    }
 }
