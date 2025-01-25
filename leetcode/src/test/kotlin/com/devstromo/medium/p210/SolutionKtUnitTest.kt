@@ -25,4 +25,25 @@ class SolutionKtUnitTest {
             expectedOutputs.stream().anyMatch { expected: IntArray -> expected.contentEquals(actual) }
         )
     }
+
+
+    @Test
+    fun `Test Course Schedule II Best`() {
+        val actual = solution.findOrderBest(
+            4, arrayOf(
+                intArrayOf(1, 0),
+                intArrayOf(2, 0),
+                intArrayOf(3, 1),
+                intArrayOf(3, 2),
+            )
+        )
+        val expectedOutputs = listOf(
+            intArrayOf(0, 1, 2, 3),
+            intArrayOf(0, 2, 1, 3)
+        )
+
+        assertTrue(
+            expectedOutputs.stream().anyMatch { expected: IntArray -> expected.contentEquals(actual) }
+        )
+    }
 }

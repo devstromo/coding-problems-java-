@@ -40,4 +40,39 @@ class SolutionKt {
 
         return if (index == numCourses) order else IntArray(0)
     }
+
+    fun findOrderBest(numCourses: Int, prerequisites: Array<IntArray>): IntArray {
+        val adj = Array<ArrayList<Int>?>(numCourses) { ArrayList() }
+
+        for ((a, b) in prerequisites) {
+            adj[a]!!.add(b)
+        }
+
+        val visited = BooleanArray(numCourses)
+
+        val result = IntArray(numCourses)
+        var resultIndex = 0
+
+        fun dfs(n: Int): Boolean {
+            if (visited[n]) return false
+            if (adj[n] == null) {
+                return true
+            }
+
+            visited[n] = true
+            for (p in adj[n]!!) {
+                if (!dfs(p)) return false
+            }
+            visited[n] = false
+            adj[n] = null
+            result[resultIndex++] = n
+            return true
+        }
+
+        for (i in 0..<numCourses) {
+            if (!dfs(i)) return intArrayOf()
+        }
+
+        return result
+    }
 }
