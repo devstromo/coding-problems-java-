@@ -6,12 +6,31 @@ import java.util.List;
 import java.util.Map;
 
 class Solution {
+    private final HashMap<Integer, Node> map = new HashMap<>();
+
     public Node cloneGraph(Node node) {
         if (node == null) return null;
 
         Map<Node, Node> visited = new HashMap<>();
 
         return dfs(node, visited);
+    }
+
+    public Node cloneGraphBest(Node node) {
+        if (node == null) {
+            return null;
+        }
+
+        if (map.containsKey(node.val)) {
+            return map.get(node.val);
+        }
+
+        Node newNode = new Node(node.val);
+        map.put(newNode.val, newNode);
+        for (Node neighbor : node.neighbors) {
+            newNode.neighbors.add(cloneGraphBest(neighbor));
+        }
+        return newNode;
     }
 
     private Node dfs(Node node, Map<Node, Node> visited) {
