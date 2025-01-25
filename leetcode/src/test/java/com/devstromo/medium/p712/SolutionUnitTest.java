@@ -14,4 +14,11 @@ class SolutionUnitTest {
         assertEquals(231, solution.minimumDeleteSum("sea", "eat"));
         assertEquals(403, solution.minimumDeleteSum("delete", "leet"));
     }
+
+    @Test
+    @DisplayName("Test Minimum ASCII Delete Sum for Two Strings Best")
+    void testMinimumASCIIDeleteSumForTwoStringsBest() {
+        assertEquals(231, solution.minimumDeleteSumBest("sea", "eat"));
+        assertEquals(403, solution.minimumDeleteSumBest("delete", "leet"));
+    }
 }
