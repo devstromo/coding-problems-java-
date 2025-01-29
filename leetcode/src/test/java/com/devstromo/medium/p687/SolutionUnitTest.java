@@ -25,5 +25,20 @@ class SolutionUnitTest {
         assertEquals(2, solution.longestUnivaluePath(root));
     }
 
-
+    @Test
+    @DisplayName("Test Longest Univalue Path Best")
+    void testLongestUnivaluePathBest() {
+        Solution.TreeNode root = new Solution.TreeNode(
+                5,
+                new Solution.TreeNode(4,
+                        new Solution.TreeNode(1),
+                        new Solution.TreeNode(1)
+                ),
+                new Solution.TreeNode(5,
+                        null,
+                        new Solution.TreeNode(5)
+                )
+        );
+        assertEquals(2, solution.longestUnivaluePathBest(root));
+    }
 }

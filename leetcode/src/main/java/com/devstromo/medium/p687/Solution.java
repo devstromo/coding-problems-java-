@@ -28,6 +28,35 @@ class Solution {
         return Math.max(leftPath, rightPath);
     }
 
+    int max = 0;
+
+    public int longestUnivaluePathBest(TreeNode root) {
+        if (root == null) {
+            return max;
+        }
+        dfsBest(root);
+        return max;
+    }
+
+    private int dfsBest(TreeNode node) {
+        int pl = 0;
+        int pr = 0;
+        if (node.left != null) {
+            int left = dfs(node.left);
+            if (node.left.val == node.val) {
+                pl = left + 1;
+            }
+        }
+        if (node.right != null) {
+            int right = dfs(node.right);
+            if (node.right.val == node.val) {
+                pr = right + 1;
+            }
+        }
+        max = Math.max(pl + pr, max);
+        return Math.max(pl, pr);
+    }
+
     static class TreeNode {
         int val;
         TreeNode left;
