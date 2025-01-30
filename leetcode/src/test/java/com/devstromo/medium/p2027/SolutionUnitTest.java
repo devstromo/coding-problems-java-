@@ -15,4 +15,10 @@ class SolutionUnitTest {
         assertEquals(3, solution.minExtraChar("sayhelloworld", new String[]{"hello", "world"}));
     }
 
+    @Test
+    @DisplayName("Test Extra Characters in a String Trie")
+    void testExtraCharactersInStringTrie() {
+        assertEquals(1, solution.minExtraCharTrie("leetscode", new String[]{"leet", "code", "leetcode"}));
+        assertEquals(3, solution.minExtraCharTrie("sayhelloworld", new String[]{"hello", "world"}));
+    }
 }
