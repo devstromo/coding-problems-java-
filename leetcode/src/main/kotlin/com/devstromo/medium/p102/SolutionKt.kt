@@ -15,7 +15,7 @@ class SolutionKt {
             val levelSize = queue.size
             val level: MutableList<Int> = ArrayList()
 
-            for (i in 0 until  levelSize) {
+            for (i in 0 until levelSize) {
                 val node = queue.poll()
                 level.add(node.`val`)
 
@@ -24,6 +24,23 @@ class SolutionKt {
             }
             result.add(level)
         }
+        return result
+    }
+
+    fun levelOrderBest(root: TreeNode?): List<List<Int>> {
+        val result = mutableListOf<MutableList<Int>>()
+
+        fun addNode(node: TreeNode?, level: Int) {
+            if (node == null) return
+
+            if (result.size == level) result.add(mutableListOf())
+
+            result[level].add(node.`val`)
+            addNode(node.left, level + 1)
+            addNode(node.right, level + 1)
+        }
+
+        addNode(root, 0)
         return result
     }
 
