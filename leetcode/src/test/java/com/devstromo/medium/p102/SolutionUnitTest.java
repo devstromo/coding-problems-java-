@@ -23,4 +23,16 @@ class SolutionUnitTest {
         assertEquals(List.of(List.of(3), List.of(9, 20), List.of(15, 7)), solution.levelOrder(root));
     }
 
+    @Test
+    @DisplayName("Test Binary Tree Level Order Traversal Best")
+    void testBinaryTreeLevelOrderTraversalBest() {
+        Solution.TreeNode root = new Solution.TreeNode(3,
+                new Solution.TreeNode(9),
+                new Solution.TreeNode(20,
+                        new Solution.TreeNode(15),
+                        new Solution.TreeNode(7)
+                )
+        );
+        assertEquals(List.of(List.of(3), List.of(9, 20), List.of(15, 7)), solution.levelOrderBest(root));
+    }
 }
