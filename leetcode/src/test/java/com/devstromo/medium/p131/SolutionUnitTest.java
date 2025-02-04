@@ -18,4 +18,11 @@ class SolutionUnitTest {
         assertEquals(List.of(List.of("a")), solution.partition("a"));
     }
 
+    @Test
+    @DisplayName("Test Palindrome Partitioning Best")
+    void testPalindromePartitioningBest() {
+        assertEquals(List.of(List.of("a", "a", "b"), List.of("aa", "b")), solution.partitionBest("aab"));
+        assertEquals(List.of(List.of("a")), solution.partitionBest("a"));
+    }
+
 }

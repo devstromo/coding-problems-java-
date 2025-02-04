@@ -11,6 +11,29 @@ public class Solution {
         return result;
     }
 
+    public List<List<String>> partitionBest(String s) {
+
+        return new java.util.AbstractList<List<String>>() {
+            List<List<String>> result;
+
+            public int size() {
+                if (result == null) {
+                    init();
+                }
+                return result.size();
+            }
+
+            public List<String> get(int index) {
+                return result.get(index);
+            }
+
+            public void init() {
+                result = new ArrayList<>();
+                recursive(result, new ArrayList<>(), s, 0);
+            }
+        };
+    }
+
     private void backtrack(String s, int start, List<String> path, List<List<String>> result, boolean[][] isPalindrome) {
         if (start == s.length()) {
             result.add(new ArrayList<>(path));
@@ -38,6 +61,31 @@ public class Solution {
             }
         }
         return isPalindrome;
+    }
+
+    private void recursive(List<List<String>> result, List<String> list, String s, int start) {
+        if (start == s.length()) {
+            result.add(new ArrayList<>(list));
+            return;
+        }
+        for (int i = start; i < s.length(); i++) {
+            String str = s.substring(start, i + 1);
+            if (isPalindrome(str)) {
+                list.add(str.toString());
+                recursive(result, list, s, i + 1);
+                list.removeLast();
+            }
+        }
+    }
+
+    private boolean isPalindrome(String str) {
+        int n = str.length();
+        for (int i = 0; i < n / 2; i++) {
+            if (str.charAt(i) != str.charAt(n - 1 - i)) {
+                return false;
+            }
+        }
+        return true;
     }
 }
 
