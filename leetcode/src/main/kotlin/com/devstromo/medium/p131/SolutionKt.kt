@@ -9,6 +9,14 @@ class SolutionKt {
         return result
     }
 
+    fun partitionBest(s: String): List<List<String>> {
+        val len = s.length
+        val dp = Array(len) { BooleanArray(len) }
+        val result = mutableListOf<List<String>>()
+        dfs(result, s, 0, mutableListOf(), dp)
+        return result
+    }
+
     private fun backtrack(
         s: String,
         start: Int,
@@ -42,5 +50,29 @@ class SolutionKt {
             }
         }
         return isPalindrome
+    }
+
+    private fun dfs(
+        result: MutableList<List<String>>,
+        s: String,
+        start: Int,
+        currentList: MutableList<String>,
+        dp: Array<BooleanArray>
+    ) {
+        if (start >= s.length) {
+            result.add(ArrayList(currentList))
+            return
+        }
+        for (end in start until s.length) {
+            if (
+                s[start] == s[end] &&
+                (end - start <= 2 || dp[start + 1][end - 1])
+            ) {
+                dp[start][end] = true
+                currentList.add(s.substring(start, end + 1))
+                dfs(result, s, end + 1, currentList, dp)
+                currentList.removeAt(currentList.size - 1)
+            }
+        }
     }
 }

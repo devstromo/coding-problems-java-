@@ -12,4 +12,9 @@ class SolutionKtUnitTest {
         assertEquals(listOf(listOf("a")), solution.partition("a"))
     }
 
+    @Test
+    fun `Test Palindrome Partitioning Best`() {
+        assertEquals(listOf(listOf("a", "a", "b"), listOf("aa", "b")), solution.partitionBest("aab"))
+        assertEquals(listOf(listOf("a")), solution.partitionBest("a"))
+    }
 }
