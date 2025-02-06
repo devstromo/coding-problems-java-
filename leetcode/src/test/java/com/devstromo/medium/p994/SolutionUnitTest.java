@@ -25,4 +25,22 @@ class SolutionUnitTest {
                 {0, 2}
         }));
     }
+
+    @Test
+    @DisplayName("Test Rotting Oranges Best")
+    void testRottingOrangesBest() {
+        assertEquals(4, solution.orangesRottingBest(new int[][]{
+                {2, 1, 1},
+                {1, 1, 0},
+                {0, 1, 1}
+        }));
+        assertEquals(-1, solution.orangesRottingBest(new int[][]{
+                {2, 1, 1},
+                {0, 1, 1},
+                {1, 0, 1}
+        }));
+        assertEquals(0, solution.orangesRottingBest(new int[][]{
+                {0, 2}
+        }));
+    }
 }

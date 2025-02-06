@@ -2,6 +2,8 @@ package com.devstromo.medium.p994;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Solution {
     public int orangesRotting(int[][] grid) {
@@ -49,5 +51,41 @@ public class Solution {
 
         // Step 3: If fresh oranges remain, return -1, otherwise return the time taken
         return fresh == 0 ? time : -1;
+    }
+
+    public int orangesRottingBest(int[][] grid) {
+        int[][] dir = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+        int row = grid.length, col = grid[0].length;
+        int fresh = 0;
+        Queue<int[]> q = new LinkedList<>();
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                if (grid[i][j] == 2) {
+                    q.offer(new int[]{i, j, 0});
+                } else if (grid[i][j] == 1) {
+                    fresh++;
+                }
+            }
+        }
+        int maxTime = 0;
+        while (!q.isEmpty()) {
+            int[] curr = q.poll();
+            int i = curr[0], j = curr[1], t = curr[2];
+            maxTime = Math.max(maxTime, t);
+            for (int k = 0; k < 4; k++) {
+                int x = i + dir[k][0];
+                int y = j + dir[k][1];
+                if (isValid(x, y, row, col) && grid[x][y] == 1) {
+                    q.offer(new int[]{x, y, t + 1});
+                    grid[x][y] = 2;
+                    fresh--;
+                }
+            }
+        }
+        return (fresh > 0) ? -1 : maxTime;
+    }
+
+    boolean isValid(int x, int y, int row, int col) {
+        return (x >= 0 && y >= 0 && x < row && y < col);
     }
 }
