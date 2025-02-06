@@ -1,5 +1,7 @@
 package com.devstromo.medium.p994
 
+import kotlin.math.max
+
 class SolutionKt {
     fun orangesRotting(grid: Array<IntArray>): Int {
         val rows = grid.size
@@ -45,5 +47,40 @@ class SolutionKt {
 
         // Step 3: If fresh oranges remain, return -1, otherwise return the time taken
         return if (fresh == 0) time else -1
+    }
+
+    fun orangesRottingBest(grid: Array<IntArray>): Int {
+        val m = grid.size
+        val n = grid[0].size
+
+        fun dfs(i: Int, j: Int, count: Int) {
+            if (i in 0..<m && 0 <= j && j < n && (grid[i][j] == 1 || grid[i][j] >= count)) {
+                grid[i][j] = count
+                dfs(i + 1, j, count + 1)
+                dfs(i - 1, j, count + 1)
+                dfs(i, j + 1, count + 1)
+                dfs(i, j - 1, count + 1)
+            }
+        }
+
+        for (i in 0..<m) {
+            for (j in 0..<n) {
+                if (grid[i][j] == 2) {
+                    dfs(i, j, 2)
+                }
+            }
+        }
+
+        var count = 2
+        for (i in 0..<m) {
+            for (j in 0..<n) {
+                if (grid[i][j] == 1) {
+                    return -1
+                }
+                count = max(count, grid[i][j])
+            }
+        }
+
+        return count - 2
     }
 }

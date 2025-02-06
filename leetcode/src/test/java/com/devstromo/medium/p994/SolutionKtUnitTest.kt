@@ -34,4 +34,33 @@ class SolutionKtUnitTest {
             )
         )
     }
+
+    @Test
+    fun `Test Rotting Oranges Best`() {
+        assertEquals(
+            4, solution.orangesRottingBest(
+                arrayOf(
+                    intArrayOf(2, 1, 1),
+                    intArrayOf(1, 1, 0),
+                    intArrayOf(0, 1, 1)
+                )
+            )
+        )
+        assertEquals(
+            -1, solution.orangesRottingBest(
+                arrayOf(
+                    intArrayOf(2, 1, 1),
+                    intArrayOf(0, 1, 1),
+                    intArrayOf(1, 0, 1)
+                )
+            )
+        )
+        assertEquals(
+            0, solution.orangesRottingBest(
+                arrayOf(
+                    intArrayOf(0, 2)
+                )
+            )
+        )
+    }
 }
