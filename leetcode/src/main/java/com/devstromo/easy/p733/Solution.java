@@ -4,6 +4,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Solution {
+    private static final int[][] steps = new int[][]{{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
         int n = image.length;
         int m = image[0].length;
@@ -40,5 +42,23 @@ public class Solution {
             }
         }
         return image;
+    }
+
+    public int[][] floodFillBest(int[][] image, int sr, int sc, int color) {
+        int previousColor = image[sr][sc];
+        if (previousColor == color) return image;
+        dfs(image, sr, sc, color, previousColor);
+        return image;
+    }
+
+    private void dfs(int[][] image, int sr, int sc, int color, int previousColor) {
+        image[sr][sc] = color;
+        for (int[] step : steps) {
+            int x = sr + step[0];
+            int y = sc + step[1];
+            if (x >= 0 && x < image.length && y >= 0 && y < image[0].length && image[x][y] == previousColor) {
+                dfs(image, x, y, color, previousColor);
+            }
+        }
     }
 }

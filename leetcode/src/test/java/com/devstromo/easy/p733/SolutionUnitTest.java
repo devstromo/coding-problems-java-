@@ -34,4 +34,27 @@ class SolutionUnitTest {
         );
     }
 
+    @Test
+    @DisplayName("Test Flood Fill Best")
+    void testFloodFillBest() {
+        assertTrue(Arrays.deepEquals(new int[][]{
+                {2, 2, 2},
+                {2, 2, 0},
+                {2, 0, 1}
+        }, solution.floodFillBest(new int[][]{
+                {1, 1, 1},
+                {1, 1, 0},
+                {1, 0, 1}
+        }, 1, 1, 2)));
+
+        assertTrue(
+                Arrays.deepEquals(new int[][]{
+                        {0, 0, 0},
+                        {0, 0, 0},
+                }, solution.floodFillBest(new int[][]{
+                        {0, 0, 0},
+                        {0, 0, 0}
+                }, 0, 0, 0))
+        );
+    }
 }
