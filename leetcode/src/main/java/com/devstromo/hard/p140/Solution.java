@@ -36,4 +36,31 @@ public class Solution {
         memo.put(s, result);
         return result;
     }
+
+    public List<String> wordBreakBest(String s, List<String> wordDict) {
+        Set<String> wordSet = new HashSet<>(wordDict);
+        List<String> results = new ArrayList<>();
+        backtrackBest(s, wordSet, new StringBuilder(), results, 0);
+        return results;
+    }
+
+    private void backtrackBest(String s, Set<String> wordSet, StringBuilder currentSentence, List<String> results, int startIndex) {
+        if (startIndex == s.length()) {
+            results.add(currentSentence.toString().trim());
+            return;
+        }
+        for (
+                int endIndex = startIndex + 1;
+                endIndex <= s.length();
+                endIndex++
+        ) {
+            String word = s.substring(startIndex, endIndex);
+            if (wordSet.contains(word)) {
+                int currentLength = currentSentence.length();
+                currentSentence.append(word).append(" ");
+                backtrackBest(s, wordSet, currentSentence, results, endIndex);
+                currentSentence.setLength(currentLength);
+            }
+        }
+    }
 }
