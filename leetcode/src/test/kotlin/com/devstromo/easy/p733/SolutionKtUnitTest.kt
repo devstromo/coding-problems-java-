@@ -38,4 +38,37 @@ class SolutionKtUnitTest {
             )
         )
     }
+
+    @Test
+    fun `Test Flood Fill Best`() {
+        assertTrue(
+            arrayOf(
+                intArrayOf(2, 2, 2),
+                intArrayOf(2, 2, 0),
+                intArrayOf(2, 0, 1)
+            ).contentDeepEquals(
+                solution.floodFillBest(
+                    arrayOf(
+                        intArrayOf(1, 1, 1),
+                        intArrayOf(1, 1, 0),
+                        intArrayOf(1, 0, 1)
+                    ), 1, 1, 2
+                )
+            )
+        )
+
+        assertTrue(
+            arrayOf(
+                intArrayOf(0, 0, 0),
+                intArrayOf(0, 0, 0),
+            ).contentDeepEquals(
+                solution.floodFillBest(
+                    arrayOf(
+                        intArrayOf(0, 0, 0),
+                        intArrayOf(0, 0, 0)
+                    ), 0, 0, 0
+                )
+            )
+        )
+    }
 }

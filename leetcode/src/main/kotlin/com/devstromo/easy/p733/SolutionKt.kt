@@ -22,4 +22,33 @@ class SolutionKt {
         dfs(sr, sc)
         return image
     }
+
+    fun floodFillBest(image: Array<IntArray>, sr: Int, sc: Int, color: Int): Array<IntArray> {
+        val pixel = image[sr][sc]
+        if (pixel != color) {
+            fill(image, sr, sc, color, pixel)
+        }
+        return image
+    }
+
+    fun fill(image: Array<IntArray>, sr: Int, sc: Int, color: Int, curr: Int) {
+
+        // out of bounds, do not proceed
+        if (sr < 0 || sr >= image.size || sc < 0 || sc >= image[0].size) return
+
+        // get the pixel
+        val pixel = image[sr][sc]
+
+        // pixel of unexpected color, do not proceed
+        if (pixel != curr) return
+
+        // update the pixel,
+        image[sr][sc] = color
+
+        // make recursive call in all directions
+        fill(image, sr + 1, sc, color, curr)
+        fill(image, sr - 1, sc, color, curr)
+        fill(image, sr, sc + 1, color, curr)
+        fill(image, sr, sc - 1, color, curr)
+    }
 }
