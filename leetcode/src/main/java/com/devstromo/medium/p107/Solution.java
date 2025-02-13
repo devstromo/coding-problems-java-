@@ -33,6 +33,29 @@ class Solution {
         return result;
     }
 
+    public List<List<Integer>> levelOrderBottomBest(TreeNode root) {
+        List<List<Integer>> ans = new ArrayList<>();
+        int n = level(root);
+        for (int i = 0; i < n; i++) {
+            ans.add(new ArrayList<>());
+        }
+        helper(root, ans, n - 1);
+        return ans;
+    }
+
+    private void helper(TreeNode root, List<List<Integer>> ans, int k) {
+        if (root == null) return;
+        ans.get(k).add(root.val);
+        helper(root.left, ans, k - 1);
+        helper(root.right, ans, k - 1);
+    }
+
+    private int level(TreeNode root) {
+        if (root == null) return 0;
+        return 1 + Math.max(level(root.left), level(root.right));
+    }
+
+
     static class TreeNode {
         int val;
         TreeNode left;
