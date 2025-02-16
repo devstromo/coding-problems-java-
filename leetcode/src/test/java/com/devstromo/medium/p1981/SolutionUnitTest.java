@@ -35,4 +35,30 @@ class SolutionUnitTest {
         );
     }
 
+    @Test
+    @DisplayName("Test Minimize the Difference Between Target and Chosen Elements Best")
+    void testMinimizeDifferenceBetweenTargetAndChosenElementsBest() {
+        assertEquals(0, solution.minimizeTheDifferenceBest(
+                        new int[][]{
+                                {1, 2, 3},
+                                {4, 5, 6},
+                                {7, 8, 9}
+                        }, 13
+                )
+        );
+        assertEquals(94, solution.minimizeTheDifferenceBest(
+                        new int[][]{
+                                {1},
+                                {2},
+                                {3}
+                        }, 100
+                )
+        );
+        assertEquals(1, solution.minimizeTheDifferenceBest(
+                        new int[][]{
+                                {1, 2, 9, 8, 7},
+                        }, 6
+                )
+        );
+    }
 }

@@ -1,8 +1,5 @@
 package com.devstromo.medium.p1981;
 
-import java.util.Set;
-import java.util.TreeSet;
-
 public class Solution {
 
     public int minimizeTheDifference(int[][] mat, int target) {
@@ -36,5 +33,53 @@ public class Solution {
         }
 
         return minDiff;
+    }
+
+    public int minimizeTheDifferenceBest(int[][] mat, int target) {
+        int n = mat.length;
+        boolean[][] dp = new boolean[n + 1][target + 1];
+        dp[0][0] = true;
+        int lastGreatThanTargetMin = Integer.MAX_VALUE;
+        for (int i = 1; i <= n; i++) {
+            int curMin = Integer.MAX_VALUE;
+            for (int k = 0; k < mat[i - 1].length; k++) {
+                for (int j = 0; j <= target; j++) {
+                    if (dp[i - 1][j]) {
+                        if (j + mat[i - 1][k] <= target) {
+                            dp[i][j + mat[i - 1][k]] = true;
+                        } else {
+                            curMin = Math.min(curMin, j + mat[i - 1][k]);
+                        }
+                    }
+                }
+                if (lastGreatThanTargetMin != Integer.MAX_VALUE) {
+                    curMin = Math.min(lastGreatThanTargetMin + mat[i - 1][k], curMin);
+                }
+            }
+            lastGreatThanTargetMin = curMin;
+        }
+        if (dp[n][target]) {
+            return 0;
+        }
+        int lessThanTargetMin = Integer.MAX_VALUE;
+        for (int j = target; j >= 0; j--) {
+            if (dp[n][j]) {
+                lessThanTargetMin = j;
+                break;
+            }
+        }
+        if (lessThanTargetMin != Integer.MAX_VALUE && lastGreatThanTargetMin != Integer.MAX_VALUE) {
+            if (lastGreatThanTargetMin - target < target - lessThanTargetMin) {
+                return lastGreatThanTargetMin - target;
+            } else {
+                return target - lessThanTargetMin;
+            }
+        } else {
+            if (lessThanTargetMin == Integer.MAX_VALUE) {
+                return lastGreatThanTargetMin - target;
+            } else {
+                return target - lessThanTargetMin;
+            }
+        }
     }
 }
