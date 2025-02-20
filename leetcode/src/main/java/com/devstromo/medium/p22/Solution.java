@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.List;
 
 public class Solution {
+    List<String> res = new ArrayList<>();
+
     public List<String> generateParenthesis(int n) {
         List<List<String>> dp = new ArrayList<>();
         dp.add(Collections.singletonList(""));
@@ -22,5 +24,28 @@ public class Solution {
         }
 
         return dp.get(n);
+    }
+
+    public List<String> generateParenthesisBest(int n) {
+        res.clear();
+        generateP(n, new StringBuilder(), 0, 0);
+        return res;
+    }
+
+    private void generateP(int n, StringBuilder sb, int open, int close) {
+        if (sb.length() == n * 2) {
+            res.add(sb.toString());
+        }
+        if (open < n) {
+            sb.append('(');
+            generateP(n, sb, open + 1, close);
+            sb.deleteCharAt(sb.length() - 1);
+        }
+        if (close < open) {
+            sb.append(')');
+            generateP(n, sb, open, close + 1);
+            sb.deleteCharAt(sb.length() - 1);
+        }
+
     }
 }

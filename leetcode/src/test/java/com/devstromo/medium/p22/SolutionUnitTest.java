@@ -19,4 +19,12 @@ class SolutionUnitTest {
         assertEquals(List.of("()"), solution.generateParenthesis(1));
     }
 
+    @Test
+    @DisplayName("Test Generate Parentheses Best")
+    void testGenerateParenthesesBest() {
+        var result = solution.generateParenthesisBest(3);
+        var expected = List.of("((()))", "(()())", "(())()", "()(())", "()()()");
+        assertTrue(result.containsAll(expected) && expected.containsAll(result));
+        assertEquals(List.of("()"), solution.generateParenthesisBest(1));
+    }
 }
