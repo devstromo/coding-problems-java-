@@ -46,4 +46,36 @@ class SolutionKt {
         // Step 4: Remaining nodes are the MHT roots
         return ArrayList(queue)
     }
+
+    fun findMinHeightTreesBest(n: Int, edges: Array<IntArray>): List<Int> {
+        if (n == 1) return listOf(0)
+        val adjList = Array<MutableList<Int>>(n) { mutableListOf() }
+        val connections = IntArray(n)
+        for (edge in edges) {
+            connections[edge[0]]++
+            connections[edge[1]]++
+            adjList[edge[0]] += edge[1]
+            adjList[edge[1]] += edge[0]
+        }
+        val queue = LinkedList<Int>()
+        for (i in connections.indices) {
+            if (connections[i] == 1) queue += i
+        }
+        val result = mutableListOf<Int>()
+        while (queue.isNotEmpty()) {
+            result.clear()
+            repeat(queue.size) {
+                val node = queue.removeFirst()
+                result += node
+                connections[node]--
+                for (adj in adjList[node]) {
+                    connections[adj]--
+                    if (connections[adj] == 1) {
+                        queue += adj
+                    }
+                }
+            }
+        }
+        return result
+    }
 }
