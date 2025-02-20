@@ -14,4 +14,12 @@ class SolutionKtUnitTest {
         assertTrue(result.containsAll(expected) && expected.containsAll(result))
         assertEquals(listOf("()"), solution.generateParenthesis(1))
     }
+
+    @Test
+    fun `Test Generate Parentheses Best`() {
+        val result = solution.generateParenthesisBest(3)
+        val expected = listOf("((()))", "(()())", "(())()", "()(())", "()()()")
+        assertTrue(result.containsAll(expected) && expected.containsAll(result))
+        assertEquals(listOf("()"), solution.generateParenthesisBest(1))
+    }
 }
