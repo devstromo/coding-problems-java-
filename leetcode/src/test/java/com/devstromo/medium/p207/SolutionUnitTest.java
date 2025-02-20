@@ -20,4 +20,15 @@ class SolutionUnitTest {
         }));
     }
 
+    @Test
+    @DisplayName("Test Course Schedule dfs")
+    void testCourseScheduleDFS() {
+        assertTrue(solution.canFinishDFS(2, new int[][]{
+                {1, 0},
+        }));
+        assertFalse(solution.canFinishDFS(2, new int[][]{
+                {1, 0},
+                {0, 1},
+        }));
+    }
 }

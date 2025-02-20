@@ -46,4 +46,38 @@ public class Solution {
 
         return completedCourses == numCourses;
     }
+
+    public boolean canFinishDFS(int numCourses, int[][] prerequisites) {
+        List<List<Integer>> graph = new ArrayList<>();
+        for (int i = 0; i < numCourses; i++) {
+            graph.add(new ArrayList<>());
+        }
+
+        for (int[] pre : prerequisites) {
+            graph.get(pre[1]).add(pre[0]); // Directed edge: pre[1] → pre[0]
+        }
+
+        int[] visited = new int[numCourses]; // 0 = unvisited, 1 = visiting, 2 = visited
+
+        for (int i = 0; i < numCourses; i++) {
+            if (hasCycle(i, graph, visited)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean hasCycle(int node, List<List<Integer>> graph, int[] visited) {
+        if (visited[node] == 1) return true; // Found a cycle
+        if (visited[node] == 2) return false; // Already checked
+
+        visited[node] = 1; // Mark as visiting
+        for (int neighbor : graph.get(node)) {
+            if (hasCycle(neighbor, graph, visited)) {
+                return true;
+            }
+        }
+        visited[node] = 2; // Mark as visited
+        return false;
+    }
 }
