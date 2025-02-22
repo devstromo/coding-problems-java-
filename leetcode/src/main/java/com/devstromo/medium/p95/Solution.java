@@ -34,6 +34,40 @@ class Solution {
         return result;
     }
 
+    public List<TreeNode> generateTreesBest(int n) {
+        List<TreeNode>[][] memo = new List[n + 1][n + 1];
+        return generateTrees(1, n, memo);
+    }
+
+    private List<TreeNode> generateTrees(int start, int end, List<TreeNode>[][] memo) {
+        var res = new ArrayList<TreeNode>();
+
+        if (start > end) {
+            res.add(null);
+
+            return res;
+        }
+
+        if (memo[start][end] != null) {
+            return memo[start][end];
+        }
+
+        for (int i = start; i <= end; i++) {
+            List<TreeNode> leftTrees = generateTrees(start, i - 1, memo);
+            List<TreeNode> rightTrees = generateTrees(i + 1, end, memo);
+
+            for (TreeNode left : leftTrees) {
+                for (TreeNode right : rightTrees) {
+                    res.add(new TreeNode(i, left, right));
+                }
+            }
+        }
+
+        memo[start][end] = res;
+
+        return res;
+    }
+
     static class TreeNode {
         int val;
         TreeNode left;

@@ -21,4 +21,18 @@ class SolutionUnitTest {
         var resultSecond = solution.generateTrees(0);
         assertTrue(resultSecond.isEmpty());
     }
+
+    @Test
+    @DisplayName("Test Unique Binary Search Trees II Best")
+    void testUniqueBinarySearchTreesBest() {
+        var result = solution.generateTreesBest(1);
+        assertEquals(1, result.size()); // Only one BST possible
+        assertEquals(1, result.getFirst().val);
+
+        var resultOne = solution.generateTreesBest(3);
+        assertEquals(5, resultOne.size());
+
+        var resultSecond = solution.generateTreesBest(0);
+        assertTrue(resultSecond.isEmpty());
+    }
 }
