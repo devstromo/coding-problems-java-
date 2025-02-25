@@ -4,7 +4,7 @@ public class Solution {
     private final int[][] directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
     private boolean[][] visited;
     private int maxArea = 0;
-
+    int r, c;
     public int maxAreaOfIsland(int[][] grid) {
         int rows = grid.length, cols = grid[0].length;
         visited = new boolean[rows][cols];
@@ -19,6 +19,27 @@ public class Solution {
             }
         }
         return max;
+    }
+
+    public int maxAreaOfIslandBest(int[][] grid) {
+        int ans = 0;
+        r = grid.length;
+        c = grid[0].length;
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                if (grid[i][j] == 1) {
+                    ans = Math.max(ans, solve(i, j, grid));
+                }
+            }
+        }
+        return ans;
+    }
+
+    private int solve(int i, int j, int[][] grid) {
+        if (i < 0 || j < 0 || i >= r || j >= c || grid[i][j] != 1) return 0;
+        grid[i][j] = -1;
+
+        return 1 + solve(i + 1, j, grid) + solve(i - 1, j, grid) + solve(i, j + 1, grid) + solve(i, j - 1, grid);
     }
 
     private void dfs(int[][] grid, int r, int c) {
