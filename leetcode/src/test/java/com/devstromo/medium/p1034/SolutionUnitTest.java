@@ -44,4 +44,41 @@ class SolutionUnitTest {
                 }, 1, 1, 2)
         );
     }
+
+    @Test
+    @DisplayName("Test Coloring A Border Best")
+    void testColoringABorderBest() {
+        assertArrayEquals(
+                new int[][]{
+                        {3, 3},
+                        {3, 2}
+                },
+                solution.colorBorderBest(new int[][]{
+                        {1, 1},
+                        {1, 2}
+                }, 0, 0, 3)
+        );
+        assertArrayEquals(
+                new int[][]{
+                        {1, 3, 3},
+                        {2, 3, 3}
+                },
+                solution.colorBorderBest(new int[][]{
+                        {1, 2, 2},
+                        {2, 3, 2}
+                }, 0, 1, 3)
+        );
+        assertArrayEquals(
+                new int[][]{
+                        {2, 2, 2},
+                        {2, 1, 2},
+                        {2, 2, 2}
+                },
+                solution.colorBorderBest(new int[][]{
+                        {1, 1, 1},
+                        {1, 1, 1},
+                        {1, 1, 1}
+                }, 1, 1, 2)
+        );
+    }
 }

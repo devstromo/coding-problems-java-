@@ -27,6 +27,30 @@ public class Solution {
         return grid;
     }
 
+    public int[][] colorBorderBest(int[][] grid, int row, int col, int color) {
+        int number = grid[row][col];
+        boolean[][] visited = new boolean[grid.length][grid[0].length];
+        colorBor(grid, row, col, number, color, visited);
+        return grid;
+    }
+
+    void colorBor(int[][] grid, int i, int j, int number, int color, boolean[][] visited) {
+        if (i < 0 || j < 0 || i == grid.length || j == grid[0].length || visited[i][j] || grid[i][j] != number) {
+            return;
+        } else {
+            visited[i][j] = true;
+            if (i == 0 || j == 0 || i == grid.length - 1 || j == grid[0].length - 1) {
+                grid[i][j] = color;
+            } else if (grid[i - 1][j] != number && !visited[i - 1][j] || grid[i + 1][j] != number && !visited[i + 1][j] || grid[i][j + 1] != number && !visited[i][j + 1] || grid[i][j - 1] != number && !visited[i][j - 1]) {
+                grid[i][j] = color;
+            }
+            colorBor(grid, i + 1, j, number, color, visited);
+            colorBor(grid, i - 1, j, number, color, visited);
+            colorBor(grid, i, j + 1, number, color, visited);
+            colorBor(grid, i, j - 1, number, color, visited);
+        }
+    }
+
     private void dfs(int[][] grid, int r, int c, List<int[]> borderCells) {
         int m = grid.length, n = grid[0].length;
         visited[r][c] = true;
