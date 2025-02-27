@@ -13,4 +13,12 @@ class SolutionKtUnitTest {
         assertFalse(solution.isValid("(]"))
         assertFalse(solution.isValid("(])"))
     }
+
+    @Test
+    fun `Test Valid Parentheses Best`() {
+        assertTrue(solution.isValidBest("()"))
+        assertTrue(solution.isValidBest("()[]{}"))
+        assertFalse(solution.isValidBest("(]"))
+        assertFalse(solution.isValidBest("(])"))
+    }
 }
