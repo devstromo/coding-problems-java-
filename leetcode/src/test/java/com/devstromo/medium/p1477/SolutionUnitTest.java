@@ -16,4 +16,11 @@ class SolutionUnitTest {
         assertEquals(-1, solution.minSumOfLengths(new int[]{4, 3, 2, 6, 2, 3, 4}, 6));
     }
 
+    @Test
+    @DisplayName("Test Find Two Non-overlapping Sub-arrays Each With Target SumLength Best")
+    void findTwoNonOverlappingSubarraysBest() {
+        assertEquals(2, solution.minSumOfLengths(new int[]{3, 2, 2, 4, 3}, 3));
+        assertEquals(2, solution.minSumOfLengths(new int[]{7, 3, 4, 7}, 7));
+        assertEquals(-1, solution.minSumOfLengths(new int[]{4, 3, 2, 6, 2, 3, 4}, 6));
+    }
 }

@@ -35,4 +35,31 @@ public class Solution {
 
         return (minLen == Integer.MAX_VALUE) ? -1 : minLen;
     }
+
+    public int minSumOfLengthsBest(int[] arr, int target) {
+        int len = arr.length, bestLen = Integer.MAX_VALUE, minLen, bestMinLen = Integer.MAX_VALUE;
+        int[] minLenArr = new int[len + 1];
+        // Arrays.fill(minLenArr, bestLen);
+        int left = 0, right = 0, sum = 0;
+        while (right < len) {
+            sum += arr[right];
+            while (sum > target) {
+                sum -= arr[left];
+                left++;
+            }
+
+            if (target == sum) {
+                minLen = right - left + 1;
+                if (left > 0 && minLenArr[left - 1] != Integer.MAX_VALUE) {
+                    bestLen = Math.min(bestLen, minLen + minLenArr[left - 1]);
+                }
+                bestMinLen = Math.min(minLen, bestMinLen);
+            }
+            minLenArr[right] = bestMinLen;
+            right++;
+        }
+
+        return (bestLen == Integer.MAX_VALUE) ? -1 : bestLen;
+
+    }
 }
