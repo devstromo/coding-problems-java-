@@ -35,4 +35,30 @@ class SolutionUnitTest {
         assertArrayEquals(expected1, input1);
     }
 
+    @Test
+    @DisplayName("Test Surrounded Regions Best")
+    void testSurroundedRegionsBest() {
+        var expected = new char[][]{
+                {'X', 'X', 'X', 'X', 'X'},
+                {'X', 'X', 'X', 'X', 'X'},
+                {'X', 'X', 'X', 'X', 'X'},
+                {'X', 'O', 'X', 'X', 'X'},
+        };
+        var input = new char[][]{
+                {'X', 'X', 'X', 'X', 'X'},
+                {'X', 'O', 'O', 'X', 'X'},
+                {'X', 'X', 'O', 'X', 'X'},
+                {'X', 'O', 'X', 'X', 'X'},
+        };
+        solution.solveBest(input);
+        assertArrayEquals(expected, input);
+        var expected1 = new char[][]{
+                {'X'}
+        };
+        var input1 = new char[][]{
+                {'X'}
+        };
+        solution.solveBest(input1);
+        assertArrayEquals(expected1, input1);
+    }
 }

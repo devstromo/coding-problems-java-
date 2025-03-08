@@ -3,6 +3,9 @@ package com.devstromo.medium.p130;
 public class Solution {
     private final int[][] directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
     private int rows, cols;
+    boolean[][] vis;
+    int n;
+    int m;
 
     public void solve(char[][] board) {
         rows = board.length;
@@ -30,6 +33,22 @@ public class Solution {
         }
     }
 
+    public void solveBest(char[][] board) {
+        n = board.length;
+        m = board[0].length;
+        vis = new boolean[board.length][board[0].length];
+        for (int i = 0; i < m; i++) {
+            if (board[0][i] == 'O') dfsBest(board, 0, i);
+            if (board[n - 1][i] == 'O') dfsBest(board, n - 1, i);
+        }
+        for (int i = 0; i < n; i++) {
+            if (board[i][0] == 'O') dfsBest(board, i, 0);
+            if (board[i][m - 1] == 'O') dfsBest(board, i, m - 1);
+        }
+        replace(board, 'O', 'X');
+        replace(board, 'T', 'O');
+    }
+
     private void dfs(char[][] board, int r, int c) {
         if (r < 0 || r >= rows || c < 0 || c >= cols || board[r][c] != 'O') {
             return;
@@ -38,6 +57,28 @@ public class Solution {
         board[r][c] = 'T'; // Mark border-connected regions
         for (int[] dir : directions) {
             dfs(board, r + dir[0], c + dir[1]);
+        }
+    }
+
+    private void dfsBest(char[][] board, int i, int j) {
+        if (i < 0 || i >= n || j < 0 || j >= m || board[i][j] != 'O' || vis[i][j]) return;
+
+        vis[i][j] = true;
+        board[i][j] = 'T';
+        dfsBest(board, i + 1, j);
+        dfsBest(board, i - 1, j);
+        dfsBest(board, i, j + 1);
+        dfsBest(board, i, j - 1);
+
+    }
+
+    private void replace(char[][] board, char from, char to) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (board[i][j] == from) {
+                    board[i][j] = to;
+                }
+            }
         }
     }
 }
