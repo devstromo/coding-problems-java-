@@ -22,4 +22,17 @@ class SolutionUnitTest {
         }));
     }
 
+    @Test
+    @DisplayName("Test Battleships in a Board Best")
+    void testBattleshipsInBoardBest() {
+        assertEquals(2, solution.countBattleshipsBest(new char[][]{
+                {'X', '.', '.', 'X'},
+                {'.', '.', '.', 'X'},
+                {'.', '.', '.', 'X'}
+        }));
+
+        assertEquals(0, solution.countBattleshipsBest(new char[][]{
+                {'.'}
+        }));
+    }
 }
