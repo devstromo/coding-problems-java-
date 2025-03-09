@@ -45,4 +45,40 @@ class SolutionUnitTest {
         ));
     }
 
+    @Test
+    @DisplayName("Test Count Sub Islands Best")
+    void testCountSubIslandsBest() {
+        assertEquals(3, solution.countSubIslandsBest(
+                new int[][]{
+                        {1, 1, 1, 0, 0},
+                        {0, 1, 1, 1, 1},
+                        {0, 0, 0, 0, 0},
+                        {1, 0, 0, 0, 0},
+                        {1, 1, 0, 1, 1}
+                },
+                new int[][]{
+                        {1, 1, 1, 0, 0},
+                        {0, 0, 1, 1, 1},
+                        {0, 1, 0, 0, 0},
+                        {1, 0, 1, 1, 0},
+                        {0, 1, 0, 1, 0}
+                }
+        ));
+        assertEquals(2, solution.countSubIslandsBest(
+                new int[][]{
+                        {1, 0, 1, 0, 1},
+                        {1, 1, 1, 1, 1},
+                        {0, 0, 0, 0, 0},
+                        {1, 1, 1, 1, 1},
+                        {1, 0, 1, 0, 1}
+                },
+                new int[][]{
+                        {0, 0, 0, 0, 0},
+                        {1, 1, 1, 1, 1},
+                        {0, 1, 0, 1, 0},
+                        {0, 1, 0, 1, 0},
+                        {1, 0, 0, 0, 1}
+                }
+        ));
+    }
 }
