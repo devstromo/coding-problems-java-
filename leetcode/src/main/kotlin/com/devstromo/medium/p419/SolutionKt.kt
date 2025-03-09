@@ -17,4 +17,18 @@ class SolutionKt {
         }
         return count
     }
+
+    fun countBattleshipsBest(board: Array<CharArray>): Int {
+        var count = 0
+        for (row in board.indices) {
+            for (col in board[0].indices) {
+                if (board[row][col] == 'X') {
+                    if (!(col > 0 && board[row][col - 1] == 'X') && !(row > 0 && board[row - 1][col] == 'X')) {
+                        count++
+                    }
+                }
+            }
+        }
+        return count
+    }
 }
