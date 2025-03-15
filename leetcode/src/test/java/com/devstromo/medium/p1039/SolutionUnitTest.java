@@ -16,4 +16,11 @@ class SolutionUnitTest {
         assertEquals(13, solution.minScoreTriangulation(new int[]{1, 3, 1, 4, 1, 5}));
     }
 
+    @Test
+    @DisplayName("Test Minimum Score Triangulation of Polygon Best")
+    void testMinimumTriangulationBest() {
+        assertEquals(6, solution.minScoreTriangulationBest(new int[]{1, 2, 3}));
+        assertEquals(144, solution.minScoreTriangulationBest(new int[]{3, 7, 4, 5}));
+        assertEquals(13, solution.minScoreTriangulationBest(new int[]{1, 3, 1, 4, 1, 5}));
+    }
 }

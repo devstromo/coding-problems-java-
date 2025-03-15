@@ -3,6 +3,8 @@ package com.devstromo.medium.p1039;
 import java.util.Arrays;
 
 public class Solution {
+    int[][] arr;
+
     public int minScoreTriangulation(int[] values) {
         int n = values.length;
         int[][] dp = new int[n][n];
@@ -13,6 +15,23 @@ public class Solution {
         }
 
         return computeMinScore(values, 0, n - 1, dp);
+    }
+
+    public int minScoreTriangulationBest(int[] values) {
+        arr = new int[values.length][values.length];
+        return dfs(values, 0, values.length - 1);
+    }
+
+    private int dfs(int[] values, int i, int j) {
+        if (i >= j - 1) return 0;
+        if (arr[i][j] != 0) return arr[i][j];
+        int sum = Integer.MAX_VALUE;
+        for (int k = i + 1; k < j; k++) {
+            sum = Math.min(sum, values[i] * values[j] * values[k] + dfs(values, i, k) + dfs(values, k, j));
+        }
+        if (sum == Integer.MAX_VALUE) sum = 0;
+        arr[i][j] = sum;
+        return sum;
     }
 
     private int computeMinScore(int[] values, int i, int j, int[][] dp) {
