@@ -15,4 +15,11 @@ class SolutionUnitTest {
         assertEquals(10, solution.maxCoins(new int[]{1, 5}));
     }
 
+    @Test
+    @DisplayName("Test Burst Balloons Best")
+    void testBurstBalloonsBest() {
+        assertEquals(167, solution.maxCoinsBest(new int[]{3, 1, 5, 8}));
+        assertEquals(10, solution.maxCoinsBest(new int[]{1, 5}));
+    }
+
 }
