@@ -11,4 +11,10 @@ class SolutionKtUnitTest {
         assertEquals(167, solution.maxCoins(intArrayOf(3, 1, 5, 8)))
         assertEquals(10, solution.maxCoins(intArrayOf(1, 5)))
     }
+
+    @Test
+    fun `Test Burst Balloons Best`() {
+        assertEquals(167, solution.maxCoinsBest(intArrayOf(3, 1, 5, 8)))
+        assertEquals(10, solution.maxCoinsBest(intArrayOf(1, 5)))
+    }
 }
