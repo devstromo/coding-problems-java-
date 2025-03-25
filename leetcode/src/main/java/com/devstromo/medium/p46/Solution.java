@@ -10,6 +10,39 @@ public class Solution {
         return result;
     }
 
+    public List<List<Integer>> permuteBest(int[] nums) {
+        List<List<Integer>> ans = new ArrayList<>();
+        int indx = 0;
+        getper(nums, indx, ans);
+        return ans;
+    }
+
+    void swap(int[] nums, int a, int b) {
+        int temp = nums[a];
+        nums[a] = nums[b];
+        nums[b] = temp;
+    }
+
+    void getper(int[] nums, int indx, List<List<Integer>> ans) {
+        ArrayList<Integer> mpp = new ArrayList<>();
+
+        if (indx == nums.length - 1) {
+            for (int value : nums) {
+                mpp.add(value);
+            }
+            ans.add(mpp);
+            return;
+        }
+
+        for (int i = indx; i < nums.length; i++) {
+            swap(nums, indx, i);
+            getper(nums, indx + 1, ans);
+            swap(nums, indx, i);
+
+        }
+    }
+
+
     private void backtrack(
             int[] nums,
             List<Integer> current,
