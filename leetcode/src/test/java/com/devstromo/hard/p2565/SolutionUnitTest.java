@@ -9,10 +9,16 @@ class SolutionUnitTest {
     private final Solution solution = new Solution();
 
     @Test
-    @DisplayName("Test  Subsequence With the Minimum Score")
+    @DisplayName("Test Subsequence With the Minimum Score")
     void testSubsequenceWithTheMinimumScore() {
         assertEquals(1, solution.minimumScore("abacaba", "bzaa"));
         assertEquals(3, solution.minimumScore("cde", "xyz"));
     }
 
+    @Test
+    @DisplayName("Test Subsequence With the Minimum Score Best")
+    void testSubsequenceWithTheMinimumScoreBest() {
+        assertEquals(1, solution.minimumScoreBest("abacaba", "bzaa"));
+        assertEquals(3, solution.minimumScoreBest("cde", "xyz"));
+    }
 }
