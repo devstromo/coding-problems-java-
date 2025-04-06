@@ -50,4 +50,47 @@ class SolutionUnitTest {
         );
         assertEquals("abc", solution.smallestFromLeaf(root));
     }
+
+    @Test
+    @DisplayName("Test Smallest String Starting From Leaf Best")
+    void testSmallestFromLeafBest() {
+        Solution.TreeNode root = new Solution.TreeNode(0,
+                new Solution.TreeNode(1,
+                        new Solution.TreeNode(3),
+                        new Solution.TreeNode(4)
+                ),
+                new Solution.TreeNode(2,
+                        new Solution.TreeNode(3),
+                        new Solution.TreeNode(4)
+                )
+        );
+        assertEquals("dba", solution.smallestFromLeafBest(root));
+
+        root = new Solution.TreeNode(25,
+                new Solution.TreeNode(1,
+                        new Solution.TreeNode(1),
+                        new Solution.TreeNode(3)
+                ),
+                new Solution.TreeNode(3,
+                        new Solution.TreeNode(0),
+                        new Solution.TreeNode(2)
+                )
+        );
+        assertEquals("adz", solution.smallestFromLeafBest(root));
+
+        root = new Solution.TreeNode(2,
+                new Solution.TreeNode(2,
+                        null,
+                        new Solution.TreeNode(1,
+                                new Solution.TreeNode(0),
+                                null
+                        )
+                ),
+                new Solution.TreeNode(1,
+                        new Solution.TreeNode(0),
+                        null
+                )
+        );
+        assertEquals("abc", solution.smallestFromLeafBest(root));
+    }
 }
