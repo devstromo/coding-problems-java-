@@ -48,4 +48,67 @@ public class Solution {
 
         return count;
     }
+
+    public int maximumDetonationBest(int[][] bombs) {
+        int n = bombs.length;
+        if (n <= 1) return n;
+        if (n == 2) return twoBombs(bombs);
+
+        byte[][] links = new byte[n][n + 1];
+        int[] linksLen = new int[n];
+        for (int b = 0; b < n; b++)
+            buildLinks(links, linksLen, bombs, bombs[b], b);
+
+        int maxLinks = 0;
+        for (int i = n - 1; i >= 0; i--) {
+            if (linksLen[i] > maxLinks) maxLinks = linksLen[i];
+            links[i][linksLen[i]] = (byte) -1;
+        }
+        if (maxLinks == 0 || maxLinks == n - 1) return maxLinks + 1;
+
+        int maxExplosions = 0;
+        for (int i = n - 1; i >= 0; i--) {
+            maxExplosions = Math.max(maxExplosions, countExplosions(links, new boolean[n], i));
+            if (maxExplosions == n) break;
+        }
+        return maxExplosions;
+    }
+
+
+    private int countExplosions(byte[][] links, boolean[] used, int b) {
+        used[b] = true;
+        int explosions = 1;
+        for (int b1 : links[b]) {
+            if (b1 < 0) break;
+            if (!used[b1]) explosions += countExplosions(links, used, b1);
+        }
+        return explosions;
+    }
+
+
+    private void buildLinks(byte[][] links, int[] linksLen, int[][] bombs, int[] bomb, int b) {
+        int x = bomb[0];
+        int y = bomb[1];
+        long radius = (long) bomb[2] * bomb[2];
+        for (int b1 = links.length - 1; b1 > b; b1--) {
+            int[] bomb1 = bombs[b1];
+            long dist = distance(x, y, bomb1[0], bomb1[1]);
+            if (dist <= radius) links[b][linksLen[b]++] = (byte) b1;
+            if (dist <= (long) bomb1[2] * bomb1[2]) links[b1][linksLen[b1]++] = (byte) b;
+        }
+    }
+
+
+    private long distance(int x1, int y1, int x2, int y2) {
+        return (long) (x1 - x2) * (x1 - x2) + (long) (y1 - y2) * (y1 - y2);
+    }
+
+
+    private int twoBombs(int[][] bombs) {
+        int[] b0 = bombs[0];
+        int[] b1 = bombs[1];
+        long dist = distance(b0[0], b0[1], b1[0], b1[1]);
+        if (dist <= (long) b0[2] * b0[2] || dist <= (long) b1[2] * b1[2]) return 2;
+        return 1;
+    }
 }

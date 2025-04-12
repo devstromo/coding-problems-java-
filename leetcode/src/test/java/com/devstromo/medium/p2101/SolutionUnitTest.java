@@ -34,4 +34,29 @@ class SolutionUnitTest {
         ));
     }
 
+    @Test
+    @DisplayName("Test Detonate the Maximum Bombs Best")
+    void testDetonationBest() {
+        assertEquals(2, solution.maximumDetonationBest(
+                new int[][]{
+                        {2, 1, 3},
+                        {6, 1, 4},
+                }
+        ));
+        assertEquals(1, solution.maximumDetonationBest(
+                new int[][]{
+                        {1, 1, 5},
+                        {10, 10, 5},
+                }
+        ));
+        assertEquals(5, solution.maximumDetonationBest(
+                new int[][]{
+                        {1, 2, 3},
+                        {2, 3, 1},
+                        {3, 4, 2},
+                        {4, 5, 3},
+                        {5, 6, 4}
+                }
+        ));
+    }
 }
