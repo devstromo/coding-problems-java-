@@ -21,7 +21,7 @@ class SolutionUnitTest {
                 {1, 1, 0},
                 {1, 0, 1}
         }));
-        assertEquals(2, solution.largestSubmatrix(new int[][]{
+        assertEquals(3, solution.largestSubmatrix(new int[][]{
                 {1, 0, 1, 0, 1}
         }));
     }
