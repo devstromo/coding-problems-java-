@@ -16,4 +16,11 @@ class SolutionUnitTest {
         assertEquals(25, solution.mergeStones(new int[]{3, 5, 1, 2, 6}, 3));
     }
 
+    @Test
+    @DisplayName("Test Minimum Cost to Merge Stones Best")
+    void testMinimumCostToMergeStonesBest() {
+        assertEquals(20, solution.mergeStonesBest(new int[]{3, 2, 4, 1}, 2));
+        assertEquals(-1, solution.mergeStonesBest(new int[]{3, 2, 4, 1}, 3));
+        assertEquals(25, solution.mergeStonesBest(new int[]{3, 5, 1, 2, 6}, 3));
+    }
 }
