@@ -36,4 +36,31 @@ class SolutionKt {
 
         return dp[0][n - 1][1]
     }
+
+    fun mergeStonesBest(stones: IntArray, k: Int): Int {
+        val n = stones.size
+        if ((n - 1) % (k - 1) != 0) {
+            return -1
+        }
+
+        val prefixSum = IntArray(n + 1)
+        for (i in 0 until n) {
+            prefixSum[i + 1] = prefixSum[i] + stones[i]
+        }
+
+        val dp = Array(n) { IntArray(n) }
+        for (length in k..n) {
+            for (i in 0..n - length) {
+                val j = i + length - 1
+                dp[i][j] = Int.MAX_VALUE
+                for (m in i until j step k - 1) {
+                    dp[i][j] = minOf(dp[i][j], dp[i][m] + dp[m + 1][j])
+                }
+                if ((j - i) % (k - 1) == 0) {
+                    dp[i][j] += prefixSum[j + 1] - prefixSum[i]
+                }
+            }
+        }
+        return dp[0][n - 1]
+    }
 }
