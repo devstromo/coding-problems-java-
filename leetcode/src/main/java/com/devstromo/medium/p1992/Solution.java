@@ -27,6 +27,33 @@ public class Solution {
         return result.toArray(new int[result.size()][]);
     }
 
+    public int[][] findFarmlandBest(int[][] land) {
+        if (land.length == 0 || land[0].length == 0) {
+            return new int[][]{
+                    {0}
+            };
+        }
+        int row = land.length;
+        int col = land[0].length;
+
+        List<int[]> rectangles = new ArrayList<>();
+        for (int currRow = 0; currRow < row; ++currRow) {
+            for (int currCol = 0; currCol < col; ++currCol) {
+                if (land[currRow][currCol] == 1) {
+                    int x = currRow;
+                    int y = currCol;
+                    for (x = currRow; x < row && land[x][currCol] == 1; ++x) {
+                        for (y = currCol; y < col && land[x][y] == 1; ++y) {
+                            land[x][y] = 0;
+                        }
+                    }
+                    rectangles.add(new int[]{currRow, currCol, x - 1, y - 1});
+                }
+            }
+        }
+        return rectangles.toArray(new int[rectangles.size()][]);
+    }
+
     private void dfs(int[][] land, int r, int c, int[] bounds) {
         int m = land.length, n = land[0].length;
         // Base case: out of bounds or not farmland
