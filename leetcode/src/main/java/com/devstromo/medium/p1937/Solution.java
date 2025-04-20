@@ -42,4 +42,35 @@ public class Solution {
 
         return max;
     }
+
+    public long maxPointsBest(int[][] points) {
+        int n = points.length;
+        int m = points[0].length;
+        long[] maxScore = new long[m];
+
+        for (int i = 0; i < m; i++) {
+            maxScore[i] = points[0][i];
+        }
+
+        for (int i = 1; i < n; i++) {
+            for (int j = 1; j < m; j++) {
+                maxScore[j] = Math.max(maxScore[j], maxScore[j - 1] - 1);
+            }
+
+            long right = maxScore[m - 1];
+            maxScore[m - 1] += points[i][m - 1];
+
+            for (int k = m - 2; k >= 0; k--) {
+                right = Math.max(right - 1, maxScore[k]);
+                maxScore[k] = points[i][k] + right;
+            }
+        }
+
+        long res = 0;
+        for (long score : maxScore) {
+            res = Math.max(res, score);
+        }
+
+        return res;
+    }
 }

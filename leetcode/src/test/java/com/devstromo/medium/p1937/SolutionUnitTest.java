@@ -22,4 +22,19 @@ class SolutionUnitTest {
                 {4, 2}
         }));
     }
+
+    @Test
+    @DisplayName("Test Maximum Number of Points with Cost Best")
+    void testMaximumNumberOfPointsWithCostBest() {
+        assertEquals(9, solution.maxPointsBest(new int[][]{
+                {1, 2, 3},
+                {1, 5, 1},
+                {3, 1, 1}
+        }));
+        assertEquals(11, solution.maxPointsBest(new int[][]{
+                {1, 5},
+                {2, 3},
+                {4, 2}
+        }));
+    }
 }
