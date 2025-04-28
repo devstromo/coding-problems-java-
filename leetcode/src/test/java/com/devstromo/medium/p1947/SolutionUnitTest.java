@@ -36,4 +36,33 @@ class SolutionUnitTest {
                 }
         ));
     }
+
+    @Test
+    @DisplayName("Test Maximum Compatibility Score Sum Best")
+    void testMaximumCompatibilityScoreSumBest() {
+        assertEquals(8, solution.maxCompatibilitySumBest(
+                new int[][]{
+                        {1, 1, 0},
+                        {1, 0, 1},
+                        {0, 0, 1}
+                },
+                new int[][]{
+                        {1, 0, 0},
+                        {0, 0, 1},
+                        {1, 1, 0}
+                }
+        ));
+        assertEquals(0, solution.maxCompatibilitySumBest(
+                new int[][]{
+                        {0, 0},
+                        {0, 0},
+                        {0, 0},
+                },
+                new int[][]{
+                        {1, 1},
+                        {1, 1},
+                        {1, 1},
+                }
+        ));
+    }
 }
