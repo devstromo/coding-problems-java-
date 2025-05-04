@@ -13,6 +13,12 @@ class SolutionUnitTest {
     void testCountNumberOfTexts() {
         assertEquals(8, solution.countTexts("22233"));
         assertEquals(82876089, solution.countTexts("222222222222222222222222222222222222"));
+    }
 
+    @Test
+    @DisplayName("Test Count Number of Texts Best")
+    void testCountNumberOfTextsBest() {
+        assertEquals(8, solution.countTextsBest("22233"));
+        assertEquals(82876089, solution.countTextsBest("222222222222222222222222222222222222"));
     }
 }
