@@ -15,4 +15,14 @@ class SolutionKtUnitTest {
         assertEquals(listOf<String>(), solution.letterCombinations(""))
         assertEquals(listOf("a", "b", "c"), solution.letterCombinations("2"))
     }
+
+    @Test
+    fun `Test Letter Combinations of a Phone Number Best`() {
+        assertEquals(
+            listOf("ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"),
+            solution.letterCombinationsBest("23")
+        )
+        assertEquals(listOf<String>(), solution.letterCombinationsBest(""))
+        assertEquals(listOf("a", "b", "c"), solution.letterCombinationsBest("2"))
+    }
 }

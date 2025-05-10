@@ -14,6 +14,44 @@ class SolutionKt {
         return result
     }
 
+    fun letterCombinationsBest(digits: String): List<String> {
+        val map = ArrayList<CharArray>()
+        map.add(charArrayOf('1'))
+        map.add(charArrayOf('1'))
+
+        map.add(charArrayOf('a', 'b', 'c'))
+        map.add(charArrayOf('d', 'e', 'f'))
+        map.add(charArrayOf('g', 'h', 'i'))
+        map.add(charArrayOf('j', 'k', 'l'))
+        map.add(charArrayOf('m', 'n', 'o'))
+        map.add(charArrayOf('p', 'q', 'r', 's'))
+        map.add(charArrayOf('t', 'u', 'v'))
+        map.add(charArrayOf('w', 'x', 'y', 'z'))
+
+        val proc = ArrayList<CharArray>()
+
+        for (c in digits) {
+            proc.add(map[(c - '0').toInt()])
+        }
+
+        val res = ArrayList<String>()
+
+        if (proc.size > 0) recv(res, proc, 0, "")
+
+        return res
+    }
+
+    fun recv(res: ArrayList<String>, proc: ArrayList<CharArray>, n: Int, priv: String) {
+        for (c in proc[n]) {
+            if (n != proc.size - 1) {
+                recv(res, proc, n + 1, priv + c)
+            } else {
+                res.add(priv + c)
+            }
+        }
+    }
+
+
     private fun backtrack(
         digits: String,
         index: Int,
