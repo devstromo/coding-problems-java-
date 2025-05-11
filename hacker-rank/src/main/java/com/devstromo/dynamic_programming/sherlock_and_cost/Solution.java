@@ -59,7 +59,7 @@ public class Solution {
                             File expectedOutputFile = new File(classLoader.getResource(outputFolder + fileName.replace("input", "output")).getFile());
 
                             if (expectedOutputFile.exists()) {
-                                compareResults(expectedOutputFile.getAbsolutePath(), expectedOutputFile.getAbsolutePath());
+                                compareResults(expectedOutputFile.getAbsolutePath(), localOutputFilePath);
                             } else {
                                 System.out.println("Expected output file not found: " + expectedOutputFile.getAbsolutePath());
                             }
