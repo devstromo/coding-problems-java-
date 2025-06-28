@@ -10,7 +10,7 @@ class StockSpannerUnitTest {
     @Test
     @DisplayName("Test Online Stock Span")
     void testOnlineStockSpan() {
-        StockSpanner stockSpanner = new StockSpanner();
+        final var stockSpanner = new StockSpanner();
         int result = 0;
         result = stockSpanner.next(100); // return 1
         assertEquals(1, result);
